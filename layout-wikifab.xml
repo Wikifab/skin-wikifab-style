@@ -37,7 +37,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component class="wiki-nav">
 		<!--  tool bar for other page than Home page-->
-		<modification type="HideFor" page="Main_Page"></modification>
+		<modification type="HideFor" page="Main_Page,Accueil"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -48,7 +48,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 	<component class="wiki-nav">
 		<!--  tool bar for Home page visible only by administrators -->
-		<modification type="ShowOnlyFor" page="Main_Page"></modification>
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil"></modification>
 		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
 		<grid>
 			<row>
