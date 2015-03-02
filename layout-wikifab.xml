@@ -37,7 +37,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component class="wiki-nav">
 		<!--  tool bar for other page than Home page-->
-		<modification type="HideFor" page="Main_Page,Accueil"></modification>
+		<modification type="HideFor" page="Main_Page,Accueil,Explorer,Contribuer"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -48,8 +48,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 	<component class="wiki-nav">
 		<!--  tool bar for Home page visible only by administrators -->
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil"></modification>
-		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
+		<modification type="ShowOnlyFor" page="Main_Page,Main_Page,Explorer,Contribuer"></modification>
+		<modification type="ShowOnlyFor" group="admin,sysop,Explorer,Contribuer"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -59,22 +59,40 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 		</grid>
 	</component>
 
+	<component>
+		<modification type="HideFor" page="Main_Page,Accueil,Explorer,Contribuer"></modification>
+		<grid>
+			<row>
+				<cell span="12">
+					<component type="SiteNotice"></component>
+				</cell>
+			</row>
 
-	<grid>
+			<row>
+				<cell span="12">
+					<component type="MainContent"></component>
+				</cell>
+			</row>
 
-		<row>
-			<cell span="12">
-				<component type="SiteNotice"></component>
-			</cell>
-		</row>
+		</grid>
+	</component>
 
-		<row>
-			<cell span="12">
-				<component type="MainContent"></component>
-			</cell>
-		</row>
+	<component>
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,Contribuer"></modification>
+			<row>
+				<cell span="12">
+					<component type="SiteNotice"></component>
+				</cell>
+			</row>
 
-	</grid>
+			<row>
+				<cell span="12">
+					<component type="MainContent"></component>
+				</cell>
+			</row>
+	</component>
+
+
 
 
 <component class="footer-test">
