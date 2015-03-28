@@ -1,5 +1,6 @@
 {
     "name": "pboutet/wikifabStyleModule",
+    "type": "mediawiki-skin",
     "require": {
 	"mediawiki/chameleon-skin": "1.*"
     }
