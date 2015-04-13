@@ -40,6 +40,31 @@
 	margin-top: 70px;
 }
 
+
+.footer-top {
+	border-top: 1px solid #e7e7e7;
+	background-color: #f8f8f8;
+	margin-top: 70px;
+	padding: 10px 0px;
+}
+
+.footer-links li{
+	line-height: 24px;
+	color: #ccc;
+}
+
+.footer-main {
+	background-color: #363636;
+	color: #fff;
+	padding:45px 0px 60px 0;
+}
+
+.footer-credits {
+	padding-top: 30px;
+	border-top: 1px solid;
+	margin-top: 20px;
+}
+
 #p-search{
 	float:left;
 }
@@ -102,6 +127,7 @@
 	border-radius: 8px;
 	border:1px solid #eeeeee;
 	border-bottom:3px solid #eeeeee;
+	margin-bottom:20px;
 }
 
 .project-card-content {
@@ -351,16 +377,31 @@
 	background:#333;	
 	background-image :url('images/wood-bg-black.jpg');
 	color:#fff;
-	padding:90px 30px;
-	text-align:left;
+	padding:40px 30px;
+	text-align:center;
 }
 
 .marketing-section-hp h1{
-	font-size:45px;
+	font-size:35px;
+	margin-top: 12px;
 }
 
-.marketing-section-hp p{
+.marketing-section-hp-subtitle{
 	font-size:17px;
+	margin-bottom:25px;
+}
+
+.search-section{
+	padding: 25px 0px;
+	font-size: 16px;
+	margin-bottom: 30px;
+	color: #337ab7;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.search-section p{
+	margin-bottom:0px;
 }
 
 .slider-section-hp {
@@ -373,6 +414,22 @@
 	margin-bottom:80px;
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
 }
+
+.sign-up-button-hp {
+	font-size: 15px;
+	padding: 10px 15px;
+	background-color: #e74c3c;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top:25px;
+}
+
+.sign-up-button-hp:hover {
+	cursor:pointer;
+	background-color: #d14132;
+}
+
 
 .slider-section-hp p{
 	font-size:17px;
@@ -389,7 +446,7 @@ input[type="submit"], input[type="button"], input[type="reset"], input[type="fil
 	color:#fff;
 }
 
-.sitedir-ltr #mw-search-top-table input{
+.sitedir-ltr #mw-search-top-table #searchText{
 	border: 1px solid #ccc;
 	padding: 9px;
 	margin-right: 5px;
@@ -408,7 +465,7 @@ input[type="submit"], input[type="button"], input[type="reset"], input[type="fil
 }
 
 .contribute-block-title{
-	font-size:24px;
+	font-size:23px;
 	font-weight: bold;
 }
 
@@ -417,7 +474,7 @@ input[type="submit"], input[type="button"], input[type="reset"], input[type="fil
 }
 
 .contribute-block {
-	padding: 70px 0px;
+	padding: 40px 0px;
 	background-color: #fff;	
 	cursor:pointer;
 	text-align: center;
@@ -437,6 +494,17 @@ input[type="submit"], input[type="button"], input[type="reset"], input[type="fil
 .contribuer-subtitle{
 	border-bottom: 1px solid #eeeeee;
 	padding-bottom: .2em;
+}
+
+.apprendre-subtitle{
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: .2em;
+	margin-top: 30px;
+}
+
+.know-more-learn{
+	font-size:13px;
+	padding:10px 0;
 }
 
 .tuto-main-image img{
@@ -677,12 +745,17 @@ body.page-Contribuer .navbar { margin-bottom:0px; }
 }
 
 .sfUploadable {
-	background-color:#fff;
+	background-image:linear-gradient(#fff, #ddd);
 	border: 1px solid #337ab7;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	padding: 8px 10px;
+}
+
+.sfUploadable:hover {
+	border: 1px solid #1d4568;
+	background-image:linear-gradient(#fff, #ccc);
 }
 
 .detail-field{
@@ -693,6 +766,12 @@ body.page-Contribuer .navbar { margin-bottom:0px; }
 	-webkit-appearance: inherit;
 	padding: 5px 23px 5px 10px;
 }
+
+.multipleTemplateAdder {
+	width: 100%;
+	background-color: red;
+}
+
 
 .detail-box{
 	padding: 30px 4% 10px;
@@ -787,6 +866,38 @@ img.removeButton, img.addAboveButton {
   cursor: pointer;
 }
 
+.collap-style {
+	border-top: 1px solid rgb(204, 204, 204);
+	padding: 10px 0;
+	margin: 0px 26px;
+}
+
+.collap-style-out {
+	border: 1px solid rgb(204, 204, 204);
+	padding: 13px 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.collaps-icon {
+	font-size: 14px;
+	padding-right: 3px;
+}
+
+.collap-in-title{
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.help-color{
+	color: #337ab7;
+}
+
+.collaps-title {
+	font-size: 18px;
+	cursor: pointer;
+}
 
 
 @media only screen and (max-width: 766px) {
