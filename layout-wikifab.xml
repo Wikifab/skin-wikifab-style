@@ -95,6 +95,23 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 
+<component class="footer-main">
+
+	<component class="container">
+		<component type="WikifabFooterLinks"></component>
+
+		<row class="footer-credits">
+			<cell span="7">
+				<component type="WikifabFooter"></component>
+			</cell>
+			<cell span="5">
+				<component type="FooterIcons"></component>
+			</cell>
+		</row>
+	</component>
+</component>
+
+<!--
 <component class="footer-test">
 
 	<grid>
@@ -123,4 +140,5 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 </component>
+-->
 </structure>
