@@ -3,4 +3,25 @@
     "type": "mediawiki-skin",
     "require": {
     }
+	"description": "Skin for wikifab based on chameleon skin",
+	"keywords"   : [
+		"wiki",
+		"MediaWiki",
+		"skin",
+		"Twitter",
+		"Bootstrap",
+		"Chameleon",
+		"Wikifab"
+	],
+	"authors"    : [
+		{
+			"name" : "Pierre Boutet",
+			"role" : "Developer"
+		}
+	],
+	"autoload"   : {
+		"files": [ ],
+		"psr-4": {
+		}
+	}
 }
