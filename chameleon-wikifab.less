@@ -16,7 +16,7 @@
 	border-bottom:1px solid #ddd;
 }
 
-#ca-nstab-main, #ca-talk, #ca-edit, #ca-history, #ca-delete, #ca-move, #ca-protect, #ca-watch, #ca-nstab-special, #ca-nstab-mediawiki, #ca-viewsource, #ca-nstab-help, #ca-nstab-template, #ca-form_edit, #ca-nstab-form, #ca-nstab-attribut, #ca-nstab-user{
+#ca-nstab-main, #ca-talk, #ca-edit, #ca-history, #ca-delete, #ca-move, #ca-protect, #ca-watch, #ca-nstab-special, #ca-nstab-mediawiki, #ca-viewsource, #ca-nstab-help, #ca-nstab-template, #ca-form_edit, #ca-nstab-form, #ca-nstab-attribut, #ca-nstab-user, #ca-nstab-project, #ca-nstab-image, #ca-nstab-category{
 	color:#bbb;
 	padding: 14px 15px;
 	margin-bottom: -1px;
@@ -48,16 +48,31 @@
 	padding: 10px 0px;
 }
 
-.footer-links li{
+.footer-links li {
 	line-height: 24px;
 	color: #ccc;
+}
+
+.footer-links li a {
+	line-height: 24px;
+	color: #ccc;
+}
+
+.footer-links li a:hover {
+	color: #fff;
 }
 
 .footer-main {
 	background-color: #363636;
 	color: #fff;
 	padding:45px 0px 60px 0;
+	margin-top:70px;
 }
+
+.step-instructions ul {margin-bottom:8px; font-size: 13.5px;}
+
+.step-instructions p {margin-bottom:8px; font-size:13.5px}
+
 
 .footer-credits {
 	padding-top: 30px;
@@ -105,7 +120,7 @@
  *********************/
 
 .wf-top-button .btn{
-	margin: 5%;
+	margin-top: 8px;
 	background-color: #f5f8fa;
 	border: 1px solid #e1e8ed;
 	color: #66757f;
@@ -144,9 +159,12 @@
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	border:1px solid #eeeeee;
-	border-bottom:3px solid #eeeeee;
+	box-shadow:0px 1px 3px 0 rgba(0,0,0,0.26);
 	margin-bottom:20px;
+}
+
+.project-card:hover{
+	box-shadow:0px 1px 3px 0 rgba(0,0,0,0.96);
 }
 
 .project-card-content {
@@ -206,17 +224,22 @@
 	text-align:center;
 	border:1px solid #ccc;
 	background:#fff;
+	color:#1d4568;
+	float:left;
+	width:100%;
+	margin:10px 0px;
 	padding: 22px 0px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	font-size:16px;
+	font-size:15px;
 	cursor:pointer;
 }
 
 .project-category:hover{
 	background-color:#e74c3c;
 	border:1px solid #e74c3c;
+	color:#fff;
 }
 
 .mw-body .project-category:hover a.extiw:link  {
@@ -231,6 +254,12 @@
     background: none repeat scroll 0 0 #f8f8f8;
     border-top: 1px solid #ccc;
     cursor: pointer;
+-webkit-border-bottom-right-radius: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-moz-border-radius-bottomright: 8px;
+-moz-border-radius-bottomleft: 8px;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
 }
 .project-card-author .project-card-author-picture p,
 .project-card-author .project-card-author-info p {
@@ -355,6 +384,17 @@
 	border-bottom-right-radius: 6px;
 }
 
+.small-h2, .small-h2-top {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: .2em;
+	font-size: 22px;
+	margin-top:25px;
+}
+
+.small-h2-top{
+	margin-top:5px;
+}
+
 .PotD-box{
 	background-color:#e74c3c;
 	color:#fff;
@@ -434,25 +474,30 @@
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
 }
 
-.sign-up-button-hp {
+.sign-up-button-hp, .forminput_button, .donation-button {
 	font-size: 15px;
 	padding: 10px 15px;
+	border:none;
 	background-color: #e74c3c;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin-top:25px;
+	color:#fff;
 }
 
-.sign-up-button-hp:hover {
+.sign-up-button-hp:hover, .forminput_button:hover, .donation-button:hover  {
 	cursor:pointer;
 	background-color: #d14132;
 }
 
+.donation-button-box {
+  text-align: center;
+  margin: 30px 0;
+}
 
 .slider-section-hp p{
 	font-size:17px;
-
 }
 
 #wpPreview, #wpDiff, #wpSave, .site-button, .multipleTemplateAdder {
@@ -465,6 +510,20 @@
 	color:#fff;
 }
 
+#wpPreview, #wpDiff, #wpSave, .site-button, .multipleTemplateAdder {
+	padding: 10px 15px;
+	background-color: #e74c3c;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#fff;
+}
+
+#wpPreview:hover, #wpDiff:hover, #wpSave:hover, .site-button:hover, .multipleTemplateAdder:hover {
+	background-color: #d14132;
+}
+
 .sitedir-ltr #mw-search-top-table #searchText{
 	border: 1px solid #ccc;
 	padding: 9px;
@@ -475,7 +534,7 @@
 }
 
 .project-ideas {
-	margin-bottom:20px;
+	margin-bottom: 20px;
 	margin-top: 33px;
 }
 
@@ -485,6 +544,8 @@
 
 .contribute-block-title{
 	font-size:23px;
+	width:100%;
+	float:left;
 	font-weight: bold;
 }
 
@@ -496,12 +557,17 @@
 	padding: 40px 0px;
 	background-color: #fff;	
 	cursor:pointer;
+	float:left;
+	width:100%;
 	text-align: center;
 	border:1px solid #333333;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin-top:30px;
+}
+.icon-contribute{
+	width:100%;
 }
 
 .contribute-block:hover {
@@ -543,6 +609,10 @@
 
 .tuto-step-image{
 	border:1px solid #e7e7e7;
+}
+
+.join-boxes{
+	margin-top:5%;
 }
 
 .tofix-list-intro{
@@ -665,11 +735,16 @@
 	padding-left:0px;
 }
 
+.icon-categrory{
+	width:100%;
+}
+
+
 .main-explore{
 	background-image:url('images/bg-explore.jpg');
 	background-size:100%;
 	background-position:bottom;
-	padding-bottom:80px;	
+	padding-bottom:60px;	
 }
 
 .main-contribute{
@@ -679,6 +754,14 @@
 	padding-bottom:50px;	
 }
 
+.static-pages-menu li {
+	list-style: none;
+	padding-bottom: 12px;
+}
+
+.static-pages-menu li.active {
+	font-weight:bold;
+}
 
 body.page-Accueil .contentHeader { display:none; }
 body.page-Accueil .mw-body { margin-top:0px }
@@ -764,8 +847,8 @@ body.page-Contribuer .navbar { margin-bottom:0px; }
 }
 
 .sfUploadable {
-	background-image:linear-gradient(#fff, #ddd);
-	border: 1px solid #337ab7;
+	background:#337ab7;
+	border: 1px solid #1d4568;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -773,8 +856,11 @@ body.page-Contribuer .navbar { margin-bottom:0px; }
 }
 
 .sfUploadable:hover {
-	border: 1px solid #1d4568;
-	background-image:linear-gradient(#fff, #ccc);
+	background:#1d4568;
+}
+
+.multipleTemplateWrapper .inputSpan a, .col-pic-detail .inputSpan a{
+	color:#fff;
 }
 
 .detail-field{
@@ -788,7 +874,11 @@ body.page-Contribuer .navbar { margin-bottom:0px; }
 
 .multipleTemplateAdder {
 	width: 100%;
-	background-color: red;
+	background-color: #337ab7;
+}
+
+.multipleTemplateAdder:hover {
+	background-color: #1d4568;
 }
 
 
@@ -818,11 +908,7 @@ label.checkboxLabel.detail-area-field{
 
 #fancybox-frame{
 	width:100%;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	border: 1px solid #eee;
-	border-bottom: 5px solid #EEE;
+	background-color:#fff;
 }
 
 .sfImagePreviewWrapper {
@@ -859,6 +945,15 @@ label.checkboxLabel.detail-area-field{
 	color:#aaa;
 }
 
+.mw-ui-button.mw-ui-progressive{
+	background:red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 12px;
+}
+
 .col-step-edit{
 	width:98%;
 }
@@ -866,6 +961,16 @@ label.checkboxLabel.detail-area-field{
 .col-step-button{
 	width:2%;
 	min-width:45px;
+}
+
+.quote-block{
+  background-color: #f1f1f1;
+  font-size: 21px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  font-style: italic;
+  border:1px solid #e7e7e7;
 }
 
 .multipleTemplateInstance {
@@ -904,6 +1009,16 @@ img.removeButton, img.addAboveButton {
 	border-radius: 3px;
 }
 
+.project-location li {
+	display:inline-table;
+	width:32%;
+}
+
+.project-location ul {
+	list-style-type:none;
+	padding-left:0px;
+}
+
 .collaps-icon {
 	font-size: 14px;
 	padding-right: 3px;
@@ -928,10 +1043,14 @@ img.removeButton, img.addAboveButton {
 }
 
 .wf-top-button{
-	margin-right:20px;
+	margin-right:10px;
 }
 
-
+@media (min-width: 992px) {
+.col-md-2b {
+	width: 20%;
+}
+}
 
 @media only screen and (max-width: 766px) {
 

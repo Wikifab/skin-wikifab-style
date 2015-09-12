@@ -112,6 +112,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 </component>
 
 
+<!--  Hide original MediaWiki Footer -->
+<!-- 
 <component class="footer-test">
 
 	<grid>
@@ -138,7 +140,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	</grid>
 
-
 </component>
+
+-->
 
 </structure>

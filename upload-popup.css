@@ -1,0 +1,28 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+}
+
+legend{
+	font-weight:bold;
+	color:#337ab7;
+}
+
+fieldset{
+	margin-bottom:18px;
+	border: 1px solid #337ab7;
+}
+
+.mw-htmlform-submit {
+	font-size: 15px;
+	padding: 10px 15px;
+	border:none;
+	background-color: #e74c3c;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#fff;
+	font-family: helvetica;
+}
