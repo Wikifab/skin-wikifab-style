@@ -1,51 +1,54 @@
 <div class="col-md-3 col-sm-6 col-xs-12">
-<a href="{{url}}">
 	<div class="project-card">
-		<div class="project-thumbnail">
-			<!--<p><a class="image" href="/index.php?title=Fichier:{{Main_Picture}}">
-				<img class="thumbborder" src="/images/1/1a/Firstpic.jpg" alt="{{Main_Picture}}"></a>
-			</p>-->
-			<img src="{{Main_Picture::url}}"  alt="{{Main_Picture}}"/>
-		</div>
-		<div class="project-card-content">
-			<h5 class="project-title">
-				<span class="mw-headline">{{title}}</span>
-			</h5>
-			<p class="project-byline">{{Type}}</p>
-			<p class="project-byline">{{Area}}</p>
-			<p class="project-blurb">{{Description}}</p>
-			<div class="project-card-footer">
-				<div class="project-location">
-					<p><span class="glyphicon glyphicon-cog"></span>
-					<span class="location-name">{{Difficulty}}</span>
-					</p>
-				</div>
-				<div class="project-location">
-					<p><span class="glyphicon glyphicon-fire"></span>
-					<span class="location-name">{{Cost}}</span>
-					</p>
-				</div>
-				<div class="project-location">
-					<p><span class="glyphicon glyphicon-eye-open"></span>
-					<span class="location-name">{{Duration}}</span>
-					</p>
+		<a href="{{url}}">
+			<div class="project-thumbnail">
+				<!--<p><a class="image" href="/index.php?title=Fichier:{{Main_Picture}}">
+					<img class="thumbborder" src="/images/1/1a/Firstpic.jpg" alt="{{Main_Picture}}"></a>
+				</p>-->
+				<img src="{{Main_Picture::url}}"  alt="{{Main_Picture}}"/>
+			</div>
+			<div class="project-card-content">
+				<h5 class="project-title">
+					<span class="mw-headline">{{title}}</span>
+				</h5>
+				<p class="project-byline">{{Type}}</p>
+				<p class="project-byline">{{Area}}</p>
+				<p class="project-blurb">{{Description}}</p>
+				<div class="project-card-footer">
+					<div class="project-location">
+						<p><span class="glyphicon glyphicon-cog"></span>
+						<span class="location-name">{{Difficulty}}</span>
+						</p>
+					</div>
+					<div class="project-location">
+						<p><span class="glyphicon glyphicon-fire"></span>
+						<span class="location-name">{{Cost}}</span>
+						</p>
+					</div>
+					<div class="project-location">
+						<p><span class="glyphicon glyphicon-eye-open"></span>
+						<span class="location-name">{{Duration}}</span>
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="project-card-author">
-			<div class="project-card-author-picture">
-				<img class="roundborder img-responsive" src="{{ROOT_URL}}wikifabStyleModule/images/user.png" alt="{{creator}}">
-			</div>
-			<div class="project-card-author-info">
-				<div class="author-name"><p>{{creator}}</p></div>
-				<div class="author-popularity">
-					<p><span class="author-followers">1203 followers</span>
-					<span class="author-viewers">100 makers</span>
-					</p>
+		</a>
+		<a href="{{creatorUrl}}">
+			<div class="project-card-author">
+				<div class="project-card-author-picture">
+					<img class="roundborder img-responsive" src="{{ROOT_URL}}wikifabStyleModule/images/user.png" alt="{{creator}}">
 				</div>
+				<div class="project-card-author-info">
+					<div class="author-name"><p>{{creator}}</p></div>
+					<div class="author-popularity">
+						<p><span class="author-followers">1203 followers</span>
+						<span class="author-viewers">100 makers</span>
+						</p>
+					</div>
+				</div>
+				<div class="clearboth"></div>
 			</div>
-			<div class="clearboth"></div>
-		</div>
+		</a>
 	</div>
 </a>
 </div>
