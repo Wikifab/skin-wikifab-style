@@ -27,7 +27,7 @@
 					</div>
 					<div class="project-location">
 						<p><span class="glyphicon glyphicon-eye-open"></span>
-						<span class="location-name">{{Duration}}</span>
+						<span class="location-name">{{Duration}} {{Duration-type}}</span>
 						</p>
 					</div>
 				</div>
@@ -35,16 +35,18 @@
 		</a>
 		<a href="{{creatorUrl}}">
 			<div class="project-card-author">
-				<div class="project-card-author-picture">
-					<img class="roundborder img-responsive" src="{{ROOT_URL}}wikifabStyleModule/images/user.png" alt="{{creator}}">
+				<div class="project-card-author-picture roundborder">
+
+					{{creatorAvatarUrl}}
+					<!--<img class="roundborder img-responsive" src="{{ROOT_URL}}wikifabStyleModule/images/user.png" alt="{{creator}}">-->
 				</div>
 				<div class="project-card-author-info">
 					<div class="author-name"><p>{{creator}}</p></div>
-					<div class="author-popularity">
-						<p><span class="author-followers">1203 followers</span>
-						<span class="author-viewers">100 makers</span>
+					<!--<div class="author-popularity">
+						<p><span class="author-followers">XXXX followers</span>
+						<span class="author-viewers">XXX makers</span>
 						</p>
-					</div>
+					</div>-->
 				</div>
 				<div class="clearboth"></div>
 			</div>
