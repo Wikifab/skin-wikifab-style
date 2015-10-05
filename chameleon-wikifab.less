@@ -7,6 +7,11 @@
     text-decoration: none;
 }
 
+body {
+	color: #30373b;
+}
+
+
 .p-contentnavigation {
 	text-align:right;
 	margin-bottom:0px;
@@ -29,15 +34,19 @@
 	margin-right:10px;
 }
 
+.indisp-icon-ok {
+	color:#7ab55c;
+}
+
 .indisp-icon-nok {
 	color:red;
 }
 
 .community-mission {
-    background-color: #4cb992;
-    margin-top: 100px;
+    background-color: #7ab55c;
+    margin: 100px 0px;
     color: #fff;
-    padding: 80px 0;
+    padding: 70px 0 50px 0;
 }
 
 .layout-layout-wikifab .qtip {
@@ -45,7 +54,8 @@
 }
 
 .community-mission p {
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 26px;
 }
 
 .community-card img {
@@ -85,7 +95,7 @@
 
 .community-heading {
 	text-align: center;
-    background-color: #f1f1f1;
+    background-color: #F9FAFA;
     padding: 50px 0px 300px;
 }
 
@@ -106,15 +116,15 @@
 }
 
 .red-card{
-    background-color: #e74c3c;
+    background-color: #7ab55c;
 }
 
 .green-card{
-    background-color: #4cb992;
+    background-color: #ebb129;
 }
 
 .blue-card{
-    background-color: #3499e0;
+    background-color: #368aa9;
 }
 
 
@@ -140,15 +150,20 @@
 }
 
 .page-Explorer .carousel-indicators li {
-	border-color: #363636;
-	background-color: #fff;
+	background-color: #aaa;
     margin: auto;
 	height: 15px;
+	border:none;
 	width: 15px;
 }
 
+.page-Explorer .carousel-indicators li:hover {
+	background-color: #6aa74c;
+}
+
 .page-Explorer .carousel-indicators .active {
-	background-color: #363636;
+	background-color: #7ab55c;
+	border:none;
 }
 
 .p-contentnavigation li a:hover {
@@ -163,7 +178,7 @@
 
 .footer-test {
 	margin: auto;
-	background-color: #f8f8f8;
+	background-color: #F9FAFA;
 	width: 100%;
 	border-top:1px solid #e7e7e7;
 	margin-top: 70px;
@@ -172,7 +187,7 @@
 
 .footer-top {
 	border-top: 1px solid #e7e7e7;
-	background-color: #f8f8f8;
+	background-color: #F9FAFA;
 	margin-top: 70px;
 	padding: 10px 0px;
 }
@@ -187,6 +202,12 @@
 	color: #ccc;
 }
 
+.footer-links li a:visited {
+	color: #ccc;
+	text-decoration:none;
+}
+
+
 .footer-links li a:hover {
 	color: #fff;
 }
@@ -196,7 +217,7 @@
 }
 
 .footer-main {
-	background-color: #363636;
+	background-color: #30373b;
 	color: #fff;
 	padding:45px 0px 60px 0;
 	margin-top:70px;
@@ -277,9 +298,10 @@ margin-bottom: 5px;
 .wf-top-button .btn{
 	margin-top: 8px;
 	background-color: #f5f8fa;
-	border: 1px solid #e1e8ed;
+	border: 1px solid #c0d2dd;
 	color: #66757f;
 	background-image: linear-gradient(#fff,#f5f8fa);
+	transition: all ease .25s;
 }
 
 .wf-top-button .btn:hover{
@@ -320,6 +342,29 @@ margin-bottom: 5px;
 	transition: all ease .25s;
 }
 
+.wd-close {
+    background-color: rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.25);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 3px 10px;
+    border: 2px solid rgba(255,255,255,0.25);
+    font-size: 21px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    vertical-align: middle;
+	transition: all ease .25s;
+}
+
+.wd-close:hover {
+    background-color: transparent;
+    color: #fff;
+	border-color:#fff;
+	cursor:pointer;
+}
+
 .project-card{
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -327,6 +372,7 @@ margin-bottom: 5px;
 	box-shadow:0px 1px 3px 0 rgba(0,0,0,0.26);
 	margin-bottom:20px;
 	background-color:#fff;
+	transition: all ease .25s;
 }
 
 .project-card:hover{
@@ -357,7 +403,7 @@ span.project-card-separator {
 }
 
 .project-author{
-	background: #f8f8f8;
+	background: #F9FAFA;
 	padding: 10px;
 	height:60px;
 	border-top: 1px solid #ccc;
@@ -401,6 +447,7 @@ span.project-card-separator {
 	text-align:center;
 	border:1px solid #ccc;
 	background:#fff;
+	transition: all ease .25s;
 	color:#1d4568;
 	float:left;
 	width:100%;
@@ -414,8 +461,8 @@ span.project-card-separator {
 }
 
 .project-category:hover{
-	background-color:#e74c3c;
-	border:1px solid #e74c3c;
+	background-color:#7ab55c;
+	border:1px solid #7ab55c;
 	color:#fff;
 }
 
@@ -428,7 +475,7 @@ span.project-card-separator {
 }
 
 .project-card-author {
-    background: none repeat scroll 0 0 #f8f8f8;
+    background: none repeat scroll 0 0 #F9FAFA;
     border-top: 1px solid #ccc;
     cursor: pointer;
 -webkit-border-bottom-right-radius: 8px;
@@ -473,7 +520,7 @@ border-bottom-left-radius: 8px;
 }
 
 .carousel-project-slide-main {
-	background-color:#f1f1f1;
+	background-color:#F9FAFA;
 }
 
 .clearboth {
@@ -495,7 +542,7 @@ h5.project-title {
 }
 
 .area-style {
-	color:#363636;
+	color:#30373b;
 }
 
 .project-blurb {
@@ -611,7 +658,7 @@ h5.project-title {
 }
 
 .PotD-box{
-	background-color:#e74c3c;
+	background-color:#7ab55c;
 	color:#fff;
 	padding:5px 10px;
 	width:225px;
@@ -655,6 +702,90 @@ h5.project-title {
 	text-align:center;
 }
 
+.indispensable-section {
+    background-image: url('/skins/wikifabStyleModule/images/bg-indispensable-white.png');
+    background-position: bottom;
+    padding: 90px 20px 65px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contribute-title {
+    font-size: 44px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.contribute-subtitle, .help-subtitle {
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.help-subtitle {
+	max-width: 730px;
+    margin: auto;
+}
+
+.dev-section {
+	background-image :url('images/bg-dev.jpg');
+	padding:75px 20px 20px;
+	text-align:center;
+	margin-bottom:70px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.dev-section h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.dev-vision p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.dev-vision h2 {
+    margin-top: 50px;
+    font-size: 34px;
+}
+
+.dev-subtitle {
+	font-size:18px;
+	margin-bottom:60px;
+}
+
+.aide-section {
+	background-image :url('images/bg-aide.jpg');
+	margin-bottom: 0px;
+	padding: 0px 0px 110px 0px;
+	background-position: bottom;
+}
+
+.aide-section-subtitle {
+	font-size:17px;
+}
+
+.indispensable-call-box {
+    border: 2px solid rgba(255,255,255,.4);
+    padding: 10px 15px;
+    margin: 30px 40px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.aide-section h2{
+	font-size:36px;
+}
+
+.help-content h4 {
+	margin-top:25px;
+}
+
+.indispensable-section h1{
+	font-size:50px;
+}
+
 .wd-section-hp {
 	padding:23px 0px 21px 0px;
 }
@@ -664,7 +795,7 @@ h5.project-title {
  	-moz-border-radius: 3px;
 	border-radius: 3px;
     padding: 7px 9px;
-	color: #363636;
+	color: #30373b;
 }
 .wd-section-hp p {
 	margin-bottom: 0px;
@@ -675,7 +806,7 @@ h5.project-title {
 	margin-right: 10px;
 }
 
-.marketing-section-hp h1{
+.marketing-section-hp h1, {
 	font-size:35px;
 	margin-top: 12px;
 }
@@ -683,6 +814,11 @@ h5.project-title {
 .marketing-section-hp-subtitle{
 	font-size:17px;
 	margin-bottom:25px;
+}	
+
+.indispensable-subtitle{
+	font-size:19px;
+	margin-bottom:24px;
 }	
 
 .search-section{
@@ -696,7 +832,7 @@ h5.project-title {
 }
 
 body.page-Accueil {
-	background-color:#f1f1f1;
+	background-color:#f9fafc;
 }
 
 .search-section p{
@@ -714,16 +850,17 @@ body.page-Accueil {
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
 }
 
-.sign-up-button-hp, .forminput_button, .donation-button, .community-button {
+.sign-up-button-hp, .forminput_button, .donation-button, .community-button, .sign-up-developers {
 	font-size: 15px;
 	padding: 10px 15px;
 	border:none;
-	background-color: #e74c3c;
+	background-color: #7ab55c;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin-top:25px;
 	color:#fff;
+	transition: all ease .25s;
 }
 
 #mw-content-text #sfForm .licence-section select#input_23 {
@@ -731,9 +868,14 @@ body.page-Accueil {
 	font-size: 13px;
 }
 
-.sign-up-button-hp:hover, .forminput_button:hover, .donation-button:hover  {
+.sign-up-button-hp:hover, .forminput_button:hover, .donation-button:hover, .sign-up-developers:hover   {
 	cursor:pointer;
-	background-color: #d14132;
+	background-color: #6aa74c;
+}
+
+.sign-up-developers {
+    font-size: 17px;
+    padding: 12px 23px;
 }
 
 .tuto-question-icon {
@@ -785,7 +927,7 @@ body.page-Accueil {
 
 .community-btn:hover, .community-btn-last:hover  {
 	cursor:pointer;
-	background-color: #f1f1f1;
+	background-color: #F9FAFA;
 }
 
 .community-btn {
@@ -793,20 +935,20 @@ body.page-Accueil {
 }
 
 .community-button-red {
-	background-color: #d14132;
+	background-color: #608f48;
 }
 
 .community-button-red:hover {
-	background-color: #b43225;
+	background-color: #4f763b;
 	cursor:pointer;
 }
 
 .community-button-green {
-	background-color: #3b9776;
+	background-color: #c49322;
 }
 
 .community-button-green:hover {
-	background-color: #298161;
+	background-color: #9f781c;
 	cursor:pointer;
 }
 
@@ -815,17 +957,17 @@ body.page-Accueil {
 }
 
 .community-button-blue {
-	background-color: #1e7fc3;
+	background-color: #2b6e87;
 }
 
 .community-button-blue:hover {
-	background-color: #16669f;
+	background-color: #235a6e;
 	cursor:pointer;
 }
 
 .community-mission img {
 	width:100%;
-	max-width:500px;
+	max-width:310px;
     height: 100%;
 	text-align:center;
 }
@@ -842,7 +984,7 @@ body.page-Accueil {
 #wpPreview, #wpDiff, #wpSave, .site-button, .multipleTemplateAdder {
 	padding: 7px 12px;
 	border: none;
-	background-color: #e74c3c;
+	background-color: #7ab55c;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -852,18 +994,18 @@ body.page-Accueil {
 #wpSaveAndContinue {
 	padding: 7px 12px;
 	border: none;
-	background-color : #f3a59d;
+	background-color : #aaa;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	color:#fef7f6;
+	color: #ddd;
 }
 
 .saving-menu {
     position: fixed;
     bottom: 0%;
     width: 100%;
-    background-color: #363636;
+    background-color: #30373b;
     box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.3);
     padding: 12px;
 	left:0px;
@@ -878,17 +1020,18 @@ body.page-Accueil {
 }
 
 #sfForm .sf-save_and_continue-changed {
-	background-color: #e74c3c;	
+	background-color: #7ab55c;	
+	color:#fff;
 }
 
 #sfForm .sf-save_and_continue-changed:hover {
-	background-color: #d14132;	
+	background-color: #6aa74c;	
 }
 
 
 
 #wpPreview:hover, #wpDiff:hover, #wpSave:hover, .site-button:hover, .multipleTemplateAdder:hover {
-	background-color: #d14132;
+	background-color: #6aa74c;
 }
 
 .sitedir-ltr #mw-search-top-table #searchText, .sitedir-ltr #mw-search-top-table #powerSearchText{
@@ -900,13 +1043,34 @@ body.page-Accueil {
 	border-radius: 5px;
 }
 
+ul.releases-list {
+	line-height: 27px;
+}
+
+.dev-vision {
+	background-color: #368aa9;
+	padding: 40px 0px;
+	margin-bottom: 70px;
+	color:#fff;
+}
+
+.vision-img {
+    background: url('/skins/wikifabStyleModule/images/vision-img.png');
+    background-size: 381px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .project-ideas {
-	margin-bottom: 20px;
-	margin-top: 33px;
+    margin-bottom: 40px;
+    margin-top: 53px;
+    text-align: center;
+    font-size: 41px;
 }
 
 #role {
-	color: #e74c3c;
+	color: #7ab55c;
 }
 
 .contribute-block-title{
@@ -924,10 +1088,11 @@ body.page-Accueil {
 	padding: 40px 0px;
 	background-color: #fff;	
 	cursor:pointer;
+	transition: all ease .25s;
 	float:left;
 	width:100%;
 	text-align: center;
-	border:1px solid #333333;
+	border:1px solid #ccc;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -945,13 +1110,13 @@ body.page-Accueil {
 
 
 .contribute-block:hover {
-	background-color:#e74c3c;
+	background-color:#7ab55c;
 	color:#fff;
-	border:1px solid #e74c3c;
+	border:1px solid #7ab55c;
 }
 
 .join-community-footer {
-    background-color: #fadbd8;
+    background-color: #F9FAFA;
     margin-top: 100px;
     padding: 30px 0px;
     text-align: center;
@@ -1079,7 +1244,7 @@ span.licence-detail-title {
 
 .tuto-details-autor {
 	padding: 15px 5px 3px 20px;
-	background-color: #f8f8f8;
+	background-color: #F9FAFA;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -1096,7 +1261,7 @@ span.licence-detail-title {
 
 .tuto-details-must-have{
 	padding:8px;
-	background-color: #f8f8f8;
+	background-color: #F9FAFA;
 	border:1px solid #e7e7e7;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -1218,6 +1383,15 @@ span.licence-detail-title {
 .page-Accueil .contentHeader { display:none; }
 .page-Accueil .mw-body { margin-top:0px }
 .page-Accueil .navbar { margin-bottom:0px; border-bottom:0; }
+.page-Wikifab_Indispensable .contentHeader { display:none; }
+.page-Wikifab_Indispensable .mw-body { margin-top:0px }
+.page-Wikifab_Indispensable .navbar { margin-bottom:0px; border-bottom:0; }
+.page-Wikifab_Aide .contentHeader { display:none; }
+.page-Wikifab_Aide .mw-body { margin-top:0px }
+.page-Wikifab_Aide .navbar { margin-bottom:0px; border-bottom:0; }
+.page-Développeurs .contentHeader { display:none; }
+.page-Développeurs .mw-body { margin-top:0px }
+.page-Développeurs .navbar { margin-bottom:0px; border-bottom:0; }
 .page-Explorer .contentHeader { display:none; }
 .page-Explorer .mw-body { margin-top:0px }
 .page-Explorer .navbar { margin-bottom:0px; }
@@ -1232,12 +1406,13 @@ span.licence-detail-title {
 .page-Wikifab_Communauté .navbar { margin-bottom:0px; }
 
 
-.page-Accueil .col-lg-12, .page-Explorer .col-lg-12, .page-Contribuer .col-lg-12, .page-Formulaire_Tutoriel .col-lg-12, .page-Wikifab_Communauté .col-lg-12 {
+.page-Accueil .col-lg-12, .page-Explorer .col-lg-12, .page-Contribuer .col-lg-12, .page-Formulaire_Tutoriel .col-lg-12, 
+.page-Wikifab_Communauté .col-lg-12, .page-Wikifab_Indispensable .col-lg-12, .page-Wikifab_Aide .col-lg-12, .page-Développeurs .col-lg-12{
 	padding-right:0px;
 	padding-left:0px;
 }
 
-#n-Explorer:hover, #n-Contribuer:hover, #n-help:hover, { background-color:#fff; }
+#n-Explorer:hover, #n-Contribuer:hover, #n-Aide:hover, { background-color:#fff; }
 
 
 .form-textarea {
@@ -1375,7 +1550,7 @@ h5.tuto-details-material-title {
 
 .detail-box{
 	padding: 30px 4% 10px;
-	background-color: #f1f1f1;
+	background-color: #F9FAFA;
 	border: 1px solid #cccccc;
 }
 
@@ -1504,7 +1679,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .quote-block{
-  background-color: #f1f1f1;
+  background-color: #F9FAFA;
   font-size: 21px;
   padding: 20px;
   text-align: center;
@@ -1627,7 +1802,9 @@ img.removeButton, img.addAboveButton {
     display: inline-block;
     margin-right: 10px;
 }
-
+.indispensable-call-box {
+    margin: 30px 0px;
+}
 .project-location li.last {
     margin-right: 0px;
 }
