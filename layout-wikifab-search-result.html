@@ -1,12 +1,7 @@
 <div class="col-md-3 col-sm-6 col-xs-12">
 	<div class="project-card">
 		<a href="{{url}}">
-			<div class="project-thumbnail">
-				<!--<p><a class="image" href="/index.php?title=Fichier:{{Main_Picture}}">
-					<img class="thumbborder" src="/images/1/1a/Firstpic.jpg" alt="{{Main_Picture}}"></a>
-				</p>-->
-				<img src="{{Main_Picture::url}}"  alt="{{Main_Picture}}"/>
-			</div>
+			<div class="project-thumbnail"><img src="{{Main_Picture::url}}"  alt="{{Main_Picture}}"/></div>
 			<div class="project-card-content">
 				<h5 class="project-title">
 					<span class="mw-headline">{{title}}</span>
@@ -29,15 +24,9 @@
 						</li>
 					</ul>
 				</div>
-			</div>
-		</a>
-		<a href="{{creatorUrl}}">
+			</div></a><a href="{{creatorUrl}}">
 			<div class="project-card-author">
-				<div class="project-card-author-picture roundborder">
-
-					{{creatorAvatar}}
-					<!--<img class="roundborder img-responsive" src="{{ROOT_URL}}wikifabStyleModule/images/user.png" alt="{{creator}}">-->
-				</div>
+				<div class="project-card-author-picture roundborder">{{creatorAvatar}}</div>
 				<div class="project-card-author-info">
 					<div class="author-name"><p>{{creator}}</p></div>
 					<!--<div class="author-popularity">
@@ -47,8 +36,6 @@
 					</div>-->
 				</div>
 				<div class="clearboth"></div>
-			</div>
-		</a>
-	</div>
-</a>
+			</div></a>
+	</div></a>
 </div>

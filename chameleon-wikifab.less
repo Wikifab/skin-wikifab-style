@@ -447,7 +447,7 @@ span.project-card-separator {
 }
 
 .project-card-content {
-	padding: 3px 15px 0px 15px;
+	padding: 10px 15px 15px 15px;
 }
 
 .project-author-picture img{
@@ -593,7 +593,7 @@ border-bottom-left-radius: 8px;
 h5.project-title {
     font-size: 16px;
     margin-top: 5px;
-    height: 17px;
+    height: 18px;
     overflow: hidden;
 }
 
@@ -1094,14 +1094,13 @@ body.page-Accueil {
 }
 
 .saving-menu {
-    /*position: fixed;
-    bottom: 0%;*/
     width: 100%;
     background-color: #30373b;
     box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.3);
     padding: 12px;
 	left:0px;
 	color:#fff;
+	transition: all ease .25s;
 }
 .saving-menu a:visited, .saving-menu a:link {
 	color:#fff;
@@ -1278,6 +1277,30 @@ h2.contribuer-subtitle{
 .tuto-step-image img{
 	width:100%;
 	height:100%;
+}
+
+.tuto-step-image .carousel-indicators {
+    width: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    text-align: left;
+    position: initial;
+    padding-left: 2px;
+}
+
+.tuto-step-image .carousel-indicators li {
+	text-indent: 0px;
+    width: 60px;
+    height: 60px;
+	border-radius: 0px;
+	border:1px solid #ddd;
+}
+
+.tuto-step-image .carousel-indicators .active {
+    width: 60px;
+    height: 60px;
+	border-radius: 0px;
+	border:1px solid #000;
 }
 
 .tuto-step-image p{
