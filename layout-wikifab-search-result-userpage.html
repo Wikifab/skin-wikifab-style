@@ -1,0 +1,41 @@
+<div class="col-md-4 col-sm-6 col-xs-12">
+	<div class="project-card">
+		<a href="{{url}}">
+			<div class="project-thumbnail"><img src="{{Main_Picture::url}}"  alt="{{Main_Picture}}"/></div>
+			<div class="project-card-content">
+				<h5 class="project-title">
+					<span class="mw-headline">{{title}}</span>
+				</h5>
+				<p class="project-byline">{{Type}} • <span class="area-style">{{Area}}</span></p>
+				<p class="project-blurb">{{Description}}</p>
+				<div class="project-location">
+					<ul>
+						<li>
+						<i class="fa fa-briefcase"></i>
+						<span class="location-name">{{Difficulty}}</span>
+						</li>
+						<li>
+						<i class="fa fa-money"></i>
+						<span class="location-name">{{Cost}}</span>
+						</li>
+						<li class="last">
+						<i class="fa fa-hourglass-half"></i>
+						<span class="location-name">{{Duration}} {{Duration-type}}</span>
+						</li>
+					</ul>
+				</div>
+			</div></a><a href="{{creatorUrl}}">
+			<div class="project-card-author">
+				<div class="project-card-author-picture roundborder">{{creatorAvatar}}</div>
+				<div class="project-card-author-info">
+					<div class="author-name"><p>{{creator}}</p></div>
+					<!--<div class="author-popularity">
+						<p><span class="author-followers">XXXX followers</span>
+						<span class="author-viewers">XXX makers</span>
+						</p>
+					</div>-->
+				</div>
+				<div class="clearboth"></div>
+			</div></a>
+	</div></a>
+</div>
