@@ -17,6 +17,10 @@ body {
 	margin-bottom:0px;
 }
 
+.community-button-blue a, .community-button-blue a:visited, .community-button-blue a:link {
+	color:#fff;
+}
+
 .wiki-nav {
 	border-bottom:1px solid #ddd;
 }
@@ -646,6 +650,22 @@ h5.project-title {
 	max-width: 750px;
 }
 
+.tuto-details-author-box img {
+    margin: 0px 5px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    width: 38px;
+}
+
+.tuto-details-box p {
+	margin-bottom:5px;
+}
+
+.type-lowercase {
+	text-transform:lowercase;
+}
 
 .featured-title{
 	margin-top:13%;
@@ -1291,14 +1311,14 @@ h2.contribuer-subtitle{
 .tuto-step-image .carousel-indicators li {
 	text-indent: 0px;
     width: 60px;
-    height: 60px;
+    height: 45px;
 	border-radius: 0px;
 	border:1px solid #ddd;
 }
 
 .tuto-step-image .carousel-indicators .active {
     width: 60px;
-    height: 60px;
+    height: 45px;
 	border-radius: 0px;
 	border:1px solid #000;
 }
@@ -1435,10 +1455,99 @@ span.licence-detail-title {
 	color:#ababab;
 }
 
-.tuto-details-author-followers {
+#profileWf #profile-image {
+	padding: 0px 0px 6px 6px;
+    margin: 0px 0px 5px 0px;
+    width: 100%;
+    float: left;
+}
+
+#profileWf #profile-image img {
+    width: 100%;
+	border-radius: 6px;
+	border:none;
+}
+
+#profile-title-container {
+	float:left;
+}
+
+#profileWf #profile-title {
+    font-size: 1.5em;
+    color: #aaa;
+    font-weight: normal;
+}
+
+.profile-info-container .fa {
+	width: 13px;
+	text-align: center;
+}
+
+.profile-info-container {
+	margin-top:8px;
+}
+
+.wf-profile-tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    float: left;
+    width: 100%;
+}
+
+.tabs-follow-btn .btn-message {
+	background: #7ab55c;
+	color: #fff;
+	transition: all ease .25s;
+}
+
+.tabs-follow-btn .btn-message:hover {
+	background-color: #475257;
+	color:#fff;
+}
+
+.tabs-actions a {
+	border: 1px solid #fff;
+	padding: 10px;
+	margin-right: 10px;
 	float: left;
-	width: 50%;
-	text-transform: capitalize;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: -1px;
+}
+
+.tabs-follow-btn {
+	float:right;
+}
+
+.tabs-actions a.active {
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #fff;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 10px;
+	margin-right: 10px;
+	float: left;
+	margin-bottom: -1px;
+}
+
+.profile-name {
+	font-size: 2em;
+	width:100%;
+	font-weight:bold;
+}
+
+.tuto-details-author-followers {
+    margin-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    float: left;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 100%;
 }
 
 .tuto-details-author-hometown {
@@ -1447,8 +1556,14 @@ span.licence-detail-title {
 	margin: 5px 0px 10px 0px;
 }
 
+.vcard-stat {
+    float: left;
+    width: 33.333%;
+    font-size: 11px;
+}
+
 .stat-count {
-	font-size:15px;
+	font-size:24px;
 	width:100%;
 	display: block;
 }
