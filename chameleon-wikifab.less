@@ -383,6 +383,7 @@ margin-bottom: 5px;
 
 .loader_container {
 	height:2em;
+	margin-top:-20px;
 	text-align:center;
 }
 
@@ -1097,26 +1098,31 @@ body.page-Accueil {
 	border-radius: 5px;
 	color:#30373b;
 	transition: all ease .25s;
+	margin-left: 5px;
 }
 .saving-menu .editHelp:hover {
-	background-color: #fff;
+	background-color: #7ab55c;
 	color: #30373b;
 }
 
 #wpSaveAndContinue {
 	padding: 7px 12px;
 	border: none;
-	background-color : #aaa;
+	background-color : #475257;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	color: #ddd;
+	color: #6e7f87;
+	margin-left: 5px;
+}
+
+.add-more-pics {
+	margin-top:10px;
 }
 
 .saving-menu {
     width: 100%;
     background-color: #30373b;
-    box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.3);
     padding: 12px;
 	left:0px;
 	color:#fff;
@@ -1476,8 +1482,7 @@ span.licence-detail-title {
 }
 
 #profileWf #profile-image {
-	padding: 0px 0px 6px 6px;
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 14px 0px;
     width: 100%;
     float: left;
 }
@@ -1488,14 +1493,28 @@ span.licence-detail-title {
 	border:none;
 }
 
-#profile-title-container {
+#profileWf .profile-name {
+    margin-top: 7px;
+}
+
+#profileWf #profile-right{
+	width:100%;
+}
+
+#profileWf #profile-title-container {
 	float:left;
+	padding:0px;
 }
 
 #profileWf #profile-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #aaa;
+	margin-right:10px;
     font-weight: normal;
+}
+
+#profileWf h5.project-title {
+	font-size: 15px;
 }
 
 .profile-info-container .fa {
@@ -1659,6 +1678,9 @@ span.licence-detail-title {
 .page-Développeurs .contentHeader { display:none; }
 .page-Développeurs .mw-body { margin-top:0px }
 .page-Développeurs .navbar { margin-bottom:0px;}
+.mw-special-WfExplore .contentHeader, .mw-special-WfExplore .mw-specialpage-summary { display:none; }
+.mw-special-WfExplore .mw-body { margin-top:0px }
+.mw-special-WfExplore .navbar { margin-bottom:0px;}
 .page-Explorer .contentHeader { display:none; }
 .page-Explorer .mw-body { margin-top:0px }
 .page-Explorer .navbar { margin-bottom:0px; }
@@ -1674,7 +1696,8 @@ span.licence-detail-title {
 
 
 .page-Accueil .col-lg-12, .page-Explorer .col-lg-12, .page-Contribuer .col-lg-12, .page-Formulaire_Tutoriel .col-lg-12, 
-.page-Wikifab_Communauté .col-lg-12, .page-Wikifab_Indispensable .col-lg-12, .page-Wikifab_Aide .col-lg-12, .page-Développeurs .col-lg-12{
+.page-Wikifab_Communauté .col-lg-12, .page-Wikifab_Indispensable .col-lg-12, .page-Wikifab_Aide .col-lg-12, .page-Développeurs .col-lg-12,
+.mw-special-WfExplore .col-lg-12 {
 	padding-right:0px;
 	padding-left:0px;
 }
