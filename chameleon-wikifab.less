@@ -2,7 +2,6 @@
  * generals styles 
  *********************/
 
-
 * a:hover {
     text-decoration: none;
 }
@@ -11,7 +10,6 @@ body {
 	color: #30373b;
 }
 
-
 .p-contentnavigation {
 	text-align:right;
 	margin-bottom:0px;
@@ -19,6 +17,10 @@ body {
 
 .mw-body ul {
 	margin-bottom:10px;
+}
+
+.mw-body .WFfilter ul.nav-pills {
+	margin-bottom:0px;
 }
 
 .community-button-blue a, .community-button-blue a:visited, .community-button-blue a:link {
@@ -418,7 +420,7 @@ margin-bottom: 5px;
  *********************/
 
 .project-location {
-	font-size: 10.5px;
+	font-size: 11.5px;
 	color:#999;
 	line-height: 1px;
 }
@@ -1975,7 +1977,7 @@ h5.tuto-details-material-title {
 	margin:0px;
 }
 
-.add-attachments .multipleTemplateAdder {
+.add-attachments .multipleTemplateAdder, .material-tool-list .multipleTemplateAdder {
     width: inherit;
 }
 
@@ -1987,6 +1989,15 @@ h5.tuto-details-material-title {
 	background-color: #1d4568;
 }
 
+.material-title {
+    width: 86%;
+    padding: 6px 8px;
+}
+
+.material-qty {
+    width: 10%;
+    padding: 6px 8px;
+}
 
 .detail-box{
 	padding: 30px 4% 10px;
@@ -2068,12 +2079,11 @@ label.checkboxLabel.detail-area-field{
 	margin-top:10px;
 }
 
-.form-detail-title{
-	background:#fff;
-	
+.form-detail-title {
+	background:#fff;	
 }
 
-.token-field{
+.token-field {
 	width:100%;
 }
 
@@ -2173,8 +2183,9 @@ img.removeButton, img.addAboveButton {
 }
 
 .project-location ul {
-	list-style-type:none;
-	padding-left:0px;
+	list-style-type: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
 }
 
 .collaps-icon {
@@ -2264,20 +2275,20 @@ img.removeButton, img.addAboveButton {
 	font-size:17px;
 }
 
-.add-attachments .step-nav {
+.add-attachments .step-nav, .material-tool-list .step-nav {
 	padding-left: 0px;
 }
 
-.add-attachments .step-nav p {
+.add-attachments .step-nav p, .material-tool-list .step-nav p {
 	margin:0px;
 	margin-bottom: 0px;
 }
 
-.add-attachments .step-nav img {
+.add-attachments .step-nav img, .material-tool-list .step-nav img {
     width: 87%;
 }
 
-.add-attachments .addAboveButton, .add-attachments .rearrangerImage {
+.add-attachments .addAboveButton, .add-attachments .rearrangerImage, .material-tool-list .rearrangerImage, .material-tool-list .addAboveButton{
 	display:none;
 }
 
@@ -2298,6 +2309,7 @@ img.removeButton, img.addAboveButton {
 .project-location li {
     display: block;
     width: 100%;
+    margin-bottom: 6px;
 }
 }
 
@@ -2306,8 +2318,9 @@ img.removeButton, img.addAboveButton {
     height: 247px;
 }
 .project-location li {
-    display: inline-block;
+    display: initial;
     margin-right: 10px;
+	font-size: 12px;
 }
 .indispensable-call-box {
     margin: 30px 0px;
@@ -2317,7 +2330,7 @@ img.removeButton, img.addAboveButton {
 }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 768px) {
 
 .step-nav {
 	display:none;
