@@ -232,13 +232,13 @@ body {
 	margin-bottom: -1px;
 }
 
-.page-Explorer .mw-body ol {
+.page-Explorer .mw-body ol, .page-Explore .mw-body ol {
     width: 100%;
     text-align: right;
 	left: 0;
 }
 
-.page-Explorer .carousel-indicators li {
+.page-Explorer .carousel-indicators li, .page-Explore .carousel-indicators li {
 	background-color: #aaa;
     margin: auto;
 	height: 15px;
@@ -246,11 +246,11 @@ body {
 	width: 15px;
 }
 
-.page-Explorer .carousel-indicators li:hover {
+.page-Explorer .carousel-indicators li:hover, .page-Explore .carousel-indicators li:hover {
 	background-color: #6aa74c;
 }
 
-.page-Explorer .carousel-indicators .active {
+.page-Explorer .carousel-indicators .active, .page-Explore .carousel-indicators .active {
 	background-color: #7ab55c;
 	border:none;
 }
@@ -1027,7 +1027,7 @@ h5.project-title {
 	background-color:#fff;
 }
 
-body.page-Accueil, body.mw-special-WfExplore {
+body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page {
 	background-color:#f9fafc;
 }
 
@@ -1471,7 +1471,7 @@ h2.contribuer-subtitle{
 	padding-bottom:10px;
 }
 
-.page-Formulaire_Tutoriel #firstHeading, .page-Wikifab_Communauté #firstHeading {
+.page-Formulaire_Tutoriel #firstHeading, .page-Wikifab_Communauté #firstHeading, .page-Form_Tutorial #firstHeading {
 	display:none
 }
 
@@ -1807,15 +1807,18 @@ span.licence-detail-title {
 	font-weight:bold;
 }
 
-.page-Accueil .contentHeader { display:none; }
-.page-Accueil .mw-body { margin-top:0px }
-.page-Accueil .navbar { margin-bottom:0px; border-bottom:0; }
+.page-Accueil .contentHeader, .page-Main_Page .contentHeader { display:none; }
+.page-Accueil .mw-body, .page-Main_Page .mw-body { margin-top:0px }
+.page-Accueil .navbar, .page-Main_Page .navbar { margin-bottom:0px; border-bottom:0; }
 .page-Wikifab_Indispensable .contentHeader { display:none; }
 .page-Wikifab_Indispensable .mw-body { margin-top:0px }
 .page-Wikifab_Indispensable .navbar { margin-bottom:0px;}
 .page-Wikifab_Aide .contentHeader { display:none; }
 .page-Wikifab_Aide .mw-body { margin-top:0px }
 .page-Wikifab_Aide .navbar { margin-bottom:0px; }
+.page-Wikifab_Help .contentHeader { display:none; }
+.page-Wikifab_Help .mw-body { margin-top:0px }
+.page-Wikifab_Help .navbar { margin-bottom:0px; }
 .page-Wikifab_est_en_version_Beta .contentHeader { display:none; }
 .page-Wikifab_est_en_version_Beta .mw-body { margin-top:0px }
 .page-Wikifab_est_en_version_Beta .navbar { margin-bottom:0px; }
@@ -1828,19 +1831,28 @@ span.licence-detail-title {
 .page-Explorer .contentHeader { display:none; }
 .page-Explorer .mw-body { margin-top:0px }
 .page-Explorer .navbar { margin-bottom:0px; }
+.page-Explore .contentHeader { display:none; }
+.page-Explore .mw-body { margin-top:0px }
+.page-Explore .navbar { margin-bottom:0px; }
 .page-Contribuer .contentHeader { display:none; }
 .page-Contribuer .mw-body { margin-top:0px; margin-bottom:0px }
 .page-Contribuer .navbar { margin-bottom:0px; }
+.page-Contribute .contentHeader { display:none; }
+.page-Contribute .mw-body { margin-top:0px; margin-bottom:0px }
+.page-Contribute .navbar { margin-bottom:0px; }
 .page-Formulaire_Tutoriel .contentHeader { display:none; }
 .page-Formulaire_Tutoriel .mw-body { margin-top:0px }
 .page-Formulaire_Tutoriel .navbar { margin-bottom:0px; }
+.page-Form_Tutorial .contentHeader { display:none; }
+.page-Form_Tutorial .mw-body { margin-top:0px }
+.page-Form_Tutorial .navbar { margin-bottom:0px; }
 .page-Wikifab_Communauté .contentHeader { display:none; }
 .page-Wikifab_Communauté .mw-body { margin-top:0px }
 .page-Wikifab_Communauté .navbar { margin-bottom:0px; }
 
 
-.page-Accueil .col-lg-12, .page-Explorer .col-lg-12, .page-Contribuer .col-lg-12, .page-Formulaire_Tutoriel .col-lg-12, 
-.page-Wikifab_Communauté .col-lg-12, .page-Wikifab_Indispensable .col-lg-12, .page-Wikifab_Aide .col-lg-12, .page-Développeurs .col-lg-12,
+.page-Accueil .col-lg-12, .page-Main_Page .col-lg-12, .page-Explorer .col-lg-12, .page-Explore .col-lg-12, .page-Contribuer .col-lg-12, .page-Contribute .col-lg-12, .page-Formulaire_Tutoriel .col-lg-12, 
+.page-Wikifab_Communauté .col-lg-12, .page-Wikifab_Indispensable .col-lg-12, .page-Wikifab_Aide .col-lg-12, .page-Wikifab_Help .col-lg-12, .page-Form_Tutorial .col-lg-12, .page-Développeurs .col-lg-12,
 .mw-special-WfExplore .col-lg-12, .page-Wikifab_est_en_version_Beta .col-lg-12 {
 	padding-right:0px;
 	padding-left:0px;
