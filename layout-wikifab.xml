@@ -37,8 +37,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component class="wiki-nav">
 		<!--  tool bar for other page than Home page-->
-		<modification type="HideFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Indispensable,Aide,Développeurs,UpdateProfile,
-			UpdateProfile/personal,WfExplore,Wikifab_est_en_version_Beta,Explore,Contribute,Tutorial"></modification>
+		<modification type="HideFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Community,Indispensable,Aide,Développeurs,Developers,UpdateProfile,
+			UpdateProfile/personal,WfExplore,Wikifab_est_en_version_Beta,Early_access,Hello_World,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Get_started"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -49,8 +49,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 	<component class="wiki-nav">
 		<!--  tool bar for Home page visible only by administrators -->
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Indispensable,Aide,Développeurs,UpdateProfile,
-			UpdateProfile/personal,WfExplore,Wikifab_est_en_version_Beta,Explore,Contribute,Tutorial"></modification>
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Community,Indispensable,Aide,Développeurs,Developers,UpdateProfile,
+			UpdateProfile/personal,WfExplore,Wikifab_est_en_version_Beta,Early_access,Hello_World,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Get_started"></modification>
 		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
 		<grid>
 			<row>
@@ -62,8 +62,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 
 	<component>
-		<modification type="HideFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Indispensable,Aide,Développeurs,WfExplore,
-			Wikifab_est_en_version_Beta,Explore,Contribute,Tutorial"></modification>
+		<modification type="HideFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Community,Indispensable,Aide,Développeurs,Developers,WfExplore,
+			Wikifab_est_en_version_Beta,Early_access,Explore,Contribute,Tutorial,Help,Hello_World,mw-special-WfSearch,Get_started"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -81,8 +81,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 
 	<component>
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Indispensable,Aide,Développeurs,WfExplore,
-			Wikifab_est_en_version_Beta,Explore,Contribute,Tutorial"></modification>
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Community,Indispensable,Aide,Développeurs,Developers,WfExplore,
+			Wikifab_est_en_version_Beta,Early_access,Explore,Contribute,Tutorial,Help,Hello_World,mw-special-WfSearch,Get_started"></modification>
 			<cell>
 				<cell span="12">
 					<component type="MainContent"></component>
@@ -91,7 +91,19 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 
 
+<component class="feedback">
+	<component type="FeedbackBtn"></component>
+</component>
 
+<component class="footerdata">
+	<grid>
+		<row>
+			<cell span="12">
+				<component type="WikifabFooterInfo"></component>
+			</cell>
+		</row>
+	</grid>
+</component>
 
 <component class="footer-main">
 

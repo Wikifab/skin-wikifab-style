@@ -2,8 +2,12 @@
  * generals styles 
  *********************/
 
-* a:hover {
+.marketing-section-hp a:hover, .project-card a:hover {
     text-decoration: none;
+}
+
+a.new:visited, a:visited {
+	color: #337ab7;
 }
 
 body {
@@ -13,6 +17,118 @@ body {
 .p-contentnavigation {
 	text-align:right;
 	margin-bottom:0px;
+}
+
+.step-instructions code {
+    padding: 8px 12px;
+    float: left;
+}
+
+.hello-world-img img {
+	border:1px solid #ccc;
+    width: 100%;
+    height: 100%;
+}
+
+#mw-content-text .user-page-message-form textarea {
+    width: 100%;
+    font-weight: normal;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+#user-page-board .user-board-message {
+	width:100%;
+}
+
+.project-top-banner {
+    background: #f1f1f1;
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
+	margin-bottom:10px
+}
+
+.project-team h3, .project-how-two h3{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.project-top-banner-img img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.how-to {
+    margin-bottom: 28px;
+    border: 1px solid #eee;
+}
+
+.how-to img{
+    width: 100%;
+    height: 180px;
+}
+
+.how-to .project-location {
+    padding: 0 0 10px 12px;
+}
+
+.how-to h4 {
+	font-size:15px;
+	padding-left:12px;
+	height: 19px;
+	overflow: hidden;
+}
+
+.how-to:hover {
+	background:#f1f1f1;
+}
+
+.how-to .guide-number {
+    color: #888;
+    font-weight: normal;
+}
+
+.project-top-banner-img p {
+	margin-bottom:0px;
+}
+
+.project-top-banner-title {
+    padding-left: 20px;
+}
+
+.project-top-banner-title ul {
+	padding-left:0px;
+	color:#777;
+}
+
+.project-top-banner-title li {
+    list-style: none;
+    display: inline;
+	margin-right: 15px;
+}
+
+.footerdata {
+    float: left;
+	margin-top:70px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 1px solid #DDD;
+}
+
+.footerdata ul {
+	margin-bottom:0px;
+}
+
+.footerdata li {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.page-Early_access .footerdata {
+	display:none;
 }
 
 .mw-body ul {
@@ -31,8 +147,8 @@ body {
 	margin-top:12px;
 }
 
-.mw-special-UploadAvatar .wiki-nav, .mw-special-UpdateProfile .wiki-nav,
-.mw-special-Preferences .wiki-nav, #mw-prefsection-rendering-skin, #preftab-smw {
+.mw-special-UploadAvatar .wiki-nav, .mw-special-UpdateProfile .wiki-nav, .page-Special_UserBoard .wiki-nav,
+.mw-special-Preferences .wiki-nav, #mw-prefsection-rendering-skin, #preftab-smw, .mw-special-Recentchanges .wiki-nav {
 	display:none;
 }
 
@@ -49,7 +165,7 @@ body {
 	width:400px;
 }
 
-.mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav, .mw-special-Upload .wiki-nav {
+.mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav, .mw-special-Upload .wiki-nav, .page-Special_WfSearch .wiki-nav, .mw-special-Confirmemail .wiki-nav {
 	display:none;
 }
 
@@ -226,7 +342,9 @@ body {
 	cursor: pointer;
 }
 
-#ca-nstab-main, #ca-talk, #ca-edit, #ca-history, #ca-delete, #ca-move, #ca-protect, #ca-watch, #ca-nstab-special, #ca-nstab-mediawiki, #ca-viewsource, #ca-nstab-help, #ca-nstab-template, #ca-form_edit, #ca-nstab-form, #ca-nstab-attribut, #ca-nstab-user, #ca-nstab-project, #ca-nstab-image, #ca-nstab-category{
+#ca-nstab-main, #ca-talk, #ca-edit, #ca-history, #ca-delete, #ca-move, #ca-protect, #ca-watch, #ca-nstab-special, 
+#ca-nstab-mediawiki, #ca-viewsource, #ca-nstab-help, #ca-nstab-template, #ca-form_edit, #ca-nstab-form, #ca-nstab-attribut, #ca-nstab-property,
+#ca-nstab-user, #ca-nstab-project, #ca-nstab-image, #ca-nstab-category{
 	color:#bbb;
 	padding: 14px 15px;
 	margin-bottom: -1px;
@@ -309,16 +427,16 @@ body {
 	background-color: #30373b;
 	color: #fff;
 	padding:45px 0px 60px 0;
-	margin-top:70px;
 	float:left;
 	width:100%;
 }
 
-.page-Wikifab_est_en_version_Beta .footer-main, .page-Wikifab_est_en_version_Beta .navbar {
+.page-Wikifab_est_en_version_Beta .footer-main, .page-Wikifab_est_en_version_Beta .navbar, 
+.page-Early_access .footer-main, .page-Early_access .navbar {
 	display:none;
 }
 
-.page-Wikifab_est_en_version_Beta .mw-body {
+.page-Wikifab_est_en_version_Beta .mw-body, .page-Early_access .mw-body {
 	margin-bottom: 0px;
 }
 
@@ -612,6 +730,7 @@ border-bottom-left-radius: 8px;
 .project-card-author-picture {
 	width:25%;
 	min-width: 62px;
+	min-height:68px;
 	padding-left:5%;
 	padding-right:5%;
 	padding-top:3%;
@@ -619,7 +738,7 @@ border-bottom-left-radius: 8px;
 	float:left;
 }
 .project-card-author-info {
-	width:60%;
+	width:75%;
 	padding-left:3%;
 	padding-right:3%;
 	padding-top:23px;
@@ -667,8 +786,10 @@ h5.project-title {
 }
 
 .project-blurb {
-    height: 40px;
+    height: 38px;
+	font-size: 13px;
     overflow: hidden;
+	color:#444;
 }
 
 .project-byline {
@@ -843,7 +964,7 @@ h5.project-title {
 	background:#333;	
 	background-image :url('images/wood-bg-black.jpg');
 	color:#fff;
-	padding:40px 30px;
+	padding:40px 10px;
 	text-align:center;
 }
 
@@ -882,8 +1003,12 @@ h5.project-title {
 }
 
 .help-subtitle {
-	max-width: 730px;
+	max-width: 785px;
     margin: auto;
+}
+
+.page-Early_access .beta-subtitle {
+	max-width: 640px;
 }
 
 .beta-subtitle {
@@ -927,12 +1052,24 @@ h5.project-title {
 	background-position: bottom;
 }
 
+.hello-world-section {
+	background-image :url('images/bg-hello-world.jpg');
+	margin-bottom: 70px;
+	padding: 40px 0px 110px 0px;
+	background-position: bottom;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+
 .beta-section {
 	background-image :url('images/bg-beta.jpg');
 	margin-bottom: 0px;
 	padding: 0px 0px 160px 0px;
 	text-align:center;
 	background-position: bottom;
+}
+
+.hello-world-section h2{
+	text-align:left;
 }
 
 .aide-section-subtitle {
@@ -946,7 +1083,7 @@ h5.project-title {
     background-color: rgba(0,0,0,.1);
 }
 
-.aide-section h2{
+.aide-section h2 {
 	font-size:36px;
 }
 
@@ -1056,7 +1193,7 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page {
 }
 
 #mw-content-text #sfForm .form-dropdown-3 {
-	max-width: 88%;
+	max-width: 86%;
 	font-size: 13px;
 }
 
@@ -1072,7 +1209,7 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page {
 
 .tuto-question-icon {
 	top: 6px;
-	left: 2px;
+	left: 6px;
 	font-size: 22px;
 	color: #aaa;
 	transition: all ease .25s;
@@ -1467,7 +1604,7 @@ h2.contribuer-subtitle{
 	padding-bottom:10px;
 }
 
-.page-Formulaire_Tutoriel #firstHeading, .page-Wikifab_Communauté #firstHeading, .page-Form_Tutorial #firstHeading {
+.page-Formulaire_Tutoriel #firstHeading, .page-Wikifab_Communauté #firstHeading, .page-Wikifab_Community #firstHeading, .page-Form_Tutorial #firstHeading {
 	display:none
 }
 
@@ -1560,8 +1697,10 @@ span.licence-detail-title {
 	height: 11px;
 	font-size: 0;
 	line-height: 0;
-	margin: 18px 0px 25px 0px;
+	margin: 8px 0px 25px 0px;
 	border: 0;
+	float:left;
+	width:100%;
 }
 
 .bg-halfsquare-separator-3 {
@@ -1632,6 +1771,7 @@ span.licence-detail-title {
 
 #profileWf .profile-name {
     margin-top: 7px;
+	font-size: 22px;
 }
 
 #profileWf #profile-right{
@@ -1809,6 +1949,12 @@ span.licence-detail-title {
 .page-Wikifab_Indispensable .contentHeader { display:none; }
 .page-Wikifab_Indispensable .mw-body { margin-top:0px }
 .page-Wikifab_Indispensable .navbar { margin-bottom:0px;}
+.page-Wikifab_Get_started .contentHeader { display:none; }
+.page-Wikifab_Get_started .mw-body { margin-top:0px }
+.page-Wikifab_Get_started .navbar { margin-bottom:0px;}
+.page-Wikifab_Hello_World .contentHeader { display:none; }
+.page-Wikifab_Hello_World .mw-body { margin-top:0px }
+.page-Wikifab_Hello_World .navbar { margin-bottom:0px;}
 .page-Wikifab_Aide .contentHeader { display:none; }
 .page-Wikifab_Aide .mw-body { margin-top:0px }
 .page-Wikifab_Aide .navbar { margin-bottom:0px; }
@@ -1818,9 +1964,15 @@ span.licence-detail-title {
 .page-Wikifab_est_en_version_Beta .contentHeader { display:none; }
 .page-Wikifab_est_en_version_Beta .mw-body { margin-top:0px }
 .page-Wikifab_est_en_version_Beta .navbar { margin-bottom:0px; }
+.page-Early_access  .contentHeader { display:none; }
+.page-Early_access  .mw-body { margin-top:0px }
+.page-Early_access  .navbar { margin-bottom:0px; }
 .page-Développeurs .contentHeader { display:none; }
 .page-Développeurs .mw-body { margin-top:0px }
 .page-Développeurs .navbar { margin-bottom:0px;}
+.page-Developers .contentHeader { display:none; }
+.page-Developers .mw-body { margin-top:0px }
+.page-Developers .navbar { margin-bottom:0px;}
 .mw-special-WfExplore .contentHeader, .mw-special-WfExplore .mw-specialpage-summary { display:none; }
 .mw-special-WfExplore .mw-body { margin-top:0px }
 .mw-special-WfExplore .navbar { margin-bottom:0px;}
@@ -1845,17 +1997,43 @@ span.licence-detail-title {
 .page-Wikifab_Communauté .contentHeader { display:none; }
 .page-Wikifab_Communauté .mw-body { margin-top:0px }
 .page-Wikifab_Communauté .navbar { margin-bottom:0px; }
+.page-Wikifab_Community .contentHeader { display:none; }
+.page-Wikifab_Community  .mw-body { margin-top:0px }
+.page-Wikifab_Community  .navbar { margin-bottom:0px; }
 
 
 .page-Accueil .col-lg-12, .page-Main_Page .col-lg-12, .page-Explorer .col-lg-12, .page-Explore .col-lg-12, .page-Contribuer .col-lg-12, .page-Contribute .col-lg-12, .page-Formulaire_Tutoriel .col-lg-12, 
-.page-Wikifab_Communauté .col-lg-12, .page-Wikifab_Indispensable .col-lg-12, .page-Wikifab_Aide .col-lg-12, .page-Wikifab_Help .col-lg-12, .page-Form_Tutorial .col-lg-12, .page-Développeurs .col-lg-12,
-.mw-special-WfExplore .col-lg-12, .page-Wikifab_est_en_version_Beta .col-lg-12 {
+.page-Wikifab_Communauté .col-lg-12, .page-Wikifab_Community .col-lg-12, .page-Wikifab_Indispensable .col-lg-12, .page-Wikifab_Hello_World .col-lg-12, .page-Wikifab_Get_started .col-lg-12, .page-Wikifab_Aide .col-lg-12, .page-Wikifab_Help .col-lg-12, .page-Developers .col-lg-12, .page-Form_Tutorial .col-lg-12, .page-Développeurs .col-lg-12,
+.mw-special-WfExplore .col-lg-12, .page-Wikifab_est_en_version_Beta .col-lg-12, .page-Early_access .col-lg-12{
 	padding-right:0px;
 	padding-left:0px;
 }
 
-#n-Explorer:hover, #n-Contribuer:hover, #n-Aide:hover, { background-color:#fff; }
+#n-Explorer:hover, #n-Contribuer:hover, #n-Aide:hover, #n-Explore:hover, #n-Contribute:hover, #n-Help:hover, #n-Feedback:hover { background-color:#fff; }
 
+.feedback {
+	display: block;
+    position: fixed;
+    border-right: 0;
+    right: 0;
+    top: 50%;
+    z-index: 100001;
+    background: #fff;
+    border: 2px solid #30373b;
+    margin: -45px 0 0;
+    border-right: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hello-world-page h2 {
+	font-size:32px;
+}
+
+.hello-world-page h2.contribuer-subtitle {
+	margin-top:40px;
+}
 
 .form-textarea {
 	-webkit-border-radius: 3px;
@@ -1983,7 +2161,10 @@ span.licence-detail-title {
 
 h5.tuto-details-material-title {
 	margin-top: 2px;
-	text-align: right;
+}
+
+.mw-body .files-list ul{
+    margin-bottom: 1px;
 }
 
 .add-attachments .multipleTemplateWrapper .multipleTemplateInstance {
@@ -2202,7 +2383,7 @@ img.removeButton, img.addAboveButton {
 
 .project-location li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 .project-location li.last {
@@ -2264,14 +2445,14 @@ img.removeButton, img.addAboveButton {
 	border-top-right-radius: 8px;
 }
 
-.page-Wikifab_est_en_version_Beta .section {
+.page-Wikifab_est_en_version_Beta .section, .page-Early_access .section {
     border-bottom: 2px solid #ddd;
     padding-bottom: 50px;
     margin-bottom: 50px;
     border-bottom-style: dotted;
 }
 
-.page-Wikifab_est_en_version_Beta .section-last {
+.page-Wikifab_est_en_version_Beta .section-last, .page-Early_access .section-last {
     margin-bottom: 50px;
 }
 
@@ -2337,13 +2518,16 @@ img.removeButton, img.addAboveButton {
 }
 
 .add-attachments .multipleTemplateInstance .col-md-11 {
-    max-width: 370px;
+    max-width: 324px;
 }
 }
 
 @media (max-width: 1200px) {
 .project-thumbnail img {
     height: 154px;
+}
+.project-card-author-info {
+	width:70%;
 }
 .project-location li {
     display: block;
