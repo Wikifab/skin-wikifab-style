@@ -90,6 +90,20 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 			</cell>
 	</component>
 
+	<component class="feedback">
+		<component type="FeedbackBtn"></component>
+	</component>
+
+	<component class="footerdata">
+		<grid>
+			<row>
+				<cell span="12">
+					<component type="WikifabFooterInfo"></component>
+				</cell>
+			</row>
+		</grid>
+	</component>
+
 
 <component class="footer-main">
 
