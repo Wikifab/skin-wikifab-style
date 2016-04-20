@@ -800,11 +800,9 @@ border-bottom-left-radius: 8px;
     margin:0;
 }
 .project-card-author-picture {
-	width:30%;
 	min-width: 62px;
 	min-height:68px;
 	padding-left:5%;
-	padding-right:5%;
 	padding-top:3%;
 	padding-bottom:3%;
 	float:left;
@@ -821,12 +819,14 @@ border-bottom-left-radius: 8px;
 		display: flex;
 }
 .project-card-author-info {
-	width:70%;
+	max-width:71%;
 	padding-left:3%;
 	padding-right:3%;
 	padding-top:23px;
 	padding-bottom:3%;
 	float:left;
+    max-height: 46px;
+    overflow: hidden;
 }
 .project-card-author-info p{
 	margin-top:1em
@@ -1645,19 +1645,18 @@ ul.releases-list {
 .load-more {
     text-align: center;
     padding: 10px;
-    background: #fff;
-    box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.26);
-	transition: all ease .25s;
+    background: #b1b1b1;
+    color: #fff;
+    transition: all ease .25s;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    width: 60%;
-    margin: 40px auto 0px;
+    max-width: 300px;
+    margin: 30px auto 0px;
 }
 
 .load-more:hover {
-    box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.6);
-	background-color: #F9FAFA;
+	background-color: #666666;
     cursor: pointer;
 }
 
