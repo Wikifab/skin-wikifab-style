@@ -166,7 +166,7 @@ body {
 	margin-top:12px;
 }
 
-.mw-special-UploadAvatar .wiki-nav, .mw-special-UpdateProfile .wiki-nav, .page-Special_UserBoard .wiki-nav,
+.mw-special-UploadAvatar .wiki-nav, .mw-special-UpdateProfile .wiki-nav, .page-Special_UserBoard .wiki-nav, .mw-special-UserBoard .wiki-nav,
 .mw-special-Preferences .wiki-nav, #mw-prefsection-rendering-skin, #preftab-smw, .mw-special-Recentchanges .wiki-nav {
 	display:none;
 }
@@ -800,7 +800,7 @@ border-bottom-left-radius: 8px;
     margin:0;
 }
 .project-card-author-picture {
-	width:25%;
+	width:30%;
 	min-width: 62px;
 	min-height:68px;
 	padding-left:5%;
@@ -809,8 +809,19 @@ border-bottom-left-radius: 8px;
 	padding-bottom:3%;
 	float:left;
 }
+
+.project-card-author-picture .image {
+	border: 1px solid #ddd;
+	    background: #fff;
+	    width: 52px;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+	    height: 52px;
+		display: flex;
+}
 .project-card-author-info {
-	width:75%;
+	width:70%;
 	padding-left:3%;
 	padding-right:3%;
 	padding-top:23px;
@@ -842,8 +853,8 @@ border-bottom-left-radius: 8px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	border: 1px solid #ddd;
-	min-width:52px;
+	width:100%;
+	margin:auto;
 }
 
 h5.project-title {
@@ -912,13 +923,26 @@ h5.project-title {
 	width:1000px;
 }
 
-.tuto-details-author-box img {
-    margin: 0px 5px;
+.tuto-details-author-box a.image {
+    margin: 0px 6px;
     border: 1px solid #ddd;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
     width: 38px;
+    height: 38px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.tuto-details-author-box a.image img {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    max-width: 36px;
+    vertical-align: middle;
+    max-height: 36px;
+    margin: auto;
 }
 
 .tuto-details-box p {
@@ -1038,6 +1062,10 @@ h5.project-title {
 	color:#fff;
 	padding:40px 10px;
 	text-align:center;
+}
+
+.marketing-section-hp-logged {
+	text-align:left;
 }
 
 .indispensable-section {
@@ -1189,7 +1217,11 @@ h5.project-title {
 
 .marketing-section-hp h1, {
 	font-size:35px;
-	margin-top: 12px;
+	margin-top: 4px;
+}
+
+.marketing-section-hp-logged h1, {
+	margin-top: 0px;
 }
 
 .WFfilter input[type="checkbox"] {
@@ -1262,6 +1294,24 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page {
 	margin-top:25px;
 	color:#fff;
 	transition: all ease .25s;
+}
+
+.edit-profile-btn-hp {
+	font-size: 15px;
+	padding: 10px 15px;
+	border:none;
+	background-color: #666;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top:25px;
+	color:#fff;
+	margin-left:10px;
+	transition: all ease .25s;
+}
+
+.edit-profile-btn-hp:hover {
+	background-color: #555;
 }
 
 .sign-up-or {
@@ -1728,7 +1778,7 @@ h2.contribuer-subtitle{
 	height: 0;
 	font-size: 0;
 	line-height: 0;
-	margin:14px 0px;
+	margin:14px 0px 10px;
 	border: 0;
 	border-bottom: 1px dotted transparent;
 }
@@ -2175,12 +2225,13 @@ span.licence-detail-title {
 }
 
 
-.mw-content-ltr .formInput {
+.mw-content-ltr .tutorial-page .formInput {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 9px 8px;
-	width: 50%;
+    padding: 9px 11px;
+    width: 50%;
+    font-size: 17px;
 	margin-right: 5px;
 	border: 1px solid #aaa;
 }
@@ -2644,6 +2695,14 @@ img.removeButton, img.addAboveButton {
 
 .step-nav {
 	display:none;
+}
+
+.project-card-author-picture {
+	width:20%;
+}
+
+.project-card-author-info .author-name {
+	font-size:17px;
 }
 
 .project-thumbnail img {
