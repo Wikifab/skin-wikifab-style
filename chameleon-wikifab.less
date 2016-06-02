@@ -366,8 +366,14 @@ span.status-checkbox {
 }
 
 .search-filters-section .tag [data-role="remove"] {
-    margin-left: 8px;
+    margin-left: 2px;
     cursor: pointer;
+    color: #ccc;
+}
+
+.search-filters-section .tag:hover [data-role="remove"] {
+	color:#fff;
+	text-decoration:underline;
 }
 
 .mw-search-formheader {
@@ -702,15 +708,19 @@ margin-bottom: 5px;
     margin-bottom: 7px;
     display: inline-block;
 	transition: all ease .25s;
+    font-size: 13.5px;
+    font-weight: normal;
 }
 
 .wfexplore-selectedLabels .search-filters-section .tag [data-role="remove"] {
-	margin-left: 3px;
+    margin-left: 2px;
+    cursor: pointer;
+    color: #ccc;
 }
 
-.wfexplore-selectedLabels .search-filters-section .tag [data-role="remove"]:hover {
-	color:777;
-	transition: all ease .25s;
+.wfexplore-selectedLabels .search-filters-section .tag:hover [data-role="remove"] {
+	color:#fff;
+	text-decoration:underline;
 }
 
 .wd-close {
