@@ -1,5 +1,5 @@
 {
-    "name": "pboutet/wikifabStyleModule",
+    "name": "wikifab/wikifabStyleModule",
     "type": "mediawiki-skin",
 	"description": "Skin for wikifab based on chameleon skin",
 	"keywords"   : [
