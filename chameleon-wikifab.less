@@ -2717,13 +2717,18 @@ img.removeButton, img.addAboveButton {
 
 .project-thumbnail img {
 	width:100%;
-    height: 191px;
+    min-height: 191px;
 	-webkit-border-top-left-radius: 8px;
 	-webkit-border-top-right-radius: 8px;
 	-moz-border-radius-topleft: 8px;
 	-moz-border-radius-topright: 8px;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
+}
+
+.project-thumbnail {
+    height: 191px;
+    overflow: hidden;
 }
 
 .page-Wikifab_est_en_version_Beta .section, .page-Early_access .section {
@@ -2802,6 +2807,9 @@ img.removeButton, img.addAboveButton {
 
 @media (max-width: 1200px) {
 .project-thumbnail img {
+    min-height: 154px;
+}
+.project-thumbnail {
     height: 154px;
 }
 .project-card-author-info {
@@ -2816,6 +2824,9 @@ img.removeButton, img.addAboveButton {
 
 @media (max-width: 992px) {
 .project-thumbnail img {
+    min-height: 247px;
+}
+.project-thumbnail {
     height: 247px;
 }
 #mw-content-text #sfForm .add-attachments-upload .createboxInput {
@@ -2840,6 +2851,14 @@ img.removeButton, img.addAboveButton {
 	display:none;
 }
 
+.marketing-section-hp h1 {
+    font-size: 26px;
+}
+
+#mc_embed_signup .mc-field-group label {
+	font-size: 14px;
+}
+
 #mc_embed_signup fieldset {
 	background-image:none;
 	padding: 10px 10px 10px 10px;
@@ -2862,7 +2881,7 @@ img.removeButton, img.addAboveButton {
 	font-size:17px;
 }
 
-.project-thumbnail img {
+.project-thumbnail {
     height: 100%;
 }
 
