@@ -245,7 +245,10 @@ span.status-checkbox {
 	width:400px;
 }
 
-.mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav, .mw-special-Upload .wiki-nav, .page-Special_WfSearch .wiki-nav, .mw-special-Confirmemail .wiki-nav {
+.mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav,
+.mw-special-Upload .wiki-nav, .page-Special_WfSearch .wiki-nav,
+.mw-special-Confirmemail .wiki-nav, .mw-special-ViewSystemGift .wiki-nav,
+.mw-special-TopAwards .wiki-nav {
 	display:none;
 }
 
@@ -2055,15 +2058,100 @@ span.licence-detail-title {
 	padding:0px;
 }
 
+#profileWf #honorific-level {
+	margin-top:6px;
+}
+
 #profileWf #profile-title {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    line-height: 19px;
     color: #aaa;
-	margin-right:10px;
+    margin-bottom: 3px;
     font-weight: normal;
+	width:100%;
+}
+
+#profileWf .user-gift-container img {
+    padding: 0px;
+    border: none;
+}
+
+.ga-description-container {
+	width:100%
+}
+
+.ga-item img {
+	border: none;
+	padding: 0px;
+}
+
+.ga-recent-title {
+    font-size: 18px;
+    color: #444;
+}
+
+.ga-description-message {
+    font-weight: normal;
+}
+
+.ga-name {
+    font-size: 20px;
+}
+
+.ga-gift-count {
+    font-size: inherit;
+    margin: 0px 0px 14px 0px;
+    color: #777;
+}
+
+.ga-description {
+    float: left;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.ga-recent {
+    border-top: 1px solid #EFEFEF;
+    padding: 10px 0px 0px 0px;
+    float: left;
+    width: 100%;
+}
+
+.ga-recent img {
+	padding: 0px;
+    background-color: #fff;
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+#profileWf .user-section-actions .action-left {
+    float: right;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+#profileWf #points-level {
+	background-color: #368aa9;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 }
 
 #profileWf h5.project-title {
 	font-size: 15px;
+}
+
+.top-award img {
+    margin: 0px 5px 0px 0px;
+    width: 58px;
+    border: 1px solid #ddd;
+}
+
+#profileWf .profile-info-container a {
+    width: 91%;
+    float: right;
+    overflow: hidden;
 }
 
 .profile-info-container .fa {
@@ -2072,7 +2160,7 @@ span.licence-detail-title {
 }
 
 .profile-info-container {
-	margin-top:8px;
+	margin-top: 12px;
 }
 
 .wf-profile-tabs {
