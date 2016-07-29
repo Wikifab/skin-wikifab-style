@@ -248,7 +248,7 @@ span.status-checkbox {
 .mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav,
 .mw-special-Upload .wiki-nav, .page-Special_WfSearch .wiki-nav,
 .mw-special-Confirmemail .wiki-nav, .mw-special-ViewSystemGift .wiki-nav,
-.mw-special-TopAwards .wiki-nav, .mw-special-ViewGift .wiki-nav {
+.mw-special-TopAwards .wiki-nav, .mw-special-ViewGift .wiki-nav, .mw-special-ViewGifts .wiki-nav {
 	display:none;
 }
 
@@ -2148,12 +2148,79 @@ span.licence-detail-title {
 }
 
 .mw-special-ViewGift .ga-description-container, .mw-special-ViewGift .g-description-container {
-	width:100%
+	width: 100%;
+    float: left;
+    margin-top: 0px;
 }
 
 .mw-special-ViewGift .ga-item img, .mw-special-ViewGift .g-item img {
 	border: none;
 	padding: 0px;
+}
+
+.profile-image-edit-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.profile-image-edit-btn .glyphicon {
+	background: #fff;
+	padding: 5px;
+	border-radius: 3px;
+	font-size: 19px;
+	border: 1px solid #ddd;
+}
+
+.user-section-heading-gift hr {
+	margin-bottom:0px;
+}
+
+.user-section-heading-gift .action-right {
+    margin-top: 4px;
+    padding: 0px 0px 0px 10px;
+}
+
+.user-section-heading-gift .action-right a {
+    text-decoration: underline;
+}
+
+.user-section-heading-gift .user-section-heading {
+	margin-bottom:0px;
+}
+
+.remove-gift-btn {
+    border: 1px solid #aaa;
+    float: left;
+    margin-top: 5px;
+    font-size: 12px;
+    background: #bbb;
+    padding: 2px 5px 0px;
+    border-radius: 3px;
+}
+
+.remove-gift-btn a {
+    color: #fff;
+}
+
+.back-links a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f5f8fa;
+    border: 1px solid #c0d2dd;
+    color: #66757f;
+    background-image: linear-gradient(#ffffff,#f5f8fa);
+    transition: all ease .25s;
+    padding: 3px;
+    display: inline-block;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .mw-special-ViewGift .ga-recent-title, .mw-special-ViewGift .g-recent-title {
@@ -2163,10 +2230,11 @@ span.licence-detail-title {
 
 .mw-special-ViewGift .g-description img {
 	padding: 10px;
-	margin: 0 20px 0 0;
+	margin: 0 0 0 0;
+	width:100%;
 }
 
-.mw-special-ViewGift .ga-description-message, .mw-special-ViewGift .g-description-message {
+.mw-special-ViewGift .ga-description-message, .mw-special-ViewGift .g-description-message, .mw-special-ViewGift .g-user-message {
     font-weight: normal;
 }
 
@@ -2199,8 +2267,7 @@ span.licence-detail-title {
 	padding: 0px;
     background-color: #fff;
     margin-right: 15px;
-    width: 100px;
-    height: 100px;
+    width: 100%;
 }
 
 #profileWf .user-section-actions .action-left {
@@ -2237,8 +2304,9 @@ span.licence-detail-title {
 	text-align: center;
 }
 
-.profile-info-container {
+#profileWf .profile-info-container {
 	margin-top: 12px;
+	padding: 0px;
 }
 
 .wf-profile-tabs {
@@ -2967,6 +3035,16 @@ img.removeButton, img.addAboveButton {
 @media (min-width: 992px) {
 .col-md-2b {
 	width: 20%;
+}
+
+.user-gift-container .col-md-3 {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.user-gift-container .row {
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 }
