@@ -248,7 +248,7 @@ span.status-checkbox {
 .mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav,
 .mw-special-Upload .wiki-nav, .page-Special_WfSearch .wiki-nav,
 .mw-special-Confirmemail .wiki-nav, .mw-special-ViewSystemGift .wiki-nav,
-.mw-special-TopAwards .wiki-nav {
+.mw-special-TopAwards .wiki-nav, .mw-special-ViewGift .wiki-nav {
 	display:none;
 }
 
@@ -1204,11 +1204,21 @@ body[class^='page-Utilisateur_'] .contentHeader, body[class*='page-Utilisateur_'
 	    margin: 0px 0px 14px 0px !important;
 }
 
+.alert-avatar .alert {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
 .profile-info input.site-button {
 	border:none;
     margin-top: 20px;
     margin-left: 175px;
     padding: 7px 13px;
+}
+
+.mw-special-UploadAvatar .profile-info input.site-button {
+	margin-left: 0px;
+	margin-top: 0px;
 }
 
 .profile-info input#notification-btn {
@@ -2137,48 +2147,55 @@ span.licence-detail-title {
 	max-width: 257px;
 }
 
-.ga-description-container, .g-description-container {
+.mw-special-ViewGift .ga-description-container, .mw-special-ViewGift .g-description-container {
 	width:100%
 }
 
-.ga-item img, .g-item img {
+.mw-special-ViewGift .ga-item img, .mw-special-ViewGift .g-item img {
 	border: none;
 	padding: 0px;
 }
 
-.ga-recent-title, .g-recent-title {
+.mw-special-ViewGift .ga-recent-title, .mw-special-ViewGift .g-recent-title {
     font-size: 18px;
     color: #444;
 }
 
-.ga-description-message, .g-description-message {
+.mw-special-ViewGift .g-description img {
+	padding: 10px;
+	margin: 0 20px 0 0;
+}
+
+.mw-special-ViewGift .ga-description-message, .mw-special-ViewGift .g-description-message {
     font-weight: normal;
 }
 
-.ga-name, .g-name {
+.mw-special-ViewGift .ga-name, .mw-special-ViewGift .g-name {
     font-size: 20px;
 }
 
-.ga-gift-count, .g-gift-count {
+.mw-special-ViewGift .ga-gift-count, .mw-special-ViewGift .g-gift-count {
     font-size: inherit;
     margin: 0px 0px 14px 0px;
     color: #777;
 }
 
-.ga-description, .g-description {
-    float: left;
-    width: 100%;
-    margin-bottom: 17px;
+.mw-special-ViewGift .ga-description, .mw-special-ViewGift .g-description {
+	float: left;
+	width: 100%;
+	margin-bottom: 17px;
+	background: #f1f1f1;
+	padding: 20px 22px;
 }
 
-.ga-recent, .g-recent {
+.mw-special-ViewGift .ga-recent, .mw-special-ViewGift .g-recent {
     border-top: 1px solid #EFEFEF;
     padding: 10px 0px 0px 0px;
     float: left;
     width: 100%;
 }
 
-.ga-recent img, .g-recent img {
+.mw-special-ViewGift .ga-recent img, .mw-special-ViewGift .g-recent img {
 	padding: 0px;
     background-color: #fff;
     margin-right: 15px;
