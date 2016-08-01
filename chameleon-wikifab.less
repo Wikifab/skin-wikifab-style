@@ -632,6 +632,11 @@ margin-bottom: 5px;
 .flow-board .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
 	background-color:#7ab55c;
     padding: 6px 15px 8px;
+    border:none;
+}
+
+.flow-board .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover {
+	background-color:#6aa74c;
 }
 
 .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header {
@@ -640,6 +645,7 @@ margin-bottom: 5px;
 
 .flow-component.flow-board-page .flow-board-navigation, .flow-component.flow-board-page .flow-board {
 	width:100%
+	max-width:none;
 }
 
 body[class*='page-Discussion_'] h1.firstHeading {
@@ -3063,6 +3069,13 @@ img.removeButton, img.addAboveButton {
 
 .add-attachments .addAboveButton, .add-attachments .rearrangerImage, .material-tool-list .rearrangerImage, .material-tool-list .addAboveButton{
 	display:none;
+}
+
+@media (min-width: 1165px) {
+.flow-component.flow-board-page .flow-board-navigation, .flow-component.flow-board-page .flow-board {
+	width:100%;
+}
+}
 }
 
 @media (min-width: 992px) {
