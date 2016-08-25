@@ -661,6 +661,7 @@ margin-bottom: 5px;
     background: #f1f1f1;
     float: left;
     width: 100%;
+	margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -677,7 +678,7 @@ margin-bottom: 5px;
     float: left;
 }
 
-.followUserListcard .avatar span.name {
+.followUserListcard span.name {
     float: left;
     padding: 10px 5px 5px 15px;
     font-size: 16px;
@@ -685,12 +686,27 @@ margin-bottom: 5px;
     overflow: hidden;
 }
 
+
 .tabs-follow-btn a:hover {
 	text-decoration: none;
 }
 
+.tabs-follow-btn a.UsersWatchButton .btn-message {
+	background: #7ab55c;
+	transition: all ease .25s;
+}
+
+.tabs-follow-btn a.UsersWatchButton .btn-message:hover {
+	background: #6aa74c;
+}
+
 .tabs-follow-btn a.UsersUnWatchButton .btn-message {
 	background: #dc2323;
+	transition: all ease .25s;
+}
+
+.tabs-follow-btn a.UsersUnWatchButton .btn-message:hover {
+	background: #c41f1f;
 }
 
 /*********************
@@ -2424,13 +2440,13 @@ span.licence-detail-title {
 }
 
 .tabs-follow-btn .btn-message {
-	background: #7ab55c;
+	background: #475257;
 	color: #fff;
 	transition: all ease .25s;
 }
 
 .tabs-follow-btn .btn-message:hover {
-	background-color: #475257;
+	background-color: #3b4448;
 	color:#fff;
 }
 
