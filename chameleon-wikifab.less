@@ -984,13 +984,16 @@ span.project-card-separator {
     background: none repeat scroll 0 0 #F9FAFA;
     border-top: 1px solid #ccc;
     cursor: pointer;
--webkit-border-bottom-right-radius: 8px;
--webkit-border-bottom-left-radius: 8px;
--moz-border-radius-bottomright: 8px;
--moz-border-radius-bottomleft: 8px;
-border-bottom-right-radius: 8px;
-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	width:100%;
+	float:left;
 }
+
 .project-card-author .project-card-author-picture p,
 .project-card-author .project-card-author-info p {
     margin:0;
@@ -3084,7 +3087,6 @@ img.removeButton, img.addAboveButton {
 }
 
 .project-thumbnail {
-    height: 191px;
     overflow: hidden;
 }
 
@@ -3182,9 +3184,7 @@ img.removeButton, img.addAboveButton {
 .project-thumbnail img {
     min-height: 154px;
 }
-.project-thumbnail {
-    height: 154px;
-}
+
 .project-card-author-info {
 	width:70%;
 }
@@ -3198,9 +3198,6 @@ img.removeButton, img.addAboveButton {
 @media (max-width: 992px) {
 .project-thumbnail img {
     min-height: 247px;
-}
-.project-thumbnail {
-    height: 247px;
 }
 #mw-content-text #sfForm .add-attachments-upload .createboxInput {
 	max-width:80%;
@@ -3219,6 +3216,46 @@ img.removeButton, img.addAboveButton {
 }
 
 @media only screen and (max-width: 768px) {
+
+.project-card {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    transition: all ease .15s;
+}
+
+.project-thumbnail img {
+    min-height: 207px;
+}
+
+.project-thumbnail img {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+}
+
+.project-card-author {
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.project-card-content {
+    padding: 10px 8px 0px 0px;
+}
 
 .step-nav {
 	display:none;
@@ -3254,10 +3291,6 @@ img.removeButton, img.addAboveButton {
 	font-size:17px;
 }
 
-.project-thumbnail {
-    height: 100%;
-}
-
 #mw-content-text #sfForm .add-attachments-upload .createboxInput {
 	max-width:70%;
 }
@@ -3275,6 +3308,56 @@ img.removeButton, img.addAboveButton {
 }
 
 
+}
+
+
+@media only screen and (max-width: 550px) {
+	.project-byline, .project-location {
+		display:none;
+	}
+	
+	#profileWf .project-byline, #profileWf .project-location {
+		display:block;
+	}
+	
+	.project-card-author-picture .image {
+	    height: 40px;
+		width: 40px;
+	    float: left;
+	}
+	.project-card-author-picture {
+	    max-width: 55px;
+	    width: 100%;
+	    float: left;
+	    min-width: 0;
+	    min-height: 0;
+	    padding: 5px 3px 5px 10px;
+	}
+	.project-card-author-info {
+	    padding: 16px 5px;
+	    float: left;
+	}
+	.project-card-author-info .author-name {
+	    font-size: 13px;
+	}
+	.project-card .col-xs-5 {
+    	padding-right: 0px;
+	}
+	.project-card .col-xs-7 {
+    	padding-left: 0px;
+	}
+	.project-card-content {
+	    padding-left: 10px;
+	}
+	.project-thumbnail img {
+	    min-height: 137px;
+	}
+	.project-card h5.project-title {
+	    font-size: 15px;
+	    margin-top: 0px;
+	    height: 17px;
+	    overflow: hidden;
+	}
 }
 
 

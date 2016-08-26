@@ -1,8 +1,13 @@
-<div class="col-md-4 col-sm-6 col-xs-12">
+<div class="col-md-4 col-sm-12 col-xs-12">
 	<div class="project-card">
 		<a href="{{url}}">
-			<div class="project-thumbnail"><img src="{{Main_Picture::url}}"  alt="{{Main_Picture}}"/></div>
+			<div class="row">
+  				<div class="col-md-12 col-sm-12 col-xs-5">
+					<div class="project-thumbnail"><img src="{{Main_Picture::url}}"  alt="{{Main_Picture}}"/></div>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-7">
 			<div class="project-card-content">
+
 				<h5 class="project-title">
 					<span class="mw-headline">{{title}}</span>
 				</h5>
@@ -24,9 +29,11 @@
 						</li>
 					</ul>
 				</div>
-			</div></a><a href="{{creatorUrl}}">
+			</div>
+		</a>
+			<a href="{{creatorUrl}}">
 			<div class="project-card-author">
-				<div class="project-card-author-picture roundborder">{{creatorAvatar}}</div>
+				<div class="project-card-author-picture roundborder"><div class="image">{{creatorAvatar}}</div></div>
 				<div class="project-card-author-info">
 					<div class="author-name"><p>{{creator}}</p></div>
 					<!--<div class="author-popularity">
@@ -35,7 +42,9 @@
 						</p>
 					</div>-->
 				</div>
-				<div class="clearboth"></div>
-			</div></a>
-	</div></a>
+			</div>
+			</a>
+			</div>
+		</div>
+	</div>
 </div>
