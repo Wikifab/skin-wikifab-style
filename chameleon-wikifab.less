@@ -10,6 +10,10 @@ a.new:visited, a:visited {
 	color: #337ab7;
 }
 
+#ca-talk a.new:link, #ca-talk a.new:visited {
+    color: #337ab7;
+}
+
 body {
 	color: #30373b;
 }
@@ -773,15 +777,23 @@ margin-bottom: 5px;
  * Flow Style
  *********************/
 
-.flow-board .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
+.flow-component .flow-board .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
 	background-color:#7ab55c;
     padding: 6px 15px 8px;
     border:none;
 }
 
-.flow-board .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover {
+.flow-component .flow-board .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover {
 	background-color:#6aa74c;
 }
+
+@media (min-width: 1165px){
+	#mw-content-text .flow-component.flow-board-page .flow-board-navigation, #mw-content-text .flow-component.flow-board-page .flow-board {
+		width: 100%;
+		max-width: none;
+		padding-right: none;
+	}
+}	
 
 .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header {
 	display:none;
