@@ -435,7 +435,7 @@ span.status-checkbox {
 	cursor: pointer;
 }
 
-.wiki-nav li#p-namespaces ul.list-inline > li{
+.wiki-nav li#p-namespaces ul.list-inline > li, .wiki-nav li#p-views ul.list-inline > li{
 	color:#bbb;
 	padding: 14px 15px;
 	margin-bottom: -1px;
@@ -772,7 +772,8 @@ margin-bottom: 5px;
 }
 
 #profileWf .nav-tabs .btn-sm {
-	font-size:13px;
+	font-size:1em;
+    margin-left: 3px;
 }
 
 /*********************
@@ -1347,7 +1348,9 @@ h5.project-title {
 }
 
 body[class^='page-Utilisateur_'] .wiki-nav, body[class*='page-Utilisateur_'] .wiki-nav,
-body[class^='page-Utilisateur_'] .contentHeader, body[class*='page-Utilisateur_'] .contentHeader{
+body[class^='page-Utilisateur_'] .contentHeader, body[class*='page-Utilisateur_'] .contentHeader,
+body[class^='page-Utilisatrice_'] .wiki-nav, body[class*='page-Utilisatrice_'] .wiki-nav,
+body[class^='page-Utilisatrice_'] .contentHeader, body[class*='page-Utilisatrice_'] .contentHeader {
     display:none;
 }
 
@@ -2286,7 +2289,7 @@ span.licence-detail-title {
 	margin-top:20px;
 }
 
-#profileWf #tab-tutorials .project-card-author {
+#profileWf .tab-content #tutorials .project-card-author {
 	display:none;
 }
 
@@ -3278,9 +3281,6 @@ img.removeButton, img.addAboveButton {
     height: 154px;
 }
 
-.project-card-author-info {
-	width:70%;
-}
 .project-location li {
     display: block;
     width: 100%;
@@ -3290,11 +3290,11 @@ img.removeButton, img.addAboveButton {
 
 @media (max-width: 992px) {
 .project-thumbnail img {
-    min-height: 247px;
+    min-height: 237px;
 }
 
 .project-thumbnail {
-    height: 247px;
+    height: 237px;
 }
 #mw-content-text #sfForm .add-attachments-upload .createboxInput {
 	max-width:80%;
@@ -3327,6 +3327,14 @@ img.removeButton, img.addAboveButton {
     min-height: 207px;
 }
 
+#profileWf .project-card .col-xs-5 {
+    padding-right: 0px;
+}
+
+#profileWf .project-card .col-xs-7 {
+    padding-left: 0px;
+}
+
 .project-thumbnail {
     height: 207px;
 }
@@ -3356,7 +3364,20 @@ img.removeButton, img.addAboveButton {
 }
 
 .project-card-content {
-    padding: 10px 8px 0px 0px;
+    padding: 10px 8px 10px 10px;
+}
+
+#profileWf .project-byline {
+	display:none;
+}
+
+#profileWf .project-blurb {
+	margin-bottom:5px;
+}
+
+#profileWf h5.project-title {
+    font-size: 15px;
+    margin-bottom: 2px;
 }
 
 .step-nav {
@@ -3405,7 +3426,7 @@ img.removeButton, img.addAboveButton {
 	text-align:left;
 }
 
-#p-contentnavigation{
+.wiki-nav{
 	display:none;
 }
 
