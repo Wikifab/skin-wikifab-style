@@ -3281,6 +3281,10 @@ img.removeButton, img.addAboveButton {
     height: 154px;
 }
 
+.project-location {
+	height:inherit;
+}
+
 .project-location li {
     display: block;
     width: 100%;
@@ -3291,6 +3295,10 @@ img.removeButton, img.addAboveButton {
 @media (max-width: 992px) {
 .project-thumbnail img {
     min-height: 237px;
+}
+
+.project-location {
+	height:12px;
 }
 
 .project-thumbnail {
@@ -3323,15 +3331,19 @@ img.removeButton, img.addAboveButton {
     transition: all ease .15s;
 }
 
+.project-byline {
+	display:none;
+}
+
 .project-thumbnail img {
     min-height: 207px;
 }
 
-#profileWf .project-card .col-xs-5 {
+#profileWf .project-card .col-xs-5, .searchresults .project-card .col-xs-5 {
     padding-right: 0px;
 }
 
-#profileWf .project-card .col-xs-7 {
+#profileWf .project-card .col-xs-7, .searchresults .project-card .col-xs-5 {
     padding-left: 0px;
 }
 
@@ -3364,7 +3376,7 @@ img.removeButton, img.addAboveButton {
 }
 
 .project-card-content {
-    padding: 10px 8px 10px 10px;
+    padding: 10px 20px 10px 15px;
 }
 
 #profileWf .project-byline {
@@ -3439,7 +3451,7 @@ img.removeButton, img.addAboveButton {
 		display:none;
 	}
 	
-	#profileWf .project-byline, #profileWf .project-location {
+	#profileWf .project-location {
 		display:block;
 	}
 	
@@ -3448,6 +3460,11 @@ img.removeButton, img.addAboveButton {
 		width: 40px;
 	    float: left;
 	}
+	
+	.searchresults .project-blurb {
+		margin-bottom:0px;
+	}
+	
 	.project-card-author-picture {
 	    max-width: 55px;
 	    width: 100%;
