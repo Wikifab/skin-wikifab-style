@@ -758,15 +758,19 @@ margin-bottom: 5px;
 .tabs-follow-btn a.UsersUnWatchButton .btn-message {
 	transition: all ease .25s;
 	background-color: #f5f8fa;
-	border: 2px solid #c0d2dd;
+	border: 1px solid #c0d2dd;
 	color: #66757f;
 	background-image: linear-gradient(#ffffff,#f5f8fa);
 }
 
 .tabs-follow-btn a.UsersUnWatchButton .btn-message:hover {
 	background: #dc2323;
-	border: 2px solid #dc2323;
+	border: 1px solid #dc2323;
 	color: #fff;
+}
+
+#profileWf .mw-body ul {
+	padding-left: 1ex;
 }
 
 #profileWf .nav-tabs .btn-sm {
@@ -804,8 +808,13 @@ margin-bottom: 5px;
 	max-width:none;
 }
 
-body[class*='page-Discussion_'] h1.firstHeading {
+h1.firstHeading {
 	font-size: 32px;
+}
+
+#profileWf .tab-content h4 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
 
 .flow-board .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover {
@@ -2279,7 +2288,7 @@ span.licence-detail-title {
 	margin-top:20px;
 }
 
-#profileWf .project-card-author {
+#profileWf #tab-tutorials .project-card-author {
 	display:none;
 }
 
@@ -3256,6 +3265,15 @@ img.removeButton, img.addAboveButton {
 @media (max-width: 1200px) {
 .project-thumbnail img {
     min-height: 154px;
+}
+
+#profileWf .nav-tabs > li > a {
+    margin-right: 2px;
+    padding: 8px 13px;
+}
+
+.btn-follow-text {
+	display:none;
 }
 
 .project-thumbnail {
