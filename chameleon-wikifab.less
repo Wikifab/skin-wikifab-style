@@ -435,7 +435,7 @@ span.status-checkbox {
 	cursor: pointer;
 }
 
-.wiki-nav li#p-namespaces ul.list-inline > li, .wiki-nav li#p-views ul.list-inline > li{
+.wiki-nav li#p-namespaces ul.list-inline > li, .wiki-nav li#p-views ul.list-inline > li, .wiki-nav li#p-actions ul.list-inline > li{
 	color:#bbb;
 	padding: 14px 15px;
 	margin-bottom: -1px;
@@ -3546,4 +3546,267 @@ div.navbar-personaltoolwidgets > li > a {
 }
 .mw-echo-ui-paginationWidget .oo-ui-buttonOptionWidget .oo-ui-buttonElement-button {
     padding: 0.25em;
+}
+
+/*************************
+ CSS of Group Pages
+**************************/
+
+
+body[class^='page-Group_'].action-view, body[class*='page-Group_'].action-view {
+	background-color: #f9fafc;
+}
+
+body[class^='page-Group_'].action-view .firstHeading, body[class*='page-Group_'].action-view .firstHeading {
+	display:none;
+}
+
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav {
+	max-width: 1170px;
+	margin:auto;
+    border-bottom: 0;
+}
+
+body[class^='page-Group_'] .group-banner img, body[class*='page-Group_'] .group-banner img {
+	width:100%;
+    height: 100%;
+}
+
+body[class^='page-Group_'] .group-banner, body[class*='page-Group_'] .group-banner {
+	height: 165px;
+	overflow: hidden;
+}
+
+.group-info span {
+    margin-right: 15px;
+	color:#888;
+}
+
+body[class^='page-Group_'] .group-info span a, body[class*='page-Group_'] .group-info span a{
+	color:#888;
+}
+
+body[class^='page-Group_'] .group-title-box, body[class*='page-Group_'] .group-title-box {
+    margin-top: -120px;
+}
+
+body[class^='page-Group_'] .group-title-box h1.group-title, body[class*='page-Group_'] .group-title-box h1.group-title {
+	padding-top: 69px;
+	margin-bottom: 28px;
+	margin-top:0px;
+	color:#fff;
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
+}
+
+body[class^='page-Group_'].action-view #mw-content-text .tabber .tabbertab, body[class*='page-Group_'].action-view #mw-content-text .tabber .tabbertab {
+	background:#fff;
+	border:none;
+	border-top:1px solid #ddd;
+}	
+
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
+    background: transparent;
+}
+
+body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+	height: 260px;
+    overflow: hidden;
+    border: 9px solid #ddd;
+    border-radius: 13px;
+	background:#fff;
+}
+
+body[class^='page-Group_'].action-view .group-main-image img, body[class*='page-Group_'].action-view .group-main-image img{
+    width: 100%;
+    height: initial;
+}
+
+.group-event-icon {
+    line-height: 23px;
+    color: #888;
+}
+
+.page-Formulaire_Groupe .contentHeader { display:none; }
+.page-Formulaire_Groupe .mw-body { margin-top:0px; margin-bottom:0px;}
+.page-Formulaire_Groupe .navbar { margin-bottom:0px; }
+
+.page-Formulaire_Groupe .footerdata {
+	display:none;
+}
+
+.page-Formulaire_Groupe .col-lg-12{
+	padding-right:0px;
+	padding-left:0px;
+}
+
+body[class^='page-Group_'] .contentHeader, body[class*='page-Group_'] .contentHeader { display:none; }
+body[class^='page-Group_'] .mw-body, body[class*='page-Group_'] .mw-body { margin-top:0px }
+
+body[class^='page-Group_'] .col-lg-12, body[class*='page-Group_'] .col-lg-12 {
+	padding-right:0px;
+	padding-left:0px;
+}
+
+body[class^='page-Group_'].action-view span.group-type, body[class*='page-Group_'].action-view span.group-type {
+    font-size: 14.5px;
+    font-weight: normal;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-left: 8px;
+    text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 3px;
+}
+
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a {
+    background: #fff;
+}
+
+body[class^='page-Group_'] .navbar, body[class*='page-Group_'] .navbar {
+	margin-bottom: 0px;
+}
+
+body[class^='page-Group_'] .wiki-nav, body[class*='page-Group_'] .wiki-nav {
+    background: #fff;
+    padding-top: 20px;
+}
+
+body[class^='page-Group_'].action-view .p-contentnavigation li.selected, body[class*='page-Group_'].action-view .p-contentnavigation li.selected {
+    border-bottom: 1px solid #f9fafc;
+	background: #f9fafc;
+}
+
+body[class^='page-Group_'].action-view #catlinks, body[class*='page-Group_'].action-view #catlinks {
+    float: left;
+    width: 100%;
+    background: #fff;
+    margin-top: 0px;
+    padding: 20px 0px 70px;
+}
+
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
+    margin-left: 13px;
+	padding: 13px 16px;
+}
+
+body[class^='page-Spécial_AjouterDonnées_Groupe_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Groupe_'] .contentHeader,
+body[class^='page-Special_FormEdit_Group_'] .contentHeader, body[class*='page-Special_FormEdit_Group_'] .contentHeader {
+	display:none;
+}
+
+body[class^='page-Spécial_AjouterDonnées_Groupe_'] .col-lg-12, body[class*='page-Spécial_AjouterDonnées_Groupe_'] .col-lg-12,
+body[class^='page-Special_FormEdit_Group_'] .col-lg-12, body[class*='page-Special_FormEdit_Group_'] .col-lg-12 {
+	padding-right:0px;
+	padding-left:0px;
+}
+
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav {
+	padding: 13px 0;
+}
+
+p.machines-form-first, p.machines-form {
+	font-weight:bold;
+	margin-bottom:0px;
+}
+
+.group-tabs .multipleTemplateAdder {
+    width: inherit;
+}
+
+.group-tabs img.removeButton, .group-tabs img.addAboveButton, .group-tabs img.instanceRearranger {
+	width: 80%;
+}
+
+.group-form-page {
+	background-color:#93a5aa;
+	background-image:url('/skins/lowtechlab-skin/images/bg-pingouin.gif');
+	background-position:left bottom ;
+	height:600px;
+    background-repeat: repeat-x;
+}
+
+.group-form-page h1 {
+	font-size:45px;
+}
+
+.mw-content-ltr .group-form-page .formInput {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 9px 11px;
+    width: 50%;
+    font-size: 17px;
+    margin-right: 5px;
+    border: 1px solid #aaa;
+}
+
+.new-tutorial-page p.group-form-subtitle {
+	font-size: 18px;
+    color: #fff;
+    margin: 30px auto 10px;
+    max-width: 571px;
+}
+
+p.machines-form {
+	margin-top:10px;
+}
+
+.group-tabs h2 {
+    font-size: 26px;
+    margin: 0px 0px 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+body[class^='page-Group_'].action-view #catlinks #mw-normal-catlinks, body[class*='page-Group_'].action-view #catlinks #mw-normal-catlinks {
+	max-width: 1170px;
+    margin: auto;
+	padding-right:15px;
+	padding-left:15px;
+}
+
+body[class^='page-Group_'].action-view .Input-tabs, body[class*='page-Group_'].action-view .Input-tabs {
+	margin-bottom:0px;
+}
+
+body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].action-view .footerdata {
+	margin-top:0px;
+}
+
+@media (max-width: 1200px) {
+	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+		height: 210px;
+	}
+}
+
+@media (max-width: 992px) {
+	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+		height: 157px;
+	}
+}
+
+@media (max-width: 768px) {
+	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+		height: 100%;
+	    max-width: 200px;
+	    margin: auto;
+	}
+	body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
+	    margin-left: 5px;
+	    padding: 13px 7px;
+	    font-size: 12px;
+	}
+	.group-info span {
+	    color: #888;
+	    margin-bottom: 4px;
+	    width: 100%;
+	    float: left;
+	}
+	body[class^='page-Group_'] .group-title-box h1.group-title, body[class*='page-Group_'] .group-title-box h1.group-title {
+		padding-top: 29px;
+		color: inherit;
+		text-shadow: none;
+	}
+	body[class^='page-Group_'].action-view span.group-type, body[class*='page-Group_'].action-view span.group-type {
+		text-shadow: none;
+	}
 }

@@ -64,6 +64,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<component>
 		<modification type="HideFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Community,Indispensable,Aide,Développeurs,Developers,WfExplore,
 			Wikifab_est_en_version_Beta,Early_access,Explore,Contribute,Tutorial,Help,Hello_World,mw-special-WfSearch,Get_started,Premiers_pas,Bonnes_pratiques,Best_practices"></modification>
+			<modification type="HideFor" namespace="NS_GROUP"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -83,6 +84,15 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<component>
 		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,Contribuer,Tutoriel,Communauté,Community,Indispensable,Aide,Développeurs,Developers,WfExplore,
 			Wikifab_est_en_version_Beta,Early_access,Explore,Contribute,Tutorial,Help,Hello_World,mw-special-WfSearch,Get_started,Premiers_pas,Bonnes_pratiques,Best_practices"></modification>
+			<cell>
+				<cell span="12">
+					<component type="MainContent"></component>
+				</cell>
+			</cell>
+	</component>
+	
+	<component>
+		<modification type="ShowOnlyFor" namespace="NS_GROUP"></modification>
 			<cell>
 				<cell span="12">
 					<component type="MainContent"></component>
