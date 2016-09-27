@@ -3556,6 +3556,7 @@ div.navbar-personaltoolwidgets > li > a {
     padding: 0.25em;
 }
 
+
 /*************************
  CSS of Group Pages
 **************************/
@@ -3726,14 +3727,65 @@ p.machines-form-first, p.machines-form {
 
 .group-form-page {
 	background-color:#93a5aa;
-	background-image:url('/skins/skin-wikifab-style/images/bg-pingouin.gif');
+	background-image:url('/skins/wikifabStyleModule/images/group-bg.jpg');
 	background-position:left bottom ;
 	height:600px;
     background-repeat: repeat-x;
+	background-size: cover;
+}
+
+.group-section-0 {
+	text-align:center;
+	padding: 40px 0 20px 0;
+}
+
+.group-section-0 h2 {
+	font-size:36px;
+}
+
+.group-section-0 p {
+	font-size: 18px;
+	max-width: 600px;
+	margin: 20px auto;
+	color: #888;
+}
+
+.group-section-1 {
+	padding: 40px 0px 50px;
+	border-bottom: 1px solid #eee;
+}
+
+.group-section-1 img {
+	width:100%;
+	height:100%;
+	max-width:480px;
+}
+
+.group-section-1 .img-part {
+	text-align:center;
+}
+
+.group-section-2 {
+	padding: 50px 0px 0px;
+}
+
+.group-section-2 p {
+	margin-top:70px;
+}
+
+.group-section-2 img {
+	width:100%;
+	height:100%;
+}
+
+.new-group-page {
+    text-align: center;
+    margin: 150px 0px;
 }
 
 .group-form-page h1 {
 	font-size:45px;
+	color:#fff;
 }
 
 .mw-content-ltr .group-form-page .formInput {
@@ -3742,16 +3794,17 @@ p.machines-form-first, p.machines-form {
     border-radius: 3px;
     padding: 9px 11px;
     width: 50%;
+	max-width: 400px;
     font-size: 17px;
     margin-right: 5px;
     border: 1px solid #aaa;
 }
 
-.new-tutorial-page p.group-form-subtitle {
+.new-group-page p.group-form-subtitle {
 	font-size: 18px;
     color: #fff;
     margin: 30px auto 10px;
-    max-width: 571px;
+    max-width: 640px;
 }
 
 p.machines-form {
@@ -3817,4 +3870,109 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	body[class^='page-Group_'].action-view span.group-type, body[class*='page-Group_'].action-view span.group-type {
 		text-shadow: none;
 	}
+	#mw-content-text .group-main-tabs ul.tabbernav li a {
+	    font-size: 15px;
+	    padding: 14px 10px 32px;
+	}
+}
+
+#mw-content-text .group-main-tabs ul.tabbernav {
+	text-align:center;
+    border: none;
+	padding: 18px 0 16px;
+}
+
+#mw-content-text .group-main-tabs ul.tabbernav li a {
+    font-size: 18px;
+    padding: 14px 20px 32px;
+    margin: 0 15px;
+    border: 0px;
+    color: #999;
+	background-color:transparent;
+}
+
+.group-section-1 .title {
+	padding-top:90px;
+}
+
+.group-section-1 ul {
+	list-style: none;
+	list-style-image: none;
+}
+
+.group-main-tabs {
+	padding:40px 15px 60px;
+    background-image: -webkit-linear-gradient(270deg, #f5f5f5, #fff);
+    background-image: linear-gradient(180deg, #f5f5f5, #fff);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+}
+
+.group-main-tabs img {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+}
+
+.group-main-tabs-title {
+	text-align:center;
+	padding-bottom:30px;
+}
+
+.group-main-tabs-title p {
+	font-size: 16px;
+	color: #888;
+}
+
+#mw-content-text .group-main-tabs ul.tabbernav li.tabberactive a {
+    border: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+	color: #fff;
+	background-image:url('/skins/wikifabStyleModule/images/arrow-group.png');
+	background-position:bottom;
+}
+
+#mw-content-text .group-main-tabs .tabber .tabbertab {
+	border:none;
+	text-align:center;
+}
+
+.group-ready {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.group-bottom-links {
+    margin: 50px 0px 80px;
+    text-align: center;
+}
+
+.create-group-btn {
+	font-size: 17px;
+	padding: 12px 24px;
+    border: none;
+    background-color: #c1ac55;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: #fff;
+    margin-left: 10px;
+    transition: all ease .25s;
+}
+
+.create-group-btn:hover {
+	background:#ae9a46;
+}
+
+.group-bottom-links a:hover {
+    text-decoration:none;
+}
+a.create-group-btn:hover {
+    text-decoration:none;
 }
