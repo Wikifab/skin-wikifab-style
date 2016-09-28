@@ -3602,6 +3602,8 @@ body[class^='page-Group_'] .group-banner img, body[class*='page-Group_'] .group-
 body[class^='page-Group_'] .group-banner, body[class*='page-Group_'] .group-banner {
 	height: 165px;
 	overflow: hidden;
+	background: #999;
+	color: transparent;
 }
 
 .group-info span {
@@ -3640,12 +3642,20 @@ body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Gr
     overflow: hidden;
     border: 9px solid #ddd;
     border-radius: 13px;
-	background:#fff;
+	background-color:#f1f1f1;
+	background-image: url('/skins/wikifabStyleModule/images/no-logo-group.gif');
+	color:transparent;
+    background-size: cover;
+    background-position: center;
 }
 
 body[class^='page-Group_'].action-view .group-main-image img, body[class*='page-Group_'].action-view .group-main-image img{
     width: 100%;
     height: initial;
+}
+
+.group-about-text {
+	color:#bbb;
 }
 
 .group-event-icon {
@@ -3711,12 +3721,12 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[
 	padding: 13px 16px;
 }
 
-body[class^='page-Spécial_AjouterDonnées_Groupe_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Groupe_'] .contentHeader,
+body[class^='page-Spécial_AjouterDonnées_Group_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Group_'] .contentHeader,
 body[class^='page-Special_FormEdit_Group_'] .contentHeader, body[class*='page-Special_FormEdit_Group_'] .contentHeader {
 	display:none;
 }
 
-body[class^='page-Spécial_AjouterDonnées_Groupe_'] .col-lg-12, body[class*='page-Spécial_AjouterDonnées_Groupe_'] .col-lg-12,
+body[class^='page-Spécial_AjouterDonnées_Group_'] .col-lg-12, body[class*='page-Spécial_AjouterDonnées_Group_'] .col-lg-12,
 body[class^='page-Special_FormEdit_Group_'] .col-lg-12, body[class*='page-Special_FormEdit_Group_'] .col-lg-12 {
 	padding-right:0px;
 	padding-left:0px;
@@ -3781,15 +3791,6 @@ p.machines-form-first, p.machines-form {
 
 .group-section-2 {
 	padding: 50px 0px 0px;
-}
-
-.group-section-2 p {
-	margin-top:70px;
-}
-
-.group-section-2 img {
-	width:100%;
-	height:100%;
 }
 
 .new-group-page {
@@ -3920,6 +3921,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
     background-image: linear-gradient(180deg, #f5f5f5, #fff);
     background-repeat: no-repeat;
     background-size: 100% 400px;
+	margin-top: 100px;
 }
 
 .group-main-tabs img {
@@ -3970,7 +3972,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	font-size: 17px;
 	padding: 12px 24px;
     border: none;
-    background-color: #c1ac55;
+    background-color: #7ab55c;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -3981,7 +3983,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 }
 
 .create-group-btn:hover {
-	background:#ae9a46;
+	background:#6aa74c;
 }
 
 .group-bottom-links a:hover {
