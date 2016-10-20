@@ -2074,7 +2074,8 @@ ul.releases-list {
 	padding-bottom: .2em;
 }
 
-.load-more {
+.load-more,
+.load-more-previous {
     text-align: center;
     padding: 10px;
     background: #b1b1b1;
@@ -2084,10 +2085,16 @@ ul.releases-list {
     -moz-border-radius: 5px;
     border-radius: 5px;
     max-width: 350px;
+}
+.load-more {
     margin: 20px auto 0px;
 }
+.load-more-previous {
+	margin: 0px auto 10px;
+}
 
-.load-more:hover {
+.load-more:hover,
+.load-more-previous:hover {
 	background-color: #666666;
     cursor: pointer;
 }
