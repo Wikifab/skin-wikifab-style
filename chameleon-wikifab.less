@@ -379,6 +379,30 @@ span.status-checkbox {
 	margin-top: -30px;
 }
 
+.search-filters-section.wfexplore-proposedTags p {
+	margin-bottom:0px;
+}
+
+.search-filters-section.wfexplore-proposedTags {
+	background-image: none;
+	background-color: #f1f1f1;
+	border-top: 1px solid #ccc;
+	padding: 8px 0 10px;
+}
+
+.search-filters-section.wfexplore-proposedTags .label-default {
+    background-color: #368aa9;
+    font-weight: normal;
+    font-size: 100%;
+    padding: 10px 20px;
+    float: left;
+    margin: 10px 10px 10px 0px;
+}
+
+.search-filters-section.wfexplore-proposedTags .label-default:hover {
+    background-color: #30373b;
+}
+
 .search-filters-section span.remove {
     margin-left: 2px;
     cursor: pointer;
@@ -581,6 +605,7 @@ margin-bottom: 5px;
 
 #p-search{
 	float:left;
+	border:none;
 }
 
 .navbar-fixed-top{
@@ -3082,6 +3107,10 @@ label.checkboxLabel.detail-area-field{
 	margin-bottom:13px;
 }
 
+.table-edit-form .checkboxSwitches {
+	display:none;
+}
+
 .upload-instructions{
 	font-size:12px;
 	font-style: italic;
@@ -3120,22 +3149,13 @@ label.checkboxLabel.detail-area-field{
   background-color: #fff;
 }
 
-.step-nav p{
-	text-align: center;
-	width: 50px;
-	margin: auto;
-	margin-bottom: 15px;
-}
-
-.step-nav p:hover{
-	background-color: #eee;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-
-img.removeButton, img.addAboveButton {
+a.removeButton, a.addAboveButton {
   cursor: pointer;
+}
+
+a.removeButton:hover, a.addAboveButton:hover {
+  background-color:#f1f1f1;
+  border:0px;
 }
 
 .collap-style {
@@ -3571,7 +3591,9 @@ img.removeButton, img.addAboveButton {
 }
 .navbar-right-aligned .navbar-personaltools.navbar-personaltoolwidgets {
     margin-left: 5px;
-    margin-right: 0px;
+    margin-right: 5px;
+    border-left: 1px solid #e7e7e7;
+	min-height: 48px;
 }
 
 .navbar-personaltoolwidgets #pt-notifications-alert {
@@ -3601,6 +3623,7 @@ div.navbar-personaltoolwidgets > li > a {
  CSS of Group Pages
 **************************/
 
+/*
 .navbar-nav > li#n-Groupes {
     background-image: url(/skins/wikifabStyleModule/images/new-label-menu.jpg);
     background-repeat: no-repeat;
@@ -3620,6 +3643,7 @@ div.navbar-personaltoolwidgets > li > a {
     background-position-y: center;
 	background-position: right;
 }
+*/
 
 body[class^='page-Group_'].action-view, body[class*='page-Group_'].action-view {
 	background-color: #f9fafc;
@@ -4053,6 +4077,12 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 
 .group-logo-upload .msupload-list .file-existing {
 	max-width: 200px;
+}
+
+@media (min-width: 768px) {
+	.navbar-right-aligned .navbar-tools:last-child {
+  		border-right: 1px solid #e7e7e7;
+	}
 }
 
 .group-banner-upload .msupload-list .file {
