@@ -387,7 +387,7 @@ span.status-checkbox {
 	background-image: none;
 	background-color: #f1f1f1;
 	border-top: 1px solid #cdcdcd;
-	box-shadow:none;
+	box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
 }
 
 .search-filters-section.wfexplore-proposedTags .label-default {
@@ -396,7 +396,13 @@ span.status-checkbox {
     font-size: 100%;
     padding: 10px 20px;
     float: left;
-    margin: 10px 10px 10px 0px;
+    margin: 10px 1% 10px 0;
+    min-width: 9%;
+}
+
+.search-filters-section.wfexplore-proposedTags .container {
+    height: 54px;
+    overflow: hidden;
 }
 
 .search-filters-section.wfexplore-proposedTags .label-default:hover {
