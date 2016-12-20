@@ -396,18 +396,25 @@ span.status-checkbox {
     font-size: 100%;
     padding: 10px 20px;
     float: left;
-    margin: 10px 1% 10px 0;
-    min-width: 9%;
-}
-
-.search-filters-section.wfexplore-proposedTags .container {
-    height: 54px;
+    margin: 11px 0.5% 11px 0.5%;
+    width: 9%;
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .search-filters-section.wfexplore-proposedTags .label-default:hover {
     background-color: #30373b;
 	cursor:pointer;
+}
+
+.mw-ui-button.mw-ui-progressive, .mw-ui-button.mw-ui-constructive {
+    background-color: #7ab55c;
+    border-color: #7ab55c;
+}
+
+.mw-ui-button.mw-ui-progressive:hover, .mw-ui-button.mw-ui-constructive:hover {
+    background-color: #6aa74c;
+    border-color: #6aa74c;
 }
 
 .page-Groups .wfexplore-proposedTags, .page-Groupes .wfexplore-proposedTags,  {
@@ -1805,6 +1812,14 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 	font-size: 13px;
 }
 
+#mw-content-text #sfForm .pfTokens {
+	width:100%;
+}
+
+#mw-content-text #sfForm .checkboxesSpan label.checkboxLabel {
+	white-space: nowrap;
+}
+
 .sign-up-button-hp:hover, .forminput_button:hover, .donation-button:hover, .sign-up-developers:hover   {
 	cursor:pointer;
 	background-color: #6aa74c;
@@ -2939,10 +2954,6 @@ span.licence-detail-title {
 	background:#1d4568;
 }
 
-.multipleTemplateWrapper .inputSpan a, .col-pic-detail .inputSpan a{
-	color:#fff;
-}
-
 .detail-field{
 	background-color:#fff;
 	background-image :url('images/bg-dropdown.jpg');
@@ -3331,6 +3342,18 @@ a.removeButton:hover, a.addAboveButton:hover {
 @media (min-width: 992px) {
 .col-md-2b {
 	width: 20%;
+}
+
+.add-attachments .col-md-11 {
+    width: auto;
+}
+
+.col-rev-form .col-md-11 {
+    width: 94%;
+}
+
+.col-rev-form .col-md-1 {
+    width: 6%;
 }
 
 .user-gift-container .col-md-3 {
