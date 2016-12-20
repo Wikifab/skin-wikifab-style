@@ -94,6 +94,10 @@ span.status-checkbox {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
+.contentHeader .dropdownButton-addtogroup button {
+	margin-left:5px;
+}
+
 #mc_embed_signup .mc-field-group label{
     margin-bottom: 0px;
     vertical-align: middle;
@@ -3373,6 +3377,15 @@ a.removeButton:hover, a.addAboveButton:hover {
     min-height: 154px;
 }
 
+.search-filters-section.wfexplore-proposedTags .label-default {
+    width: 11.5%;
+}
+
+.search-filters-section.wfexplore-proposedTags {
+	max-height: 54px;
+	overflow: hidden;
+}
+
 #profileWf .nav-tabs > li > a {
     margin-right: 2px;
     padding: 8px 13px;
@@ -3400,6 +3413,10 @@ a.removeButton:hover, a.addAboveButton:hover {
 @media (max-width: 992px) {
 .project-thumbnail img {
     min-height: 237px;
+}
+
+.search-filters-section.wfexplore-proposedTags .label-default {
+    width: 15.67%;
 }
 
 .project-location {
@@ -3547,13 +3564,16 @@ a.removeButton:hover, a.addAboveButton:hover {
 	display:none;
 }
 
-
 }
-
 
 @media only screen and (max-width: 550px) {
 	.project-byline, .project-location {
 		display:none;
+	}
+	
+	.search-filters-section.wfexplore-proposedTags .label-default {
+    	margin: 11px 1% 11px 1%;
+    	width: 31.3333333%;
 	}
 	
 	#profileWf .project-location {
