@@ -2097,27 +2097,30 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 	font-size:17px;
 }
 
+.ve-init-target {
+	border: 1px solid #bbbbbb;
+}
+
+#wpSaveAndContinue,
+.saving-menu .editHelp,
 #wpPreview, #wpDiff, #wpSave, .site-button, .multipleTemplateAdder {
 	padding: 7px 12px;
 	border: none;
-	background-color: #7ab55c;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	color:#fff;
+	margin-left: 5px;
 	transition: all ease .25s;
 }
 
+#wpPreview, #wpDiff, #wpSave, .site-button, .multipleTemplateAdder {
+	background-color: #7ab55c;
+	color:#fff;
+}
+
 .saving-menu .editHelp {
-	padding: 9px 12px;
-	border: none;
 	background-color: #475257;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 	color:#30373b;
-	transition: all ease .25s;
-	margin-left: 5px;
 }
 .saving-menu .editHelp:hover {
 	background-color: #7ab55c;
@@ -2125,14 +2128,23 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 }
 
 #wpSaveAndContinue {
-	padding: 7px 12px;
-	border: none;
 	background-color : #475257;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 	color: #6e7f87;
-	margin-left: 5px;
+}
+#wpSaveAndContinue.pf-save_and_continue-ok {
+	background-color : #7ab55c;
+	color: #fff;
+}
+#wpSaveAndContinue.pf-save_and_continue-wait {
+	background-color : #475257;
+	color: #6e7f87;
+	background: linear-gradient(90deg, #475257,#7ab55c,);
+	background-size: 200% 200%;
+	
+}
+#wpSaveAndContinue.pf-save_and_continue-changed {
+	background-color : #475257;
+	color: #fff;
 }
 
 .add-more-pics {
@@ -4351,3 +4363,6 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 a.create-group-btn:hover {
     text-decoration:none;
 }
+
+
+
