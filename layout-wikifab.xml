@@ -130,6 +130,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 </component>
 
+<component type="WikifabPrintFooter"></component>
+
 
 <!--  Hide original MediaWiki Footer -->
 <!-- 
