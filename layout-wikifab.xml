@@ -24,6 +24,9 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 <structure>
 
+
+	<component type="WikifabPrintHeader"></component>
+
 	<component type="NavbarHorizontal" fixed="0">
 
 		<component type="Logo" position="head"></component>
