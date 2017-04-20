@@ -69,7 +69,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 			Wikifab_est_en_version_Beta,Early_access,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,Hello_World,mw-special-WfSearch,Get_started,Premiers_pas,Bonnes_pratiques,Best_practices"></modification>
 			<modification type="HideFor" namespace="NS_GROUP"></modification>
 		<grid>
-			<row>
+			<row class="siteNoticeArea">
 				<cell span="12">
 					<component type="SiteNotice"></component>
 				</cell>
