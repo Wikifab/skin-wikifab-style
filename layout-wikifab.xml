@@ -124,7 +124,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 		<row class="footer-credits">
 			<cell span="7">
-				<component type="WikifabFooter"></component>
+				<component type="MessageContent" name="WikifabFooter"></component>
 			</cell>
 			<cell span="5">
 				<component type="FooterIcons"></component>
