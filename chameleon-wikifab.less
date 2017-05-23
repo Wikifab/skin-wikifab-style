@@ -655,25 +655,41 @@ span.status-checkbox {
 	margin-bottom: -1px;
 }
 
-.page-Explorer .mw-body ol, .page-Explore .mw-body ol {
+.wikipage .mw-body ol {
     width: 100%;
     text-align: right;
 	left: 0;
 }
 
-.page-Explorer .carousel-indicators li, .page-Explore .carousel-indicators li {
+.wikipage .carousel-indicators li {
 	background-color: #aaa;
     margin: auto;
+    margin-left: 3px;
+    opacity:0.35;
 	height: 15px;
 	border:none;
 	width: 15px;
 }
 
-.page-Explorer .carousel-indicators li:hover, .page-Explore .carousel-indicators li:hover {
+.wikipage .carousel-indicators li.active {
+	opacity:1;
+}
+
+.wikipage .carousel-indicators li:hover {
 	background-color: #6aa74c;
 }
 
-.page-Explorer .carousel-indicators .active, .page-Explore .carousel-indicators .active {
+.wikipage ol.carousel-indicators {
+	width: 100%;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 12px;
+    bottom: 7px;
+}
+
+.wikipage .carousel-indicators .active {
 	background-color: #7ab55c;
 	border:none;
 }
@@ -1388,6 +1404,7 @@ span.project-card-separator {
 
 .carousel-project-slide-main {
 	background-color:#F9FAFA;
+	border: 1px solid #ddd;
 }
 
 .clearboth {
