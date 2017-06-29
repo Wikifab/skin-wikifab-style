@@ -108,10 +108,6 @@ span.dynatree-expanded a {
 	color:#fff;
 }
 
-.page-Accueil .footerdata, .page-Main_Page .footerdata {
-	margin-top: 20px;
-}
-
 #mc_embed_signup .mc-field-group input {
     height: 34px;
     min-width: 205px;
@@ -2355,6 +2351,7 @@ ul.releases-list {
 
 .contribute-block-title{
 	font-size:23px;
+	margin-bottom:5px;
 	width:100%;
 	float:left;
 	font-weight: bold;
@@ -2365,9 +2362,10 @@ ul.releases-list {
 }
 
 .contribute-block {
-	padding: 40px 0px;
+	padding: 40px 20px;
 	background-color: #fff;	
 	cursor:pointer;
+	font-size:1.1em;
 	transition: all ease .25s;
 	float:left;
 	width:100%;
@@ -2604,12 +2602,12 @@ span.licence-detail-title {
 
 .tuto-items-details-container {
     background: #f1f1f1;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     border: 1px solid #ddd;
     float: left;
-    font-size: 15.3px;
+    font-size: 15.6px;
     width: 100%;
     margin-bottom: 13px;
     padding: 8px 15px;
@@ -2628,10 +2626,105 @@ span.licence-detail-title {
 }
 
 .tuto-items-container .fa {
-    font-size: 21px;
+    font-size: 22px;
+    width: 23px;
+    text-align: center;
     color: #999;
-    margin-right: 8px;
-	float:left;
+    margin-right: 10px;
+    float: left;
+}
+
+.tuto-items-container .mw-pt-languages {
+    background: #f1f1f1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    float: left;
+    font-size: 15.6px;
+    width: 100%;
+    margin-bottom: 13px;
+    padding: 11px 15px 10px 48px;
+    border-collapse: inherit;
+    line-height: normal;
+    background-image: url(/w/skins/wikifabStyleModule/images/language-icon.png);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: 14px 8px;
+}
+
+.tuto-items-container .mw-pt-languages-ui {
+    font-weight: normal;
+}
+
+.tuto-items-container .mw-pt-languages-selected {
+    font-weight: bold;
+}
+
+#mw-content-text .mw-pt-translate-header {
+    font-size: inherit;
+    text-align: left;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    padding: 15px 15px 15px 45px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: -7px;
+    background-image: url('images/language-icon-alert.png');
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: 12px;
+}
+
+.tuto-items-container .mw-pt-progress {
+    padding-right: 18px;
+    background: transparent right center no-repeat;
+    background-size: 14px 14px;
+}
+
+.tuto-items-container .mw-pt-progress--complete {
+    background-image:url('images/language-progress-complete.png');
+}
+
+.tuto-items-container .mw-pt-languages-list {
+	text-transform: capitalize;
+}
+
+.tuto-items-container .mw-pt-progress--high {
+    background-image:url('images/language-progress-high.png');
+}
+
+.tuto-items-container .mw-pt-progress--med {
+    background-image:url('images/language-progress-med.png');
+}
+
+.tuto-items-container .mw-pt-progress--low {
+    background-image:url('images/language-progress-low.png');
+}
+
+.tuto-items-container .mw-pt-progress--stub {
+    background-image:url('images/language-progress-stub.png');
+}
+
+.tuto-items-container .mw-pt-languages-label {
+	border-right: none;
+    padding: 0px;
+    background: transparent;
+    font-weight: normal;
+    float: left;
+    width: 145px;
+}
+
+.tuto-items-container .mw-pt-languages-list {
+    padding-left: 1em;
+    padding-bottom: 0;
+    display: table-cell;
+    width: initial;
+    float: right;
+    font-size: 15px;
+    color: #444;
 }
 
 .mw-content-ltr .tuto-items-container #toc ul {
@@ -4635,6 +4728,12 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 @media (min-width: 768px) {
 	.navbar-right-aligned .navbar-tools:last-child {
   		border-right: 1px solid #e7e7e7;
+	}
+	.navbar-right-aligned {
+		margin-right:15px;
+	}
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
 	}
 	.multipleTemplate-tutostep .col-md-1 {
 		width: 56px;
