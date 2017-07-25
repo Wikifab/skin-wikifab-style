@@ -5,6 +5,21 @@
 body {
 	font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	-webkit-font-smoothing: subpixel-antialiased;
+	text-rendering: optimizeLegibility;
+	color: #30373b;
+}
+
+button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:focus {
+	outline:none;
+	outline-offset: 0px;
+}
+
+input, .input, textarea, .textarea {
+	 border: 1px solid #ccc;
+}
+
+input:focus, .input:focus, textarea:focus, .textarea:focus {
+	 border-color: #2196F3;
 }
 
 .marketing-section-hp a:hover, .project-card a:hover {
@@ -24,10 +39,6 @@ a.new:visited, a:visited {
 
 #ca-talk a.new:link, #ca-talk a.new:visited {
     color: #337ab7;
-}
-
-body {
-	color: #30373b;
 }
 
 .p-contentnavigation {
@@ -960,6 +971,10 @@ navbar-personaltoolwidgets #pt-notifications-notice:hover {
 	color: #66757f;
 	background-image: linear-gradient(#fff,#f5f8fa);
 	transition: all ease .25s;
+}
+
+.wf-top-button .btn:focus {
+	outline: none;
 }
 
 .wf-top-button .btn:hover{
@@ -3416,7 +3431,7 @@ span.licence-detail-title {
 }
 
 
-.mw-content-ltr .tutorial-page .formInput {
+.mw-content-ltr .tutorial-page .new-tutorial-page input.formInput {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -3424,7 +3439,6 @@ span.licence-detail-title {
     width: 50%;
     font-size: 17px;
 	margin-right: 5px;
-	border: 1px solid #aaa;
 }
 
 
