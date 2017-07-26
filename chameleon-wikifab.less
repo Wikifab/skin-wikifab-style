@@ -10,6 +10,10 @@ body {
 	font-size: 14.5px;
 }
 
+body .btn {
+	font-size: 14.5px;
+}
+
 button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, .select:focus {
 	outline:none;
 	outline-offset: 0px;
@@ -42,7 +46,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     text-decoration: none;
 }
 
-a:link, a.new:visited, a:visited, ul.tabbernav li a:link, ul.tabbernav li a:visited {
+a:link, a.new:visited, a:visited, ul.tabbernav li a:link,
+.mw-body a.external:link, .mw-body a.external:visited {
 	color: #2c9ab7;
 }
 
@@ -2494,7 +2499,7 @@ ul.releases-list {
 .load-more,
 .load-more-previous {
     text-align: center;
-    padding: 15px;
+    padding: 13px;
     font-size: 17px;
     background: #b1b1b1;
     color: #fff;
@@ -2502,7 +2507,7 @@ ul.releases-list {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    max-width: 358px;
+    max-width: 350px;
 }
 .load-more {
     margin: 22px auto 0px;
@@ -4682,6 +4687,11 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	    padding: 13px 7px;
 	    font-size: 12px;
 	}
+
+	.WFfilter-property .nav > li > a {
+		padding: 10px 10px;
+	}
+
 	.group-info span {
 	    color: #888;
 	    margin-bottom: 4px;
