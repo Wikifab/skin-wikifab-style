@@ -14,12 +14,23 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
 	outline-offset: 0px;
 }
 
-input, .input, textarea, .textarea {
-	 border: 1px solid #ccc;
+input, .input, textarea, .textarea, input.mw-ui-input, select {
+	 border: 1px solid #ddd;
 }
 
-input:focus, .input:focus, textarea:focus, .textarea:focus {
+input:hover, .input:hover, textarea:hover, .textarea:hover, select:hover, input.mw-ui-input:hover {
+	 border-color: #bbb;
+}
+
+input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.mw-ui-input:focus {
 	 border-color: #2196F3;
+	 box-shadow: 0 0 7px rgba(39,128,248,.15);
+	 outline:none;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	 outline:none;
+	 box-shadow: 0;
 }
 
 .marketing-section-hp a:hover, .project-card a:hover {
@@ -604,14 +615,24 @@ span.dynatree-expanded a {
 	cursor:pointer;
 }
 
-.mw-ui-button.mw-ui-progressive, .mw-ui-button.mw-ui-constructive {
+#mw-content-text .mw-ui-button.mw-ui-progressive, #mw-content-text .mw-ui-button.mw-ui-constructive {
     background-color: #7ab55c;
-    border-color: #7ab55c;
+    border: none;
+    font-weight: normal;
+    font-size: 15px;
+    text-shadow: none;
+    padding: 9px 16px;
+    border-radius: 3px;
 }
 
-.mw-ui-button.mw-ui-progressive:hover, .mw-ui-button.mw-ui-constructive:hover {
+#mw-content-text .mw-ui-button.mw-ui-progressive:focus, #mw-content-text .mw-ui-button.mw-ui-constructive:focus {
+    box-shadow: none;
+}
+
+
+
+#mw-content-text .mw-ui-button.mw-ui-progressive:hover, #mw-content-text .mw-ui-button.mw-ui-constructive:hover {
     background-color: #6aa74c;
-    border-color: #6aa74c;
 }
 
 .page-Groups .wfexplore-proposedTags, .page-Groupes .wfexplore-proposedTags,  {
@@ -973,7 +994,7 @@ navbar-personaltoolwidgets #pt-notifications-notice:hover {
 	transition: all ease .25s;
 }
 
-.wf-top-button .btn:focus {
+.wf-top-button .btn:focus, .input-group-btn > .btn:focus {
 	outline: none;
 }
 
@@ -2336,12 +2357,17 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 }
 
 .sitedir-ltr #mw-search-top-table #searchText, .sitedir-ltr #mw-search-top-table #powerSearchText{
-	border: 1px solid #ccc;
-	padding: 9px;
-	margin-right: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	padding: 8px;
+	margin-right: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.sitedir-ltr #mw-search-top-table #searchText:focus, .sitedir-ltr #mw-search-top-table #powerSearchText:focus {
+	border: 1px solid #2196F3;
+	box-shadow: 0 0 7px rgba(39,128,248,.15);
+	outline: none;
 }
 
 ul.releases-list {
@@ -3355,7 +3381,6 @@ span.licence-detail-title {
 	border-radius: 3px;
 	padding: 6px 8px;
 	height:34px;
-	border: 1px solid #ddd;
 }
 
 .form-step-title {
@@ -3421,7 +3446,6 @@ span.licence-detail-title {
 	width: 60px;
 	text-align: right;
 	padding: 6px 8px;
-	border: 1px solid #ddd;
 }
 
 
@@ -3728,6 +3752,8 @@ label.checkboxLabel.detail-area-field{
 .multipleTemplateInstance a.removeButton:hover, .multipleTemplateInstance a.addAboveButton:hover {
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
+  box-shadow: 0;
+  outline:none;
 }
 
 .collap-style {
