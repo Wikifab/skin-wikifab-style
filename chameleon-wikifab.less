@@ -42,6 +42,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	 box-shadow: 0;
 }
 
+input.hasDatepicker {
+	padding: 5px;
+    border-right: none;
+}
+
+button.ui-datepicker-trigger {
+	padding: 6px 9px;
+}
+
 .marketing-section-hp a:hover, .project-card a:hover {
     text-decoration: none;
 }
@@ -117,9 +126,10 @@ span.status-checkbox {
 	display:none;
 }
 
-span.dynatree-expanded a {
+span.dynatree-expanded a, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button,
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
 	font-family: "Lato","Helvetica Neue";
-    font-size: 14px;
+    font-size: 14.5px;
 }
 
 #mc_embed_signup {
@@ -1220,9 +1230,10 @@ h1.firstHeading {
 }
 
 #mw-content-text ul.tabbernav {
-    padding: 10px 0;
+    padding: 8px 0;
 	padding-left: 10px;
 	border-color: #ddd;
+	font:inherit;
 }
 
 #mw-content-text .tabber .tabbertab {
@@ -3716,10 +3727,11 @@ label.checkboxLabel.detail-area-field{
 
 .select2-container.pfComboBox .select2-choice {
 	height: 33px;
-    font-size: 1em;
+    font-size: 14.5px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     padding: 3px 0 0 8px;
     outline: none;
+    color: #30373b !important;
 }
 
 .select2-container.pfComboBox .select2-choice abbr {
