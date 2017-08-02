@@ -1030,6 +1030,22 @@ margin-bottom: 5px;
 	left: -3px;
 }
 
+#preftoc > li > a:focus {
+	outline: none;
+	background-color: transparent;
+}
+
+#preftoc > li > a:hover {
+	background: transparent !important;
+	border-color: #fff !important;
+	border-bottom-color: #dddddd !important;
+}
+
+#preftoc > li.selected > a:hover {
+	border-color: #dddddd !important;
+	border-bottom-color: #fff !important;
+}
+
 /*********************
  * Header (navbar)
  *********************/
@@ -4874,5 +4890,101 @@ a.create-group-btn:hover {
     text-decoration:none;
 }
 
+/*********************
+ * Preferences styles 
+ *********************/
 
+#preferences legend.mainLegend {
+	display:none;
+}
+
+#preferences legend {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#preferences fieldset > fieldset {
+	background: #f8f8f8;
+    padding: 7px 20px 10px;
+    border-radius: 3px;
+}
+
+#preferences fieldset {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    line-height: normal;
+    padding: 0;
+}
+
+#preferences > fieldset > fieldset td.mw-label {
+    width: 320px;
+}
+
+.ns-special .mw-body td.mw-label, .ns-special .mw-body td.mw-input {
+	width: calc(~"100% - 320px");
+	padding: 8px 4px;
+}
+
+#preferences .mw-htmlform-matrix td {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding: 4px 5px 4px 0;
+    min-width: 66px;
+	text-align: center;
+}
+
+#preferences .mw-htmlform-matrix td:first-child {
+	text-align:left;
+}
+
+#preferences select {
+    border: 1px solid #ddd;
+    background: #fff;
+    height: 36px;
+ }
+
+#preferences input {
+	border-radius: 3px;
+    padding: 8px;
+}
+
+ .mw-prefs-buttons input#prefcontrol {
+	font-size: 15px;
+    padding: 9px 15px;
+    border: none;
+    background-color: #52bad5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 10px;
+    color: #fff;
+    transition: all ease .25s;
+}
+
+#preferences #mw-htmlform-smw p {
+	padding: .75rem 1.25rem;
+    margin: 0.5em 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b;
+    line-height: 1.5em;
+}
+
+#preferences label {
+	    line-height: 1.7em;
+    padding-left: 5px;
+}
+
+ .mw-prefs-buttons input#prefcontrol:hover {
+	background:#2c9ab7;
+}
 
