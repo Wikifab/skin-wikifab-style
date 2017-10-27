@@ -1688,11 +1688,15 @@ h5.project-title span {
 	color:#30373b;
 }
 
-.project-blurb {
+.project-blurb, .project-card-content .mw-translate-fuzzy {
     height: 38px;
 	font-size: 13px;
     overflow: hidden;
 	color:#444;
+}
+
+.project-blurb:empty {
+	display:none;
 }
 
 .project-byline {
