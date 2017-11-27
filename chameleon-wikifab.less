@@ -1061,7 +1061,7 @@ margin-bottom: 5px;
     line-height: normal;
 }
 
-#pt-notifications-notice .mw-echo-ui-notificationBadgeButtonPopupWidget > .oo-ui-popupWidget > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-head > .oo-ui-labelElement-label {
+.mw-echo-ui-notificationBadgeButtonPopupWidget#pt-notifications-notice > .oo-ui-popupWidget > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-head > .oo-ui-labelElement-label {
 	padding: 0px;
 	padding-left: 0.3em;
 }
@@ -1070,12 +1070,16 @@ margin-bottom: 5px;
 	margin-top: 0.4em;
 }
 
-#pt-notifications-notice .mw-echo-ui-notificationBadgeButtonPopupWidget > .oo-ui-popupWidget > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-head .mw-echo-ui-notificationsWidget-markAllReadButton {
+.mw-echo-ui-notificationBadgeButtonPopupWidget#pt-notifications-notice > .oo-ui-popupWidget > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-head .mw-echo-ui-notificationsWidget-markAllReadButton {
 	margin: 0.8em 1em 0 0;
 }
 
 #pt-notifications-notice .mw-echo-ui-toggleReadCircleButtonWidget-circle {
 	background-color:#52bad5;
+}
+
+#pt-notifications-notice .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
+	background-color: #eaecf0;
 }
 
 .mw-echo-ui-notificationBadgeButtonPopupWidget-popup .oo-ui-buttonElement-frameless.oo-ui-labelElement > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
@@ -1126,11 +1130,11 @@ margin-bottom: 5px;
 }
 
 .navbar .oo-ui-popupWidget-anchored .oo-ui-popupWidget-anchor:before {
-	left: -25px;
+	left: -23px;
 }
 
 .navbar .oo-ui-popupWidget-anchored .oo-ui-popupWidget-anchor:after {
-	left: -24px;
+	left: -22px;
 }
 
 #preftoc > li > a:focus {
@@ -2356,6 +2360,10 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	transition: all ease .25s;
+}
+
+.multipleTemplateAdder {
+	margin-left:0px;
 }
 
 #fancybox-frame #mw-upload-form input.wpUpload:hover,
