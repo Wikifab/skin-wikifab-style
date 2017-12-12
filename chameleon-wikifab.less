@@ -488,6 +488,22 @@ span.dynatree-expanded a, .ui-widget input, .ui-widget select, .ui-widget textar
 	display:none;
 }
 
+.mw-special-Userlogin .wiki-nav + div {
+	max-width: 320px;
+    margin: auto;
+    text-align: center;
+}
+
+.mw-special-Userlogin .wiki-nav + div {
+	max-width: 320px;
+    margin: auto;
+    text-align: center;
+}
+
+.mw-special-Userlogin .wiki-nav + div + div.container {
+	width:100%;
+}
+
 .indisp-icon-nok, .indisp-icon-ok {
 	font-size:90%;
 	margin-right:10px;
@@ -2811,7 +2827,9 @@ span.licence-detail-title {
     color:#000;
 }
 
-.navbar-default .navbar-nav > li#pt-social-message-link > a:hover {
+.navbar-default .navbar-nav > li#pt-social-message-link > a:hover,
+.navbar-default .navbar-nav > li#pt-social-message-link > a:focus,
+.navbar-default .navbar-nav > li#pt-social-message-link > a:link {
     text-decoration: none;
 }
 
@@ -3785,8 +3803,18 @@ label.checkboxLabel.detail-area-field{
 	color:#aaa;
 }
 
-.mw-ui-button.mw-ui-progressive{
-	background:red;
+#userloginForm .mw-ui-button.mw-ui-progressive,
+#userloginForm .mw-ui-button.mw-ui-constructive {
+    background-color: #52bad5;
+    border: 1px solid #52bad5;
+}
+
+#userloginForm .mw-ui-button.mw-ui-progressive,
+#userloginForm .mw-ui-button.mw-ui-constructive,
+#userloginForm .mw-ui-button.mw-ui-progressive:focus,
+#userloginForm .mw-ui-button.mw-ui-constructive:focus {
+    background-color: #2c9ab7;
+    border: 1px solid #2c9ab7;
 }
 
 .errorMessage {
