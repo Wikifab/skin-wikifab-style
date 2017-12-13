@@ -1759,25 +1759,28 @@ h5.project-title span {
 }
 
 .tuto-details-author-box a.image {
-    margin: 0px 4px;
     border: 1px solid #ddd;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    width: 34px;
-    height: 34px;
-    display: inline-flex;
-    vertical-align: middle;
+    background: #fff;
+    width: 32px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 3px -10px;
+    isplay: inline-block;
 }
 
 .tuto-details-author-box a.image img {
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    max-width: 32px;
-    vertical-align: middle;
-    max-height: 32px;
     margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 .type-lowercase {
@@ -3838,8 +3841,8 @@ label.checkboxLabel.detail-area-field{
     border: 1px solid #52bad5;
 }
 
-#userloginForm .mw-ui-button.mw-ui-progressive,
-#userloginForm .mw-ui-button.mw-ui-constructive,
+#userloginForm .mw-ui-button.mw-ui-progressive:hover,
+#userloginForm .mw-ui-button.mw-ui-constructive:hover,
 #userloginForm .mw-ui-button.mw-ui-progressive:focus,
 #userloginForm .mw-ui-button.mw-ui-constructive:focus {
     background-color: #2c9ab7;
@@ -3960,11 +3963,13 @@ label.checkboxLabel.detail-area-field{
 }
 
 .project-thumbnail img {
-    width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
-    min-height: 191px;
+    min-width: 264px;
+    min-height: 193px;
+    max-width: 350px;
+    max-height: 260px;
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
@@ -4091,6 +4096,7 @@ label.checkboxLabel.detail-area-field{
 @media (max-width: 1200px) {
 .project-thumbnail img {
     min-height: 154px;
+        width: 100%;
 }
 
 .search-filters-section.wfexplore-proposedTags .label-default {
@@ -4120,6 +4126,7 @@ label.checkboxLabel.detail-area-field{
 @media (max-width: 992px) {
 .project-thumbnail img {
     min-height: 237px;
+    max-height: 350px;
 }
 
 .step-instructions h3 {
@@ -4208,7 +4215,7 @@ h1.firstHeading {
 }
 
 .project-thumbnail img {
-    min-height: 207px;
+    min-height: 190px;
 }
 
 #profileWf .project-card .col-xs-5, .searchresults .project-card .col-xs-5 {
@@ -4220,11 +4227,11 @@ h1.firstHeading {
 }
 
 .project-thumbnail {
-    height: 207px;
+    height: 190px;
     border-radius: 0px;
 }
 
-.project-thumbnail img {
+.project-thumbnail {
 	-webkit-border-top-left-radius: 3px;
 	-webkit-border-bottom-left-radius: 3px;
 	-moz-border-radius-topleft: 3px;
