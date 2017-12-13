@@ -358,9 +358,32 @@ span.dynatree-expanded a, .ui-widget input, .ui-widget select, .ui-widget textar
 }
 
 .attach-link-table {
-	border-top:1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	background-color: #f9f9f9;
-	padding:10px;
+	padding: 10px;
+	float: left;
+	width: 100%;
+}
+
+.attach-link-table:first-child {
+	border-top: 1px solid #ddd;
+}
+
+.attach-link-table .fa {
+    width: 30px;
+    float: left;
+    text-align: center;
+    padding-top: 4px;
+    color: #666;
+}
+
+.attach-link-table .a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: baseline;
+    float: left;
+    width: calc(100% - 30px);
 }
 
 .file-subtitle {
@@ -1320,7 +1343,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 }
 
 #mw-content-text ul.tabbernav li a {
-	margin-left: 10px;
+	margin-left: 0px;
     padding: 10px 14px;
 	border: none;
 	border-bottom: 1px solid #ddd;
@@ -1340,13 +1363,13 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 
 #mw-content-text ul.tabbernav {
     padding: 8px 0;
-	padding-left: 10px;
+	padding-left: 0px;
 	border-color: #ddd;
 	font:inherit;
 }
 
 #mw-content-text .tabber .tabbertab {
-	padding:15px 25px;
+	padding: 15px 15px;
 	border-color: #ddd;
 	float: left;
     width: 100%;
@@ -4732,7 +4755,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
 	    margin-left: 5px;
 	    padding: 13px 7px;
-	    font-size: 12px;
+	    font-size: 14px;
 	}
 
 	.WFfilter-property .nav > li > a {
