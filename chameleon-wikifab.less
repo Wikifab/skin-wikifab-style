@@ -1634,7 +1634,7 @@ span.project-card-separator {
     position: relative;
 }
 .project-card-author-info {
-	max-width:71%;
+	width: calc(~"100% - 66px");
 	padding-left:3%;
 	padding-right:3%;
 	padding-top:23px;
@@ -2689,7 +2689,8 @@ h2.contribuer-subtitle{
 
 .tuto-step-image .item img, .tuto-step-image .item video, .tuto-main-image img, .tuto-main-image video {
 	border: 1px solid #ddd;
-	max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .tuto-step-image .carousel-indicators video {
@@ -4140,6 +4141,10 @@ label.checkboxLabel.detail-area-field{
     min-width: 345px;
 }
 
+.project-card-author-info {
+    width: calc(100% - 70px);
+}
+
 .nav {
 	display:none;
 }
@@ -4185,6 +4190,11 @@ label.checkboxLabel.detail-area-field{
     width: 100%;
     float: left;
 }
+
+.project-card-author-info {
+    width: calc(100% - 87px);
+}
+
 
 .nav {
 	display:block;
@@ -4351,6 +4361,10 @@ h1.firstHeading {
 @media only screen and (max-width: 550px) {
 	.project-byline, .project-location {
 		display:none;
+	}
+
+	.project-card-author-info {
+	    width: calc(100% - 57px);
 	}
 
 	.contentHeader .btn-group.dropdownButton-addtogroup {
