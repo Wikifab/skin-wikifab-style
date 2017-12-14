@@ -377,7 +377,7 @@ span.dynatree-expanded a, .ui-widget input, .ui-widget select, .ui-widget textar
     color: #666;
 }
 
-.attach-link-table .a {
+.attach-link-table a {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -1768,7 +1768,6 @@ h5.project-title span {
     overflow: hidden;
     position: relative;
     margin: 0 3px -11px;
-    isplay: inline-block;
 }
 
 .tuto-details-author-box a.image img {
@@ -2792,7 +2791,8 @@ span.licence-detail-title {
     font-size: 13.5px;
     color: #757575;
     margin-bottom: 22px;
-	text-align:center;
+	text-align: center;
+	line-height: 2em;
 }
 
 .display-none {
@@ -2948,7 +2948,7 @@ span.licence-detail-title {
     background: transparent;
     font-weight: normal;
     float: left;
-    width: 145px;
+    width: 130px;
 }
 
 .tuto-items-container .mw-pt-languages-list {
@@ -4350,6 +4350,10 @@ h1.firstHeading {
 
 @media only screen and (max-width: 550px) {
 	.project-byline, .project-location {
+		display:none;
+	}
+
+	.contentHeader .btn-group.dropdownButton-addtogroup {
 		display:none;
 	}
 	
