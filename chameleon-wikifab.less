@@ -1469,6 +1469,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 
 .project-card .project-thumbnail {
 	position:relative;
+	z-index: 100;
 }
 
 .project-card-lang-code {
@@ -1675,6 +1676,7 @@ span.project-card-separator {
     min-height: 52px;
     max-width: 52px;
     max-height: 52px;
+    z-index: 1;
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
@@ -4142,7 +4144,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .project-card-author-info {
-    width: calc(100% - 70px);
+    width: calc(~"100% - 70px");
 }
 
 .nav {
@@ -4192,7 +4194,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .project-card-author-info {
-    width: calc(100% - 87px);
+    width: calc(~"100% - 87px");
 }
 
 
@@ -4364,7 +4366,7 @@ h1.firstHeading {
 	}
 
 	.project-card-author-info {
-	    width: calc(100% - 57px);
+	    width: calc(~"100% - 57px");
 	}
 
 	.contentHeader .btn-group.dropdownButton-addtogroup {
