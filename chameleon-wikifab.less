@@ -490,8 +490,22 @@ span.dynatree-expanded a, .ui-widget input, .ui-widget select, .ui-widget textar
 }
 
 .mw-special-UploadAvatar .wiki-nav, .mw-special-UpdateProfile .wiki-nav, .page-Special_UserBoard .wiki-nav, .mw-special-UserBoard .wiki-nav,
-.mw-special-Preferences .wiki-nav, .mw-special-Userlogout .wiki-nav, .mw-special-WfSearch .wiki-nav, #mw-prefsection-rendering-skin, #preftab-smw, .mw-special-Recentchanges .wiki-nav, .mw-special-InviteSignup .wiki-nav {
+.mw-special-Preferences .wiki-nav, .mw-special-Userlogout .wiki-nav, .mw-special-WfSearch .wiki-nav, #mw-prefsection-rendering-skin, #preftab-smw, .mw-special-Recentchanges .wiki-nav, .mw-special-InviteSignup .wiki-nav, .mw-special-Search .wiki-nav {
 	display:none;
+}
+
+#mw-search-top-table .oo-ui-textInputWidget.oo-ui-iconElement .oo-ui-iconElement-icon {
+	left: 0.3em;
+    max-height: initial;
+}
+
+#mw-search-top-table .oo-ui-actionFieldLayout-input {
+    padding-right: 0px;
+}
+
+#mw-search-top-table .oo-ui-textInputWidget.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {
+    margin-right: 1.2em;
+    max-height: initial;
 }
 
 .mw-special-UploadAvatar .profile-info img {
@@ -2493,7 +2507,7 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 }
 
 .sitedir-ltr #mw-search-top-table #searchText, .sitedir-ltr #mw-search-top-table #powerSearchText{
-	padding: 8px;
+	padding: 8px 8px 8px 0;
 	margin-right: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
