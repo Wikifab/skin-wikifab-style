@@ -3388,6 +3388,9 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 .rootpage-Wikifab_Creator_handbook .contentHeader { display:none; }
 .rootpage-Wikifab_Creator_handbook .mw-body { margin-top:0px }
 .rootpage-Wikifab_Creator_handbook .navbar { margin-bottom:0px; }
+.rootpage-Wikifab_About .contentHeader { display:none; }
+.rootpage-Wikifab_About .mw-body { margin-top:0px }
+.rootpage-Wikifab_About .navbar { margin-bottom:0px; }
 .rootpage-Wikifab_Developers .contentHeader { display:none; }
 .rootpage-Wikifab_Developers .mw-body { margin-top:0px }
 .rootpage-Wikifab_Developers .navbar { margin-bottom:0px;}
@@ -3440,8 +3443,9 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 .rootpage-Wikifab_Community .col-lg-12,
 .rootpage-Wikifab_Best_practices .col-lg-12,
 .rootpage-Wikifab_Get_started .col-lg-12,
-.rootpage-Wikifab_HelpCenter .col-lg-12,
+.rootpage-Wikifab_Help .col-lg-12,
 .rootpage-Wikifab_Creator_handbook .col-lg-12,
+.rootpage-Wikifab_About .col-lg-12,
 .page-Wikifab_Developers .col-lg-12,
 .page-Form_Tutorial .col-lg-12,
 .mw-special-WfExplore .col-lg-12,
@@ -3468,8 +3472,9 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
     cursor: pointer;
 }
 
-body.rootpage-Wikifab_HelpCenter #mw-content-text .mw-pt-translate-header,
+body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header,
+body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
@@ -3485,16 +3490,18 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     transition: 2s;
 }
 
-body.rootpage-Wikifab_HelpCenter #mw-content-text .mw-pt-translate-header + hr,
+body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header + hr,
+body.rootpage-About #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header + hr {
 	display:none;
 }
 
-body.rootpage-Wikifab_HelpCenter #mw-content-text .mw-pt-translate-header:hover,
+body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header:hover,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header:hover,
+body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header:hover,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header:hover,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header:hover,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header:hover {
@@ -3502,8 +3509,9 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header:hover {
     box-shadow: 0px 0px 10px;
 }
 
-body.rootpage-Wikifab_HelpCenter #mw-content-text .mw-pt-translate-header a,
+body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header a,
+ody.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header a {
@@ -3514,8 +3522,9 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header a {
     font-size: 17px;
 }
 
-body.rootpage-Wikifab_HelpCenter #mw-content-text .mw-pt-translate-header .translation-intro-text a,
+body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header .translation-intro-text a,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header .translation-intro-text a,
+body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header .translation-intro-text a,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header .translation-intro-text a,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header .translation-intro-text a,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header .translation-intro-text a {
@@ -3526,8 +3535,9 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header .transl
     font-size: initial;
 }
 
-body.rootpage-Wikifab_HelpCenter #mw-content-text .mw-pt-translate-header .translation-intro-text,
+body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header .translation-intro-text,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header .translation-intro-text,
+body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header .translation-intro-text,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header .translation-intro-text,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header .translation-intro-text,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header .translation-intro-text {
@@ -3537,16 +3547,18 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header .transl
     padding: 10px 930px 10px 60px;
 }
 
-body.rootpage-Wikifab_HelpCenter div.wiki-nav + div > div.container,
+body.rootpage-Wikifab_Help div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container,
+body.rootpage-Wikifab_About div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_Community div.wiki-nav + div > div.container {
 	width:100%
 }
 
-body.rootpage-Wikifab_HelpCenter div.wiki-nav + div > div.container > div.siteNoticeArea,
+body.rootpage-Wikifab_Help div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container > div.siteNoticeArea,
+body.rootpage-Wikifab_About div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_Community div.wiki-nav + div > div.container > div.siteNoticeArea {
