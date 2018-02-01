@@ -2065,37 +2065,44 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     margin: 10px auto;
 }
 
-.dev-section, .about-section {
+.dev-section,
+.about-section,
+.handbook-section {
 	background-image :url('images/bg-dev.jpg');
 	padding:75px 20px 20px;
 	text-align:center;
 	margin-bottom:70px;
     background-position: bottom;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about-section {
     background-image :url('images/bg-splash.jpg');
 }
 
-.dev-section h1, .about-section h1{
+.handbook-section {
+    background-image :url('images/bg-wall.jpg');
+}
+
+.dev-section h1,
+.about-section h1,
+.handbook-section h1 {
     font-size: 44px;
     margin-bottom: 30px;
 }
 
-.dev-vision p, .about-section p {
-    font-size: 15px;
+.dev-vision p,
+.about-section p,
+.handbook-section p {
     line-height: 24px;
+    font-size:18px;
+    margin-bottom:60px;
 }
 
 .dev-vision h2 {
     margin-top: 50px;
     font-size: 34px;
-}
-
-.dev-subtitle {
-	font-size:18px;
-	margin-bottom:60px;
 }
 
 .aide-section {
@@ -3496,7 +3503,7 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 
 body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header + hr,
-body.rootpage-About #mw-content-text .mw-pt-translate-header + hr,
+body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header + hr,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header + hr {
@@ -3515,7 +3522,7 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header:hover {
 
 body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header a,
-ody.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header a,
+body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header a,
 body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header a {

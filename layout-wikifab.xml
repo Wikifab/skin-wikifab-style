@@ -41,7 +41,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<component class="wiki-nav">
 		<!--  tool bar for other page than Home page-->
 		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
-			UpdateProfile/personal,WfExplore,Creator_handbook,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Get_started,Best_practices"></modification>
+			UpdateProfile/personal,WfExplore,Creator_handbook,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,About,mw-special-WfSearch,Get_started,Best_practices"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -53,7 +53,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<component class="wiki-nav">
 		<!--  tool bar for Home page visible only by administrators -->
 		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
-			UpdateProfile/personal,Creator_handbook,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Get_started,Best_practices"></modification>
+			UpdateProfile/personal,Creator_handbook,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,About,mw-special-WfSearch,Get_started,Best_practices"></modification>
 		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
 		<grid>
 			<row>
@@ -65,7 +65,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 
 	<component>
-		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Creator_handbook,Get_started,Best_practices"></modification>
+		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,About,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Creator_handbook,Get_started,Best_practices"></modification>
 			<modification type="HideFor" namespace="NS_GROUP"></modification>
 		<grid>
 			<row class="siteNoticeArea">
@@ -84,7 +84,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 
 	<component>
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,Creator_handbook,mw-special-WfSearch,Get_started,Best_practices"></modification>
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,About,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,Creator_handbook,mw-special-WfSearch,Get_started,Best_practices"></modification>
 			<cell>
 				<cell span="12">
 					<component type="MainContent"></component>
