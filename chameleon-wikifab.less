@@ -2017,15 +2017,6 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     margin-right: 5px;
 }
 
-.help-subtitle {
-    max-width: 800px;
-    margin: auto;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 60px;
-    text-align: center;
-}
-
 .page-Early_access .beta-subtitle {
 	max-width: 640px;
 }
@@ -2047,6 +2038,14 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     background-repeat: no-repeat;
 }
 
+.about-section {
+    background-image :url('images/bg-splash.jpg');
+}
+
+.handbook-section {
+    background-image :url('images/bg-wall.jpg');
+}
+
 .indispensable-section {
     background-image: url('images/bg-indispensable-white.png');
     padding: 75px 20px 20px;
@@ -2064,19 +2063,21 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     margin-bottom:70px;  
 }
 
-.about-section {
-    background-image :url('images/bg-splash.jpg');
-}
-
-.handbook-section {
-    background-image :url('images/bg-wall.jpg');
+.aide-section {
+    background-image :url('images/bg-aide.jpg');
+    padding: 75px 20px 20px;
+    text-align: center;
+    margin-bottom: 70px;
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 .dev-section h1,
 .about-section h1,
 .handbook-section h1,
 .contribute-section h1,
-.indispensable-section h1 {
+.indispensable-section h1,
+.aide-section h1 {
     font-size: 44px;
     margin-bottom: 30px;
 }
@@ -2085,10 +2086,13 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 .about-section p,
 .handbook-section p,
 .contribute-section p,
-.indispensable-section p {
+.indispensable-section p,
+.aide-section p {
     line-height: 24px;
     font-size:18px;
     margin-bottom:60px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .dev-vision h2 {
@@ -2096,36 +2100,8 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     font-size: 34px;
 }
 
-.aide-section {
-    padding: 75px 20px 20px;
-    text-align: center;
-    margin-bottom: 70px;
-    background-position: bottom;
-    background-repeat: repeat-x;
-}
-
-.hello-world-section {
-	background-image :url('images/bg-hello-world.jpg');
-	margin-bottom: 70px;
-	padding: 40px 0px 110px 0px;
-	background-position: bottom;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-}
-
-.beta-section {
-	background-image :url('images/bg-beta.jpg');
-	margin-bottom: 0px;
-	padding: 0px 0px 160px 0px;
-	text-align:center;
-	background-position: bottom;
-}
-
 .hello-world-section h2{
 	text-align:left;
-}
-
-.aide-section-subtitle {
-	font-size:17px;
 }
 
 .indispensable-call-box {
@@ -2133,10 +2109,6 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     padding: 10px 15px;
     margin: 30px 40px;
     background-color: rgba(0,0,0,.1);
-}
-
-.aide-section h2 {
-	font-size:36px;
 }
 
 .help-content h4 {
