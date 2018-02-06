@@ -2025,35 +2025,13 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     margin-bottom: 40px;
 }
 
-.contribute-title, .beta-title {
-    font-size: 44px;
-    margin-top: 70px;
-    text-align: center;
-}
-
-.beta-menu {
-    text-align: right;
-    margin-top: 20px;
-}
-
-.beta-menu li {
-    display: inline;
-    padding-left: 35px;
-}
-
-.beta-title {
-	margin-bottom: 30px;
-}
-
-.contribute-subtitle, .help-subtitle, .beta-subtitle {
-    margin-bottom: 40px;
-    font-size: 16px;
-    text-align: center;
-}
-
 .help-subtitle {
-	max-width: 785px;
+    max-width: 800px;
     margin: auto;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 .page-Early_access .beta-subtitle {
@@ -2077,6 +2055,15 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     background-repeat: no-repeat;
 }
 
+.contribute-section {
+    background-image :url('images/bg-dev.jpg');
+    background-repeat: x-repeat;
+    background-position:bottom;
+    padding:75px 20px 20px;
+    text-align:center;
+    margin-bottom:70px;  
+}
+
 .about-section {
     background-image :url('images/bg-splash.jpg');
 }
@@ -2087,14 +2074,16 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 
 .dev-section h1,
 .about-section h1,
-.handbook-section h1 {
+.handbook-section h1,
+.contribute-section h1 {
     font-size: 44px;
     margin-bottom: 30px;
 }
 
 .dev-vision p,
 .about-section p,
-.handbook-section p {
+.handbook-section p,
+.contribute-section p {
     line-height: 24px;
     font-size:18px;
     margin-bottom:60px;
@@ -2106,10 +2095,11 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 }
 
 .aide-section {
-	background-image :url('images/bg-aide.jpg');
-	margin-bottom: 0px;
-	padding: 0px 0px 110px 0px;
-	background-position: bottom;
+    padding: 75px 20px 20px;
+    text-align: center;
+    margin-bottom: 70px;
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 .hello-world-section {
@@ -3346,13 +3336,6 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
     background-position: bottom;
     padding-bottom: 60px;
     margin-bottom: 20px;
-}
-
-.main-contribute{
-	background-image:url('images/bg-elec-wf.jpg');
-	background-repeat: x-repeat;
-	background-position:bottom;
-	padding-bottom:50px;	
 }
 
 .tutorial-page{
@@ -4797,10 +4780,9 @@ p.machines-form-first, p.machines-form {
 .group-form-page {
 	background-color:#93a5aa;
 	background-image:url('images/group-bg.jpg');
-	background-position:left bottom ;
-	height:600px;
-    background-repeat: repeat-x;
-	background-size: 100%;
+    background-position: center;
+    height: 600px;
+    background-size: cover;
 }
 
 .group-section-0 {
