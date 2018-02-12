@@ -298,6 +298,7 @@ span.status-checkbox {
     margin-top: 100px;
     border-top: 1px solid #ddd;
     padding: 50px 0;
+    text-align: center;
 }
 
 .contentHeader .btn-group.dropdownButton-addtogroup button {
@@ -325,14 +326,19 @@ span.status-checkbox {
     margin-right: 8px;
 }
 
-#mc_embed_signup input[type="submit"]{
-    background-color: #2b6e87;
-    border-color: #2b6e87;
+#mc_embed_signup input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: normal;
+    border: none;
+    transition: 0.25s;
+    background-color: #52bad5;
 }
 
 #mc_embed_signup input[type="submit"]:hover{
-    background-color: #235a6e;
-    border-color: #235a6e;
+    background-color: #2c9ab7;
     color:#fff;
 }
 
@@ -344,12 +350,13 @@ span.status-checkbox {
     min-width: 250px;
     color: #444;
     padding: 10px 12px;
+    height: 44px;
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -358,7 +365,8 @@ span.status-checkbox {
 
 #mc_embed_signup fieldset {
     background-image:none;
-    padding: 10px 10px 10px 10px;
+    padding: 0px;
+    margin-left: calc(~"50% - 182px");
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -372,10 +380,6 @@ span.status-checkbox {
 
 #mc_embed_signup .mc-field-group {
     margin-right:0px;
-}
-
-#mc_embed_signup input[type="submit"] {
-    width:100%;
 }
 
 #mc_embed_signup .mc-field-group label{
