@@ -1953,16 +1953,6 @@ h5.project-title span {
 	text-decoration:none;
 }
 
-.group-explore-hp {
-	background:#f1f1f1;	
-	background-image: url('images/group-explore-bg.jpg');
-	background-position: bottom center;
-	padding:40px 10px;
-	text-align:center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
 .marketing-section-hp-logged {
 	text-align:left;
 }
@@ -2030,7 +2020,8 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 .about-section,
 .indispensable-section,
 .contribute-section,
-.aide-section {
+.aide-section,
+.group-explore-hp {
 	padding:75px 20px 75px;
 	text-align:center;
 	margin-bottom:40px;
@@ -2045,9 +2036,18 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 
 .dev-section,
 .about-section,
-.handbook-section {
+.handbook-section,
+.group-explore-hp {
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.group-explore-hp {
+    background-image: url('images/group-explore-bg.jpg');
+}
+
+body.page-Wikifab_AboutGroup .group-explore-hp {
+    background-image: url('images/bg-explore.jpg');
 }
 
 .dev-section {
@@ -2081,7 +2081,8 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 .handbook-section h1,
 .contribute-section h1,
 .indispensable-section h1,
-.aide-section h1 {
+.aide-section h1,
+.group-explore-hp h1 {
     font-size: 44px;
     margin-bottom: 30px;
 }
@@ -2091,7 +2092,8 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 .handbook-section p,
 .contribute-section p,
 .indispensable-section p,
-.aide-section p {
+.aide-section p,
+..group-explore-hp p {
     line-height: 29px;
     font-size: 18px;
     max-width: 800px;
@@ -2173,7 +2175,7 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 	margin-right: 10px;
 }
 
-.marketing-section-hp h1, .group-explore-hp h1 {
+.marketing-section-hp h1 {
 	font-size:35px;
 	margin-top: 4px;
 }
@@ -2248,7 +2250,7 @@ body.page-Wikifab_Creator_handbook {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	margin-top:25px;
+	margin-top: 25px;
 	color:#fff;
 	transition: all ease .25s;
 }
@@ -2309,6 +2311,10 @@ body.page-Wikifab_Creator_handbook {
 .sign-up-developers {
     font-size: 17px;
     padding: 12px 23px;
+}
+
+.sign-up-developers:focus {
+    text-decoration:none;
 }
 
 .sign-up-developers a:link, .sign-up-developers a.external {
@@ -4331,7 +4337,8 @@ h1.firstHeading {
 	display:none;
 }
 
-.marketing-section-hp h1, .group-explore-hp h1 {
+.marketing-section-hp h1,
+.group-explore-hp h1 {
     font-size: 26px;
 }
 
