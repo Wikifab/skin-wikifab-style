@@ -47,7 +47,8 @@ nav.navbar-default {
     background: rgba(255,255,255,.2);
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
     color: rgba(255,255,255,1);
 }
 
@@ -3335,11 +3336,15 @@ span.licence-detail-title {
 }
 
 .skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link .glyphicon-user:before,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link .glyphicon-user:before,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-user:before,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited .glyphicon-user:before {
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-user:before {
 	color: rgba(255,255,255,.4);
 }
+
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link .glyphicon-user:before,
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited .glyphicon-user:before {
+    color: #30373b;
+}
+
 
 .mw-input #mw-createaccount-join {
 	color: #2c9ab7;	
@@ -4575,6 +4580,10 @@ h1.firstHeading {
 
 .navbar-personaltoolwidgets #pt-notifications-alert {
 	display:none;
+}
+
+.skin-chameleon .navbar-default .navbar-collapse, .skin-chameleon .navbar-default .navbar-form {
+    border: none;
 }
 
 .navbar-personaltoolwidgets #pt-notifications-notice .mw-echo-notifications-badge::before {
