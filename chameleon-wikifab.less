@@ -23,12 +23,27 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
 	outline-offset: 0px;
 }
 
+nav.navbar-default {
+    background-color: #30373b;
+    border-bottom: 0px;
+}
+
 .navbar #mw-searchButton {
 	height: 34px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #666;
+    color: rgba(255,255,255,.4);
+}
+
+.skin-chameleon .navbar-tools > li > a {
+    border-radius: 0px;
+    border: 0px;
+}
+
+.navbar ul.nav > li:hover {
+    background: rgba(255,255,255,.2);
+    color: rgba(255,255,255,1);
 }
 
 input, .input, textarea, .textarea, input.mw-ui-input, select {
@@ -3537,8 +3552,6 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 	padding-left:0px;
 }
 
-.navbar ul.nav > li:hover { background-color:#fff; }
-
 .feedback {
 	display: block;
     position: fixed;
@@ -4531,12 +4544,11 @@ h1.firstHeading {
 **************************/
 
 .navbar-personaltoolwidgets.navbar-personaltools {
-    border-right: 0px solid #e7e7e7;
-	margin:0px 0px 0px;
-	padding:10px 0px 0px 0px;
+	margin: 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 }
 .navbar-personaltoolwidgets li {
-	margin:0px 0px;
+	margin: 0px 0px;
 	list-style-type:none;
 	display:inline-block;
 }
@@ -4545,12 +4557,11 @@ h1.firstHeading {
     font-size: 15px;
 }
 .navbar-right-aligned .navbar-personaltools.navbar-personaltoolwidgets {
-    border-left: 1px solid #e7e7e7;
     height: 50px;
 }
 
 .navbar-right-aligned .navbar-personaltools.navbar-personaltoolwidgets:hover {
-	background-color:#eeeeee;
+	background: rgba(255,255,255,.2);
 }
 
 .navbar-personaltoolwidgets #pt-notifications-alert {
