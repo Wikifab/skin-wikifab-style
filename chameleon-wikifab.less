@@ -23,12 +23,36 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
 	outline-offset: 0px;
 }
 
+nav.navbar-default {
+    background-color: #30373b;
+    border-bottom: 0px;
+}
+
 .navbar #mw-searchButton {
 	height: 34px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #666;
+    color: rgba(255,255,255,.4);
+}
+
+.navbar-right-aligned .navbar-tools:last-child li:last-child > a {
+    border-radius: 0px;
+    border: 0px;
+}
+
+.navbar ul.nav > li:hover,
+.skin-chameleon .navbar-tools > li > a:hover,
+.skin-chameleon .navbar-tools > li > a:focus {
+    background: rgba(255,255,255,.2);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: rgba(255,255,255,1);
+}
+
+.navbar-personaltoolwidgets > #pt-notifications-notice > .mw-echo-notifications-badge::before:hover {
+    color: rgba(255,255,255,1);
 }
 
 input, .input, textarea, .textarea, input.mw-ui-input, select {
@@ -47,7 +71,7 @@ input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	 outline:none;
-	 box-shadow: 0;
+	 box-shadow: 0px;
 }
 
 input.hasDatepicker {
@@ -288,64 +312,104 @@ span.status-checkbox {
 
 .grid.ext-translate-container .row.tux-messagetable-header.floating {
 	border-bottom: 1px solid #bbb;
-    box-shadow: 0 3px 3px -3px rgba( 0,0,0,0.5
+    box-shadow: 0 3px 3px -3px rgba( 0,0,0,0.5);
+}
+
+.wikifab-newsletter {
+    float: left;
+    width: 100%;
+    background: #fff;
+    margin-top: 100px;
+    border-top: 1px solid #ddd;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.wikifab-newsletter-subtitle {
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.contentHeader .btn-group.dropdownButton-addtogroup button {
+	margin-left: 5px;
+}
+
+.hello-world-img img {
+	border:1px solid #ccc;
+    width: 100%;
+    height: auto;
 }
 
 #mc_embed_signup {
-	margin-bottom: -50px;
     float: left;
     width: 100%;
 }
 
 #mc_embed_signup fieldset {
-    padding: 6px 30px 6px 70px;
-    margin: 80px 0px 0px;
-	background:#2c9ab7;
-	color:#fff;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-image:url('images/newsletter-bg.png');
-	background-repeat:no-repeat;
-    background-position-x: 14px;
-    background-position-y: 13px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #mc_embed_signup .mc-field-group {
     float: left;
     margin-right: 8px;
 }
-#mc_embed_signup input[type="submit"]{
-	background-color: #2b6e87;
-	border-color: #2b6e87;
+
+#mc_embed_signup input[type="submit"] {
+    font-size: 16px;
+    padding: 11px 15px;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: normal;
+    border: none;
+    transition: 0.25s;
+    background-color: #52bad5;
+    float: left;
 }
 
 #mc_embed_signup input[type="submit"]:hover{
-	background-color: #235a6e;
-	border-color: #235a6e;
-	color:#fff;
+    background-color: #2c9ab7;
+    color:#fff;
 }
 
 #mc_embed_signup input[type="submit"]:focus {
-	outline: none;
+    outline: none;
 }
 
 #mc_embed_signup .mc-field-group input {
-    height: 34px;
-    min-width: 205px;
-	color:#444;
-	padding: 8px;
-	background-color: #ffffff;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-    border: 1px solid #ccc;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    min-width: 250px;
+    color: #444;
+    padding: 10px 12px;
+    height: 44px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
 }
 
-.contentHeader .btn-group.dropdownButton-addtogroup button {
-	margin-left: 5px;
+#mc_embed_signup .mc-field-group label {
+    font-size: 14px;
+}
+
+#mc_embed_signup fieldset {
+    background-image:none;
+    padding: 0px;
+    margin-left: calc(~"50% - 182px");
+}
+
+#mc_embed_signup .mc-field-group label {
+    margin-bottom:10px;
+    text-align:center;
+}
+
+#mc_embed_signup .mc-field-group input {
+    width:100%;
+}
+
+#mc_embed_signup .mc-field-group {
+    margin-right:0px;
 }
 
 #mc_embed_signup .mc-field-group label{
@@ -353,13 +417,7 @@ span.status-checkbox {
     vertical-align: middle;
     font-size: 16px;
     margin-right: 10px;
-	font-weight:normal;
-}
-
-.hello-world-img img {
-	border:1px solid #ccc;
-    width: 100%;
-    height: auto;
+    font-weight:normal;
 }
 
 #mw-content-text .user-page-message-form textarea {
@@ -525,8 +583,20 @@ span.status-checkbox {
 	margin-top:12px;
 }
 
-.mw-special-UploadAvatar .wiki-nav, .mw-special-UpdateProfile .wiki-nav, .page-Special_UserBoard .wiki-nav, .mw-special-UserBoard .wiki-nav,
-.mw-special-Preferences .wiki-nav, .mw-special-Userlogout .wiki-nav, .mw-special-WfSearch .wiki-nav, #mw-prefsection-rendering-skin, #preftab-smw, .mw-special-Recentchanges .wiki-nav, .mw-special-InviteSignup .wiki-nav, .mw-special-Search .wiki-nav {
+.mw-special-UploadAvatar .wiki-nav,
+.mw-special-UpdateProfile .wiki-nav,
+.page-Special_UserBoard .wiki-nav,
+.mw-special-UserBoard .wiki-nav,
+.mw-special-Preferences .wiki-nav,
+.mw-special-Userlogout .wiki-nav,
+.mw-special-WfSearch .wiki-nav,
+#mw-prefsection-rendering-skin,
+#preftab-smw,
+.mw-special-Recentchanges .wiki-nav,
+.mw-special-InviteSignup .wiki-nav,
+body[class^='page-Wikifab_Help_'] .wiki-nav,
+body[class*='page-Wikifab_Help_'] .wiki-nav,
+.mw-special-Search .wiki-nav {
 	display:none;
 }
 
@@ -1111,6 +1181,10 @@ margin-bottom: 5px;
 	margin-top: 20px;
 }
 
+.main-contribute {
+    padding-bottom: 80px;
+}
+
 #p-search{
 	float:left;
 	border:none;
@@ -1153,6 +1227,10 @@ margin-bottom: 5px;
 
 .mw-special-Notifications .mw-echo-ui-notificationsInboxWidget, .mw-special-Notifications .mw-echo-ui-datedSubGroupListWidget {
 	width: 100%;
+}
+
+.mw-special-Notifications .mw-echo-ui-notificationBadgeButtonPopupWidget > .oo-ui-popupWidget {
+    z-index:1000;
 }
 
 .mw-special-Notifications .mw-echo-ui-notificationBadgeButtonPopupWidget > .oo-ui-popupWidget > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-footer .mw-echo-ui-notificationBadgeButtonPopupWidget-footer-buttons .oo-ui-buttonElement > .oo-ui-buttonElement-button {
@@ -1953,16 +2031,6 @@ h5.project-title span {
 	text-decoration:none;
 }
 
-.group-explore-hp {
-	background:#f1f1f1;	
-	background-image: url('images/group-explore-bg.jpg');
-	background-position: bottom center;
-	padding:40px 10px;
-	text-align:center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
 .marketing-section-hp-logged {
 	text-align:left;
 }
@@ -2017,45 +2085,6 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     margin-right: 5px;
 }
 
-.indispensable-section {
-    background-image: url('images/bg-indispensable-white.png');
-    background-position: bottom;
-    padding: 90px 20px 65px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.contribute-title, .beta-title {
-    font-size: 44px;
-    margin-top: 70px;
-    text-align: center;
-}
-
-.beta-menu {
-    text-align: right;
-    margin-top: 20px;
-}
-
-.beta-menu li {
-    display: inline;
-    padding-left: 35px;
-}
-
-.beta-title {
-	margin-bottom: 30px;
-}
-
-.contribute-subtitle, .help-subtitle, .beta-subtitle {
-    margin-bottom: 40px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.help-subtitle {
-	max-width: 785px;
-    margin: auto;
-}
-
 .page-Early_access .beta-subtitle {
 	max-width: 640px;
 }
@@ -2067,14 +2096,41 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 
 .dev-section,
 .about-section,
-.handbook-section {
-	background-image :url('images/bg-dev.jpg');
-	padding:75px 20px 20px;
+.indispensable-section,
+.contribute-section,
+.aide-section,
+.group-explore-hp {
+	padding:75px 20px 75px;
 	text-align:center;
-	margin-bottom:70px;
+	margin-bottom:40px;
     background-position: bottom;
+}
+
+.handbook-section {
+    padding:75px 20px 75px;
+    margin-bottom: 0px;
+    background-position: bottom;
+}
+
+.dev-section,
+.about-section,
+.handbook-section,
+.group-explore-hp {
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.group-explore-hp {
+    background-image: url('images/group-explore-bg.jpg');
+    margin-bottom: 0px;
+}
+
+body.page-Wikifab_AboutGroups .group-explore-hp {
+    background-image: url('images/bg-explore.jpg');
+}
+
+.dev-section {
+    background-image :url('images/bg-dev.jpg');
 }
 
 .about-section {
@@ -2082,58 +2138,55 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 }
 
 .handbook-section {
-    background-image :url('images/bg-wall.jpg');
+    background-image :url('images/bg-handbook.jpg');
+}
+
+.indispensable-section {
+    background-image: url('images/bg-indispensable-white.png');
+}
+
+.contribute-section {
+    background-image :url('images/bg-elec-wf.jpg');
+    background-repeat: x-repeat;
+}
+
+.aide-section {
+    background-image :url('images/bg-aide.jpg');
+    background-repeat: repeat-x;
 }
 
 .dev-section h1,
 .about-section h1,
-.handbook-section h1 {
+.handbook-section h1,
+.contribute-section h1,
+.indispensable-section h1,
+.aide-section h1,
+.group-explore-hp h1 {
     font-size: 44px;
     margin-bottom: 30px;
 }
 
 .dev-vision p,
 .about-section p,
+.handbook-section p,
+.contribute-section p,
+.indispensable-section p,
+.aide-section p,
+.group-explore-hp p {
+    line-height: 29px;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
 .handbook-section p {
-    line-height: 24px;
-    font-size:18px;
-    margin-bottom:60px;
+    margin: 0 0 100px 0;
+    max-width: 500px;
 }
 
 .dev-vision h2 {
     margin-top: 50px;
     font-size: 34px;
-}
-
-.aide-section {
-	background-image :url('images/bg-aide.jpg');
-	margin-bottom: 0px;
-	padding: 0px 0px 110px 0px;
-	background-position: bottom;
-}
-
-.hello-world-section {
-	background-image :url('images/bg-hello-world.jpg');
-	margin-bottom: 70px;
-	padding: 40px 0px 110px 0px;
-	background-position: bottom;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-}
-
-.beta-section {
-	background-image :url('images/bg-beta.jpg');
-	margin-bottom: 0px;
-	padding: 0px 0px 160px 0px;
-	text-align:center;
-	background-position: bottom;
-}
-
-.hello-world-section h2{
-	text-align:left;
-}
-
-.aide-section-subtitle {
-	font-size:17px;
 }
 
 .indispensable-call-box {
@@ -2143,16 +2196,47 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     background-color: rgba(0,0,0,.1);
 }
 
-.aide-section h2 {
-	font-size:36px;
+.about {
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+.about h2 {
+    margin-top: 0px;
+}
+
+.wf-section {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.about-press {
+    margin: 50px 0 100px;
+    text-align: center;
+    color: #fff;
+    background-color: #52bad5;
+    padding: 80px 20px;
+}
+
+.about-press .about-press-citation {
+    font-size: 2.5em;
+    max-width: 580px;
+    line-height: 1.3em;
+    margin: 0 auto 30px;
+}
+
+.about-press .about-press-source p {
+    display: inline;
+    margin-left: 20px;
+}
+
+.help-content {
+    font-size: 15px;
+    line-height: 1.6em;
 }
 
 .help-content h4 {
-	margin-top:25px;
-}
-
-.indispensable-section h1{
-	font-size:50px;
+	margin-top:35px;
 }
 
 .wd-section-hp {
@@ -2175,7 +2259,7 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 	margin-right: 10px;
 }
 
-.marketing-section-hp h1, .group-explore-hp h1 {
+.marketing-section-hp h1 {
 	font-size:35px;
 	margin-top: 4px;
 }
@@ -2209,11 +2293,6 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
     box-shadow: inset 0px 2px 3px -1px rgba(0,0,0,0.6);
 }
 
-.indispensable-subtitle{
-	font-size:19px;
-	margin-bottom:24px;
-}	
-
 .search-section{
 	padding: 12px 0px;
 	font-size: 16px;
@@ -2224,8 +2303,17 @@ body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHead
 	background-color:#fff;
 }
 
-body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Groupes, body.page-Groups {
+body.page-Accueil,
+body.mw-special-WfExplore,
+body.page-Main_Page,
+body.page-Groupes,
+body.page-Groups,
+body.page-Explore {
 	background-color:#f9fafc;
+}
+
+body.page-Wikifab_Creator_handbook {
+    background-color:#eaeaea;
 }
 
 .search-section p{
@@ -2251,7 +2339,7 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	margin-top:25px;
+	margin-top: 25px;
 	color:#fff;
 	transition: all ease .25s;
 }
@@ -2314,7 +2402,12 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
     padding: 12px 23px;
 }
 
-.sign-up-developers a:link, .sign-up-developers a.external {
+.sign-up-developers:focus {
+    text-decoration:none;
+}
+
+.sign-up-developers a:link,
+.sign-up-developers a.external {
 	color:#fff !important;
 }
 
@@ -2445,10 +2538,6 @@ body.page-Accueil, body.mw-special-WfExplore, body.page-Main_Page, body.page-Gro
 
 .slider-section-hp p{
 	font-size:17px;
-}
-
-.ve-init-target {
-	border: 1px solid #bbbbbb;
 }
 
 #fancybox-frame #mw-upload-form input.wpUpload,
@@ -2791,7 +2880,12 @@ h2.contribuer-subtitle{
 	padding-bottom:10px;
 }
 
-.page-Formulaire_Tutorial #firstHeading, .page-Wikifab_Communauté #firstHeading, .page-Wikifab_Community #firstHeading,
+.page-Formulaire_Tutorial #firstHeading,
+body.page-Accueil .footerdata,
+body.page-Wikifab_Creator_handbook .footerdata,
+body.mw-special-WfExplore .footerdata,
+body.page-Explore .footerdata,
+.page-Wikifab_Communauté #firstHeading, .page-Wikifab_Community #firstHeading,
 .page-Form_Tutorial #firstHeading, .page-Formulaire_Group #firstHeading, .page-Form_Group #firstHeading {
 	display:none
 }
@@ -2924,7 +3018,6 @@ span.licence-detail-title {
 .navbar-default .navbar-nav > li#pt-social-message-link > a{
 	padding: 15px 10.5px;
     font-size: 1.2em;
-    color:#000;
 }
 
 .navbar-default .navbar-nav > li#pt-social-message-link > a:hover,
@@ -3243,9 +3336,9 @@ span.licence-detail-title {
 
 .skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link .glyphicon-user:before,
 .skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link .glyphicon-user:before,
-skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-user:before,
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-user:before,
 .skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited .glyphicon-user:before {
-	color: #000;	
+	color: rgba(255,255,255,.4);
 }
 
 .mw-input #mw-createaccount-join {
@@ -3348,13 +3441,6 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
     margin-bottom: 20px;
 }
 
-.main-contribute{
-	background-image:url('images/bg-elec-wf.jpg');
-	background-repeat: x-repeat;
-	background-position:bottom;
-	padding-bottom:50px;	
-}
-
 .tutorial-page{
 	background-image:url('images/bg-brick.jpg');
 	background-repeat: x-repeat;
@@ -3364,11 +3450,16 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 
 .static-pages-menu ul {
 	margin-top:10px;
+    padding-left: 0;
+}
+
+.HelpContent {
+    margin-top: 40px;
 }
 
 .static-pages-menu li {
 	list-style: none;
-	padding-bottom: 12px;
+    line-height: 2em;
 }
 
 .static-pages-menu li.active {
@@ -3399,6 +3490,9 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 .rootpage-Wikifab_Creator_handbook .contentHeader { display:none; }
 .rootpage-Wikifab_Creator_handbook .mw-body { margin-top:0px }
 .rootpage-Wikifab_Creator_handbook .navbar { margin-bottom:0px; }
+.rootpage-Wikifab_AboutGroups .contentHeader { display:none; }
+.rootpage-Wikifab_AboutGroups .mw-body { margin-top:0px }
+.rootpage-Wikifab_AboutGroups .navbar { margin-bottom:0px; }
 .rootpage-Wikifab_About .contentHeader { display:none; }
 .rootpage-Wikifab_About .mw-body { margin-top:0px }
 .rootpage-Wikifab_About .navbar { margin-bottom:0px; }
@@ -3456,6 +3550,7 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 .rootpage-Wikifab_Get_started .col-lg-12,
 .rootpage-Wikifab_Help .col-lg-12,
 .rootpage-Wikifab_Creator_handbook .col-lg-12,
+.rootpage-Wikifab_AboutGroups .col-lg-12,
 .rootpage-Wikifab_About .col-lg-12,
 .page-Wikifab_Developers .col-lg-12,
 .page-Form_Tutorial .col-lg-12,
@@ -3464,8 +3559,6 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 	padding-right:0px;
 	padding-left:0px;
 }
-
-.navbar ul.nav > li:hover { background-color:#fff; }
 
 .feedback {
 	display: block;
@@ -3485,6 +3578,7 @@ skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-use
 
 body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header,
+body.rootpage-Wikifab_AboutGroups #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header,
 body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header,
@@ -3501,65 +3595,10 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     transition: 2s;
 }
 
-body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header + hr,
-body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header + hr,
-body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header + hr,
-body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header + hr,
-body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header + hr,
-body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header + hr {
-	display:none;
-}
-
-body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header:hover,
-body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header:hover,
-body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header:hover,
-body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header:hover,
-body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header:hover,
-body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header:hover {
-    overflow: inherit;
-    box-shadow: 0px 0px 10px;
-}
-
-body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header a,
-body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header a,
-body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header a,
-body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header a,
-body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header a,
-body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header a {
-	padding-left: 58px;
-    height: 50px;
-    float: left;
-    padding-top: 12px;
-    font-size: 17px;
-}
-
-body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header .translation-intro-text a,
-body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header .translation-intro-text a,
-body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header .translation-intro-text a,
-body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header .translation-intro-text a,
-body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header .translation-intro-text a,
-body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header .translation-intro-text a {
-    padding-left: initial;
-    height: initial;
-    float: initial;
-    padding-top: initial;
-    font-size: initial;
-}
-
-body.rootpage-Wikifab_Help #mw-content-text .mw-pt-translate-header .translation-intro-text,
-body.rootpage-Wikifab_Creator_handbook #mw-content-text .mw-pt-translate-header .translation-intro-text,
-body.rootpage-Wikifab_About #mw-content-text .mw-pt-translate-header .translation-intro-text,
-body.rootpage-Wikifab_Get_started #mw-content-text .mw-pt-translate-header .translation-intro-text,
-body.rootpage-Wikifab_Best_practices #mw-content-text .mw-pt-translate-header .translation-intro-text,
-body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header .translation-intro-text {
-    font-size: 15px;
-    width: 100%;
-    float: left;
-    padding: 10px 930px 10px 60px;
-}
 
 body.rootpage-Wikifab_Help div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container,
+body.rootpage-Wikifab_AboutGroups div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_About div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container,
 body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container,
@@ -3569,6 +3608,7 @@ body.rootpage-Wikifab_Community div.wiki-nav + div > div.container {
 
 body.rootpage-Wikifab_Help div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container > div.siteNoticeArea,
+body.rootpage-Wikifab_AboutGroups div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_About div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container > div.siteNoticeArea,
 body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container > div.siteNoticeArea,
@@ -4394,34 +4434,9 @@ h1.firstHeading {
 	display:none;
 }
 
-.marketing-section-hp h1, .group-explore-hp h1 {
+.marketing-section-hp h1,
+.group-explore-hp h1 {
     font-size: 26px;
-}
-
-#mc_embed_signup .mc-field-group label {
-	font-size: 14px;
-}
-
-#mc_embed_signup fieldset {
-	background-image:none;
-	padding: 10px 10px 10px 10px;
-}
-
-#mc_embed_signup .mc-field-group label {
-	margin-bottom:10px;
-	text-align:center;
-}
-
-#mc_embed_signup .mc-field-group input {
-	width:100%;
-}
-
-#mc_embed_signup .mc-field-group {
-	margin-right:0px;
-}
-
-#mc_embed_signup input[type="submit"] {
-	width:100%;
 }
 
 .project-card-author-picture {
@@ -4537,12 +4552,11 @@ h1.firstHeading {
 **************************/
 
 .navbar-personaltoolwidgets.navbar-personaltools {
-    border-right: 0px solid #e7e7e7;
-	margin:0px 0px 0px;
-	padding:10px 0px 0px 0px;
+	margin: 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 }
 .navbar-personaltoolwidgets li {
-	margin:0px 0px;
+	margin: 0px 0px;
 	list-style-type:none;
 	display:inline-block;
 }
@@ -4551,12 +4565,12 @@ h1.firstHeading {
     font-size: 15px;
 }
 .navbar-right-aligned .navbar-personaltools.navbar-personaltoolwidgets {
-    border-left: 1px solid #e7e7e7;
+    border: 0px;
     height: 50px;
 }
 
 .navbar-right-aligned .navbar-personaltools.navbar-personaltoolwidgets:hover {
-	background-color:#eeeeee;
+	background: rgba(255,255,255,.2);
 }
 
 .navbar-personaltoolwidgets #pt-notifications-alert {
@@ -4564,9 +4578,13 @@ h1.firstHeading {
 }
 
 .navbar-personaltoolwidgets #pt-notifications-notice .mw-echo-notifications-badge::before {
-    background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M17.5%2014V9c0-3-2.3-5-5.5-5S6.5%206%206.5%209v5c0%202%200%203-2%203v1h15v-1c-2%200-2-1-2-3zM12%2020H9c0%201%201.6%202%203%202s3-1%203-2h-3z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-    background-position: center 18px;
-    height: 56px;
+    background-image: none;
+    height: 55px;
+    padding: 21px 11px;
+    font-family: 'Glyphicons Halflings';
+    content: "\e123";
+    color: rgba(255,255,255,0.4);
+    font-size: 18px;
 }
 
 div.navbar-personaltoolwidgets > li > a {
@@ -4797,10 +4815,9 @@ p.machines-form-first, p.machines-form {
 .group-form-page {
 	background-color:#93a5aa;
 	background-image:url('images/group-bg.jpg');
-	background-position:left bottom ;
-	height:600px;
-    background-repeat: repeat-x;
-	background-size: 100%;
+    background-position: center;
+    height: 600px;
+    background-size: cover;
 }
 
 .group-section-0 {
@@ -4821,7 +4838,7 @@ p.machines-form-first, p.machines-form {
 
 .group-section-1 {
 	padding: 40px 0px 50px;
-	border-bottom: 1px solid #eee;
+    font-size: 1.1em;
 }
 
 .group-section-1 img {
@@ -4832,10 +4849,6 @@ p.machines-form-first, p.machines-form {
 
 .group-section-1 .img-part {
 	text-align:center;
-}
-
-.group-section-2 {
-	padding: 50px 0px 0px;
 }
 
 .new-group-page {
@@ -4973,6 +4986,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
     background-repeat: no-repeat;
     background-size: 100% 400px;
 	margin-top: 100px;
+    font-size: 1.1em;
 }
 
 .group-main-tabs img {
@@ -4988,7 +5002,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 }
 
 .group-main-tabs-title p {
-	font-size: 16px;
+	font-size: 1.1em;
 	color: #888;
 }
 
@@ -5064,13 +5078,21 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 
 @media (min-width: 768px) {
 	.navbar-right-aligned .navbar-tools:last-child {
-  		border-right: 1px solid #e7e7e7;
-	}
+  		border-right: 0px;
+        border-left: 0px;
+    }
+    .skin-chameleon .navbar-tools > li:last-child:hover {
+        background: rgba(255,255,255,.2);
+    }
+
+    .skin-chameleon .navbar-tools > li:last-child > a:hover {
+        color: rgba(255,255,255,1);
+    }
 	.navbar-right-aligned {
-		margin-right:15px;
+		margin-right: 15px;
 	}
 	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin-left: 0px;
+        margin-left: 0px;
 	}
 	.multipleTemplate-tutostep .col-md-1 {
 		width: 56px;
@@ -5091,9 +5113,13 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	margin-bottom:10px;
 }
 
-.group-bottom-links a:hover, .group-explore-hp a:hover{
+.group-bottom-links a:hover,
+.group-explore-hp a:hover,
+.group-bottom-links a:focus,
+.group-explore-hp a:focus {
     text-decoration:none;
 }
+
 a.create-group-btn:hover {
     text-decoration:none;
 }
