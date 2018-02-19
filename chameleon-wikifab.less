@@ -3335,20 +3335,20 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
     width: 100%;
 }
 
-.navbar #pt-notifications-alert .mw-echo-notifications-badge:after, .navbar #pt-notifications-notice .mw-echo-notifications-badge:after {
+.navbar #pt-notifications-alert .mw-echo-notifications-badge:after,
+.navbar #pt-notifications-notice .mw-echo-notifications-badge:after {
 	background-color: #2c9ab7;	
 }
 
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link .glyphicon-user:before,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited .glyphicon-user:before {
-	color: rgba(255,255,255,.4);
+.skin-chameleon #pt-notifications-alert .mw-echo-notifications-badge:before,
+.skin-chameleon #pt-notifications-notice .mw-echo-notifications-badge:before {
+    opacity:1;
 }
 
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link .glyphicon-user:before,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited .glyphicon-user:before {
-    color: #30373b;
+.skin-chameleon #pt-notifications-alert .mw-echo-notifications-badge:hover:before,
+.skin-chameleon #pt-notifications-notice .mw-echo-notifications-badge:hover:before {
+    color: #fff;
 }
-
 
 .mw-input #mw-createaccount-join {
 	color: #2c9ab7;	
@@ -5252,3 +5252,37 @@ a.create-group-btn:hover {
 	background:#2c9ab7;
 }
 
+.skin-chameleon .navbar-tools > li > a,
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited,
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link,
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:focus,
+.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:visited,
+.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:link,
+.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:focus  {
+    color: rgba(255,255,255,.4) !important;
+}
+
+.skin-chameleon .navbar-tools > li > a:hover,
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited:hover,
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link:hover,
+.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:focus:hover,
+.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:focus:hover,
+.skin-chameleon .navbar-tools > li.open > a,
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited,
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link,
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:focus,
+.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:visited,
+.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:link,
+.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:focus,
+.skin-chameleon .navbar-tools > li.open > a:hover,
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited:hover,
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link:hover,
+.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:focus:hover,
+.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
+    color: #fff !important;
+    background: rgba(255,255,255,0.4) !important;
+}
