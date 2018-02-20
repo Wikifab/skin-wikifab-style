@@ -30,8 +30,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<component type="NavbarHorizontal" fixed="0">
 
 		<component type="Logo" position="head"></component>
-		<component type="ExploreSearchBar" position="left"></component>
-		<component type="NavMenu" flatten="navigation"></component>
+		<component type="ExploreSearchBar" position="right"></component>
+		<component type="NavMenu" flatten="navigation" position="right"></component>
 		<component type="NewTutoBar" position="right"></component>
 		<component type="PersonalTools" position="right"> </component>
 	</component>
@@ -52,7 +52,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 	<component class="wiki-nav">
 		<!--  tool bar for Home page visible only by administrators -->
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
+		<modification type="ShowOnlyFor" page="Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
 			UpdateProfile/personal,Creator_handbook,WfExplore,Group,Groups,AboutGroups,Groupes,Explore,Contribute,Tutorial,Help,About,mw-special-WfSearch,Get_started,Best_practices"></modification>
 		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
 		<grid>
