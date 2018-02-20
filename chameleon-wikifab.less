@@ -10,6 +10,11 @@ body {
 	font-size: 14.5px;
 }
 
+@font-face {
+    font-family: WikifabFont;
+    src: url('wikifab-font.ttf');
+}
+
 body .btn {
 	font-size: 14.5px;
 }
@@ -28,8 +33,12 @@ nav.navbar-default {
     border-bottom: 0px;
 }
 
-.navbar #mw-searchButton {
-	height: 34px;
+.skin-chameleon .navbar #mw-searchButton {
+    padding-top: 8px;
+    margin-left: -37px;
+    border: 0;
+    background: none;
+    z-index: 100;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -2024,12 +2033,44 @@ h5.project-title span {
 	font-size:17px;
 }
 
-.marketing-section-hp, .wd-section-hp {
+.marketing-section-hp {
 	background:#333;	
-	background-image :url('images/wood-bg-black.jpg');
-	color:#fff;
-	padding:40px 10px;
-	text-align:center;
+    padding: 0px;
+    margin-top: -50px;
+    text-align: center;
+    background: #333;
+    background-size: cover;
+    background-image: url(http://files-thumbs.wikifab.org/images/thumb/e/e4/Lampe_en_bois_ciment_14_1.jpg/1024px-Lampe_en_bois_ciment_14_1.jpg);
+    background-position: center;
+    color: #fff;
+}
+
+.marketing-section-hp-overlay {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.marketing-section-hp-content {
+    padding: 150px 0px 20px;
+}
+
+.marketing-section-hp-btn .btn:hover {
+    opacity: 1;
+}
+
+.marketing-section-hp-btn {
+    text-align: right;
+    padding: 15px;
+}
+
+.marketing-section-hp-btn .fa {
+    font-size: 0.8em;
+    margin-left: 3px;
+}
+
+.marketing-section-hp-btn .btn {
+    padding: 3px 8px;
+    border: none;
+    opacity: 0.5;
 }
 
 .marketing-section-hp a:link {
@@ -2265,8 +2306,20 @@ body.page-Wikifab_AboutGroups .group-explore-hp {
 }
 
 .marketing-section-hp h1 {
-	font-size:35px;
-	margin-top: 4px;
+    font-family: 'WikifabFont';
+    font-size: 66px;
+    letter-spacing: 2px;
+    margin-top: 4px;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+    /* margin: auto; */
+    -ms-transform: rotate(-1.5deg);
+    -webkit-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg);
+    color: #ccc;
+    mix-blend-mode: color-dodge;
 }
 
 .marketing-section-hp-logged h1, {
@@ -2275,11 +2328,6 @@ body.page-Wikifab_AboutGroups .group-explore-hp {
 
 .WFfilter input[type="checkbox"] {
 	display:none;
-}
-
-.marketing-section-hp-subtitle{
-	font-size:17px;
-	margin-bottom:25px;
 }
 
 .btn-primary {
@@ -3568,6 +3616,17 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 	padding-left:0px;
 }
 
+.page-Accueil .navbar {
+    background:transparent;
+    z-index: 10;
+}
+
+.page-Accueil .navbar ul.nav > li:hover,
+.skin-chameleon.page-Accueil  .navbar-tools > li > a:hover,
+.skin-chameleon.page-Accueil  .navbar-tools > li > a:focus {
+    background: transparent;
+}
+
 .feedback {
 	display: block;
     position: fixed;
@@ -4585,8 +4644,23 @@ h1.firstHeading {
 	display:none;
 }
 
-.skin-chameleon .navbar-default .navbar-collapse, .skin-chameleon .navbar-default .navbar-form {
+.skin-chameleon .navbar-default .navbar-collapse,
+.skin-chameleon .navbar-default .navbar-form {
     border: none;
+}
+
+.skin-chameleon .navbar-form .input-group > .form-control {
+    border: 0;
+    opacity: 0.3;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: 0.25s;
+    border-radius: 3px;
+    padding-right: 34px;
+}
+
+.skin-chameleon .navbar-form .input-group > .form-control:focus {
+    opacity: 0.4;
 }
 
 .navbar-personaltoolwidgets #pt-notifications-notice .mw-echo-notifications-badge::before {
