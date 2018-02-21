@@ -4338,6 +4338,18 @@ label.checkboxLabel.detail-area-field{
 
 }
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
 @media (max-width: 1200px) {
 .project-thumbnail img {
 	min-height: 154px;
@@ -4431,6 +4443,10 @@ label.checkboxLabel.detail-area-field{
 
 @media only screen and (max-width: 767px) {
 
+body.page-Accueil.layout-layout-wikifab .navbar {
+    background-color:#30373b;
+}
+
 .navbar ul.navbar-nav > li {
     width: 100%;
     float: left;
@@ -4440,17 +4456,39 @@ label.checkboxLabel.detail-area-field{
     width: calc(~"100% - 87px");
 }
 
-
 .nav {
 	display:block;
 }
 
+.navbar-form {
+    margin: auto;
+}
+
+.skin-chameleon .navbar-tools .open .dropdown-menu > li > a {
+    font-size: 15px;
+}
+
+.skin-chameleon .navbar-tools .open .dropdown-menu > li > a:hover {
+    color:#fff;
+}
+
+.skin-chameleon .navbar-tools .open .dropdown-menu {
+    margin-bottom: 15px;
+}
+
 .wf-top-button .btn {
-	max-width: 100%;
+    max-width: 100%;
     color: #fff;
     width: 100%;
-    font-size: 1.2em;
-    padding: 10px;
+    text-align: left;
+    background: transparent;
+    padding: 0px 0;
+    opacity: 0.4;
+    background: transparent;
+}
+
+.wf-top-button .btn .glyphicon {
+    display:none;
 }
 
 .project-card {
@@ -4693,6 +4731,8 @@ h1.firstHeading {
 .skin-chameleon .navbar-default .navbar-collapse,
 .skin-chameleon .navbar-default .navbar-form {
     border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .skin-chameleon .navbar-form .input-group > .form-control {
