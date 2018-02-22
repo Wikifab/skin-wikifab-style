@@ -1609,7 +1609,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	box-shadow:0px 0px 15px 0 rgba(0,0,0,0.10);
+	box-shadow:0px 0px 15px 0 rgba(0,0,0,0.1);
 	margin-bottom:20px;
 	background-color:#fff;
 	transition: .15s;
@@ -1639,8 +1639,8 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	display:none;
 }
 
-.project-card:hover{
-	box-shadow: 0px 5px 15px 0 rgba(0,0,0,0.3);
+.project-card:hover {
+	box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.3);
 }
 
 span.project-card-type {
@@ -1849,9 +1849,13 @@ h5.project-title span {
 
 .project-blurb, .project-card-content .mw-translate-fuzzy {
     height: 38px;
-	font-size: 14px;
+	font-size: 13.5px;
     overflow: hidden;
 	color:#444;
+}
+
+.project-blurb:first-letter {
+    text-transform: uppercase;
 }
 
 .project-blurb:empty {
@@ -1870,6 +1874,11 @@ h5.project-title span {
     line-height: 18px;
     white-space: nowrap;
     vertical-align: baseline;
+}
+
+.project-byline-separator {
+    margin: 0 2px;
+    color: #ccc;
 }
 
 .project-byline a {
