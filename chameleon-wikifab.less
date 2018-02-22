@@ -1538,9 +1538,8 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 .project-location {
 	font-size: 11px;
 	color:#999;
-	line-height: 1px;
-	height: 11px;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .searchresults {
@@ -1606,11 +1605,11 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	cursor:pointer;
 }
 
-.project-card{
+.project-card {
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	box-shadow:0px 1px 3px 0 rgba(0,0,0,0.26);
+	box-shadow:0px 0px 15px 0 rgba(0,0,0,0.10);
 	margin-bottom:20px;
 	background-color:#fff;
 	transition: .15s;
@@ -1641,7 +1640,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 }
 
 .project-card:hover{
-	box-shadow:0px 1px 3px 0 rgba(0,0,0,0.86);
+	box-shadow: 0px 5px 15px 0 rgba(0,0,0,0.3);
 }
 
 span.project-card-type {
@@ -1656,10 +1655,8 @@ span.project-card-separator {
 }
 
 .project-card-content {
-	padding: 10px 15px 15px 15px;
+	padding: 10px 12px 15px 12px;
 }
-
-
 
 #bodyContent .tuto-details-autor-revision .tuto-details-author-box a.image {
 	display:inline-block;
@@ -1831,7 +1828,7 @@ span.project-card-separator {
 }
 
 h5.project-title {
-    font-size: 16px;
+    font-size: 1.08em;
     margin-top: 5px;
     height: 16px;
 }
@@ -1852,7 +1849,7 @@ h5.project-title span {
 
 .project-blurb, .project-card-content .mw-translate-fuzzy {
     height: 38px;
-	font-size: 13px;
+	font-size: 14px;
     overflow: hidden;
 	color:#444;
 }
@@ -1862,11 +1859,21 @@ h5.project-title span {
 }
 
 .project-byline {
-    font-size: 12px;
+    font-size: 13px;
     color: #aaa;
-    height: 15px;
+    height: 16px;
     margin-bottom: 7px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    line-height: 18px;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.project-byline a {
+    color:#888;
 }
 
 .featured-thumbnail img {
@@ -4160,7 +4167,10 @@ label.checkboxLabel.detail-area-field{
 
 .project-location li {
     display: inline-block;
-    margin-right: 6px;
+    background: #f3f3f3;
+    padding: 4px 6px;
+    color: #777;
+    border-radius: 5px;
 }
 
 .project-location li.last {
@@ -4171,6 +4181,12 @@ label.checkboxLabel.detail-area-field{
 	list-style-type: none;
 	padding-left: 0px;
 	margin-bottom: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    white-space: nowrap;
+    vertical-align: baseline;
 }
 
 .collaps-icon {
@@ -4392,11 +4408,6 @@ label.checkboxLabel.detail-area-field{
 	height:inherit;
 }
 
-.project-location li {
-    display: block;
-    width: 100%;
-    margin-bottom: 6px;
-}
 }
 
 @media (max-width: 992px) {
