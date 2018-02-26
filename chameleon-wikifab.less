@@ -1632,16 +1632,17 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 }
 
 .wfExpInput-container button.mw-searchButton {
-	font-size: 17px;
+    font-size: 17px;
     font-weight: normal;
-    width: 20px;
+    width: 50px;
     border: 0px;
-    padding: 10px 22px;
+    padding: 11px 13px;
     background-color: #fff;
     border-radius: 0px 3px 3px 0;
     color: transparent;
     background-image: url(/w/skins/dokit-package/assets/search-button.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .project-card-lang-code {
@@ -3612,8 +3613,8 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 }
 
 body.page-Accueil.layout-layout-wikifab .navbar {
-    background:transparent;
-    z-index: 10;
+    position: relative;
+    z-index: 1;
 }
 
 body.page-Accueil.layout-layout-wikifab .navbar ul.nav > li:hover,
@@ -4429,10 +4430,6 @@ label.checkboxLabel.detail-area-field{
 }
 
 @media only screen and (max-width: 767px) {
-
-body.page-Accueil.layout-layout-wikifab .navbar {
-    background-color:#30373b;
-}
 
 .navbar ul.navbar-nav > li {
     width: 100%;
