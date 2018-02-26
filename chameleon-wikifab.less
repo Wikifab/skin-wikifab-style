@@ -1742,59 +1742,6 @@ span.project-card-separator {
 	color:#555;
 }
 
-.project-card-author {
-    background: none repeat scroll 0 0 #F9FAFA;
-    border-top: 1px solid #ccc;
-    cursor: pointer;
-	-webkit-border-bottom-right-radius: 8px;
-	-webkit-border-bottom-left-radius: 8px;
-	-moz-border-radius-bottomright: 8px;
-	-moz-border-radius-bottomleft: 8px;
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
-	width:100%;
-	float:left;
-}
-
-.project-card-author .project-card-author-picture p,
-.project-card-author .project-card-author-info p {
-    margin:0;
-}
-.project-card-author-picture {
-	min-width: 62px;
-	min-height:68px;
-	padding-left:5%;
-	padding-top:3%;
-	padding-bottom:3%;
-	float:left;
-}
-
-.project-card-author-picture .image {
-	border: 1px solid #ddd;
-    background: #fff;
-    width: 52px;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	border-radius: 100%;
-    height: 52px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-}
-.project-card-author-info {
-	width: calc(~"100% - 66px");
-	padding-left:3%;
-	padding-right:3%;
-	padding-top:23px;
-	padding-bottom:3%;
-	float:left;
-    max-height: 46px;
-    overflow: hidden;
-}
-.project-card-author-info p{
-	margin-top:1em
-}
-
 .featured-card-info {
 	padding:0px 40px;
 }
@@ -1811,20 +1758,6 @@ span.project-card-separator {
 
 .clearboth {
 	clear:both;
-}
-
-.project-card-author-picture img{
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    min-width: 52px;
-    min-height: 52px;
-    max-width: 52px;
-    max-height: 52px;
-    z-index: 1;
-    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 h5.project-title {
@@ -4075,6 +4008,7 @@ label.checkboxLabel.detail-area-field{
     border-radius: 3px 0px 0px 3px;
     max-width: 330px;
     margin-right: -5px;
+    width: calc(~"100% - 70px");
 }
 
 .wf-inputbox .mw-ui-button {
@@ -4426,10 +4360,6 @@ label.checkboxLabel.detail-area-field{
     min-width: 345px;
 }
 
-.project-card-author-info {
-    width: calc(~"100% - 70px");
-}
-
 .nav {
 	display:none;
 }
@@ -4480,10 +4410,6 @@ body.page-Accueil.layout-layout-wikifab .navbar {
     float: left;
 }
 
-.project-card-author-info {
-    width: calc(~"100% - 87px");
-}
-
 .nav {
 	display:block;
 }
@@ -4527,6 +4453,10 @@ body.page-Accueil.layout-layout-wikifab .navbar {
     transition: all ease .15s;
 }
 
+.project-byline {
+    margin-bottom: 8px;
+}
+
 .feedback {
 	display:none;
 }
@@ -4556,10 +4486,6 @@ h1.firstHeading {
 
 .navbar-header .navbar-brand {
 	padding-left:15px;
-}
-
-.project-byline {
-	display:none;
 }
 
 .project-thumbnail img {
@@ -4593,18 +4519,6 @@ h1.firstHeading {
 	border-top-right-radius: 0px;
 }
 
-.project-card-author {
-	-webkit-border-top-right-radius: 0px;
-	-webkit-border-bottom-right-radius: 3px;
-	-moz-border-radius-topright: 0px;
-	-moz-border-radius-bottomright: 3px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 3px;
-	-webkit-border-bottom-left-radius: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	border-bottom-left-radius: 0px;
-}
-
 .project-card-content {
     padding: 10px 10px 10px 15px;
 }
@@ -4615,15 +4529,7 @@ h1.firstHeading {
 
 .marketing-section-hp h1,
 .group-explore-hp h1 {
-    font-size: 26px;
-}
-
-.project-card-author-picture {
-	width:20%;
-}
-
-.project-card-author-info .author-name {
-	font-size:17px;
+    font-size: 34px;
 }
 
 #mw-content-text #sfForm .add-attachments-upload .createboxInput {
@@ -4638,6 +4544,10 @@ h1.firstHeading {
 	text-align:left;
 }
 
+.marketing-section-hp-content {
+	padding-top:120px;
+}
+
 .wiki-nav{
 	display:none;
 }
@@ -4645,13 +4555,6 @@ h1.firstHeading {
 }
 
 @media only screen and (max-width: 550px) {
-	.project-byline, .project-location {
-		display:none;
-	}
-
-	.project-card-author-info {
-	    width: calc(~"100% - 57px");
-	}
 
 	.contentHeader .btn-group.dropdownButton-addtogroup {
 		display:none;
@@ -4665,38 +4568,17 @@ h1.firstHeading {
 	.step-instructions h2 {
 		font-size: 18px;
 	}
-	
-	.project-card-author-picture .image {
-	    height: 40px;
-		width: 40px;
-	}
 
-	.project-card-author-picture img {
-	    min-width: 40px;
-    	min-height: 40px;
-    	max-width: 40px;
-    	max-height: 40px;
-	}
-	
 	#bodyContent .searchresults p.project-blurb {
-		margin-bottom:0px;
+	    margin-bottom: 10px;
+	    height: 20px;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	    width: 100%;
+	    white-space: nowrap;
+	    vertical-align: baseline;
 	}
 	
-	.project-card-author-picture {
-	    max-width: 55px;
-	    width: 100%;
-	    float: left;
-	    min-width: 0;
-	    min-height: 0;
-	    padding: 5px 3px 5px 10px;
-	}
-	.project-card-author-info {
-	    padding: 16px 5px;
-	    float: left;
-	}
-	.project-card-author-info .author-name {
-	    font-size: 13px;
-	}
 	.project-card .col-xs-5 {
     	padding-right: 0px;
 	}
@@ -4708,10 +4590,10 @@ h1.firstHeading {
 	    padding-bottom: 5px;
 	}
 	.project-thumbnail img {
-    min-height: 126px;
-    max-height: 350px;
-    min-width: 130px;
-    max-width: 211px;
+	    min-height: 126px;
+	    max-height: 350px;
+	    min-width: 130px;
+	    max-width: 211px;
 	}
 	.project-thumbnail {
 	    height: 126px;
@@ -4719,10 +4601,10 @@ h1.firstHeading {
 	.project-card h5.project-title {
 	    font-size: 15px;
 	    margin-top: 0px;
-	    height: 17px;
-        margin-bottom: 4px;
+	    height: 19px;
+	    margin-bottom: 5px;
 	    overflow: hidden;
-       line-height: 1;
+	    line-height: 1;
 	}
 }
 
