@@ -28,7 +28,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<component type="WikifabPrintHeader"></component>
 
 	<component type="NavbarHorizontal" fixed="0">
-
 		<component type="Logo" position="head"></component>
 		<component type="ExploreSearchBar"></component>
 		<component type="NavMenu" flatten="navigation"></component>
@@ -36,12 +35,11 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 		<component type="PersonalTools" position="right"> </component>
 	</component>
 
-
-
 	<component class="wiki-nav">
 		<!--  tool bar for other page than Home page-->
 		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
 			UpdateProfile/personal,WfExplore,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,mw-special-WfSearch,Get_started,Best_practices"></modification>
+			<modification type="HideFor" namespace="NS_HELP"></modification>
 		<grid>
 			<row>
 				<cell span="12">
@@ -66,7 +64,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component>
 		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,AboutGroups,Developers,About,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Creator_handbook,Get_started,Best_practices"></modification>
-			<modification type="HideFor" namespace="NS_GROUP"></modification>
+			<modification type="HideFor" namespace="NS_GROUP,NS_HELP"></modification>
 		<grid>
 			<row class="siteNoticeArea">
 				<cell span="12">
@@ -93,7 +91,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 	
 	<component>
-		<modification type="ShowOnlyFor" namespace="NS_GROUP"></modification>
+		<modification type="ShowOnlyFor" namespace="NS_GROUP,NS_HELP"></modification>
 			<cell>
 				<cell span="12">
 					<component type="MainContent"></component>
