@@ -24,7 +24,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 <structure>
 
-
 	<component type="WikifabPrintHeader"></component>
 
 	<component type="NavbarHorizontal" fixed="0">
@@ -83,20 +82,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component>
 		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,AboutGroups,Developers,About,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,Creator_handbook,mw-special-WfSearch,Get_started,Best_practices"></modification>
-			<cell>
-				<cell span="12">
-					<component type="MainContent"></component>
-				</cell>
-			</cell>
+			<component type="MainContentWithoutTitle"></component>
 	</component>
 	
 	<component>
 		<modification type="ShowOnlyFor" namespace="NS_GROUP,NS_HELP"></modification>
-			<cell>
-				<cell span="12">
-					<component type="MainContent"></component>
-				</cell>
-			</cell>
+			<component type="MainContentWithoutTitle"></component>
 	</component>
 
 	<component class="footerdata">
