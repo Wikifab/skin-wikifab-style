@@ -1609,10 +1609,15 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	box-shadow:0px 0px 15px 0 rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.1);
 	margin-bottom:20px;
 	background-color:#fff;
-	transition: .15s;
+	transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+    will-change: transform;
 }
 
 .project-card .project-thumbnail {
@@ -1666,6 +1671,9 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 
 .project-card:hover {
 	box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.3);
+	-webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    box-shadow: 0 7px 13px rgba(0,0,0,.2);
 }
 
 span.project-card-type {
@@ -4476,7 +4484,11 @@ label.checkboxLabel.detail-area-field{
     -moz-border-radius: 3px;
     border-radius: 3px;
     margin-bottom: 15px;
-    transition: all ease .15s;
+}
+
+.project-card:hover {
+	transform: none;
+	box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.3);
 }
 
 .project-byline {
