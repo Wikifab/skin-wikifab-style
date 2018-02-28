@@ -2507,6 +2507,7 @@ body.page-Wikifab_Creator_handbook {
 
 .custom-tooltip .smwtticon.info {
 	background: url('images/question-icon.png');
+    opacity: 0.5;
     padding: 13px;
     margin-top: 5px;
     margin-bottom: -2px;
@@ -2521,7 +2522,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .custom-tooltip .smwtticon.info:hover {
-	background: url('images/question-icon-hover.png');
+    opacity: 1;
 }
 
 
@@ -4088,14 +4089,23 @@ label.checkboxLabel.detail-area-field{
 
 .multipleTemplateInstance a.removeButton, .multipleTemplateInstance a.addAboveButton {
   cursor: pointer;
-  width: 36px;
-  border: 1px solid #fff;
-  height: 36px;
-  border-radius: 4px;
+  width: 39px;
+  height: 39px;
+  border-radius: 50px;
+  background-image: url('images/wf-ic-addstep.png') no-repeat;
+  background-position: center;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  opacity: .7;
+  transition: 0.2s;
+}
+
+.multipleTemplateInstance a.removeButton {
+  background-image: url('images/wf-ic-removestep.png') no-repeat;
 }
 
 .multipleTemplateInstance a.removeButton:hover, .multipleTemplateInstance a.addAboveButton:hover {
-  border-color: #52bad5;
+  opacity: 1;
   box-shadow: 0;
   outline:none;
 }
