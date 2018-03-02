@@ -1142,6 +1142,11 @@ body[class*='page-Wikifab_Help_'] .wiki-nav,
 	font-size:30px;
 }
 
+.action-formedit .footer-main,
+.action-formedit .footerdata {
+	display:none;
+}
+
 .footer-main {
 	background-color: #30373b;
 	color: #fff;
@@ -2707,7 +2712,11 @@ body.page-Wikifab_Creator_handbook {
 	color:#fff;
 	transition: all ease .25s;
 	z-index:2;
+	position: fixed;
+    bottom: 0;
+    text-align: right;
 }
+
 .saving-menu a:visited, .saving-menu a:link {
 	color:#fff;
 	text-decoration:none;
@@ -3433,7 +3442,9 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 }
 
 .skin-chameleon #pt-notifications-alert .mw-echo-notifications-badge:before,
-.skin-chameleon #pt-notifications-notice .mw-echo-notifications-badge:before {
+.skin-chameleon #pt-notifications-notice .mw-echo-notifications-badge:before,
+#pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read,
+#pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
     opacity:1;
 }
 
