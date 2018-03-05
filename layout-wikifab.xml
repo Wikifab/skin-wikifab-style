@@ -30,7 +30,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 		<component type="Logo" position="head"></component>
 		<component type="ExploreSearchBar"></component>
 		<component type="NavMenu" flatten="navigation"></component>
-		<component type="NewTutoBar" position="right"></component>
+		<component type="MessageContent" name="CreateTutorialBtn" position="right"></component>
 		<component type="PersonalTools" position="right"> </component>
 	</component>
 
