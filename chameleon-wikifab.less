@@ -1184,7 +1184,7 @@ body[class*='page-Wikifab_Help_'] .wiki-nav,
     float: left;
 }
 
-.modal-header {
+.modal-header .modal-title {
     float:left;
 }
 
@@ -4123,7 +4123,10 @@ label.checkboxLabel.detail-area-field{
   background-image: url('images/wf-ic-removestep.png');
 }
 
-.multipleTemplateInstance a.removeButton:hover, .multipleTemplateInstance a.addAboveButton:hover {
+.multipleTemplateInstance a.removeButton:hover,
+.multipleTemplateInstance a.addAboveButton:hover,
+.multipleTemplateInstance a.addAboveButton:active,
+.multipleTemplateInstance a.removeButton:active {
   opacity: 0.7;
   box-shadow: 0;
   outline:none;
