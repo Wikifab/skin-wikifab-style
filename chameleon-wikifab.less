@@ -4765,8 +4765,13 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class
 }
 
 body[class^='page-Group_'] .group-banner img, body[class*='page-Group_'] .group-banner img {
-	width:100%;
-    height: 100%;
+	width: 100%;
+    height: auto;
+    opacity: 0.5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 body[class^='page-Group_'] .permissions-errors, body[class*='page-Group_'] .permissions-errors {
@@ -4778,8 +4783,9 @@ body[class^='page-Group_'] .permissions-errors, body[class*='page-Group_'] .perm
 body[class^='page-Group_'] .group-banner, body[class*='page-Group_'] .group-banner {
 	height: 165px;
 	overflow: hidden;
-	background: #999;
+	background-color: #30373b;
 	color: transparent;
+	position: relative;
 }
 
 .group-info span {
