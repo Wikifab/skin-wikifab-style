@@ -2539,11 +2539,14 @@ body.page-Wikifab_Creator_handbook {
 	margin-right:5px;
 }
 
+.custom-tooltip {
+    vertical-align: middle;
+}
+
 .custom-tooltip .smwtticon.info {
 	background: url('images/question-icon.png');
-    opacity: 0.5;
-    padding: 10px;
-    margin-top: 7px;
+    opacity: 0.3;
+    padding: 9px;
     transition: all ease .25s;
     background-repeat: no-repeat;
 }
@@ -3709,13 +3712,23 @@ body.rootpage-Wikifab_Community div.wiki-nav + div > div.container > div.siteNot
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position: right 50%;
+    padding: 8px;
     background-repeat: no-repeat;
     background-image: url('images/WFselectDropdown.png');
+}
+
+.WfFormLabel {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 3px;
 }
 
 .WfFormDropdownCombine {
     width: 80%;
     border-radius: 0 3px 3px 0;
+    border-left: 0px;
 }
 
 .WfFormTextCombine {
@@ -3725,10 +3738,22 @@ body.rootpage-Wikifab_Community div.wiki-nav + div > div.container > div.siteNot
     text-align: right;
 }
 
+.WfFormTextarea {
+    padding: 7px 8px;
+}
+
 .WfFormCheckbox {
     float: left;
     margin-right: 10px;
     white-space: nowrap;
+    font-weight:normal;
+}
+
+.WfFormTokens .select2-choices,
+.WfFormTokens .select2-choice {
+    border-radius: 3px;
+    min-width: 260px;
+    max-width: 100%;
 }
 
 .form-textarea {
