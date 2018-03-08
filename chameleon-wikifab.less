@@ -165,7 +165,7 @@ a:hover {
 }
 
 span.status-checkbox {
-	margin-left:10px;
+	margin-right:10px;
 }
 
 .prerequisites-selection .select2-container {
@@ -3912,8 +3912,9 @@ body.rootpage-Wikifab_Community div.wiki-nav + div > div.container > div.siteNot
 	padding: 8px 10px;
 }
 
-.notes-ref {
-	margin-bottom:50px;
+.WfEndForm {
+    border: 0px;
+    height: 50px;
 }
 
 .notes-ref .multipleTemplateWrapper p {
@@ -4266,10 +4267,6 @@ label.checkboxLabel.detail-area-field{
     border-radius: 5px;
 }
 
-.project-location li.last {
-    margin-right: 0px;
-}
-
 .project-location ul {
 	list-style-type: none;
 	padding-left: 0px;
@@ -4525,28 +4522,17 @@ label.checkboxLabel.detail-area-field{
     margin: 11px 0.50% 11px 0.50%;
 }
 
-.project-location {
-	height:12px;
-}
-
 .project-thumbnail {
     height: 237px;
 }
 #mw-content-text #sfForm .add-attachments-upload .createboxInput {
 	max-width:80%;
 }
-.project-location li {
-    display: initial;
-    margin-right: 10px;
-	font-size: 12px;
-	line-height: 10px;
-}
+
 .indispensable-call-box {
     margin: 30px 0px;
 }
-.project-location li.last {
-    margin-right: 0px;
-}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -4554,6 +4540,11 @@ label.checkboxLabel.detail-area-field{
 .navbar ul.navbar-nav > li {
     width: 100%;
     float: left;
+}
+
+.project-blurb, .project-card-content .mw-translate-fuzzy {
+	-webkit-line-clamp: 3;
+    height: 60px;
 }
 
 .nav {
@@ -4727,6 +4718,10 @@ h1.firstHeading {
 	    width: 100%;
 	    white-space: nowrap;
 	    vertical-align: baseline;
+		color: #444;
+		display: block;
+	    -webkit-line-clamp: 1;
+	    -webkit-box-orient: initial;
 	}
 	
 	.project-card .col-xs-5 {
@@ -4749,9 +4744,9 @@ h1.firstHeading {
 	    height: 126px;
 	}
 	.project-card h5.project-title {
-	    font-size: 15px;
-	    margin-top: 0px;
-	    height: 19px;
+	    font-size: 16px;
+	    margin-top: 4px;
+	    height: 20px;
 	    margin-bottom: 5px;
 	    overflow: hidden;
 	    line-height: 1;
