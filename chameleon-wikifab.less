@@ -1866,8 +1866,12 @@ h5.project-title span {
 .project-blurb, .project-card-content .mw-translate-fuzzy {
     height: 38px;
 	font-size: 13.5px;
+    color: #444;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-	color:#444;
+    text-overflow: ellipsis;
 }
 
 .project-blurb:first-letter {
