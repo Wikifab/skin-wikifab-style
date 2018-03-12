@@ -1681,10 +1681,14 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
     padding: 11px 13px;
     border: 0px;
     font-size: 17px;
-    border-radius: 3px 0px 0px 3px;
-    max-width: 300px;
-    float: left;
-    width: calc(100% - 70px);
+    border-radius: 3px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.wfExpInput-container .input-group-btn {
+    display: inline;
+    margin-left: -50px;
 }
 
 .wfExpInput-container button.mw-searchButton {
@@ -1693,12 +1697,17 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
     width: 50px;
     border: 0px;
     padding: 11px 13px;
-    background-color: #fff;
-    border-radius: 0px 3px 3px 0;
+    background-color: transparent;
     color: transparent;
     background-image: url(/w/skins/dokit-package/assets/search-button.png);
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.5;
+    transition: 0.25s;
+}
+
+.wfExpInput-container button.mw-searchButton:hover {
+    opacity: 1;
 }
 
 .project-card-lang-code {
