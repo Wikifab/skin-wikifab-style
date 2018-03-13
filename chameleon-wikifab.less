@@ -1701,13 +1701,17 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
     color: transparent;
     background-image: url(/w/skins/dokit-package/assets/search-button.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 10px;
     opacity: 0.5;
     transition: 0.25s;
 }
 
-.wfExpInput-container button.mw-searchButton:hover {
+.wfExpInput-container button.mw-searchButton:hover,
+.wfExpInput-container button.mw-searchButton:focus,
+.wfExpInput-container button.mw-searchButton:active {
     opacity: 1;
+    color: transparent;
+    background-color: transparent;
 }
 
 .project-card-lang-code {
