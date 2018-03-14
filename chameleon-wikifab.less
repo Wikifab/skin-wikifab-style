@@ -2566,16 +2566,21 @@ body.page-Wikifab_Creator_handbook {
 	margin-right:5px;
 }
 
-.custom-tooltip {
+.custom-tooltip, custom-tooltip-light {
     margin-left:3px;
 }
 
-.custom-tooltip .smwtticon.info {
+.custom-tooltip .smwtticon.info,
+.custom-tooltip-light .smwtticon.info {
 	background: url('images/question-icon.png');
     opacity: 0.3;
     padding: 9px;
     transition: all ease .25s;
     background-repeat: no-repeat;
+}
+
+.custom-tooltip-light .smwtticon.info {
+    background: url('images/question-icon-light.png');
 }
 
 .cc-modal-subtitle {
@@ -2584,7 +2589,8 @@ body.page-Wikifab_Creator_handbook {
     margin-left: 4px;
 }
 
-.custom-tooltip .smwtticon.info:hover {
+.custom-tooltip .smwtticon.info:hover,
+.custom-tooltip-light .smwtticon.info:hover {
     opacity: 1;
 }
 
