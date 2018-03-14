@@ -374,13 +374,13 @@ span.status-checkbox {
     margin-bottom: 15px;
 }
 
-.NewPageTabs .label {
+.NewPageTabs .chooselabel {
     float: left;
-    font-weight: bold;
+    margin-right: 10px;
     padding-top: 7px;
 }
 
-.NewPageTabs .nav-tabs > li {
+.NewPageTabs ul.nav-tabs > li {
     padding: 5px 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -388,18 +388,19 @@ span.status-checkbox {
     margin-left: 10px;
 }
 
-.NewPageTabs .nav-tabs > li:hover {
+.NewPageTabs ul.nav-tabs > li:hover {
     background: #f1f1f1;
     cursor: pointer;
 }
 
-.NewPageTabs .nav-tabs > li.active {
+.NewPageTabs ul.nav-tabs > li.active,
+.NewPageTabs ul.nav-tabs > li.active:hover {
     background: #1fc8db;
     color: #fff;
     border-color: #1fc8db;
 }
 
-.NewPageTabs .nav-tabs > li:first-child {
+.NewPageTabs ul.nav-tabs > li:first-child {
     margin-left:0px;
 }
 
@@ -408,6 +409,7 @@ span.status-checkbox {
     width: calc(~"100% - 134px");
     border-radius: 3px;
     padding: 8px;
+    vertical-align: top;
 }
 
 .NewPageField input[type='submit'] {
