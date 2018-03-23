@@ -1712,34 +1712,38 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	z-index: 1;
 }
 
+.wfExpInput-container {
+    display: inline-flex;
+    width: 100%;
+    max-width: 450px;
+}
+
 .wfExpInput-container input.fulltext-search {
     color: #333333;
-    padding: 11px 13px;
+    padding: 10px 50px 10px 13px;
     border: 0px;
     font-size: 17px;
     border-radius: 3px;
-    max-width: 450px;
     width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-overflow: ellipsis;
 }
 
 .wfExpInput-container .input-group-btn {
     display: inline;
-    margin-left: -50px;
+    margin-left: -45px;
 }
 
 .wfExpInput-container button.mw-searchButton {
-    font-size: 17px;
+    font-size: 22px;
     font-weight: normal;
-    width: 50px;
     border: 0px;
-    padding: 11px 13px;
+    margin-top: -2px;
+    padding: 7px 13px;
     background-color: transparent;
-    color: transparent;
-    background-image: url('images/search-button.png');
-    background-repeat: no-repeat;
-    background-position: center 10px;
     opacity: 0.5;
-    z-index: auto !important;
     transition: 0.25s;
 }
 
@@ -1747,7 +1751,6 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 .wfExpInput-container button.mw-searchButton:focus,
 .wfExpInput-container button.mw-searchButton:active {
     opacity: 1;
-    color: transparent;
     box-shadow: none;
     background-color: transparent;
 }
@@ -3780,6 +3783,10 @@ body.rootpage-Wikifab_Community div.wiki-nav + div > div.container > div.siteNot
 	font-size:30px;
 }
 
+.contentHeader {
+    float:left;
+}
+
 .hello-world-page h2.contribuer-subtitle {
 	margin-top:50px;
 }
@@ -4641,6 +4648,15 @@ label.checkboxLabel.detail-area-field{
 .navbar ul.navbar-nav > li {
     width: 100%;
     float: left;
+}
+
+.footer-dokit {
+    text-align: center;
+    line-height: 2em;
+}
+
+.footer-dokit ul {
+    float: none;
 }
 
 .project-blurb, .project-card-content .mw-translate-fuzzy {
