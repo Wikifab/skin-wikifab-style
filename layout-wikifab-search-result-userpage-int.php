@@ -1,4 +1,4 @@
-<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="col-md-4 col-sm-6 col-xs-12">
 	<div class="project-card">
 		<a href="<?php echo $url; ?>">
 			<div class="row">
@@ -16,9 +16,7 @@
 							<span class="mw-headline"><?php echo $title; ?></span>
 						</h5>
 						<p class="project-byline">
-							<?php echo $creator; ?>
 							<?php if (isset($Area)):?>
-							<span class="project-byline-separator">|</span>
 							<span class="area-style"><?php echo $Area; ?></span>
 							<?php endif; ?>
 						</p>
