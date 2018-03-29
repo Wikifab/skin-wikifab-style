@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-5">
 					<div class="project-thumbnail">
-						<img src="<?php echo  getImageUrl($Main_Picture);?>"  alt="<?php echo $Main_Picture; ?>"/>
+						<img src="<?php echo  WikifabExploreResultFormatter::getImageUrl($Main_Picture);?>"  alt="<?php echo $Main_Picture; ?>"/>
 						<div class="project-card-lang-code lang-<?php echo $codeLang; ?>">
 							<?php echo $codeLang; ?>
 						</div>
