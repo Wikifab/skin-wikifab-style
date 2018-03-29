@@ -33,7 +33,7 @@
 								<?php endif; ?>
 								<?php if (isset($Business)):?>
 									<li>
-									<i class="fa fa-money"></i>
+									<i class="fa fa-building-o"></i>
 									<span class="location-name"><?php echo $Business; ?></span>
 									</li>
 								<?php endif; ?>
