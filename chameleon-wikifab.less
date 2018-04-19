@@ -1264,31 +1264,56 @@ body.skin-chameleon .qtip {
     font-size: 25px;
 }
 
-.dont-icon, .caution-icon, .pin-icon, .idea-icon, .info-icon {
-	width: 30px;
-	height: 30px;
-	background-size:100%;
-	background-repeat:no-repeat;
+.icon-instructions {
+    padding: 5px 11px 8px;
+    background: #f9f9f9;
 }
 
-.dont-icon {
-	background-image: url('images/dont-icon.jpg');
+.icon-instructions-icon {
+    float: left;
+    width: 35px;
+    text-align: center;
+    font-size: 1.70em;
 }
 
-.caution-icon {
-	background-image: url('images/caution-icon.jpg');
+.icon-instructions.dont-icon {
+    border-left: 4px solid #000;
 }
 
-.pin-icon {
-	background-image: url('images/pin-icon.jpg');
+.icon-instructions.dont-icon .icon-instructions-icon {
+    color:#000;
 }
 
-.idea-icon {
-	background-image: url('images/idea-icon.jpg');
+.icon-instructions.caution-icon {
+    border-left: 4px solid red;
 }
 
-.info-icon {
-	background-image: url('images/info-icon.jpg');
+.icon-instructions.caution-icon .icon-instructions-icon {
+    color:red;
+}
+
+.icon-instructions.pin-icon {
+    border-left: 4px solid #555;
+}
+
+.icon-instructions.pin-icon .icon-instructions-icon {
+    color:#555;
+}
+
+.icon-instructions.idea-icon {
+    border-left: 4px solid yellow;
+}
+
+.icon-instructions.idea-icon .icon-instructions-icon {
+    color:yellow;
+}
+
+.icon-instructions.info-icon {
+    border-left: 4px solid #555;
+}
+
+.icon-instructions.info-icon .icon-instructions-icon {
+    color:#555;
 }
 
 .icon-instructions-text {
