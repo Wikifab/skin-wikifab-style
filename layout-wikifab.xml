@@ -40,6 +40,15 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 		<component type="PersonalTools" position="right"> </component>
 	</component>
 
+	<component type="MainContentHeader">
+		<component type="Title" position="head"></component>
+		<component type="PageToolsTabs" position="left"></component>
+		<component type="PageLinks" position="right"></component>
+		<component type="PageToolsDropdown" position="right"></component>
+	</component>
+
+
+
 	<component class="wiki-nav">
 		<!--  tool bar for other page than Home page-->
 		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
