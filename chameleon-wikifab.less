@@ -1170,7 +1170,6 @@ body.skin-chameleon .qtip {
     background-image: -webkit-linear-gradient(#fcfcfc,#eee);
     background-image: linear-gradient(#fcfcfc,#eee);
     border: 1px solid #d5d5d5;
-    overflow: hidden;
 }
 
 .header-right-aligned li.navbar-tools-tools ul#p-contentnavigation {
@@ -1187,11 +1186,24 @@ body.skin-chameleon .qtip {
 }
 
 .header-right-aligned .navbar-personaltools-tools li,
-.header-right-aligned .navbar-personaltools-tools li a {
+.header-right-aligned .navbar-personaltools-tools li a,
+.header-right-aligned .navbar-personaltools-tools li:hover,
+.header-right-aligned .navbar-personaltools-tools li a:hover,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child:hover,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child:hover {
     height: 28px;
+    background: transparent;
 }
 
-.header-right-aligned .navbar-personaltools-tools li a span {
+
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a > *,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a > *,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a:hover > *,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a:hover > *,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a:focus > *,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a:focus > * {
     line-height: normal;
     padding: unset;
 }
