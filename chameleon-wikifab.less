@@ -33,9 +33,16 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
     outline-offset: 0px;
 }
 
+#main-content-header {
+    margin-bottom: 20px;
+    background-color: #fafbfc;
+    border-bottom: 1px solid #eee;
+}
+
 nav.navbar-default {
     background-color: #30373b;
     border-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .skin-chameleon .navbar #mw-searchButton {
@@ -1141,6 +1148,38 @@ body.skin-chameleon .qtip {
 	background-color: #52bad5;
 	border:none;
 }
+
+.page-tools-tabs {
+    float: left;
+}
+
+.page-tools-tabs .list-inline {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.page-tools-tabs .list-inline > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #bbb;
+    padding: 11px 14px;
+    margin-bottom: -1px;
+}
+
+.page-tools-tabs li.selected {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top: 3px solid #52bad5;
+    background: #fff;
+}
+
 
 .p-contentnavigation li a:hover {
 	text-decoration:none;
