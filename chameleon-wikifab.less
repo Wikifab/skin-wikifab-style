@@ -68,8 +68,8 @@ nav.navbar-default {
 }
 
 .navbar ul.nav > li:hover,
-.skin-chameleon .navbar-tools > li > a:hover,
-.skin-chameleon .navbar-tools > li > a:focus {
+.skin-chameleon .nav .navbar-tools > li > a:hover,
+.skin-chameleon .nav .navbar-tools > li > a:focus {
     background: rgba(255,255,255,.2);
 }
 
@@ -1153,6 +1153,10 @@ body.skin-chameleon .qtip {
     float: left;
 }
 
+.header-right-aligned {
+    float:right;
+}
+
 .page-tools-tabs .list-inline {
     margin-left: 0px;
     margin-bottom: 0px;
@@ -1163,8 +1167,12 @@ body.skin-chameleon .qtip {
     padding-left: 5px;
     padding-right: 5px;
     color: #bbb;
-    padding: 11px 14px;
+    padding: 9px 15px;
     margin-bottom: -1px;
+}
+
+.page-tools-tabs .list-inline > li a:hover {
+    text-decoration:none;
 }
 
 .page-tools-tabs li.selected {
@@ -1598,6 +1606,7 @@ body.skin-chameleon .qtip {
 h1.firstHeading {
     font-size: 28px;
     padding-bottom: .4em;
+    border-bottom: 0px;
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
@@ -4723,15 +4732,15 @@ label.checkboxLabel.detail-area-field{
     margin: auto;
 }
 
-.skin-chameleon .navbar-tools .open .dropdown-menu > li > a {
+.skin-chameleon .nav .navbar-tools .open .dropdown-menu > li > a {
     font-size: 15px;
 }
 
-.skin-chameleon .navbar-tools .open .dropdown-menu > li > a:hover {
+.skin-chameleon .nav .navbar-tools .open .dropdown-menu > li > a:hover {
     color:#fff;
 }
 
-.skin-chameleon .navbar-tools .open .dropdown-menu {
+.skin-chameleon .nav .navbar-tools .open .dropdown-menu {
     margin-bottom: 15px;
 }
 
@@ -5482,7 +5491,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
         border-left: 0px;
     }
 
-    .skin-chameleon .navbar-tools > li:last-child > a:hover {
+    .skin-chameleon .nav .navbar-tools > li:last-child > a:hover {
         color: rgba(255,255,255,1);
     }
 
@@ -5637,37 +5646,37 @@ a.create-group-btn:hover {
 	background:#2c9ab7;
 }
 
-.skin-chameleon .navbar-tools > li > a,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:focus,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:visited,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:link,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:focus  {
+.skin-chameleon .nav .navbar-tools > li > a,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:visited,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:link,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:focus,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:visited,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:link,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:focus  {
     color: rgba(255,255,255,.4) !important;
 }
 
-.skin-chameleon .navbar-tools > li > a:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:focus:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:link:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:focus:hover,
-.skin-chameleon .navbar-tools > li.open > a,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:focus,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:visited,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:link,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:focus,
-.skin-chameleon .navbar-tools > li.open > a:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:focus:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
+.skin-chameleon .nav .navbar-tools > li > a:hover,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:visited:hover,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:link:hover,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:focus:hover,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:focus:hover,
+.skin-chameleon .nav .navbar-tools > li.open > a,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:visited,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:link,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:focus,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:link,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus,
+.skin-chameleon .nav .navbar-tools > li.open > a:hover,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:visited:hover,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:link:hover,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:focus:hover,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
     color: #fff !important;
     background: rgba(255,255,255,0.2) !important;
 }
