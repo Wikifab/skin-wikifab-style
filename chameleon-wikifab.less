@@ -68,8 +68,8 @@ nav.navbar-default {
 }
 
 .navbar ul.nav > li:hover,
-.skin-chameleon .nav .navbar-tools > li > a:hover,
-.skin-chameleon .nav .navbar-tools > li > a:focus {
+.skin-chameleon nav .navbar-tools > li > a:hover,
+.skin-chameleon nav .navbar-tools > li > a:focus {
     background: rgba(255,255,255,.2);
 }
 
@@ -734,13 +734,13 @@ body[class*='page-Wikifab_Help_'] .wiki-nav,
 	display:none;
 }
 
-.mw-special-Userlogin .wiki-nav + div {
+.mw-special-Userlogin nav + div {
 	max-width: 320px;
     margin: auto;
     text-align: center;
 }
 
-.mw-special-Userlogin .wiki-nav + div .container {
+.mw-special-Userlogin nav + div .container {
 	width:100%;
 }
 
@@ -1154,7 +1154,42 @@ body.skin-chameleon .qtip {
 }
 
 .header-right-aligned {
-    float:right;
+    float: right;
+    display: inline-flex;
+}
+
+.header-right-aligned .navbar-personaltools-tools {
+    margin-left: 5px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fcfcfc,#eee);
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    overflow: hidden;
+}
+
+.header-right-aligned li.navbar-tools-tools ul#p-contentnavigation {
+    top: 26px;
+    right: 0;
+    text-align: left;
+    left: auto;
+}
+
+.header-right-aligned .navbar-personaltools-tools:hover {
+    color: #333333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.header-right-aligned .navbar-personaltools-tools li,
+.header-right-aligned .navbar-personaltools-tools li a {
+    height: 28px;
+}
+
+.header-right-aligned .navbar-personaltools-tools li a span {
+    line-height: normal;
+    padding: unset;
 }
 
 .page-tools-tabs .list-inline {
@@ -4732,15 +4767,15 @@ label.checkboxLabel.detail-area-field{
     margin: auto;
 }
 
-.skin-chameleon .nav .navbar-tools .open .dropdown-menu > li > a {
+.skin-chameleon nav .navbar-tools .open .dropdown-menu > li > a {
     font-size: 15px;
 }
 
-.skin-chameleon .nav .navbar-tools .open .dropdown-menu > li > a:hover {
+.skin-chameleon nav .navbar-tools .open .dropdown-menu > li > a:hover {
     color:#fff;
 }
 
-.skin-chameleon .nav .navbar-tools .open .dropdown-menu {
+.skin-chameleon nav .navbar-tools .open .dropdown-menu {
     margin-bottom: 15px;
 }
 
@@ -4810,6 +4845,10 @@ h1.firstHeading {
     min-height: 190px;
     max-height: 350px;
     min-width: 279px;
+}
+
+#profileWf {
+    margin-top: 25px;
 }
 
 #profileWf .project-card .col-xs-5, .searchresults .project-card .col-xs-5 {
@@ -5491,7 +5530,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
         border-left: 0px;
     }
 
-    .skin-chameleon .nav .navbar-tools > li:last-child > a:hover {
+    .skin-chameleon nav .navbar-tools > li:last-child > a:hover {
         color: rgba(255,255,255,1);
     }
 
@@ -5646,37 +5685,37 @@ a.create-group-btn:hover {
 	background:#2c9ab7;
 }
 
-.skin-chameleon .nav .navbar-tools > li > a,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:visited,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:link,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:focus,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:visited,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:link,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:focus  {
+.skin-chameleon nav .navbar-tools > li > a,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:visited,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:link,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:focus,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:visited,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:link,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:focus  {
     color: rgba(255,255,255,.4) !important;
 }
 
-.skin-chameleon .nav .navbar-tools > li > a:hover,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:visited:hover,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:link:hover,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-userloggedin:focus:hover,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:visited:hover,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:link:hover,
-.skin-chameleon .nav .navbar-tools > li > a.navbar-usernotloggedin:focus:hover,
-.skin-chameleon .nav .navbar-tools > li.open > a,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:visited,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:link,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:focus,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:link,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus,
-.skin-chameleon .nav .navbar-tools > li.open > a:hover,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:visited:hover,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:link:hover,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-userloggedin:focus:hover,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
-.skin-chameleon .nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
+.skin-chameleon nav .navbar-tools > li > a:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:focus:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:focus:hover,
+.skin-chameleon nav .navbar-tools > li.open > a,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:visited,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:link,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:focus,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:link,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus,
+.skin-chameleon nav .navbar-tools > li.open > a:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:focus:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
     color: #fff !important;
     background: rgba(255,255,255,0.2) !important;
 }
