@@ -833,6 +833,10 @@ body.skin-chameleon .qtip {
 	width: 100%;
 }
 
+.WFfilter .WFfilter-filters .btn-group:first-child {
+    margin-top:0px;
+}
+
 .WFfilter .btn-group label {
 	width: 100%;
 }
@@ -1166,7 +1170,6 @@ body.skin-chameleon .qtip {
     background-image: -webkit-linear-gradient(#fcfcfc,#eee);
     background-image: linear-gradient(#fcfcfc,#eee);
     border: 1px solid #d5d5d5;
-    overflow: hidden;
 }
 
 .header-right-aligned li.navbar-tools-tools ul#p-contentnavigation {
@@ -1183,11 +1186,24 @@ body.skin-chameleon .qtip {
 }
 
 .header-right-aligned .navbar-personaltools-tools li,
-.header-right-aligned .navbar-personaltools-tools li a {
+.header-right-aligned .navbar-personaltools-tools li a,
+.header-right-aligned .navbar-personaltools-tools li:hover,
+.header-right-aligned .navbar-personaltools-tools li a:hover,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child:hover,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child:hover {
     height: 28px;
+    background: transparent;
 }
 
-.header-right-aligned .navbar-personaltools-tools li a span {
+
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a > *,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a > *,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a:hover > *,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a:hover > *,
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a:focus > *,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a:focus > * {
     line-height: normal;
     padding: unset;
 }
@@ -1409,7 +1425,7 @@ body.skin-chameleon .qtip {
 	border-right: 1px solid #e7e7e7;
 }
 
-.p-contentnavigation li.selected {
+.page-tools-tabs .p-contentnavigation li.selected {
 	border: 1px solid #ddd;
 	border-bottom:1px solid #fff;
 	-webkit-border-top-left-radius: 4px;
@@ -1419,6 +1435,10 @@ body.skin-chameleon .qtip {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
     border-top: 3px solid #52bad5;
+}
+
+.header-right-aligned .p-contentnavigation li.selected a.selected {
+    font-weight:bold;   
 }
 
 /*********************
@@ -1640,7 +1660,10 @@ body.skin-chameleon .qtip {
 
 h1.firstHeading {
     font-size: 28px;
-    padding-bottom: .4em;
+    padding-bottom: .4em; 
+}
+
+.main-content-header h1.firstHeading {
     border-bottom: 0px;
 }
 
