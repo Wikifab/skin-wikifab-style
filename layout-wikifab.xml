@@ -41,44 +41,46 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 
 	<component type="MainContentHeader">
+		<!--  Hide tool bar to specific pages -->
+		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
+			UpdateProfile/personal,WfExplore,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,mw-special-WfSearch,Get_started,Best_practices"></modification>
+		<modification type="HideFor" namespace="NS_GROUP,NS_HELP,NS_USER,NS_SPECIAL,NS_MEDIAWIKI"></modification>
 		<component type="Title" position="head"></component>
 		<component type="PageToolsTabs" position="left"></component>
 		<component type="PageLinks" position="right"></component>
 		<component type="PageToolsDropdown" position="right"></component>
 	</component>
 
-
-
-	<component class="wiki-nav">
-		<!--  tool bar for other page than Home page-->
-		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
+	<component type="MainContentHeader">
+		<!--  Show tool bar on specific pages only by administrators -->
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
 			UpdateProfile/personal,WfExplore,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,mw-special-WfSearch,Get_started,Best_practices"></modification>
-			<modification type="HideFor" namespace="NS_HELP"></modification>
-		<grid>
-			<row>
-				<cell span="12">
-					<component type="PageTools"></component>
-				</cell>
-			</row>
-		</grid>
-	</component>
-	<component class="wiki-nav">
-		<!--  tool bar for Home page visible only by administrators -->
-		<modification type="ShowOnlyFor" page="Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
-			UpdateProfile/personal,Creator_handbook,WfExplore,Group,Groups,AboutGroups,Groupes,Explore,Contribute,Tutorial,Help,About,mw-special-WfSearch,Get_started,Best_practices"></modification>
 		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
-		<grid>
-			<row>
-				<cell span="12">
-					<component type="PageTools"></component>
-				</cell>
-			</row>
-		</grid>
+		<component type="PageToolsTabs" position="left"></component>
+		<component type="PageToolsDropdown" position="right"></component>
 	</component>
 
 	<component>
 		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,AboutGroups,Developers,About,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,mw-special-WfSearch,Creator_handbook,Get_started,Best_practices"></modification>
-			<modification type="HideFor" namespace="NS_GROUP,NS_HELP"></modification>
+			<modification type="HideFor" namespace="NS_GROUP,NS_HELP,NS_SPECIAL,NS_MEDIAWIKI"></modification>
+		<grid>
+			<row class="siteNoticeArea">
+				<cell span="12">
+					<component type="SiteNotice"></component>
+				</cell>
+			</row>
+
+			<row>
+				<cell span="12">
+					<component type="MainContentWithoutTitle"></component>
+				</cell>
+			</row>
+
+		</grid>
+	</component>
+
+	<component>
+		<modification type="ShowOnlyFor" namespace="NS_SPECIAL,NS_MEDIAWIKI"></modification>
 		<grid>
 			<row class="siteNoticeArea">
 				<cell span="12">
@@ -97,12 +99,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component>
 		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,AboutGroups,Developers,About,WfExplore,Group,Groups,Groupes,Explore,Contribute,Tutorial,Help,Creator_handbook,mw-special-WfSearch,Get_started,Best_practices"></modification>
-			<component type="MainContentWithoutTitle"></component>
+		<component type="MainContentWithoutTitle"></component>
 	</component>
-	
+
 	<component>
 		<modification type="ShowOnlyFor" namespace="NS_GROUP,NS_HELP"></modification>
-			<component type="MainContentWithoutTitle"></component>
+		<component type="MainContentWithoutTitle"></component>
 	</component>
 
 	<component class="footerdata">
@@ -114,7 +116,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 			</row>
 		</grid>
 	</component>
-
 
 <component class="footer-main">
 
