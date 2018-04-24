@@ -34,7 +34,7 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
 }
 
 #main-content-header {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     background-color: #fafbfc;
     border-bottom: 1px solid #eee;
 }
@@ -1160,9 +1160,15 @@ body.skin-chameleon .qtip {
 .header-right-aligned {
     float: right;
     display: inline-flex;
+    margin-bottom: 13px;
 }
 
-.header-right-aligned .navbar-personaltools-tools li.navbar-tools-tools {
+.header-right-aligned ul.page-tools-dropdown {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools {
     margin-left: 5px;
     height: 28px;
     border-radius: 3px;
@@ -1172,15 +1178,28 @@ body.skin-chameleon .qtip {
     border: 1px solid #d5d5d5;
 }
 
-@media (min-width: 768px) {
-.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child,
-.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child {
-    height: 28px;
-}
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools:hover {
+    background-image: none;
+    background-color: #e6e6e6;
+    border-color: #adadad;
 }
 
-.header-right-aligned li.navbar-tools-tools ul#p-contentnavigation {
-    top: 26px;
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools.open,
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools.open:hover {
+    background-image: none;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a {
+    padding: 8px;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a:hover {
+    text-decoration:none;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools ul#p-contentnavigation {
     right: 0;
     text-align: left;
     left: auto;
@@ -1651,7 +1670,6 @@ h1.firstHeading {
 
 .maincontent-header-head h1.firstHeading {
     border-bottom: 0px;
-    margin-top: 20px;
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
