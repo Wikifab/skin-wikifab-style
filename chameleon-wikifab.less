@@ -1179,33 +1179,11 @@ body.skin-chameleon .qtip {
     left: auto;
 }
 
-.header-right-aligned .navbar-personaltools-tools:hover {
-    color: #333333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
-}
-
-.header-right-aligned .navbar-personaltools-tools li,
-.header-right-aligned .navbar-personaltools-tools li a,
-.header-right-aligned .navbar-personaltools-tools li:hover,
-.header-right-aligned .navbar-personaltools-tools li a:hover,
-.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child,
-.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child,
-.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child:hover,
-.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child:hover {
-    height: 28px;
-    background: transparent;
-}
-
-
-.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a > *,
-.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a > *,
-.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a:hover > *,
-.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a:hover > *,
-.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child > a:focus > *,
-.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child > a:focus > * {
-    line-height: normal;
-    padding: unset;
+.skin-chameleon .header-right-aligned .navbar-tools {
+    height: auto;
+    margin: auto;
+    border-left: none;
+    border-right: none;
 }
 
 .page-tools-tabs .list-inline {
@@ -1661,10 +1639,12 @@ body.skin-chameleon .qtip {
 h1.firstHeading {
     font-size: 28px;
     padding-bottom: .4em; 
+    margin-top: 30px;
 }
 
-.main-content-header h1.firstHeading {
+.maincontent-header-head h1.firstHeading {
     border-bottom: 0px;
+    margin-top: 20px;
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
@@ -4285,6 +4265,10 @@ label.checkboxLabel.detail-area-field{
 	display:none;
 }
 
+#profileWf {
+    margin-top: 25px;
+}
+
 #sfForm .sf-select2-container {
 	margin-bottom:0px;
 }
@@ -4868,10 +4852,6 @@ h1.firstHeading {
     min-height: 190px;
     max-height: 350px;
     min-width: 279px;
-}
-
-#profileWf {
-    margin-top: 25px;
 }
 
 #profileWf .project-card .col-xs-5, .searchresults .project-card .col-xs-5 {
