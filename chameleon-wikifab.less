@@ -1162,7 +1162,7 @@ body.skin-chameleon .qtip {
     display: inline-flex;
 }
 
-.header-right-aligned .navbar-personaltools-tools {
+.header-right-aligned .navbar-personaltools-tools li.navbar-tools-tools {
     margin-left: 5px;
     height: 28px;
     border-radius: 3px;
@@ -1170,6 +1170,13 @@ body.skin-chameleon .qtip {
     background-image: -webkit-linear-gradient(#fcfcfc,#eee);
     background-image: linear-gradient(#fcfcfc,#eee);
     border: 1px solid #d5d5d5;
+}
+
+@media (min-width: 768px) {
+.skin-chameleon .header-right-aligned .navbar-tools > li:first-child:last-child,
+.skin-chameleon .header-right-aligned .navbar-tools li.open:first-child:last-child {
+    height: 28px;
+}
 }
 
 .header-right-aligned li.navbar-tools-tools ul#p-contentnavigation {
