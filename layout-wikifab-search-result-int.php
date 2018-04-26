@@ -23,7 +23,7 @@
 							<?php endif; ?>
 						</p>
 						<?php if (isset($Description)):?>
-							<p class="project-blurb"><?php echo $Description; ?></p>
+							<div class="project-blurb"><?php echo $Description; ?></div>
 						<?php endif; ?>
 						<div class="project-location">
 							<ul>
