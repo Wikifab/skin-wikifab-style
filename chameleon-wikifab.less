@@ -1166,10 +1166,12 @@ body.skin-chameleon .qtip {
 .header-right-aligned ul.page-tools-dropdown {
     list-style: none;
     padding-left: 0px;
+    margin-bottom: 0px;
+    display: inline-flex;
 }
 
 .header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools {
-    margin-left: 5px;
+    margin-left: 10px;
     height: 28px;
     border-radius: 3px;
     background-color: #eee;
@@ -1185,17 +1187,27 @@ body.skin-chameleon .qtip {
 }
 
 .header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools.open,
-.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools.open:hover {
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools.open:hover, {
     background-image: none;
     background-color: #d4d4d4;
     border-color: #8c8c8c;
 }
 
-.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a {
-    padding: 8px;
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a.dropdown-toggle,
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.page-tools-dropdown-tools a {
+    width: 28px;
+    float: left;
+    height: 100%;
+    text-align: center;
+    color: #333333;
 }
 
-.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a:hover {
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.page-tools-dropdown-tools a .glyphicon {
+    padding-top: 5px;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a:hover,
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a:focus {
     text-decoration:none;
 }
 
