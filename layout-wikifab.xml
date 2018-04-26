@@ -43,7 +43,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	<component type="MainContentHeader">
 		<!--  Hide tool bar to specific pages -->
 		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
-			UpdateProfile/personal,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
+			UpdateProfile/personal,Creator_handbook,Group,UserBoardAdvanced,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
 		<modification type="HideFor" namespace="NS_GROUP,NS_HELP,NS_USER"></modification>
 		<component type="Title" position="head"></component>
 		<component type="PageToolsTabs" position="left"></component>

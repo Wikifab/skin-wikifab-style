@@ -54,6 +54,10 @@ nav.navbar-default {
     color: #555;
 }
 
+body.ns-special .maincontent-header-tail {
+    display:none;
+}
+
 .skin-chameleon .navbar #mw-searchButton:hover {
     color: #fff;
 }
@@ -684,25 +688,6 @@ a:hover {
 	margin-top:12px;
 }
 
-.mw-special-UploadAvatar .wiki-nav,
-.mw-special-UpdateProfile .wiki-nav,
-.page-Special_UserBoard .wiki-nav,
-.mw-special-UserBoard .wiki-nav,
-.mw-special-Preferences .wiki-nav,
-.mw-special-Userlogout .wiki-nav,
-.mw-special-WfSearch .wiki-nav,
-#mw-prefsection-rendering-skin,
-#preftab-smw,
-.mw-special-Recentchanges .wiki-nav,
-.mw-special-InviteSignup .wiki-nav,
-body[class^='page-Wikifab_Help_'] .catlinks,
-body[class*='page-Wikifab_Help_'] .catlinks,
-body[class^='page-Wikifab_Help_'] .wiki-nav,
-body[class*='page-Wikifab_Help_'] .wiki-nav,
-.mw-special-Search .wiki-nav {
-	display:none;
-}
-
 #mw-search-top-table .oo-ui-textInputWidget.oo-ui-iconElement .oo-ui-iconElement-icon {
 	left: 0.3em;
     max-height: initial;
@@ -722,26 +707,27 @@ body[class*='page-Wikifab_Help_'] .wiki-nav,
     margin-bottom: 30px;
 }
 
-.wiki-nav {
-	border-bottom:1px solid #ddd;
+.mw-special-Userlogin #main-content-header {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0px;
 }
 
-
-.mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav, .mw-special-CreateAccount .wiki-nav,
-.mw-special-Upload .wiki-nav, .page-Special_WfSearch .wiki-nav, .mw-special-Confirmemail .wiki-nav,
-.mw-special-ViewSystemGift .wiki-nav, .mw-special-TopAwards .wiki-nav, .mw-special-ViewGift .wiki-nav,
-.mw-special-ViewGifts .wiki-nav, .mw-special-Notifications .wiki-nav {
-	display:none;
-}
-
-.mw-special-Userlogin nav + div {
-	max-width: 320px;
+.mw-special-Userlogin #main-content-header .container {
+    max-width: 320px;
     margin: auto;
+    margin-bottom: 25px;
     text-align: center;
 }
 
-.mw-special-Userlogin nav + div .container {
-	width:100%;
+.mw-special-Userlogin #main-content-header #firstHeading {
+    border-bottom: 1px solid #eee;
+}
+
+.mw-special-Userlogin #main-content-header + div .container {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
 }
 
 .indisp-icon-nok, .indisp-icon-ok {
@@ -1104,12 +1090,6 @@ body.skin-chameleon .qtip {
 	cursor: pointer;
 }
 
-.wiki-nav li#p-namespaces ul.list-inline > li, .wiki-nav li#p-views ul.list-inline > li, .wiki-nav li#p-actions ul.list-inline > li{
-	color:#bbb;
-	padding: 11px 14px;
-	margin-bottom: -1px;
-}
-
 .WikiPageContent .mw-body ol {
     width: 100%;
     text-align: right;
@@ -1200,6 +1180,17 @@ body.skin-chameleon .qtip {
     height: 100%;
     text-align: center;
     color: #333333;
+}
+
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.selected.page-tools-dropdown-tools,
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.selected.page-tools-dropdown-tools:hover {
+    background-color: #30373b;
+    background-image: none;
+    border: 1px solid #30373b;
+}
+
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.selected.page-tools-dropdown-tools a {
+    color:#fff;
 }
 
 .header-right-aligned ul.page-tools-dropdown li#ca-edit.page-tools-dropdown-tools a .glyphicon {
@@ -2308,15 +2299,6 @@ h5.project-title span {
 
 .marketing-section-hp-logged {
 	text-align:left;
-}
-
-body[class^='page-Utilisateur_'] .wiki-nav, body[class*='page-Utilisateur_'] .wiki-nav,
-body[class^='page-Utilisateur_'] .contentHeader, body[class*='page-Utilisateur_'] .contentHeader,
-body[class^='page-Utilisatrice_'] .wiki-nav, body[class*='page-Utilisatrice_'] .wiki-nav,
-body[class^='page-Utilisatrice_'] .contentHeader, body[class*='page-Utilisatrice_'] .contentHeader,
-body[class^='page-User_'] .wiki-nav, body[class*='page-User_'] .wiki-nav,
-body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHeader {
-    display:none;
 }
 
 .profile-info {
@@ -3896,27 +3878,6 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     transition: 2s;
 }
 
-
-body.rootpage-Wikifab_Help div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_AboutGroups div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_About div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Community div.wiki-nav + div > div.container {
-	width:100%
-}
-
-body.rootpage-Wikifab_Help div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_AboutGroups div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_About div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Community div.wiki-nav + div > div.container > div.siteNoticeArea {
-	display:none;
-}
-
 .hello-world-page h2 {
 	font-size:30px;
 }
@@ -4560,7 +4521,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .mw-indicators {
-    z-index: inherit;
+    display: none;
 }
 
 .wf-top-button{
@@ -4945,10 +4906,6 @@ h1.firstHeading {
 	padding-top:120px;
 }
 
-.wiki-nav{
-	display:none;
-}
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -4966,7 +4923,7 @@ h1.firstHeading {
 		font-size: 18px;
 	}
 
-	#bodyContent .searchresults p.project-blurb {
+	#bodyContent .searchresults .project-blurb {
 	    margin-bottom: 10px;
 	    height: 20px;
 	    text-overflow: ellipsis;
@@ -5130,7 +5087,6 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class
 body[class^='page-Group_'] .group-banner img, body[class*='page-Group_'] .group-banner img {
 	width: 100%;
     height: auto;
-    opacity: 0.5;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -5150,6 +5106,7 @@ body[class^='page-Group_'] .group-banner, body[class*='page-Group_'] .group-bann
 	background-color: #30373b;
 	color: transparent;
 	position: relative;
+    opacity: 0.7;
 }
 
 .group-info span {
@@ -5242,12 +5199,6 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberac
 body[class^='page-Group_'] .navbar,
 body[class*='page-Group_'] .navbar {
 	margin-bottom: 0px;
-}
-
-body[class^='page-Group_'] .wiki-nav,
-body[class*='page-Group_'] .wiki-nav {
-    background: #fff;
-    padding-top: 20px;
 }
 
 body[class^='page-Group_'].action-view .p-contentnavigation li.selected, body[class*='page-Group_'].action-view .p-contentnavigation li.selected {
@@ -5388,6 +5339,36 @@ body[class^='page-Group_'].action-view #catlinks #mw-normal-catlinks, body[class
 
 body[class^='page-Group_'].action-view .Input-tabs, body[class*='page-Group_'].action-view .Input-tabs {
 	margin-bottom:0px;
+    margin-top:0px;
+}
+
+.tabGroupsButton {
+    margin-button:10px;
+}
+
+.tabGroupsButton .edit-btn {
+    margin-left: 10px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fcfcfc,#eee);
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    float: right;
+}
+
+.tabGroupsButton .edit-btn:hover {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(#eee,#ddd);
+    background-image: linear-gradient(#eee,#ddd);
+    border: 1px solid #ccc;
+}
+
+.tabGroupsButton .edit-btn a {
+    padding: 4px 8px;
+    float: right;
+    height: 26px;
+    color: #333;
 }
 
 body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].action-view .footerdata {
