@@ -33,9 +33,16 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
     outline-offset: 0px;
 }
 
+#main-content-header {
+    margin-bottom: 25px;
+    background-color: #fafbfc;
+    border-bottom: 1px solid #eee;
+}
+
 nav.navbar-default {
     background-color: #30373b;
     border-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .skin-chameleon .navbar #mw-searchButton {
@@ -45,6 +52,10 @@ nav.navbar-default {
     background: none;
     z-index: 100;
     color: #555;
+}
+
+body.ns-special .maincontent-header-tail {
+    display:none;
 }
 
 .skin-chameleon .navbar #mw-searchButton:hover {
@@ -61,8 +72,8 @@ nav.navbar-default {
 }
 
 .navbar ul.nav > li:hover,
-.skin-chameleon .navbar-tools > li > a:hover,
-.skin-chameleon .navbar-tools > li > a:focus {
+.skin-chameleon nav .navbar-tools > li > a:hover,
+.skin-chameleon nav .navbar-tools > li > a:focus {
     background: rgba(255,255,255,.2);
 }
 
@@ -677,25 +688,6 @@ a:hover {
 	margin-top:12px;
 }
 
-.mw-special-UploadAvatar .wiki-nav,
-.mw-special-UpdateProfile .wiki-nav,
-.page-Special_UserBoard .wiki-nav,
-.mw-special-UserBoard .wiki-nav,
-.mw-special-Preferences .wiki-nav,
-.mw-special-Userlogout .wiki-nav,
-.mw-special-WfSearch .wiki-nav,
-#mw-prefsection-rendering-skin,
-#preftab-smw,
-.mw-special-Recentchanges .wiki-nav,
-.mw-special-InviteSignup .wiki-nav,
-body[class^='page-Wikifab_Help_'] .catlinks,
-body[class*='page-Wikifab_Help_'] .catlinks,
-body[class^='page-Wikifab_Help_'] .wiki-nav,
-body[class*='page-Wikifab_Help_'] .wiki-nav,
-.mw-special-Search .wiki-nav {
-	display:none;
-}
-
 #mw-search-top-table .oo-ui-textInputWidget.oo-ui-iconElement .oo-ui-iconElement-icon {
 	left: 0.3em;
     max-height: initial;
@@ -715,26 +707,27 @@ body[class*='page-Wikifab_Help_'] .wiki-nav,
     margin-bottom: 30px;
 }
 
-.wiki-nav {
-	border-bottom:1px solid #ddd;
+.mw-special-Userlogin #main-content-header {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0px;
 }
 
-
-.mw-special-FormEdit .wiki-nav, .mw-special-Userlogin .wiki-nav, .mw-special-CreateAccount .wiki-nav,
-.mw-special-Upload .wiki-nav, .page-Special_WfSearch .wiki-nav, .mw-special-Confirmemail .wiki-nav,
-.mw-special-ViewSystemGift .wiki-nav, .mw-special-TopAwards .wiki-nav, .mw-special-ViewGift .wiki-nav,
-.mw-special-ViewGifts .wiki-nav, .mw-special-Notifications .wiki-nav {
-	display:none;
-}
-
-.mw-special-Userlogin .wiki-nav + div {
-	max-width: 320px;
+.mw-special-Userlogin #main-content-header .container {
+    max-width: 320px;
     margin: auto;
+    margin-bottom: 25px;
     text-align: center;
 }
 
-.mw-special-Userlogin .wiki-nav + div .container {
-	width:100%;
+.mw-special-Userlogin #main-content-header #firstHeading {
+    border-bottom: 1px solid #eee;
+}
+
+.mw-special-Userlogin #main-content-header + div .container {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
 }
 
 .indisp-icon-nok, .indisp-icon-ok {
@@ -824,6 +817,10 @@ body.skin-chameleon .qtip {
 .WFfilter .btn-group {
 	margin-bottom: 10px;
 	width: 100%;
+}
+
+.WFfilter .WFfilter-filters .btn-group:first-child {
+    margin-top:0px;
 }
 
 .WFfilter .btn-group label {
@@ -1093,12 +1090,6 @@ body.skin-chameleon .qtip {
 	cursor: pointer;
 }
 
-.wiki-nav li#p-namespaces ul.list-inline > li, .wiki-nav li#p-views ul.list-inline > li, .wiki-nav li#p-actions ul.list-inline > li{
-	color:#bbb;
-	padding: 11px 14px;
-	margin-bottom: -1px;
-}
-
 .WikiPageContent .mw-body ol {
     width: 100%;
     text-align: right;
@@ -1141,6 +1132,120 @@ body.skin-chameleon .qtip {
 	background-color: #52bad5;
 	border:none;
 }
+
+.page-tools-tabs {
+    float: left;
+}
+
+.header-right-aligned {
+    float: right;
+    display: inline-flex;
+    margin-bottom: 13px;
+}
+
+.header-right-aligned ul.page-tools-dropdown {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    display: inline-flex;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools {
+    margin-left: 10px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fcfcfc,#eee);
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools:hover {
+    background-image: none;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools.open,
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools.open:hover, {
+    background-image: none;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a.dropdown-toggle,
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.page-tools-dropdown-tools a {
+    width: 28px;
+    float: left;
+    height: 100%;
+    text-align: center;
+    color: #333333;
+}
+
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.selected.page-tools-dropdown-tools,
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.selected.page-tools-dropdown-tools:hover {
+    background-color: #30373b;
+    background-image: none;
+    border: 1px solid #30373b;
+}
+
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.selected.page-tools-dropdown-tools a {
+    color:#fff;
+}
+
+.header-right-aligned ul.page-tools-dropdown li#ca-edit.page-tools-dropdown-tools a .glyphicon {
+    padding-top: 5px;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a:hover,
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools a:focus {
+    text-decoration:none;
+}
+
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools ul#p-contentnavigation {
+    right: 0;
+    text-align: left;
+    left: auto;
+}
+
+.skin-chameleon .header-right-aligned .navbar-tools {
+    height: auto;
+    margin: auto;
+    border-left: none;
+    border-right: none;
+}
+
+.page-tools-tabs .list-inline {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.page-tools-tabs .list-inline > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #bbb;
+    padding: 9px 15px;
+    margin-bottom: -1px;
+}
+
+.page-tools-tabs .list-inline > li a:hover {
+    text-decoration:none;
+}
+
+.page-tools-tabs li.selected {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top: 3px solid #52bad5;
+    background: #fff;
+}
+
 
 .p-contentnavigation li a:hover {
 	text-decoration:none;
@@ -1357,7 +1462,7 @@ body.skin-chameleon .qtip {
 	border-right: 1px solid #e7e7e7;
 }
 
-.p-contentnavigation li.selected {
+.page-tools-tabs .p-contentnavigation li.selected {
 	border: 1px solid #ddd;
 	border-bottom:1px solid #fff;
 	-webkit-border-top-left-radius: 4px;
@@ -1367,6 +1472,10 @@ body.skin-chameleon .qtip {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
     border-top: 3px solid #52bad5;
+}
+
+.header-right-aligned .p-contentnavigation li.selected a.selected {
+    font-weight:bold;   
 }
 
 /*********************
@@ -1588,7 +1697,12 @@ body.skin-chameleon .qtip {
 
 h1.firstHeading {
     font-size: 28px;
-    padding-bottom: .4em;
+    padding-bottom: .4em; 
+    margin-top: 30px;
+}
+
+.maincontent-header-head h1.firstHeading {
+    border-bottom: 0px;
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
@@ -1969,6 +2083,7 @@ h5.project-title span {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-button: 10px;
 }
 
 .project-card-content .project-blurb + ul {
@@ -2219,15 +2334,6 @@ h5.project-title span {
 
 .marketing-section-hp-logged {
 	text-align:left;
-}
-
-body[class^='page-Utilisateur_'] .wiki-nav, body[class*='page-Utilisateur_'] .wiki-nav,
-body[class^='page-Utilisateur_'] .contentHeader, body[class*='page-Utilisateur_'] .contentHeader,
-body[class^='page-Utilisatrice_'] .wiki-nav, body[class*='page-Utilisatrice_'] .wiki-nav,
-body[class^='page-Utilisatrice_'] .contentHeader, body[class*='page-Utilisatrice_'] .contentHeader,
-body[class^='page-User_'] .wiki-nav, body[class*='page-User_'] .wiki-nav,
-body[class^='page-User_'] .contentHeader, body[class*='page-User_'] .contentHeader {
-    display:none;
 }
 
 .profile-info {
@@ -3819,27 +3925,6 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     transition: 2s;
 }
 
-
-body.rootpage-Wikifab_Help div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_AboutGroups div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_About div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container,
-body.rootpage-Wikifab_Community div.wiki-nav + div > div.container {
-	width:100%
-}
-
-body.rootpage-Wikifab_Help div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Creator_handbook div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_AboutGroups div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_About div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Get_started div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Best_practices div.wiki-nav + div > div.container > div.siteNoticeArea,
-body.rootpage-Wikifab_Community div.wiki-nav + div > div.container > div.siteNoticeArea {
-	display:none;
-}
-
 .hello-world-page h2 {
 	font-size:30px;
 }
@@ -4225,6 +4310,10 @@ label.checkboxLabel.detail-area-field{
 	display:none;
 }
 
+#profileWf {
+    margin-top: 25px;
+}
+
 #sfForm .sf-select2-container {
 	margin-bottom:0px;
 }
@@ -4479,7 +4568,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .mw-indicators {
-    z-index: inherit;
+    display: none;
 }
 
 .wf-top-button{
@@ -4730,15 +4819,15 @@ label.checkboxLabel.detail-area-field{
     margin: auto;
 }
 
-.skin-chameleon .navbar-tools .open .dropdown-menu > li > a {
+.skin-chameleon nav .navbar-tools .open .dropdown-menu > li > a {
     font-size: 15px;
 }
 
-.skin-chameleon .navbar-tools .open .dropdown-menu > li > a:hover {
+.skin-chameleon nav .navbar-tools .open .dropdown-menu > li > a:hover {
     color:#fff;
 }
 
-.skin-chameleon .navbar-tools .open .dropdown-menu {
+.skin-chameleon nav .navbar-tools .open .dropdown-menu {
     margin-bottom: 15px;
 }
 
@@ -4864,10 +4953,6 @@ h1.firstHeading {
 	padding-top:120px;
 }
 
-.wiki-nav{
-	display:none;
-}
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -4885,7 +4970,7 @@ h1.firstHeading {
 		font-size: 18px;
 	}
 
-	#bodyContent .searchresults p.project-blurb {
+	#bodyContent .searchresults .project-blurb {
 	    margin-bottom: 10px;
 	    height: 20px;
 	    text-overflow: ellipsis;
@@ -5049,7 +5134,6 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class
 body[class^='page-Group_'] .group-banner img, body[class*='page-Group_'] .group-banner img {
 	width: 100%;
     height: auto;
-    opacity: 0.5;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -5069,6 +5153,7 @@ body[class^='page-Group_'] .group-banner, body[class*='page-Group_'] .group-bann
 	background-color: #30373b;
 	color: transparent;
 	position: relative;
+    opacity: 0.7;
 }
 
 .group-info span {
@@ -5161,12 +5246,6 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberac
 body[class^='page-Group_'] .navbar,
 body[class*='page-Group_'] .navbar {
 	margin-bottom: 0px;
-}
-
-body[class^='page-Group_'] .wiki-nav,
-body[class*='page-Group_'] .wiki-nav {
-    background: #fff;
-    padding-top: 20px;
 }
 
 body[class^='page-Group_'].action-view .p-contentnavigation li.selected, body[class*='page-Group_'].action-view .p-contentnavigation li.selected {
@@ -5307,6 +5386,36 @@ body[class^='page-Group_'].action-view #catlinks #mw-normal-catlinks, body[class
 
 body[class^='page-Group_'].action-view .Input-tabs, body[class*='page-Group_'].action-view .Input-tabs {
 	margin-bottom:0px;
+    margin-top:0px;
+}
+
+.tabGroupsButton {
+    margin-button:10px;
+}
+
+.tabGroupsButton .edit-btn {
+    margin-left: 10px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fcfcfc,#eee);
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    float: right;
+}
+
+.tabGroupsButton .edit-btn:hover {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(#eee,#ddd);
+    background-image: linear-gradient(#eee,#ddd);
+    border: 1px solid #ccc;
+}
+
+.tabGroupsButton .edit-btn a {
+    padding: 4px 8px;
+    float: right;
+    height: 26px;
+    color: #333;
 }
 
 body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].action-view .footerdata {
@@ -5489,7 +5598,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
         border-left: 0px;
     }
 
-    .skin-chameleon .navbar-tools > li:last-child > a:hover {
+    .skin-chameleon nav .navbar-tools > li:last-child > a:hover {
         color: rgba(255,255,255,1);
     }
 
@@ -5644,37 +5753,37 @@ a.create-group-btn:hover {
 	background:#2c9ab7;
 }
 
-.skin-chameleon .navbar-tools > li > a,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:focus,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:visited,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:link,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:focus  {
+.skin-chameleon nav .navbar-tools > li > a,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:visited,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:link,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:focus,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:visited,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:link,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:focus  {
     color: rgba(255,255,255,.4) !important;
 }
 
-.skin-chameleon .navbar-tools > li > a:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:link:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-userloggedin:focus:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:link:hover,
-.skin-chameleon .navbar-tools > li > a.navbar-usernotloggedin:focus:hover,
-.skin-chameleon .navbar-tools > li.open > a,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:focus,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:visited,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:link,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:focus,
-.skin-chameleon .navbar-tools > li.open > a:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:link:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-userloggedin:focus:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
-.skin-chameleon .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
+.skin-chameleon nav .navbar-tools > li > a:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-userloggedin:focus:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:focus:hover,
+.skin-chameleon nav .navbar-tools > li.open > a,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:visited,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:link,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:focus,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:link,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus,
+.skin-chameleon nav .navbar-tools > li.open > a:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-userloggedin:focus:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
+.skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
     color: #fff !important;
     background: rgba(255,255,255,0.2) !important;
 }
