@@ -1136,6 +1136,7 @@ body.skin-chameleon .qtip {
 
 .page-tools-tabs {
     float: left;
+    margin-bottom: -1px;
 }
 
 .header-right-aligned {
@@ -1224,11 +1225,8 @@ body.skin-chameleon .qtip {
 
 .page-tools-tabs .list-inline > li {
     display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
     color: #bbb;
     padding: 9px 15px;
-    margin-bottom: -1px;
 }
 
 .page-tools-tabs .list-inline > li a:hover {
@@ -5128,7 +5126,7 @@ body[class^='page-Group_'].action-view .firstHeading, body[class*='page-Group_']
 }
 
 body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav {
-	max-width: 1170px;
+	max-width: 1140px;
 	margin:auto;
     border-bottom: 0;
 }
@@ -5241,7 +5239,17 @@ body[class*='page-Group_'].action-view span.group-type {
     text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 3px;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a {
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a,
+body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top: 3px solid #52bad5;
     background: #fff;
 }
 
@@ -5264,8 +5272,8 @@ body[class^='page-Group_'].action-view #catlinks, body[class*='page-Group_'].act
 }
 
 body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
-    margin-left: 13px;
-	padding: 13px 16px;
+	padding: 9px 15px;
+	border: none;
 }
 
 body[class^='page-Spécial_AjouterDonnées_Group_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Group_'] .contentHeader,
@@ -5280,7 +5288,7 @@ body[class^='page-Special_FormEdit_Group_'] .col-lg-12, body[class*='page-Specia
 }
 
 body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav {
-	padding: 11px 0;
+	margin-bottom: -1px;
 }
 
 p.machines-form-first, p.machines-form {
