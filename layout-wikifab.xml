@@ -42,7 +42,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component type="MainContentHeader">
 		<!--  Hide tool bar to specific pages -->
-		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
+		<modification type="HideFor" page="Main_Page,Accueil,WfExplore,ExploreGroups,Contribuer,Community,Developers,UpdateProfile,
 			UpdateProfile/personal,Creator_handbook,Group,UserBoardAdvanced,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
 		<modification type="HideFor" namespace="NS_GROUP,NS_HELP,NS_USER"></modification>
 		<component type="Title" position="head"></component>
@@ -53,14 +53,14 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component type="MainContentHeader">
 		<!--  Show tool bar on specific pages only by administrators -->
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil,ExploreGroups,Contribuer,Community,Developers,Creator_handbook,Group,Groups,Groupes,AboutGroups,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
 		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
 		<component type="PageToolsTabs" position="left"></component>
 		<component type="PageToolsDropdown" position="right"></component>
 	</component>
 
 	<component>
-		<modification type="HideFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
+		<modification type="HideFor" page="Main_Page,Accueil,ExploreGroups,Contribuer,Community,Developers,WfExplore,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
 		<modification type="HideFor" namespace="NS_GROUP,NS_HELP"></modification>
 		<grid>
 			<row class="siteNoticeArea">
@@ -79,7 +79,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 	</component>
 
 	<component>
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil,Explorer,ExploreGroups,Contribuer,Community,Developers,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
+		<modification type="ShowOnlyFor" page="Main_Page,Accueil,WfExplore,ExploreGroups,Contribuer,Community,Developers,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
 			<component type="MainContentWithoutTitle"></component>
 	</component>
 
