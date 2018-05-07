@@ -1749,6 +1749,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
     border-bottom: 1px solid #fff;
+    border-top: 3px solid #52bad5;
 }
 
 #mw-content-text ul.tabbernav {
@@ -4762,7 +4763,7 @@ label.checkboxLabel.detail-area-field{
     min-width: 345px;
 }
 
-.nav {
+.nav, #ca-history, .dropdownButton-addtogroup {
 	display:none;
 }
 
@@ -4795,6 +4796,11 @@ label.checkboxLabel.detail-area-field{
 .navbar ul.navbar-nav > li {
     width: 100%;
     float: left;
+}
+
+.embedVideoUrlInput {
+    width: 100%;
+    margin-top: 10px;
 }
 
 .footer-dokit {
@@ -4969,6 +4975,10 @@ h1.firstHeading {
 	.step-instructions h2 {
 		font-size: 18px;
 	}
+
+    .load-more, .load-more-previous {
+        max-width: 290px;
+    }
 
 	#bodyContent .searchresults .project-blurb {
 	    margin-bottom: 10px;
@@ -5455,6 +5465,10 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	    max-width: 200px;
 	    margin: auto;
 	}
+
+    #PageGallery, .pageGalleryControls {
+        display:none;
+    }
 	body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
 	    margin-left: 5px;
 	    padding: 13px 7px;
@@ -6047,6 +6061,10 @@ body > .oo-ui-windowManager {
 }
 
 @media only screen and (max-width: 550px) {
+
+.PageNetworkLinks, .saving-menu #wpSaveAndContinue, .saving-menu .custom-tooltip-light {
+    display: none;
+}
 
 .cs-comment-details {
     display:none;
