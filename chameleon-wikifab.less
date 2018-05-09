@@ -557,7 +557,7 @@ a:hover {
     margin: 20px 0;
 }
 
-ul.wf-nav-tabs {
+.mw-body ul.wf-nav-tabs {
     float: left;
     width: 100%;
     padding-left:0px;
@@ -6114,8 +6114,15 @@ body > .oo-ui-windowManager {
 }
 
 .wf-nav-tabs > li > span.wf-nav-tabs-switch .fa {
-    display:block;
+    display: block;
+    font-size: 1.2em;
+    opacity: 0.5;
 }
+
+.wf-nav-tabs > li.active > span.wf-nav-tabs-switch .fa {
+    opacity:1;
+}
+
 
 .wf-nav-tabs span.wf-nav-tabs-text,
 .wf-nav-tabs .attach-link-table .fa {
