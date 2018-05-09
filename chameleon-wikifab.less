@@ -551,12 +551,58 @@ a:hover {
     border: 1px solid #ddd;
 }
 
+.wf-nav {
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+}
+
+ul.wf-nav-tabs {
+    float: left;
+    width: 100%;
+    padding-left:0px;
+    margin-bottom: 0px;
+}
+
+.wf-nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.wf-nav-tabs > li > span.wf-nav-tabs-switch {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-top: 3px solid transparent;
+}
+
+.wf-nav-tabs > li.active > span.wf-nav-tabs-switch, .wf-nav-tabs > li.active > span.wf-nav-tabs-switch:hover, .wf-nav-tabs > li.active > span.wf-nav-tabs-switch:focus {
+    color: initial;
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-bottom-color: transparent;
+    border-top: 3px solid #52bad5;
+}
+
+.wf-nav-tabs > li > span.wf-nav-tabs-switch .fa {
+    display:none;
+}
+
 .attach-link-table {
 	border-bottom: 1px solid #ddd;
 	background-color: #f9f9f9;
 	padding: 10px;
 	float: left;
 	width: 100%;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
 
 .attach-link-table:first-child {
@@ -6064,6 +6110,15 @@ body > .oo-ui-windowManager {
 
 .PageNetworkLinks, .saving-menu #wpSaveAndContinue, .saving-menu .custom-tooltip-light {
     display: none;
+}
+
+.wf-nav-tabs > li > span.wf-nav-tabs-switch .fa {
+    display:block;
+}
+
+.wf-nav-tabs span.wf-nav-tabs-text,
+.wf-nav-tabs .attach-link-table .fa {
+    display:none;
 }
 
 .cs-comment-details {
