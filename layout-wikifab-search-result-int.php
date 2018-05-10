@@ -45,6 +45,12 @@
 									<span class="location-name"><?php echo wfMessage('wf-propertyvalue-business-'.trim($Business)); ?></span>
 									</li>
 								<?php endif; ?>
+								<?php if (isset($Device)):?>
+									<li>
+									<i class="fa fa-mobile"></i>
+									<span class="location-name"><?php echo $Device; ?></span>
+									</li>
+								<?php endif; ?>
 								<?php if (isset($Cost)):?>
 									<li>
 									<i class="fa fa-money"></i>
