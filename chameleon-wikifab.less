@@ -10,10 +10,28 @@ body {
 	font-size: 14.5px;
 }
 
+/********** DARK HEADER **********/
+
 :root {
     --main-btn-color: #52bad5; 
     --main-hover-color: #2c9ab7;
+    --nav-bg-color: #30373b;
+    --nav-bghover-color: rgba(255,255,255,0.2);
+    --nav-txt-color: rgba(255,255,255,0.4);
+    --nav-txthover-color: rgba(255,255,255,1);
 }
+
+/********** WHITE HEADER **********/
+/*
+:root {
+    --main-btn-color: #52bad5; 
+    --main-hover-color: #2c9ab7;
+    --nav-bg-color: #fff;
+    --nav-bghover-color: #f1f1f1;
+    --nav-txt-color: #30373b; 
+    --nav-txthover-color: #30373b; 
+}
+*/
 
 @font-face {
     font-family: 'WikifabFont';
@@ -50,9 +68,10 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
 }
 
 nav.navbar-default {
-    background-color: #30373b;
+    background-color: var(--nav-bg-color);
     border-bottom: 0px;
     margin-bottom: 0px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 }
 
 .skin-chameleon .navbar #mw-searchButton {
@@ -72,8 +91,24 @@ body.ns-special .maincontent-header-tail {
     color: #fff;
 }
 
+.skin-chameleon .navbar-form .input-group > .form-control {
+    border: 0;
+    opacity: 0.4;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: 0.25s;
+    border-radius: 3px;
+    padding-right: 34px;
+    background-color: #000;
+    color:#fff;
+}
+
+.skin-chameleon .navbar-form .input-group > .form-control:focus {
+    opacity: 1;
+}
+
 .navbar-default .navbar-nav > li > a {
-    color: rgba(255,255,255,.4);
+    color: var(--nav-txt-color);
 }
 
 .navbar-right-aligned .navbar-tools:last-child li:last-child > a {
@@ -84,16 +119,16 @@ body.ns-special .maincontent-header-tail {
 .navbar ul.nav > li:hover,
 .skin-chameleon nav .navbar-tools > li > a:hover,
 .skin-chameleon nav .navbar-tools > li > a:focus {
-    background: rgba(255,255,255,.2);
+    background: var(--nav-bghover-color);
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: rgba(255,255,255,1);
+    color: var(--nav-txthover-color);
 }
 
 .navbar-personaltoolwidgets > #pt-notifications-notice > .mw-echo-notifications-badge::before:hover {
-    color: rgba(255,255,255,1);
+    color: var(--nav-txthover-color);
 }
 
 input, .input, textarea, .textarea, input.mw-ui-input, select {
@@ -105,7 +140,7 @@ input:hover, .input:hover, textarea:hover, .textarea:hover, select:hover, input.
 }
 
 input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.mw-ui-input:focus {
-	 border-color: var(--main-hover-color);
+	 border-color: var(--main-btn-color);
 	 box-shadow: 0 0 7px rgba(39,128,248,.15);
 	 outline:none;
 }
@@ -311,7 +346,7 @@ a:hover {
     border-radius: 4px;
     padding: 5px 10px;
     margin-top: -4px;
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     color: #fff;
     transition: all ease .2s;
 }
@@ -349,7 +384,7 @@ a:hover {
 .ext-translate-container .ext-translate-language-selector .uls {
     border-radius: 4px;
     padding: 5px 10px;
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     color: #fff;
     transition: all ease .2s;
     text-transform: capitalize;
@@ -360,7 +395,7 @@ a:hover {
 }
 
 .ext-translate-container .ext-translate-language-selector:after {
-	border-top: 4px solid var(--main-hover-color);
+	border-top: 4px solid var(--main-btn-color);
 }
 
 .ext-translate-container .tux-statsbar .tux-translated {
@@ -468,7 +503,7 @@ a:hover {
     font-weight: normal;
     border: none;
     transition: 0.25s;
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     float: left;
 }
 
@@ -601,7 +636,7 @@ a:hover {
     background-color: #f9f9f9;
     border: 1px solid #dddddd;
     border-bottom-color: transparent;
-    border-top: 3px solid var(--main-hover-color);
+    border-top: 3px solid var(--main-btn-color);
 }
 
 .wf-nav-tabs > li > span.wf-nav-tabs-switch .fa {
@@ -808,7 +843,7 @@ a:hover {
 }
 
 .community-mission {
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     margin: 100px 0px;
     color: #fff;
     padding: 70px 0 50px 0;
@@ -1121,7 +1156,7 @@ body.skin-chameleon .qtip {
 }
 
 .red-card{
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
 }
 
 .green-card{
@@ -1185,7 +1220,7 @@ body.skin-chameleon .qtip {
 }
 
 .WikiPageContent .carousel-indicators .active {
-	background-color: var(--main-hover-color);
+	background-color: var(--main-btn-color);
 	border:none;
 }
 
@@ -1302,7 +1337,7 @@ body.skin-chameleon .qtip {
     -moz-border-radius-topright: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    border-top: 3px solid var(--main-hover-color);
+    border-top: 3px solid var(--main-btn-color);
     background: #fff;
 }
 
@@ -1531,7 +1566,7 @@ body.skin-chameleon .qtip {
 	-moz-border-radius-topright: 4px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
-    border-top: 3px solid var(--main-hover-color);
+    border-top: 3px solid var(--main-btn-color);
 }
 
 .header-right-aligned .p-contentnavigation li.selected a.selected {
@@ -1568,7 +1603,7 @@ body.skin-chameleon .qtip {
 }
 
 #pt-notifications-notice .mw-echo-ui-toggleReadCircleButtonWidget-circle {
-	background-color:var(--main-hover-color);
+	background-color:var(--main-btn-color);
 }
 
 #pt-notifications-notice .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
@@ -1652,7 +1687,7 @@ body.skin-chameleon .qtip {
 
 .wf-top-button .btn{
 	margin-top: 8px;
-	background-color: var(--main-hover-color);
+	background-color: var(--main-btn-color);
 	color: #fff;
 	transition: all ease .2s;
 }
@@ -1733,7 +1768,7 @@ body.skin-chameleon .qtip {
 }
 
 .tabs-follow-btn a.UsersWatchButton .btn-message {
-	background: var(--main-hover-color);
+	background: var(--main-btn-color);
 	transition: all ease .25s;
 }
 
@@ -1766,8 +1801,8 @@ h1.firstHeading {
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
-	background-color:var(--main-hover-color);
-	border-color: var(--main-hover-color);
+	background-color:var(--main-btn-color);
+	border-color: var(--main-btn-color);
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover {
@@ -1809,7 +1844,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
     border-bottom: 1px solid #fff;
-    border-top: 3px solid var(--main-hover-color);
+    border-top: 3px solid var(--main-btn-color);
 }
 
 #mw-content-text ul.tabbernav {
@@ -2084,8 +2119,8 @@ span.project-card-separator {
 }
 
 .project-category:hover{
-	background-color:var(--main-hover-color);
-	border:1px solid var(--main-hover-color);
+	background-color:var(--main-btn-color);
+	border:1px solid var(--main-btn-color);
 	color:#fff;
 }
 
@@ -2311,7 +2346,7 @@ h5.project-title span {
 }
 
 .PotD-box{
-	background-color:var(--main-hover-color);
+	background-color:var(--main-btn-color);
 	color:#fff;
 	padding:5px 10px;
 	width:225px;
@@ -2576,7 +2611,7 @@ h5.project-title span {
     margin: 50px 0 100px;
     text-align: center;
     color: #fff;
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     padding: 80px 20px;
 }
 
@@ -2649,7 +2684,7 @@ h5.project-title span {
 }
 
 .btn-primary {
-	background-color: var(--main-hover-color);
+	background-color: var(--main-btn-color);
     border-color: transparent;
 }
 
@@ -2706,7 +2741,7 @@ body.page-Wikifab_Creator_handbook {
 	font-size: 15px;
 	padding: 10px 15px;
 	border:none;
-	background-color: var(--main-hover-color);
+	background-color: var(--main-btn-color);
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -2801,7 +2836,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .tuto-question-icon:hover {
-	color:var(--main-hover-color);
+	color:var(--main-btn-color);
 }
 
 .navbar-header .navbar-brand img {
@@ -2944,7 +2979,7 @@ body.page-Wikifab_Creator_handbook {
 .multipleTemplateAdder,
 .site-button {
 	margin-left:5px;
-	background-color: var(--main-hover-color);
+	background-color: var(--main-btn-color);
 	color:#fff;
 	padding: 7px 12px;
 	border: none;
@@ -3012,7 +3047,7 @@ body.page-Wikifab_Creator_handbook {
 	cursor:progress;
 }
 #wpSaveAndContinue.pf-save_and_continue-changed {
-	background-color : var(--main-hover-color);
+	background-color : var(--main-btn-color);
 	color: #fff;
 }
 
@@ -3043,7 +3078,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 #sfForm .sf-save_and_continue-changed {
-	background-color: var(--main-hover-color);	
+	background-color: var(--main-btn-color);	
 	color:#fff;
 }
 
@@ -3060,7 +3095,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .sitedir-ltr #mw-search-top-table #searchText:focus, .sitedir-ltr #mw-search-top-table #powerSearchText:focus {
-	border: 1px solid var(--main-hover-color);
+	border: 1px solid var(--main-btn-color);
 	box-shadow: 0 0 7px rgba(39,128,248,.15);
 	outline: none;
 }
@@ -3097,7 +3132,7 @@ ul.releases-list {
 }
 
 #role {
-	color: var(--main-hover-color);
+	color: var(--main-btn-color);
 }
 
 .contribute-block-title{
@@ -3139,9 +3174,9 @@ ul.releases-list {
 
 
 .contribute-block:hover {
-	background-color:var(--main-hover-color);
+	background-color:var(--main-btn-color);
 	color:#fff;
-	border:1px solid var(--main-hover-color);
+	border:1px solid var(--main-btn-color);
 }
 
 .join-community-footer {
@@ -3773,7 +3808,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 
 .skin-chameleon #pt-notifications-alert .mw-echo-notifications-badge:hover:before,
 .skin-chameleon #pt-notifications-notice .mw-echo-notifications-badge:hover:before {
-    color: #fff;
+    color: var(--nav-txthover-color);
 }
 
 .mw-input #mw-createaccount-join {
@@ -4313,7 +4348,7 @@ h5.tuto-details-material-title {
 }
 
 .WfFormTokensParent .select2-container-multi.select2-container-active .select2-choices {
-     border-color: var(--main-hover-color);
+     border-color: var(--main-btn-color);
      box-shadow: 0 0 7px rgba(39,128,248,.15);
 }
 
@@ -4499,8 +4534,8 @@ label.checkboxLabel.detail-area-field{
 
 #userloginForm .mw-ui-button.mw-ui-progressive,
 #userloginForm .mw-ui-button.mw-ui-constructive {
-    background-color: var(--main-hover-color);
-    border: 1px solid var(--main-hover-color);
+    background-color: var(--main-btn-color);
+    border: 1px solid var(--main-btn-color);
 }
 
 #userloginForm .mw-ui-button.mw-ui-progressive:hover,
@@ -5106,7 +5141,7 @@ h1.firstHeading {
 }
 
 .navbar-right-aligned .navbar-personaltools.navbar-personaltoolwidgets:hover {
-	background: rgba(255,255,255,.2);
+	background: var(--nav-bghover-color);
 }
 
 .navbar-personaltoolwidgets #pt-notifications-alert {
@@ -5120,29 +5155,13 @@ h1.firstHeading {
     box-shadow: none;
 }
 
-.skin-chameleon .navbar-form .input-group > .form-control {
-    border: 0;
-    opacity: 0.4;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    transition: 0.25s;
-    border-radius: 3px;
-    padding-right: 34px;
-    background-color: #000;
-    color:#fff;
-}
-
-.skin-chameleon .navbar-form .input-group > .form-control:focus {
-    opacity: 1;
-}
-
 .navbar-personaltoolwidgets #pt-notifications-notice .mw-echo-notifications-badge::before {
     background-image: none;
     height: 55px;
     padding: 21px 11px;
     font-family: 'Glyphicons Halflings';
     content: "\e123";
-    color: rgba(255,255,255,0.4);
+    color: var(--nav-txt-color);
     font-size: 18px;
 }
 
@@ -5319,7 +5338,7 @@ body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberac
     -moz-border-radius-topright: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    border-top: 3px solid var(--main-hover-color);
+    border-top: 3px solid var(--main-btn-color);
     background: #fff;
 }
 
@@ -5647,7 +5666,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	font-size: 17px;
 	padding: 12px 24px;
     border: none;
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -5817,7 +5836,7 @@ a.create-group-btn:hover {
 	font-size: 15px;
     padding: 9px 15px;
     border: none;
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -5853,7 +5872,7 @@ a.create-group-btn:hover {
 .skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:visited,
 .skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:link,
 .skin-chameleon nav .navbar-tools > li > a.navbar-usernotloggedin:focus  {
-    color: rgba(255,255,255,.4) !important;
+    color: var(--nav-txt-color) !important;
 }
 
 .skin-chameleon nav .navbar-tools > li > a:hover,
@@ -5877,8 +5896,7 @@ a.create-group-btn:hover {
 .skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:visited:hover,
 .skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:link:hover,
 .skin-chameleon nav .navbar-tools > li.open > a.navbar-usernotloggedin:focus:hover {
-    color: #fff !important;
-    background: rgba(255,255,255,0.2) !important;
+    color: var(--nav-txthover-color) !important;
 }
 
 
@@ -5921,7 +5939,7 @@ body > .oo-ui-windowManager {
 
 .cs-target-comment .cs-comment-header,
 .cs-head-comment > .cs-comment-header {
-    border-color:var(--main-hover-color);
+    border-color:var(--main-btn-color);
 }
 
 .cs-reply-comment > .cs-comment-header {
@@ -5973,7 +5991,7 @@ body > .oo-ui-windowManager {
 
 #cs-add-button,
 .cs-edit-box .cs-button {
-    background-color: var(--main-hover-color);
+    background-color: var(--main-btn-color);
     color: #fff;
     transition: all ease .2s;
     font-weight: normal;
