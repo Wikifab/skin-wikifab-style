@@ -10,6 +10,11 @@ body {
 	font-size: 14.5px;
 }
 
+:root {
+    --main-btn-color: #52bad5; 
+    --main-hover-color: #2c9ab7;
+}
+
 @font-face {
     font-family: 'WikifabFont';
     src: url('fonts/edosz.eot'),
@@ -100,7 +105,7 @@ input:hover, .input:hover, textarea:hover, .textarea:hover, select:hover, input.
 }
 
 input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.mw-ui-input:focus {
-	 border-color: #52bad5;
+	 border-color: var(--main-hover-color);
 	 box-shadow: 0 0 7px rgba(39,128,248,.15);
 	 outline:none;
 }
@@ -139,7 +144,7 @@ button.ui-datepicker-trigger {
 
 a:link, a.new:visited, a:visited, ul.tabbernav li a:link,
 .mw-body a.external:link, .mw-body a.external:visited {
-	color: #2c9ab7;
+	color: var(--main-hover-color);
 }
 
 a:hover {
@@ -177,7 +182,7 @@ a:hover {
 }
 
 #ca-talk a.new:link, #ca-talk a.new:visited {
-    color: #2c9ab7;
+    color: var(--main-hover-color);
 }
 
 .p-contentnavigation {
@@ -283,7 +288,7 @@ a:hover {
 }
 
 .ext-translate-container .tux-message-selector li.selected a {
-    color: #2c9ab7;
+    color: var(--main-hover-color);
 }
 
 .ext-translate-container .tux-message-selector li a {
@@ -292,7 +297,7 @@ a:hover {
 }
 
 .ext-translate-container .tux-message-selector li.selected {
-    border-color: #2c9ab7;
+    border-color: var(--main-hover-color);
 }
 
 .ext-translate-container .tux-message-selector li {
@@ -306,13 +311,13 @@ a:hover {
     border-radius: 4px;
     padding: 5px 10px;
     margin-top: -4px;
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     color: #fff;
     transition: all ease .2s;
 }
 
 .ext-translate-container .grouptitle.grouplink.tux-breadcrumb__item--aggregate:hover {
-	background-color:#2c9ab7;
+	background-color:var(--main-hover-color);
 }
 
 
@@ -338,28 +343,28 @@ a:hover {
 }
 
 .ext-translate-container .tm-suggestion, .ext-translate-container .in-other-language {
-	border-left: 2px solid #2c9ab7;
+	border-left: 2px solid var(--main-hover-color);
 }
 
 .ext-translate-container .ext-translate-language-selector .uls {
     border-radius: 4px;
     padding: 5px 10px;
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     color: #fff;
     transition: all ease .2s;
     text-transform: capitalize;
 }
 
 .ext-translate-container .ext-translate-language-selector .uls:hover {
-	background-color:#2c9ab7;
+	background-color:var(--main-hover-color);
 }
 
 .ext-translate-container .ext-translate-language-selector:after {
-	border-top: 4px solid #52bad5;
+	border-top: 4px solid var(--main-hover-color);
 }
 
 .ext-translate-container .tux-statsbar .tux-translated {
-    background-color: #2c9ab7;
+    background-color: var(--main-hover-color);
 }
 
 .grid.ext-translate-container .row.tux-messagetable-header.floating {
@@ -463,12 +468,12 @@ a:hover {
     font-weight: normal;
     border: none;
     transition: 0.25s;
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     float: left;
 }
 
 #mc_embed_signup input[type="submit"]:hover{
-    background-color: #2c9ab7;
+    background-color: var(--main-hover-color);
     color:#fff;
 }
 
@@ -596,7 +601,7 @@ a:hover {
     background-color: #f9f9f9;
     border: 1px solid #dddddd;
     border-bottom-color: transparent;
-    border-top: 3px solid #52bad5;
+    border-top: 3px solid var(--main-hover-color);
 }
 
 .wf-nav-tabs > li > span.wf-nav-tabs-switch .fa {
@@ -803,7 +808,7 @@ a:hover {
 }
 
 .community-mission {
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     margin: 100px 0px;
     color: #fff;
     padding: 70px 0 50px 0;
@@ -919,7 +924,7 @@ body.skin-chameleon .qtip {
 }
 
 .search-filters-section.wfexplore-proposedTags .label-default {
-    background-color: #2c9ab7;
+    background-color: var(--main-hover-color);
 	background-position: center;
     font-weight: normal;
     font-size: 100%;
@@ -1116,7 +1121,7 @@ body.skin-chameleon .qtip {
 }
 
 .red-card{
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
 }
 
 .green-card{
@@ -1124,7 +1129,7 @@ body.skin-chameleon .qtip {
 }
 
 .blue-card{
-    background-color: #2c9ab7;
+    background-color: var(--main-hover-color);
 }
 
 .help-text {
@@ -1133,7 +1138,7 @@ body.skin-chameleon .qtip {
 }
 
 .style-instructions-text {
-	color: #2c9ab7;
+	color: var(--main-hover-color);
 }
 
 .style-instructions-text:hover {
@@ -1162,7 +1167,7 @@ body.skin-chameleon .qtip {
 }
 
 .WikiPageContent .carousel-indicators li:hover {
-	background-color: #2c9ab7;
+	background-color: var(--main-hover-color);
 }
 
 .WikiPageContent .carousel {
@@ -1180,7 +1185,7 @@ body.skin-chameleon .qtip {
 }
 
 .WikiPageContent .carousel-indicators .active {
-	background-color: #52bad5;
+	background-color: var(--main-hover-color);
 	border:none;
 }
 
@@ -1297,7 +1302,7 @@ body.skin-chameleon .qtip {
     -moz-border-radius-topright: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    border-top: 3px solid #52bad5;
+    border-top: 3px solid var(--main-hover-color);
     background: #fff;
 }
 
@@ -1526,7 +1531,7 @@ body.skin-chameleon .qtip {
 	-moz-border-radius-topright: 4px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
-    border-top: 3px solid #52bad5;
+    border-top: 3px solid var(--main-hover-color);
 }
 
 .header-right-aligned .p-contentnavigation li.selected a.selected {
@@ -1563,7 +1568,7 @@ body.skin-chameleon .qtip {
 }
 
 #pt-notifications-notice .mw-echo-ui-toggleReadCircleButtonWidget-circle {
-	background-color:#52bad5;
+	background-color:var(--main-hover-color);
 }
 
 #pt-notifications-notice .mw-echo-ui-toggleReadCircleButtonWidget-circle-unread {
@@ -1604,7 +1609,7 @@ body.skin-chameleon .qtip {
 .navbar #pt-notifications-alert .mw-echo-notifications-badge:after, .navbar #pt-notifications-notice .mw-echo-notifications-badge:after {
     padding: 0px 7px;
     border-radius: 20px;
-    background-color: #2c9ab7;
+    background-color: var(--main-hover-color);
     border: 0px solid #fff;
     margin-top: 20px;
     left: 16px;
@@ -1647,7 +1652,7 @@ body.skin-chameleon .qtip {
 
 .wf-top-button .btn{
 	margin-top: 8px;
-	background-color: #52bad5;
+	background-color: var(--main-hover-color);
 	color: #fff;
 	transition: all ease .2s;
 }
@@ -1657,7 +1662,7 @@ body.skin-chameleon .qtip {
 }
 
 .wf-top-button .btn:hover{
-	background-color: #2c9ab7;
+	background-color: var(--main-hover-color);
 }
 
 /*********************
@@ -1728,12 +1733,12 @@ body.skin-chameleon .qtip {
 }
 
 .tabs-follow-btn a.UsersWatchButton .btn-message {
-	background: #52bad5;
+	background: var(--main-hover-color);
 	transition: all ease .25s;
 }
 
 .tabs-follow-btn a.UsersWatchButton .btn-message:hover {
-	background: #2c9ab7;
+	background: var(--main-hover-color);
 }
 
 .tabs-follow-btn a.UsersUnWatchButton .btn-message {
@@ -1761,13 +1766,13 @@ h1.firstHeading {
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
-	background-color:#52bad5;
-	border-color: #52bad5;
+	background-color:var(--main-hover-color);
+	border-color: var(--main-hover-color);
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover {
-	background-color:#2c9ab7;
-	border-color: #2c9ab7;
+	background-color:var(--main-hover-color);
+	border-color: var(--main-hover-color);
 }
 
 .flow-board .flow-ui-wikitextEditorWidget .oo-ui-textInputWidget {
@@ -1804,7 +1809,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
     border-bottom: 1px solid #fff;
-    border-top: 3px solid #52bad5;
+    border-top: 3px solid var(--main-hover-color);
 }
 
 #mw-content-text ul.tabbernav {
@@ -2079,8 +2084,8 @@ span.project-card-separator {
 }
 
 .project-category:hover{
-	background-color:#52bad5;
-	border:1px solid #52bad5;
+	background-color:var(--main-hover-color);
+	border:1px solid var(--main-hover-color);
 	color:#fff;
 }
 
@@ -2306,7 +2311,7 @@ h5.project-title span {
 }
 
 .PotD-box{
-	background-color:#52bad5;
+	background-color:var(--main-hover-color);
 	color:#fff;
 	padding:5px 10px;
 	width:225px;
@@ -2571,7 +2576,7 @@ h5.project-title span {
     margin: 50px 0 100px;
     text-align: center;
     color: #fff;
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     padding: 80px 20px;
 }
 
@@ -2644,12 +2649,12 @@ h5.project-title span {
 }
 
 .btn-primary {
-	background-color: #52bad5;
+	background-color: var(--main-hover-color);
     border-color: transparent;
 }
 
 .btn-primary:hover, .btn-primary.active:hover {
-	background-color: #2c9ab7;
+	background-color: var(--main-hover-color);
     border-color: transparent;
 }
 
@@ -2664,7 +2669,7 @@ h5.project-title span {
 	font-size: 16px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.2);
 	margin-bottom: 30px;
-	color: #2c9ab7;
+	color: var(--main-hover-color);
 	text-align: center;
 	background-color:#fff;
 }
@@ -2701,7 +2706,7 @@ body.page-Wikifab_Creator_handbook {
 	font-size: 15px;
 	padding: 10px 15px;
 	border:none;
-	background-color: #52bad5;
+	background-color: var(--main-hover-color);
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -2770,7 +2775,7 @@ body.page-Wikifab_Creator_handbook {
 
 .sign-up-button-hp:hover, .forminput_button:hover, .donation-button:hover, .sign-up-developers:hover   {
 	cursor:pointer;
-	background-color: #2c9ab7;
+	background-color: var(--main-hover-color);
 }
 
 .sign-up-developers {
@@ -2796,7 +2801,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .tuto-question-icon:hover {
-	color:#52bad5;
+	color:var(--main-hover-color);
 }
 
 .navbar-header .navbar-brand img {
@@ -2885,7 +2890,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .community-button-red {
-	background-color: #2c9ab7;
+	background-color: var(--main-hover-color);
 }
 
 .community-button-red:hover {
@@ -2939,7 +2944,7 @@ body.page-Wikifab_Creator_handbook {
 .multipleTemplateAdder,
 .site-button {
 	margin-left:5px;
-	background-color: #52bad5;
+	background-color: var(--main-hover-color);
 	color:#fff;
 	padding: 7px 12px;
 	border: none;
@@ -2964,7 +2969,7 @@ body.page-Wikifab_Creator_handbook {
 .saving-menu #wpDiff:hover,
 .multipleTemplateAdder:hover,
 .site-button:hover {
-	background-color: #2c9ab7;
+	background-color: var(--main-hover-color);
 }
 
 .saving-menu .editHelp a {
@@ -3007,7 +3012,7 @@ body.page-Wikifab_Creator_handbook {
 	cursor:progress;
 }
 #wpSaveAndContinue.pf-save_and_continue-changed {
-	background-color : #52bad5;
+	background-color : var(--main-hover-color);
 	color: #fff;
 }
 
@@ -3038,12 +3043,12 @@ body.page-Wikifab_Creator_handbook {
 }
 
 #sfForm .sf-save_and_continue-changed {
-	background-color: #52bad5;	
+	background-color: var(--main-hover-color);	
 	color:#fff;
 }
 
 #sfForm .sf-save_and_continue-changed:hover {
-	background-color: #2c9ab7;	
+	background-color: var(--main-hover-color);	
 }
 
 .sitedir-ltr #mw-search-top-table #searchText, .sitedir-ltr #mw-search-top-table #powerSearchText{
@@ -3055,7 +3060,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .sitedir-ltr #mw-search-top-table #searchText:focus, .sitedir-ltr #mw-search-top-table #powerSearchText:focus {
-	border: 1px solid #52bad5;
+	border: 1px solid var(--main-hover-color);
 	box-shadow: 0 0 7px rgba(39,128,248,.15);
 	outline: none;
 }
@@ -3065,7 +3070,7 @@ ul.releases-list {
 }
 
 .dev-vision {
-	background-color: #2c9ab7;
+	background-color: var(--main-hover-color);
 	padding: 40px 0px;
 	margin-bottom: 70px;
 	color:#fff;
@@ -3092,7 +3097,7 @@ ul.releases-list {
 }
 
 #role {
-	color: #52bad5;
+	color: var(--main-hover-color);
 }
 
 .contribute-block-title{
@@ -3134,9 +3139,9 @@ ul.releases-list {
 
 
 .contribute-block:hover {
-	background-color:#52bad5;
+	background-color:var(--main-hover-color);
 	color:#fff;
-	border:1px solid #52bad5;
+	border:1px solid var(--main-hover-color);
 }
 
 .join-community-footer {
@@ -3455,7 +3460,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
     color: #fff;
     padding: 0px 6.5px;
     border-radius: 20px;
-    background-color: #2c9ab7;
+    background-color: var(--main-hover-color);
     border: 0px solid #fff;
     margin-top: 9px;
     margin-left: -12px;
@@ -3756,7 +3761,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 
 .navbar #pt-notifications-alert .mw-echo-notifications-badge:after,
 .navbar #pt-notifications-notice .mw-echo-notifications-badge:after {
-	background-color: #2c9ab7;	
+	background-color: var(--main-hover-color);	
 }
 
 .skin-chameleon #pt-notifications-alert .mw-echo-notifications-badge:before,
@@ -3772,7 +3777,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 }
 
 .mw-input #mw-createaccount-join {
-	color: #2c9ab7;	
+	color: var(--main-hover-color);	
 }
 
 .top-award img {
@@ -4210,8 +4215,8 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 }
 
 .sfUploadable {
-	background:#2c9ab7;
-	border: 1px solid #2c9ab7;
+	background:var(--main-hover-color);
+	border: 1px solid var(--main-hover-color);
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -4308,7 +4313,7 @@ h5.tuto-details-material-title {
 }
 
 .WfFormTokensParent .select2-container-multi.select2-container-active .select2-choices {
-     border-color: #52bad5;
+     border-color: var(--main-hover-color);
      box-shadow: 0 0 7px rgba(39,128,248,.15);
 }
 
@@ -4494,16 +4499,16 @@ label.checkboxLabel.detail-area-field{
 
 #userloginForm .mw-ui-button.mw-ui-progressive,
 #userloginForm .mw-ui-button.mw-ui-constructive {
-    background-color: #52bad5;
-    border: 1px solid #52bad5;
+    background-color: var(--main-hover-color);
+    border: 1px solid var(--main-hover-color);
 }
 
 #userloginForm .mw-ui-button.mw-ui-progressive:hover,
 #userloginForm .mw-ui-button.mw-ui-constructive:hover,
 #userloginForm .mw-ui-button.mw-ui-progressive:focus,
 #userloginForm .mw-ui-button.mw-ui-constructive:focus {
-    background-color: #2c9ab7;
-    border: 1px solid #2c9ab7;
+    background-color: var(--main-hover-color);
+    border: 1px solid var(--main-hover-color);
 }
 
 .errorMessage {
@@ -4600,7 +4605,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .help-color{
-	color: #2c9ab7;
+	color: var(--main-hover-color);
 }
 
 .download-subbutton {
@@ -5314,7 +5319,7 @@ body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberac
     -moz-border-radius-topright: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    border-top: 3px solid #52bad5;
+    border-top: 3px solid var(--main-hover-color);
     background: #fff;
 }
 
@@ -5642,7 +5647,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	font-size: 17px;
 	padding: 12px 24px;
     border: none;
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -5653,7 +5658,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 }
 
 .create-group-btn:hover {
-	background:#2c9ab7;
+	background:var(--main-hover-color);
 }
 
 .group-logo-upload {
@@ -5812,7 +5817,7 @@ a.create-group-btn:hover {
 	font-size: 15px;
     padding: 9px 15px;
     border: none;
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -5838,7 +5843,7 @@ a.create-group-btn:hover {
 }
 
  .mw-prefs-buttons input#prefcontrol:hover {
-	background:#2c9ab7;
+	background:var(--main-hover-color);
 }
 
 .skin-chameleon nav .navbar-tools > li > a,
@@ -5916,7 +5921,7 @@ body > .oo-ui-windowManager {
 
 .cs-target-comment .cs-comment-header,
 .cs-head-comment > .cs-comment-header {
-    border-color:#52bad5;
+    border-color:var(--main-hover-color);
 }
 
 .cs-reply-comment > .cs-comment-header {
@@ -5958,7 +5963,7 @@ body > .oo-ui-windowManager {
 
 #cs-comments button#cs-add-button:hover,
 #cs-comments .cs-edit-box .cs-button:hover {
-    background-color: #2c9ab7;
+    background-color: var(--main-hover-color);
 }
 
 #cs-body-edit-field,
@@ -5968,7 +5973,7 @@ body > .oo-ui-windowManager {
 
 #cs-add-button,
 .cs-edit-box .cs-button {
-    background-color: #52bad5;
+    background-color: var(--main-hover-color);
     color: #fff;
     transition: all ease .2s;
     font-weight: normal;
