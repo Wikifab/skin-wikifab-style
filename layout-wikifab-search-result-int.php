@@ -51,6 +51,12 @@
 									<span class="location-name"><?php echo $Device; ?></span>
 									</li>
 								<?php endif; ?>
+								<?php if (isset($Operation)):?>
+									<li>
+									<i class="fa fa-wrench"></i>
+									<span class="location-name"><?php echo $Operation; ?></span>
+									</li>
+								<?php endif; ?>
 								<?php if (isset($Cost)):?>
 									<li>
 									<i class="fa fa-money"></i>
