@@ -1,3 +1,7 @@
+<?php 
+	global $wgPropsOnThumbnails;
+?>
+
 <div class="col-md-3 col-sm-6 col-xs-12">
 	<div class="project-card">
 		<a href="<?php echo $url; ?>">
@@ -19,13 +23,7 @@
 							<?php echo $creator; ?>
 							<?php if (isset($Area)):?>
 							<span class="project-byline-separator">|</span>
-							<span class="area-style"><?php $values = explode(',', $Area);
-								$intValues = [];
-								$intKeyPrefix = 'wf-propertyvalue-area-';
-								foreach ($values as $v) {
-									$intValues[] = wfMessage( $intKeyPrefix . trim($v));
-								}
-								$intValue = implode(', ', $intValues); echo $intValue; ?></span>
+							<span class="area-style"><?php echo $Area; ?></span>
 							<?php endif; ?>
 						</p>
 						<?php if (isset($Description)):?>
@@ -33,28 +31,18 @@
 						<?php endif; ?>
 						<div class="project-location">
 							<ul>
-								<?php if (isset($Difficulty)):?>
+								<?php foreach($wgPropsOnThumbnails as $propertyData): ?>
+							    <?php if (isset(${$propertyData["property_id"]})):?>
 									<li>
-									<i class="fa fa-briefcase"></i>
-									<span class="location-name"><?php echo wfMessage('wf-propertyvalue-difficulty-'.trim($Difficulty)); ?></span>
+									<i class=<?php echo '"fa '.$propertyData["fa"].'"'; ?>></i>
+									<span class="location-name"><?php echo ${$propertyData["property_id"]}; ?></span>
 									</li>
 								<?php endif; ?>
-								<?php if (isset($Business)):?>
-									<li>
-									<i class="fa fa-building-o"></i>
-									<span class="location-name"><?php echo wfMessage('wf-propertyvalue-business-'.trim($Business)); ?></span>
-									</li>
-								<?php endif; ?>
-								<?php if (isset($Cost)):?>
-									<li>
-									<i class="fa fa-money"></i>
-									<span class="location-name"><?php echo $Cost; ?> <?php echo $Currency; ?></span>
-									</li>
-								<?php endif; ?>
+							    <?php endforeach; ?>
 								<?php if (isset($Duration)):?>
 									<li class="last">
 									<i class="fa fa-hourglass-half"></i>
-									<span class="location-name"><?php echo $Duration; ?> <?php echo wfMessage('wf-propertyvalue-durationtype-'.trim($Duration_type)); ?></span>
+									<span class="location-name"><?php echo $Duration; ?> <?php echo $Duration_type; ?></span>
 									</li>
 								<?php endif; ?>
 							</ul>

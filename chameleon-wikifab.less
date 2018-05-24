@@ -811,11 +811,11 @@ body.skin-chameleon .qtip {
 }
 
 .WFfilter ul.mega-dropdown-menu {
-    padding: 5px 15px 15px 15px;
+    padding: 15px 15px 5px 15px;
 }
 
 .WFfilter .btn-group {
-	margin-top: 10px;
+	margin-bottom: 10px;
 	width: 100%;
 }
 
@@ -1365,36 +1365,66 @@ body.skin-chameleon .qtip {
     font-size: 25px;
 }
 
-.dont-icon, .caution-icon, .pin-icon, .idea-icon, .info-icon {
-	width: 30px;
-	height: 30px;
-	background-size:100%;
-	background-repeat:no-repeat;
+.icon-instructions {
+    float: left;
+    width: 100%;
+    padding: 6px 10px 6px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
 }
 
-.dont-icon {
-	background-image: url('images/dont-icon.jpg');
+.icon-instructions-icon {
+    float: left;
+    width: 27px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
-.caution-icon {
-	background-image: url('images/caution-icon.jpg');
+.icon-instructions.dont-icon {
+    border-left: 4px solid #000;
 }
 
-.pin-icon {
-	background-image: url('images/pin-icon.jpg');
+.icon-instructions.dont-icon .icon-instructions-icon {
+    color:#000;
 }
 
-.idea-icon {
-	background-image: url('images/idea-icon.jpg');
+.icon-instructions.caution-icon {
+    border-left: 4px solid #db0001;
+    background-color: #fff7f7;
 }
 
-.info-icon {
-	background-image: url('images/info-icon.jpg');
+.icon-instructions.caution-icon .icon-instructions-icon {
+    color:#db0001;
+}
+
+.icon-instructions.pin-icon {
+    border-left: 4px solid #777;
+}
+
+.icon-instructions.pin-icon .icon-instructions-icon {
+    color:#777;
+}
+
+.icon-instructions.idea-icon {
+    border-left: 4px solid #c6a701;
+    background-color: #fffcef;
+}
+
+.icon-instructions.idea-icon .icon-instructions-icon {
+    color:#c6a701;
+}
+
+.icon-instructions.info-icon {
+    border-left: 4px solid #3aa3e3;
+    background-color: rgba(58, 163, 227, 0.08);
+}
+
+.icon-instructions.info-icon .icon-instructions-icon {
+    color:#3aa3e3;
 }
 
 .icon-instructions-text {
-	padding-left: 41px;
-    min-height: 30px;
+	padding-left: 40px;
 }
 
 .footer-credits {
@@ -2053,6 +2083,11 @@ h5.project-title span {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-button: 10px;
+}
+
+.project-card-content .project-blurb + ul {
+    display:none;
 }
 
 .project-blurb:first-letter {
@@ -2382,8 +2417,13 @@ h5.project-title span {
     margin-bottom: 0px;
 }
 
-body.page-Wikifab_AboutGroups .group-explore-hp {
+.about-groups {
     background-image: url('images/bg-explore.jpg');
+    padding: 75px 20px 75px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-position: bottom;
+    background-size: cover;
 }
 
 .dev-section {
@@ -2414,6 +2454,7 @@ body.page-Wikifab_AboutGroups .group-explore-hp {
 
 .dev-section h1,
 .about-section h1,
+.about-groups h1,
 .handbook-section h1,
 .contribute-section h1,
 .indispensable-section h1,
@@ -2425,9 +2466,10 @@ body.page-Wikifab_AboutGroups .group-explore-hp {
     letter-spacing: 2px;
 }
 
-.dev-vision p,
+.dev-section p,
 .about-section p,
 .handbook-section p,
+.about-groups p,
 .contribute-section p,
 .indispensable-section p,
 .aide-section p,
@@ -2849,6 +2891,10 @@ body.page-Wikifab_Creator_handbook {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	transition: all ease .25s;
+}
+
+.saving-menu #wpSave {
+	min-width: 94px;
 }
 
 .multipleTemplateAdder {
@@ -3811,6 +3857,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 .page-Explore .navbar,
 .page-Form_Tutorial .navbar,
 .page-Form_Group .navbar,
+.rootpage-AboutGroups .navbar,
 .rootpage-Items .navbar,
 .rootpage-Wikifab_Community .navbar {
     margin-bottom:0px;
