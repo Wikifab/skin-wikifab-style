@@ -37,14 +37,16 @@
 						<?php endif; ?>
 						<div class="project-location">
 							<ul>
-								<?php foreach($wgPropsOnThumbnails as $propertyData): ?>
-							    <?php if (isset(${$propertyData["property_id"]})):?>
-									<li>
-									<i class=<?php echo '"fa '.$propertyData["fa"].'"'; ?>></i>
-									<span class="location-name"><?php echo ${$propertyData["property_id"]}; ?></span>
-									</li>
-								<?php endif; ?>
-							    <?php endforeach; ?>
+								<?php if(isset($wgPropsOnThumbnails)): ?>
+									<?php foreach($wgPropsOnThumbnails as $propertyData): ?>
+									    <?php if (isset(${$propertyData["property_id"]})):?>
+											<li>
+											<i class=<?php echo '"fa '.$propertyData["fa"].'"'; ?>></i>
+											<span class="location-name"><?php echo ${$propertyData["property_id"]}; ?></span>
+											</li>
+										<?php endif; ?>
+							    	<?php endforeach; ?>
+							    <?php endif; ?>
 								<?php if (isset($Duration)):?>
 									<li class="last">
 									<i class="fa fa-hourglass-half"></i>
