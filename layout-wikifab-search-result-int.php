@@ -23,7 +23,13 @@
 							<?php echo $creator; ?>
 							<?php if (isset($Area)):?>
 							<span class="project-byline-separator">|</span>
-							<span class="area-style"><?php echo $Area; ?></span>
+							<span class="area-style"><?php $values = explode(',', $Area);
+								$intValues = [];
+								$intKeyPrefix = 'wf-propertyvalue-area-';
+								foreach ($values as $v) {
+									$intValues[] = wfMessage( $intKeyPrefix . trim($v));
+								}
+								$intValue = implode(', ', $intValues); echo $intValue; ?></span>
 							<?php endif; ?>
 						</p>
 						<?php if (isset($Description)):?>
