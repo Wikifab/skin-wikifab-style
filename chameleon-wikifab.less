@@ -4883,8 +4883,14 @@ label.checkboxLabel.detail-area-field{
     min-width: 345px;
 }
 
-.nav, #ca-history, .dropdownButton-addtogroup {
+nav .navbar-nav,
+#main-content-header #ca-history,
+#main-content-header .dropdownButton-addtogroup {
 	display:none;
+}
+
+nav .navbar-nav.ExploreSearchBar {
+    display:block;
 }
 
 .step-instructions h2 {
@@ -5936,6 +5942,11 @@ a.create-group-btn:hover {
     background-color: #777;
 }
 
+
+/*********************
+ * Autocomplete dropdown style
+ *********************/
+
 .ui-autocomplete {
     font-size: 14px;
     font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -5943,6 +5954,43 @@ a.create-group-btn:hover {
     border-radius: 0 0 3px 3px;
     border-top: none;
     cursor: pointer;
+}
+
+.ui-autocomplete {
+    border-radius: 0 0 3px 3px;
+    margin-top: -2px;
+    border-top: 0px;
+}
+
+.ui-autocomplete li {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    font-size:14px;
+}
+
+.ui-autocomplete.ui-menu li a {
+    color: var(--main-hover-color);
+}
+
+.ui-autocomplete.ui-menu li a,
+.ui-autocomplete.ui-menu li a:hover {
+    background:none;
+    cursor:pointer;
+    border:none;
+    padding: 2px 5px;
+    margin:0;
+}
+
+.ui-autocomplete.ui-menu li a:hover {
+    color: #30373b;
+    font-weight:bold;
+}
+
+.ui-autocomplete.ui-menu li a.ui-state-focus,
+.ui-autocomplete.ui-menu li a.ui-state-focus:hover {
+    padding: 2px 5px;
+    margin:0;
 }
 
 /*********************
