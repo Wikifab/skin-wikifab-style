@@ -42,7 +42,7 @@
 									    <?php if (isset(${$propertyData["property_id"]})):?>
 											<li>
 											<i class=<?php echo '"fa '.$propertyData["fa"].'"'; ?>></i>
-											<span class="location-name"><?php echo ${$propertyData["property_id"]}; ?></span>
+											<span class="location-name"><?php echo wfMessage('dokit-autopropertyvalue-'.$propertyData["property_id"].'-'.str_replace('\n','_', trim(${$propertyData["property_id"]}))); ?></span>
 											</li>
 										<?php endif; ?>
 							    	<?php endforeach; ?>
