@@ -36,10 +36,11 @@ body {
 
 @font-face {
     font-family: 'edosz';
-    src: url('fonts/edosz.eot'),
-    url('fonts/edosz.woff') format('woff'),
-    url('fonts/edosz.ttf') format('truetype'),
-    url('fonts/edosz.svg') format('svg');
+    src: url('fonts/edosz-webfont.eot');
+    src: url('fonts/edosz-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/edosz-webfont.ttf?') format('truetype'),
+         url('fonts/edosz-webfont.woff') format('woff'),
+         url('fonts/edosz-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -88,6 +89,10 @@ body.ns-special .maincontent-header-tail,
 .ve-area-wrapper .ve-init-target-visual .ve-ce-generated-wrapper {
     display:none;
 }
+
+.ve-area-wrapper .ve-init-target-visual ul.ve-ce-branchNode p.ve-ce-generated-wrapper {
+	display:block
+};
 
 .skin-chameleon .navbar #mw-searchButton:hover {
     color: #fff;
@@ -219,7 +224,7 @@ a:hover {
     background: #f1f1f1;
     border-radius: 3px;
     color: #ccc;
-    padding: 3.93em 15px;
+    padding: 3.8em 15px;
     font-size: 1.3em;
     border: 1px solid #ddd;
     text-transform: uppercase;
@@ -1267,6 +1272,10 @@ body.skin-chameleon .qtip {
     float:right;
 }
 
+.header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools ul.dropdown-menu li {
+	float: none;
+}
+
 .header-right-aligned ul.page-tools-dropdown li.page-tools-dropdown-tools {
     margin-left: 10px;
     height: 28px;
@@ -1551,6 +1560,10 @@ body.skin-chameleon .qtip {
 	padding-top: 30px;
 	border-top: 1px solid #666;
 	margin-top: 20px;
+}
+
+.footer-credits .footer-icons li {
+	padding-bottom: 10px;
 }
 
 .main-contribute {
@@ -2424,7 +2437,7 @@ h5.project-title span {
 }
 
 .marketing-section-hp-content {
-    padding: 90px 0px 20px;
+    padding: 90px 10px 20px;
 }
 
 .marketing-section-hp-btn .btn:hover {
@@ -2541,7 +2554,7 @@ h5.project-title span {
 
 .about-groups {
     background-image: url('images/bg-explore.jpg');
-    padding: 75px 20px 75px;
+    padding: 75px 10px 75px;
     text-align: center;
     margin-bottom: 40px;
     background-position: bottom;
@@ -2586,6 +2599,7 @@ h5.project-title span {
     font-family: 'edosz';
     font-size: 55px;
     letter-spacing: 2px;
+    word-wrap: break-word;
 }
 
 .dev-section p,
@@ -3707,8 +3721,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 }
 
 .tuto-details-about-title {
-    font-size: 1.05em;
-    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .tuto-details-about-title span{
@@ -3912,6 +3925,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 
 .tuto-main-image p {
 	margin-bottom:0px;
+	padding-top:5px;
 }
 
 .tuto-main-image {
@@ -4929,6 +4943,15 @@ nav .navbar-nav.ExploreSearchBar,
     float: left;
 }
 
+.footer-credits .footer-icons {
+	display:none;
+}
+
+.footer-credits {
+	text-align:center;
+	opacity: 0.3;
+}
+
 .embedVideoUrlInput {
     width: 100%;
     margin-top: 10px;
@@ -5091,7 +5114,11 @@ h1.firstHeading {
 }
 
 .marketing-section-hp-content {
-	padding-top:120px;
+	padding: 80px 10px 70px;
+}
+
+.marketing-section-hp-btn {
+	display:none;
 }
 
 }
