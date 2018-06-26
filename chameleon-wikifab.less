@@ -790,8 +790,38 @@ a:hover {
     border-radius: 5px;
 }
 
-.wf-univers-box h4 {
+.wf-univers-electronic,
+.wf-univers-wood,
+.wf-univers-craft,
+.wf-univers-outside,
+.wf-univers-deco {
+    background-size:cover;
+}
+
+.wf-univers-electronic {
+    background-image : url('images/univers-electronic.jpg');
+}
+
+.wf-univers-wood {
+    background-image : url('images/univers-wood.jpg');
+}
+
+.wf-univers-craft {
+    background-image : url('images/univers-craft.jpg');
+}
+
+.wf-univers-outside {
+    background-image : url('images/univers-outside.jpg');
+}
+
+.wf-univers-deco {
+    background-image : url('images/univers-deco.jpg');
+}
+
+.wf-univers-box h4 a {
     padding: 5em 10px;
+    display: block;
+    color: #fff;
 }
 
 .wf-univers-box a:hover {
@@ -4888,11 +4918,6 @@ label.checkboxLabel.detail-area-field{
     max-height: 250px;
 }
 
-.wf-top-button .btn {
-	max-width: 40px;
-    color: transparent;
-}
-
 .wf-top-button .btn .glyphicon {
     color: #fff;
 }
@@ -4923,10 +4948,14 @@ label.checkboxLabel.detail-area-field{
     min-width: 345px;
 }
 
-nav .navbar-nav,
 #main-content-header #ca-history,
 #main-content-header .dropdownButton-addtogroup {
 	display:none;
+}
+
+.wf-top-button .btn {
+    max-width: 40px;
+    color: transparent;
 }
 
 nav .navbar-nav.ExploreSearchBar,
@@ -4962,6 +4991,12 @@ nav .navbar-nav.ExploreSearchBar,
 .navbar ul.navbar-nav > li {
     width: 100%;
     float: left;
+}
+
+
+.wf-btn-lg {
+    font-size: 15px;
+    padding: 10px 15px;
 }
 
 .footer-credits .footer-icons {
