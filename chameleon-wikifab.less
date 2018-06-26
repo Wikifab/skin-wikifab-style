@@ -794,11 +794,13 @@ a:hover {
 .wf-univers-wood,
 .wf-univers-craft,
 .wf-univers-outside,
-.wf-univers-deco {
+.wf-univers-deco,
+.wf-univers-robotics {
     background-size:cover;
+    background-position:center;
 }
 
-.wf-univers-electronic {
+.wf-univers-electronics {
     background-image : url('images/univers-electronic.jpg');
 }
 
@@ -818,10 +820,23 @@ a:hover {
     background-image : url('images/univers-deco.jpg');
 }
 
+.wf-univers-box h4 {
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.wf-univers-box h4:hover {
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+}
+
 .wf-univers-box h4 a {
     padding: 5em 10px;
     display: block;
-    color: #fff;
+    color: #fff !important;
+    text-shadow: 0 3px 20px rgba(0,0,0,0.3);
 }
 
 .wf-univers-box a:hover {
