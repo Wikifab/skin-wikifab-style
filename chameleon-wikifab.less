@@ -4980,7 +4980,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: @nav-txt-color;
 }
 
 @media (max-width: 1200px) {
@@ -5120,15 +5120,32 @@ nav .navbar-nav.ExploreSearchBar,
     margin-bottom: 15px;
 }
 
+.wf-top-button {
+    margin:0;
+}
+
+nav .navbar-nav {
+    margin: 0 -15px;
+}
+
+nav .navbar-nav .input-group {
+    width:100%;
+}
+
+.wf-top-button .btn:hover {
+    background-color: #f1f1f1;
+}
+
 .wf-top-button .btn {
     max-width: 100%;
-    color: #fff;
+    color: @nav-txt-color;
     width: 100%;
     text-align: left;
     background: transparent;
-    padding: 0px 0;
-    opacity: 0.4;
+    padding: 10px 15px;
+    margin:0;
     background: transparent;
+    border-radius: 0px;
 }
 
 .wf-top-button .btn .glyphicon {
@@ -5762,7 +5779,8 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	    font-size: 14px;
 	}
 
-	.WFfilter-property .nav > li > a {
+	.WFfilter-property .nav > li > a,
+    .WFfilter .nav-pills > li > a {
 		padding: 10px 10px;
 		font-size: 1em;
 	}
