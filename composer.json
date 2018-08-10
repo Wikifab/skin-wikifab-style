@@ -1,5 +1,5 @@
 {
-    "name": "wikifab/wikifabStyleModule",
+    "name": "wikifab/wikifab-style-module",
     "description": "skin pour wikifab, doit etre utilisé ave la skin wikifab/chameleon",
     "type": "mediawiki-skin",
 	"description": "Skin for wikifab based on chameleon skin",
