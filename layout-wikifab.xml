@@ -28,7 +28,8 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	<component type="NavbarHorizontal" fixed="0">
 		<component type="Logo" position="head"></component>
-		<component type="ExploreSearchBar"></component>
+		<!--  <component type="ExploreSearchBar"></component> -->
+		<component type="SearchBar"></component>
 		<component type="NavMenu" flatten="navigation"></component>
 		<component type="MessageContent" name="CreateTutorialBtnNotAllowed" position="right">
 			<modification type="ShowOnlyFor" group="*"></modification>
