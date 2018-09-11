@@ -180,6 +180,7 @@ input:hover, .input:hover, textarea:hover, .textarea:hover, select:hover, input.
 }
 
 input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.mw-ui-input:focus {
+     border-color: #52bad5;
 	 border-color: @main-btn-color;
 	 box-shadow: 0 0 7px rgba(39,128,248,.15);
 	 outline:none;
@@ -213,16 +214,29 @@ button.ui-datepicker-trigger {
     border-bottom-right-radius: 3px;
 }
 
+.UserCard .UsersWatchButton .btn {
+    background: #52bad5;
+    background: var(--main-btn-color);
+}
+
+.UserCard .UsersWatchButton .btn:hover {
+    background: #2c9ab7;
+    background: var(--main-hover-color);
+}
+
+
 .marketing-section-hp a:hover, .project-card a:hover {
     text-decoration: none;
 }
 
 a:link, a.new:visited, a:visited, ul.tabbernav li a:link,
 .mw-body a.external:link, .mw-body a.external:visited {
+    color: #2c9ab7;
 	color: @main-hover-color;
 }
 
 a:hover {
+    color: #2c9ab7;
 	color: @main-hover-color;
 }
 
@@ -250,6 +264,7 @@ a:hover {
 }
 
 #ca-talk a.new:link, #ca-talk a.new:visited {
+    color: #2c9ab7;
     color: @main-hover-color;
 }
 
@@ -315,6 +330,7 @@ a:hover {
 .wf-hp-userprogress-start {
     text-align: center;
     background: #f1f1f1;
+    background-color: #52bad5;
     background-color: @main-btn-color;
     padding: 38px 15px 20px;
     border-radius: 5px;
@@ -326,6 +342,7 @@ a:hover {
 
 .wf-hp-userprogress-start .btn {
     background: #fff;
+    color: #52bad5;
     color: @main-btn-color;
     font-size: 1.1em;
     transition: .25s;
@@ -413,6 +430,7 @@ a:hover {
     border-radius: 4px;
     padding: 5px 10px;
     margin-top: -4px;
+    background-color: #52bad5;
     background-color: @main-btn-color;
     color: #fff;
     transition: all ease .2s;
@@ -451,6 +469,7 @@ a:hover {
 .ext-translate-container .ext-translate-language-selector .uls {
     border-radius: 4px;
     padding: 5px 10px;
+    background-color: #52bad5;
     background-color: @main-btn-color;
     color: #fff;
     transition: all ease .2s;
@@ -458,14 +477,17 @@ a:hover {
 }
 
 .ext-translate-container .ext-translate-language-selector .uls:hover {
+    background-color: #2c9ab7;
 	background-color:@main-hover-color;
 }
 
 .ext-translate-container .ext-translate-language-selector:after {
+    border:4px solid ##52bad5;
 	border-top: 4px solid @main-btn-color;
 }
 
 .ext-translate-container .tux-statsbar .tux-translated {
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
 }
 
@@ -541,8 +563,10 @@ a:hover {
 
 .NewPageTabs ul.nav-tabs > li.active,
 .NewPageTabs ul.nav-tabs > li.active:hover {
+    background: #52bad5;
     background: @main-btn-color;
     color: #fff;
+    border-color: #52bad5;
     border-color: @main-btn-color;
 }
 
@@ -588,11 +612,13 @@ a:hover {
     font-weight: normal;
     border: none;
     transition: 0.25s;
+    background-color: #52bad5;
     background-color: @main-btn-color;
     float: left;
 }
 
 #mc_embed_signup input[type="submit"]:hover{
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
     color:#fff;
 }
@@ -721,6 +747,7 @@ a:hover {
     background-color: #f9f9f9;
     border: 1px solid #dddddd;
     border-bottom-color: transparent;
+    border-top: 3px solid #52bad5;
     border-top: 3px solid @main-btn-color;
 }
 
@@ -1001,6 +1028,7 @@ a:hover {
 }
 
 .community-mission {
+    background-color: #52bad5;
     background-color: @main-btn-color;
     margin: 100px 0px;
     color: #fff;
@@ -1117,6 +1145,7 @@ body.skin-chameleon .qtip {
 }
 
 .search-filters-section.wfexplore-proposedTags .label-default {
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
 	background-position: center;
     font-weight: normal;
@@ -1314,6 +1343,7 @@ body.skin-chameleon .qtip {
 }
 
 .red-card{
+    background-color: #52bad5;
     background-color: @main-btn-color;
 }
 
@@ -1322,6 +1352,7 @@ body.skin-chameleon .qtip {
 }
 
 .blue-card{
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
 }
 
@@ -1331,6 +1362,7 @@ body.skin-chameleon .qtip {
 }
 
 .style-instructions-text {
+    color: #2c9ab7;
 	color: @main-hover-color;
 }
 
@@ -1360,6 +1392,7 @@ body.skin-chameleon .qtip {
 }
 
 .WikiPageContent .carousel-indicators li:hover {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 }
 
@@ -1378,6 +1411,7 @@ body.skin-chameleon .qtip {
 }
 
 .WikiPageContent .carousel-indicators .active {
+    background-color: #52bad5;
 	background-color: @main-btn-color;
 	border:none;
 }
@@ -1502,6 +1536,7 @@ body.skin-chameleon .qtip {
     -moz-border-radius-topright: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    border-top: 3px solid #52bad5;
     border-top: 3px solid @main-btn-color;
     background: #fff;
 }
@@ -1734,6 +1769,7 @@ body.skin-chameleon .qtip {
 	-moz-border-radius-topright: 4px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
+    border-top: 3px solid #52bad5;
     border-top: 3px solid @main-btn-color;
 }
 
@@ -1795,6 +1831,7 @@ body.skin-chameleon .qtip {
 }
 
 #pt-notifications-notice .mw-echo-ui-toggleReadCircleButtonWidget-circle {
+    background-color: #52bad5;
 	background-color:@main-btn-color;
 }
 
@@ -1836,6 +1873,7 @@ body.skin-chameleon .qtip {
 .navbar #pt-notifications-alert .mw-echo-notifications-badge:after, .navbar #pt-notifications-notice .mw-echo-notifications-badge:after {
     padding: 4px 7px;
     border-radius: 20px;
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
     border: 0px solid #fff;
     margin-top: 20px;
@@ -1879,6 +1917,7 @@ body.skin-chameleon .qtip {
 
 .wf-top-button .btn{
 	margin-top: 8px;
+    background-color: #52bad5;
 	background-color: @main-btn-color;
 	color: #fff;
 	transition: all ease .2s;
@@ -1889,6 +1928,7 @@ body.skin-chameleon .qtip {
 }
 
 .wf-top-button .btn:hover{
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 }
 
@@ -1960,11 +2000,13 @@ body.skin-chameleon .qtip {
 }
 
 .tabs-follow-btn a.UsersWatchButton .btn-message {
+    background: #52bad5;
 	background: @main-btn-color;
 	transition: all ease .25s;
 }
 
 .tabs-follow-btn a.UsersWatchButton .btn-message:hover {
+    background: #2c9ab7;
 	background: @main-hover-color;
 }
 
@@ -1993,12 +2035,16 @@ h1.firstHeading {
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button {
-	background-color:@main-btn-color;
+	background-color: #52bad5;
+    background-color:@main-btn-color;
+    border-color: #52bad5;
 	border-color: @main-btn-color;
 }
 
 body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover {
+    background-color: #2c9ab7;
 	background-color:@main-hover-color;
+    border-color: #2c9ab7;
 	border-color: @main-hover-color;
 }
 
@@ -2036,6 +2082,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
     border-bottom: 1px solid #fff;
+    border-top: 3px solid #52bad5;
     border-top: 3px solid @main-btn-color;
 }
 
@@ -2311,8 +2358,10 @@ span.project-card-separator {
 }
 
 .project-category:hover{
+    background-color: #52bad5;
 	background-color:@main-btn-color;
-	border:1px solid @main-btn-color;
+    border: 1px solid #52bad5;
+	border: 1px solid @main-btn-color;
 	color:#fff;
 }
 
@@ -2539,6 +2588,7 @@ h5.project-title span {
 }
 
 .PotD-box{
+    background-color: #52bad5;
 	background-color:@main-btn-color;
 	color:#fff;
 	padding:5px 10px;
@@ -2804,6 +2854,7 @@ h5.project-title span {
     margin: 50px 0 100px;
     text-align: center;
     color: #fff;
+    background-color: #52bad5;
     background-color: @main-btn-color;
     padding: 80px 20px;
 }
@@ -2877,11 +2928,13 @@ h5.project-title span {
 }
 
 .btn-primary {
+    background-color: #52bad5;
 	background-color: @main-btn-color;
     border-color: transparent;
 }
 
 .btn-primary:hover, .btn-primary.active:hover {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
     border-color: transparent;
 }
@@ -2897,6 +2950,7 @@ h5.project-title span {
 	font-size: 16px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.2);
 	margin-bottom: 30px;
+    color: #2c9ab7;
 	color: @main-hover-color;
 	text-align: center;
 	background-color:#fff;
@@ -2934,6 +2988,7 @@ body.page-Wikifab_Creator_handbook {
 	font-size: 15px;
 	padding: 10px 15px;
 	border:none;
+    background-color: #52bad5;
 	background-color: @main-btn-color;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -3003,6 +3058,7 @@ body.page-Wikifab_Creator_handbook {
 
 .sign-up-button-hp:hover, .forminput_button:hover, .donation-button:hover, .sign-up-developers:hover {
 	cursor:pointer;
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 }
 
@@ -3029,6 +3085,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .tuto-question-icon:hover {
+    color: #52bad5;
 	color:@main-btn-color;
 }
 
@@ -3118,6 +3175,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .community-button-red {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 }
 
@@ -3172,6 +3230,7 @@ body.page-Wikifab_Creator_handbook {
 .multipleTemplateAdder,
 .site-button {
 	margin-left:5px;
+    background-color: #52bad5;
 	background-color: @main-btn-color;
 	color:#fff;
 	padding: 7px 12px;
@@ -3213,6 +3272,7 @@ body.page-Wikifab_Creator_handbook {
 .saving-menu #wpDiff:hover,
 .multipleTemplateAdder:hover,
 .site-button:hover {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 }
 
@@ -3257,6 +3317,7 @@ body.page-Wikifab_Creator_handbook {
 	cursor:progress;
 }
 #wpSaveAndContinue.pf-save_and_continue-changed {
+    background-color: #52bad5;
 	background-color : @main-btn-color;
 	color: #fff;
 }
@@ -3288,11 +3349,13 @@ body.page-Wikifab_Creator_handbook {
 }
 
 #sfForm .sf-save_and_continue-changed {
+    background-color: #52bad5;
 	background-color: @main-btn-color;	
 	color:#fff;
 }
 
 #sfForm .sf-save_and_continue-changed:hover {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;	
 }
 
@@ -3305,6 +3368,7 @@ body.page-Wikifab_Creator_handbook {
 }
 
 .sitedir-ltr #mw-search-top-table #searchText:focus, .sitedir-ltr #mw-search-top-table #powerSearchText:focus {
+    border: 1px solid #52bad5;
 	border: 1px solid @main-btn-color;
 	box-shadow: 0 0 7px rgba(39,128,248,.15);
 	outline: none;
@@ -3315,6 +3379,7 @@ ul.releases-list {
 }
 
 .dev-vision {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 	padding: 40px 0px;
 	margin-bottom: 70px;
@@ -3342,6 +3407,7 @@ ul.releases-list {
 }
 
 #role {
+    color: #52bad5;
 	color: @main-btn-color;
 }
 
@@ -3360,6 +3426,7 @@ ul.releases-list {
 .contribute-block {
 	padding: 40px 20px;
 	background-color: #fff;	
+    color: #2c9ab7;
     color: @main-hover-color;
 	cursor:pointer;
 	font-size:1.1em;
@@ -3385,8 +3452,10 @@ ul.releases-list {
 
 
 .contribute-block:hover {
+    background-color: #52bad5;
 	background-color:@main-btn-color;
 	color:#fff;
+    border: 1px solid #52bad5;
 	border:1px solid @main-btn-color;
 }
 
@@ -3711,6 +3780,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
     color: #fff;
     padding: 0px 6.5px;
     border-radius: 20px;
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
     border: 0px solid #fff;
     margin-top: 9px;
@@ -4019,6 +4089,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 
 .navbar #pt-notifications-alert .mw-echo-notifications-badge:after,
 .navbar #pt-notifications-notice .mw-echo-notifications-badge:after {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;	
 }
 
@@ -4035,6 +4106,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 }
 
 .mw-input #mw-createaccount-join {
+    color: #2c9ab7;
 	color: @main-hover-color;	
 }
 
@@ -4474,8 +4546,10 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 }
 
 .sfUploadable {
-	background:@main-hover-color;
-	border: 1px solid @main-hover-color;
+    background: #2c9ab7;
+	background: @main-hover-color;
+	border: 1px solid #2c9ab7;
+    border: 1px solid @main-hover-color;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -4572,6 +4646,7 @@ h5.tuto-details-material-title {
 }
 
 .WfFormTokensParent .select2-container-multi.select2-container-active .select2-choices {
+     border-color: #52bad5;
      border-color: @main-btn-color;
      box-shadow: 0 0 7px rgba(39,128,248,.15);
 }
@@ -4745,20 +4820,25 @@ label.checkboxLabel.detail-area-field{
 }
 
 .wf-inputbox .mw-ui-button:focus {
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
     color: transparent;
+    border-color: #2c9ab7;
     border-color: @main-hover-color;
     box-shadow: none;
 }
 
 .wf-inputbox .mw-ui-button:hover {
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
     color: transparent; 
 }
 
 #userloginForm .mw-ui-button.mw-ui-progressive,
 #userloginForm .mw-ui-button.mw-ui-constructive {
+    background-color: #52bad5;
     background-color: @main-btn-color;
+    border:1px solid #52bad5;
     border: 1px solid @main-btn-color;
 }
 
@@ -4766,7 +4846,9 @@ label.checkboxLabel.detail-area-field{
 #userloginForm .mw-ui-button.mw-ui-constructive:hover,
 #userloginForm .mw-ui-button.mw-ui-progressive:focus,
 #userloginForm .mw-ui-button.mw-ui-constructive:focus {
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
+    border: 1px solid #2c9ab7;
     border: 1px solid @main-hover-color;
 }
 
@@ -4864,6 +4946,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .help-color{
+    color: #2c9ab7;
 	color: @main-hover-color;
 }
 
@@ -5618,6 +5701,7 @@ body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberac
     -moz-border-radius-topright: 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    border-top: #52bad5;
     border-top: 3px solid @main-btn-color;
     background: #fff;
 }
@@ -5934,6 +6018,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	font-size: 17px;
 	padding: 12px 24px;
     border: none;
+    background-color: #52bad5;
     background-color: @main-btn-color;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -5945,6 +6030,7 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 }
 
 .create-group-btn:hover {
+    background-color: #2c9ab7;
 	background:@main-hover-color;
 }
 
@@ -6104,6 +6190,7 @@ a.create-group-btn:hover {
 	font-size: 15px;
     padding: 9px 15px;
     border: none;
+    background-color: #52bad5;
     background-color: @main-btn-color;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -6130,6 +6217,7 @@ a.create-group-btn:hover {
 }
 
  .mw-prefs-buttons input#prefcontrol:hover {
+    background:#2c9ab7;
 	background:@main-hover-color;
 }
 
@@ -6200,6 +6288,7 @@ a.create-group-btn:hover {
 }
 
 .ui-autocomplete.ui-menu li a {
+    color:#2c9ab7;
     color: @main-hover-color;
 }
 
@@ -6266,6 +6355,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 
 #cs-comments .cs-target-comment .cs-comment-header,
 #cs-comments .cs-head-comment > .cs-comment-header {
+    border-color:#52bad5;
     border-color:@main-btn-color;
 }
 
@@ -6310,6 +6400,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 
 #cs-comments button#cs-add-button:hover,
 #cs-comments .cs-edit-box .cs-button:hover {
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
 }
 
@@ -6320,6 +6411,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 
 #cs-comments #cs-add-button,
 #cs-comments .cs-edit-box .cs-button {
+    background-color: #52bad5;
     background-color: @main-btn-color;
     color: #fff;
     transition: all ease .2s;
@@ -6479,20 +6571,25 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 
 /*  START  classes used by extension tu customise with uniform style : */
 .msuploadContainer.dropOverActive {
+    border: 2px solid #52bad5;
 	border: 2px solid @main-btn-color;
 }
 .msuploadContainer.dropOverInactive {
+    border: 2px dotted #52bad5;
 	border: 2px dotted @main-btn-color;
 }
 .dk-modal a,
 .dk-modal a:link {
+    color:#2c9ab7;
 	color:@main-hover-color;
 }
 
 .dk-main-button {
-	background-color: var(--main-btn-color);
+    background-color: #52bad5;
+	background-color: @main-btn-color;
 }
 .dk-main-button:hover {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 }
 .dk-secondary-button {
@@ -6502,10 +6599,12 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 	
 }
 #loaderSave {
+    background-color: #2c9ab7;
     background-color: @main-hover-color;
 }
 
 #points-level {
+    background-color: #2c9ab7;
 	background-color: @main-hover-color;
 }
 /*  END    classes used by extension tu customise with uniform style */
