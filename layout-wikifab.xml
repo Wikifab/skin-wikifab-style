@@ -52,14 +52,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 		<component type="PageToolsDropdown" position="right"></component>
 	</component>
 
-	<component type="MainContentHeader">
-		<!--  Show tool bar on specific pages only by administrators -->
-		<modification type="ShowOnlyFor" page="Main_Page,Accueil,ExploreGroups,Contribuer,Community,Developers,Creator_handbook,Group,Groups,Groupes,AboutGroups,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
-		<modification type="ShowOnlyFor" group="admin,sysop"></modification>
-		<component type="PageToolsTabs" position="left"></component>
-		<component type="PageToolsDropdown" position="right"></component>
-	</component>
-
 	<component>
 		<modification type="HideFor" page="Main_Page,Accueil,ExploreGroups,Contribuer,Community,Developers,WfExplore,Creator_handbook,Group,Groups,Groupes,AboutGroups,Explore,Contribute,Tutorial,Help,About,Get_started,Best_practices"></modification>
 		<modification type="HideFor" namespace="NS_GROUP,NS_HELP"></modification>
