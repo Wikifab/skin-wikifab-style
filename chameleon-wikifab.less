@@ -1749,6 +1749,14 @@ body.skin-chameleon .qtip {
 	width: 100%;
 }
 
+.mw-echo-ui-overlay {
+    font-size: inherit;
+}
+
+.mw-echo-ui-overlay .mw-echo-ui-notificationBadgeButtonPopupWidget-popup > .oo-ui-popupWidget-popup > .oo-ui-popupWidget-body {
+    overflow-x: hidden;
+}
+
 .mw-special-Notifications.ns-special .mw-body label.mw-echo-ui-crossWikiUnreadFilterWidget-title {
     display: block;
 }
@@ -5419,6 +5427,12 @@ h1.firstHeading {
     -webkit-box-shadow: none;
     box-shadow: none;
     background-color: @nav-bg-color;
+}
+
+.skin-chameleon .navbar-default .navbar-collapse {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
 }
 
 .navbar-personaltoolwidgets #pt-notifications-notice .mw-echo-notifications-badge::before {
