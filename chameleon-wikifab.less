@@ -5103,10 +5103,6 @@ label.checkboxLabel.detail-area-field{
 	width: 20%;
 }
 
-.container {
-    width: 100%;
-}
-
 .multipleTemplate-tutostep .col-md-1 {
 	width: 56px;
     padding: 0 15px 0 5px;
@@ -5138,12 +5134,6 @@ label.checkboxLabel.detail-area-field{
     margin-right: -5px;
 }
 
-}
-
-@media (min-width: 1200px) {
-	.container {
-	    width: 1170px;
-	}
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -5189,15 +5179,17 @@ label.checkboxLabel.detail-area-field{
 
 }
 
+@media only screen and (max-width: 1200px) {
+	.container {
+    	width: 100%;
+	}
+}
+
 @media (max-width: 992px) {
 .project-thumbnail img {
     min-height: 237px;
     max-height: 350px;
     min-width: 345px;
-}
-
-.container {
-    width: 100%;
 }
 
 #main-content-header #ca-history,
