@@ -5609,11 +5609,12 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class
     border-bottom: 0;
 }
 
-body[class^='page-Group_'] .group-banner img, body[class*='page-Group_'] .group-banner img {
+.group-banner img {
 	width: 100%;
     height: auto;
     position: absolute;
     left: 50%;
+    opacity: 0.25;
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
@@ -5625,13 +5626,14 @@ body[class^='page-Group_'] .permissions-errors, body[class*='page-Group_'] .perm
     padding: 0px 15px;
 }
 
-body[class^='page-Group_'] .group-banner, body[class*='page-Group_'] .group-banner {
+.group-banner {
 	height: 165px;
 	overflow: hidden;
 	background-color: #30373b;
-	color: transparent;
-	position: relative;
-    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
 }
 
 .group-info span {
@@ -5643,8 +5645,8 @@ body[class^='page-Group_'] .group-info span a, body[class*='page-Group_'] .group
 	color:#888;
 }
 
-body[class^='page-Group_'] .group-title-box, body[class*='page-Group_'] .group-title-box {
-    margin-top: -120px;
+.group-title-box {
+    margin-top: 50px;
 }
 
 body[class^='page-Group_'] .group-title-box h1.group-title, body[class*='page-Group_'] .group-title-box h1.group-title {
