@@ -5633,6 +5633,7 @@ body[class^='page-Group_'] .permissions-errors, body[class*='page-Group_'] .perm
 .group-banner {
 	height: 165px;
 	overflow: hidden;
+    opacity: 0.9;
 	background-color: #30373b;
     position: absolute;
     left: 0;
@@ -5653,12 +5654,26 @@ body[class^='page-Group_'] .group-info span a, body[class*='page-Group_'] .group
     margin-top: 50px;
 }
 
-body[class^='page-Group_'] .group-title-box h1.group-title, body[class*='page-Group_'] .group-title-box h1.group-title {
-	padding-top: 69px;
-	margin-bottom: 28px;
-	margin-top:0px;
-	color:#fff;
-    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
+.group-description {
+    font-size: 1.1em;
+    float: left;
+    width: 100%;
+}
+
+.group-title-box h1.group-title {
+    padding-top: 69px;
+    margin-bottom: 20px;
+    padding-bottom: 7px;
+    margin-top: 0px;
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.498039) 0px 1px 3px;
+    float: left;
+    width: calc(~"100% - 50px");
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+    vertical-align: baseline;
 }
 
 body[class^='page-Group_'] div.patrollink, body[class*='page-Group_'] div.patrollink {
@@ -5873,6 +5888,7 @@ body[class^='page-Group_'].action-view .Input-tabs, body[class*='page-Group_'].a
 
 .tabGroupsOptionButton {
     float:right;
+    padding-top: 73px;
 }
 
 .tabGroupsOptionButton ul.dropdown-menu {
