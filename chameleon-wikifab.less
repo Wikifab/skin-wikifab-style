@@ -6584,18 +6584,12 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     opacity:0.55;
 }
 
-#cs-comments .cs-target-comment .cs-comment-header,
-#cs-comments .cs-head-comment > .cs-comment-header {
-    border-color:#52bad5;
-    border-color:@main-btn-color;
-}
-
 #cs-comments .cs-reply-comment > .cs-comment-header {
     background-color: #fafbfc;
 }
 
 #cs-comments .cs-expanded .cs-comment-header {
-    background-color: #edf8fb;
+    border:none;
 }
 
 #cs-comments .cs-comment-header-center {
@@ -6682,11 +6676,17 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     margin-right: 5px;
 }
 
-#cs-comments #cs-title-edit-field {
+#cs-comments #cs-title-edit-field,
+#cs-comments #cs-fake-edit-field {
     box-style: inherit;
+    border-radius: 3px;
     -webkit-box-sizing: inherit;
     width: 100%;
+    line-height: initial;
     min-width: 0;
+    padding: 10px;
+    border-color:0;
+    margin-bottom: 10px;
 }
 
 #cs-comments .cs-comment-header-right {
@@ -6747,7 +6747,12 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 }
 
 #cs-comments #cs-body-edit-field {
-    max-height:120px;
+    max-height: 120px;
+    font-size: 15px;
+    padding: 10px;
+    resize: none;
+    border-radius: 3px;
+    margin-bottom: 8px;
 }
 
 #cs-comments #cs-header {
@@ -6758,6 +6763,9 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 #cs-comments .cs-stream {
     width: 100%;
     float: left;
+    border-bottom: 2px dotted #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #cs-comments #cs-add-button {
@@ -6782,9 +6790,11 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     content: "\f065";
 }
 
-#cs-comments #cs-header #cs-edit-box {
+#cs-comments #cs-edit-box {
     float: left;
     width: 100%;
+    background: transparent;
+    padding: 0;
 }
 
 #cs-comments #cs-add-button .cs-comment-button-label {
