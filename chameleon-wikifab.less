@@ -6612,6 +6612,20 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     font-size: 14.5px;
 }
 
+#cs-comments .cs-reply-comment {
+	float: left;
+    width: calc(100% - 30px);
+    overflow: hidden;
+}
+
+.cs-comment .cs-chosensolution {
+	display:none;
+}
+
+.cs-comment.cs-discussion-solved .cs-chosensolution {
+	display:block;
+}
+
 #cs-comments .cs-reply-comment > .cs-comment-header {
     background-color: #fafbfc;
 }
@@ -6717,7 +6731,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     font-weight: normal;
     padding: 10px;
     border-color:0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 #cs-comments .cs-comment-header-right {
@@ -6780,6 +6794,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     resize: none;
     border-radius: 3px;
     margin-bottom: 8px;
+    margin-top: 10px;
 }
 
 #cs-comments #cs-header {
@@ -6793,6 +6808,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     border-bottom: 2px dotted #eee;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 #cs-comments #cs-add-button {
@@ -6819,7 +6835,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 
 #cs-comments #cs-edit-box {
     float: left;
-    width: 100%;
+    width: calc(100% - 30px);
     background: transparent;
     padding: 0;
 }
