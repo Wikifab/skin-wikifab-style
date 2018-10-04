@@ -2359,6 +2359,56 @@ span.project-card-separator {
 
 
 /*********************
+ * style of page Special:Drafts
+ *********************/
+
+.draft-list-container {
+    margin-top:20px;
+}
+.mw-special-Drafts .draft-list-container ul {
+    transform: rotate(180deg);
+    list-style: none;
+    padding: 0;
+}
+
+.mw-special-Drafts .draft-list-container ul > li span:first-child {
+    width: 50%;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: baseline;
+    padding-right: 10px;
+}
+
+.mw-special-Drafts .draft-list-container ul > li span:nth-child(4) a {
+    background: @main-btn-color;
+    padding: 5px 7px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.mw-special-Drafts .draft-list-container ul > li span:nth-child(4) a:hover {
+    background: @main-hover-color;
+    text-decoration: none;
+}
+
+.mw-special-Drafts .draft-list-container ul > li span.draft-savetime {
+    min-width: 140px;
+    display: inline-block;
+}
+
+.mw-special-Drafts .draft-list-container ul > li {
+    transform: rotate(-180deg);
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.mw-special-Drafts .draft-list-container ul > li:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+/*********************
  * styles pour la vue d'un tuto (home page )
  *********************/
 
