@@ -2365,13 +2365,14 @@ span.project-card-separator {
 .mw-special-Drafts .draft-list-container {
     margin-top:20px;
 }
-.mw-special-Drafts .draft-list-container ul {
+
+.draft-list-container ul {
     transform: rotate(180deg);
     list-style: none;
     padding: 0;
 }
 
-.mw-special-Drafts .draft-list-container ul > li span:first-child {
+.draft-list-container ul > li span:first-child {
     width: 50%;
     float: left;
     text-overflow: ellipsis;
@@ -2381,27 +2382,31 @@ span.project-card-separator {
     padding-right: 10px;
 }
 
-.mw-special-Drafts .draft-list-container ul > li span:nth-child(4) a {
+.draft-list-container ul > li span:nth-child(4) a {
     background: @main-btn-color;
     padding: 5px 7px;
     border-radius: 3px;
     color: #fff;
 }
 
-.mw-special-Drafts .draft-list-container ul > li span:nth-child(4) a:hover {
+.draft-list-container ul > li span:nth-child(4) a:hover {
     background: @main-hover-color;
     text-decoration: none;
 }
 
-.mw-special-Drafts .draft-list-container ul > li span.draft-savetime {
+.draft-list-container ul > li span.draft-savetime {
     min-width: 140px;
     display: inline-block;
 }
 
-.mw-special-Drafts .draft-list-container ul > li {
+.draft-list-container ul > li {
     transform: rotate(-180deg);
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 10px;
+}
+
+.mw-special-Drafts .draft-list-container ul > li {
+    background-color: #f9f9f9;
 }
 
 .mw-special-Drafts .draft-list-container ul > li:nth-of-type(odd) {
