@@ -2394,6 +2394,20 @@ span.project-card-separator {
     text-decoration: none;
 }
 
+.draft-list-container ul > li span:nth-child(4) a.draft-being-edited {
+    display: none;
+}
+
+.draft-list-container ul > li span:first-child a.draft-being-edited {
+    font-weight:normal;
+}
+
+.draft-list-container ul > li span:first-child a.draft-being-edited:before {
+    font-family: FontAwesome;
+    content: "\f040";
+    margin-right: 5px;
+}
+
 .draft-list-container ul > li span.draft-savetime {
     min-width: 140px;
     display: inline-block;
@@ -2403,10 +2417,20 @@ span.project-card-separator {
     transform: rotate(-180deg);
     background-color: #fff;
     padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.draft-discard {
+    margin-left: 10px;
+}
+
+.draft-list-container ul > li:last-child {
+    border-bottom: 0;
 }
 
 .mw-special-Drafts .draft-list-container ul > li {
     background-color: #f9f9f9;
+    border-bottom: 0;
 }
 
 .mw-special-Drafts .draft-list-container ul > li:nth-of-type(odd) {
