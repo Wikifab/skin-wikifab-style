@@ -2389,23 +2389,34 @@ span.project-card-separator {
     color: #fff;
 }
 
-.draft-list-container ul > li span:nth-child(4) a:hover {
+.draft-list-container ul > li span:nth-child(4) a:hover,
+.draft-list-container ul > li span:nth-child(4) a:focus {
     background: @main-hover-color;
     text-decoration: none;
 }
 
-.draft-list-container ul > li span:nth-child(4) a.draft-being-edited {
-    display: none;
+.draft-list-container ul > li span a.draft-being-edited-2:hover,
+.draft-list-container ul > li span a.draft-being-edited-2:focus {
+	text-decoration: none;
 }
 
-.draft-list-container ul > li span:first-child a.draft-being-edited {
-    font-weight:normal;
+.draft-list-container ul > li span a.draft-being-edited-2 {
+	font-weight:bold;
+	color:#30373b;
 }
 
-.draft-list-container ul > li span:first-child a.draft-being-edited:before {
+.draft-list-container ul > li span a.draft-being-edited-2:before {
     font-family: FontAwesome;
     content: "\f040";
     margin-right: 5px;
+    font-weight:normal;
+}
+
+.draft-list-container ul > li span a.draft-being-edited-3 {
+	background: #eee;
+    cursor: default;
+    color: #bbb;
+    border: 1px solid #ddd;
 }
 
 .draft-list-container ul > li span.draft-savetime {
