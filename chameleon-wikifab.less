@@ -102,6 +102,7 @@ button:focus, .btn:focus, input:focus, .input:focus, textarea:focus, .textarea:f
     float: left;
     margin-bottom: 15px;
     background: #fff;
+    width:100%;
 }
 
 .DokitPfTemplateContent {
@@ -5035,7 +5036,8 @@ label.checkboxLabel.detail-area-field{
     width:100%;
 }
 
-.DokitPfTemplateTools a,
+.DokitPfTemplateTools a.addAboveButton,
+.DokitPfTemplateTools a.removeButton,
 .DokitPfTemplateTools .instanceRearranger {
   background-repeat: no-repeat;
   background-position: center;
@@ -5044,8 +5046,21 @@ label.checkboxLabel.detail-area-field{
   height: 40px;
 }
 
+.multipleTemplate-dokitstep .DokitPfTemplateContent {
+    width:calc(~"100% - 100px")
+}
+
+.multipleTemplate-dokitstep .DokitPfTemplateTools div,
+.multipleTemplate-dokitstep .DokitPfTemplateTools div.instanceRearranger {
+    width:33%;
+}
+
+.multipleTemplate-dokitstep .DokitPfTemplateTools {
+    width:33%;
+}
+
 .DokitPfTemplateTools .instanceRearranger {
-    cursor: row-resize;
+    cursor: move;
     background-image: url('images/wf-ic-movestep.png');
 }
 
@@ -5066,7 +5081,7 @@ label.checkboxLabel.detail-area-field{
 .DokitPfTemplateTools .instanceRearranger:active,
 .DokitPfTemplateTools .instanceRearranger:focus {
   opacity: 1;
-  box-shadow: none;
+  box-shadow: none !important;
   outline: none;
 }
 
@@ -5238,7 +5253,10 @@ label.checkboxLabel.detail-area-field{
     width: 73%;
 }
 
-.add-attachments .addAboveButton, .add-attachments .rearrangerImage, .material-tool-list .rearrangerImage, .material-tool-list .addAboveButton{
+.add-attachments .addAboveButton,
+.add-attachments .instanceRearranger,
+.material-tool-list .addAboveButton,
+.material-tool-list .instanceRearranger {
 	display:none;
 }
 
