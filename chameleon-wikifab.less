@@ -3471,16 +3471,6 @@ body.page-Wikifab_Creator_handbook {
     margin:0px
 }
 
-#sfForm .sf-save_and_continue-changed {
-    background-color: #52bad5;
-	background-color: @main-btn-color;	
-	color:#fff;
-}
-
-#sfForm .sf-save_and_continue-changed:hover {
-    background-color: #2c9ab7;
-	background-color: @main-hover-color;	
-}
 
 .sitedir-ltr #mw-search-top-table #searchText, .sitedir-ltr #mw-search-top-table #powerSearchText{
 	padding: 8px 8px 8px 0;
@@ -4521,6 +4511,7 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 .ve-ce-surface {
     border: 1px solid #ddd;
     border-radius: 3px;
+    background: #fff;
 }
 
 .ve-ce-surface:hover {
@@ -4643,6 +4634,12 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     resize: none;
 }
 
+.multipleTemplate-tutostep td.instanceAddAbove,
+.multipleTemplate-tutostep td.instanceRemove {
+	display: inline;
+}
+
+
 #pfForm .security-rules label.checkboxLabel {
 	padding: 0 30px;
     width: 50%;
@@ -4736,14 +4733,6 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 	padding: 5px 23px 5px 10px;
 }
 
-#mw-content-text #sfForm .add-attachments .createboxInput {
-    padding: 6px 8px;
-}
-
-#mw-content-text #sfForm .add-attachments-upload .createboxInput {
-	max-width: 87%;
-}
-
 .add-attachments .multipleTemplate td.instanceMain, .add-attachments .multipleTemplate td.instanceMain p {
 	width: 341px;
 }
@@ -4775,22 +4764,9 @@ h5.tuto-details-material-title {
 	font-weight: normal;
 }
 
-#mw-content-text #sfForm .material-tool-list input.material-title {
-    width: 77%;
-    margin-right: 7px;
-}
-
 .step-instructions h2 {
 	margin-top: 5px;
     font-size: 22px;
-}
-
-#mw-content-text #sfForm .material-tool-list input.tools-title {
-    width: 98%;
-}
-
-#mw-content-text #sfForm .material-tool-list input.material-qty {
-    width: 10%;
 }
 
 .detail-box{
@@ -4841,30 +4817,22 @@ label.checkboxLabel.detail-area-field{
 }
 
 .multipleTemplateWrapper .multipleTemplateInstance {
-	background-color: #fff;
-	border: none;
-	padding: 0px;
-	margin: 0px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 5px;
 }
 
-#sfForm td.instanceRearranger {
-	display:none;
+#pfForm td.instanceRearranger {
+	width: 10px;
 }
 
 .multipleTemplateInstance td.instanceMain {
 	padding:0px;
 }
 
-#sfForm .checkboxSwitches {
-	display:none;
-}
 
 #profileWf {
     margin-top: 25px;
-}
-
-#sfForm .sf-select2-container {
-	margin-bottom:0px;
 }
 
 .step-instruction-title {
@@ -4872,14 +4840,6 @@ label.checkboxLabel.detail-area-field{
 	font-weight: bold;
 }
 
-#mw-content-text #sfForm .form-picture {
-	max-width:219px;
-    padding: 6px 8px;
-}
-
-#mw-content-text #sfForm .form-text {
-    padding: 6px 8px;
-}
 
 .sfImagePreviewWrapper {
 	margin-top:10px;
@@ -5039,50 +4999,32 @@ label.checkboxLabel.detail-area-field{
     width:100%;
 }
 
-.DokitPfTemplateTools a.addAboveButton,
-.DokitPfTemplateTools a.removeButton,
-.DokitPfTemplateTools .instanceRearranger {
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.3;
-  width: 100%;
-  height: 34px;
+.multipleTemplate-tutostep a.addAboveButton,
+.multipleTemplate-tutostep a.removeButton {
+	float: right;
 }
 
-.multipleTemplate-dokitstep .DokitPfTemplateContent {
-    width:calc(~"100% - 100px")
-}
-
-.multipleTemplate-dokitstep .DokitPfTemplateTools div,
-.multipleTemplate-dokitstep .DokitPfTemplateTools div.instanceRearranger {
-    width:33%;
-}
-
-.multipleTemplate-dokitstep .DokitPfTemplateTools {
-    width:100px;
-}
-
-.DokitPfTemplateTools .instanceRearranger {
-    cursor: move;
-    background-image: url('images/wf-ic-movestep.png');
-}
-
-.DokitPfTemplateTools a.addAboveButton {
+.multipleTemplate-tutostep a.addAboveButton {
     cursor: pointer;
     background-image: url('images/wf-ic-addstep.png');
 }
 
-.DokitPfTemplateTools a.removeButton {
+.multipleTemplate-tutostep a.removeButton {
   cursor: pointer;
   background-image: url('images/wf-ic-removestep.png');
 }
 
-.DokitPfTemplateTools a:hover,
-.DokitPfTemplateTools a:active,
-.DokitPfTemplateTools a:focus,
-.DokitPfTemplateTools .instanceRearranger:hover,
-.DokitPfTemplateTools .instanceRearranger:active,
-.DokitPfTemplateTools .instanceRearranger:focus {
+.multipleTemplate-tutostep .instanceAddAbove a,
+.multipleTemplate-tutostep .instanceRemove a {
+	opacity: 0.4;
+}
+
+.multipleTemplate-tutostep .instanceAddAbove a:hover,
+.multipleTemplate-tutostep .instanceAddAbove a:active,
+.multipleTemplate-tutostep .instanceAddAbove a:focus,
+.multipleTemplate-tutostep .instanceRemove a:hover,
+.multipleTemplate-tutostep .instanceRemove a:active,
+.multipleTemplate-tutostep .instanceRemove a:focus {
   opacity: 1;
   box-shadow: none !important;
   outline: none;
@@ -5244,10 +5186,6 @@ label.checkboxLabel.detail-area-field{
     margin-left: -25px;
 }
 
-#sfForm a.sfUploadable {
-	color: #fff;
-}
-
 .add-attachments .step-nav img {
     width: 87%;
 }
@@ -5388,9 +5326,6 @@ nav .navbar-nav.ExploreSearchBar,
 
 .project-thumbnail {
     height: 237px;
-}
-#mw-content-text #sfForm .add-attachments-upload .createboxInput {
-	max-width:80%;
 }
 
 .indispensable-call-box {
@@ -5589,10 +5524,6 @@ h2.VideoTitle {
 .marketing-section-hp h1,
 .group-explore-hp h1 {
     font-size: 34px;
-}
-
-#mw-content-text #sfForm .add-attachments-upload .createboxInput {
-	max-width:70%;
 }
 
 .form-dropdown, .form-dropdown-1 {
@@ -5959,10 +5890,6 @@ p.machines-form-first, p.machines-form {
 
 .group-tabs .multipleTemplateAdder {
     width: inherit;
-}
-
-#mw-content-text #sfForm .group-field {
-    max-width: 350px;
 }
 
 .group-tabs img.removeButton, .group-tabs img.addAboveButton, .group-tabs img.instanceRearranger {
