@@ -4636,7 +4636,8 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 
 .multipleTemplate-tutostep td.instanceAddAbove,
 .multipleTemplate-tutostep td.instanceRemove {
-	display: inline;
+	display: block;
+	float: right;
 }
 
 
@@ -4828,6 +4829,8 @@ label.checkboxLabel.detail-area-field{
 
 .multipleTemplateInstance td.instanceMain {
 	padding:0px;
+	width: calc(100% - 34px);
+    float: left;
 }
 
 
@@ -4999,11 +5002,6 @@ label.checkboxLabel.detail-area-field{
     width:100%;
 }
 
-.multipleTemplate-tutostep a.addAboveButton,
-.multipleTemplate-tutostep a.removeButton {
-	float: right;
-}
-
 .multipleTemplate-tutostep a.addAboveButton {
     cursor: pointer;
     background-image: url('images/wf-ic-addstep.png');
@@ -5017,6 +5015,8 @@ label.checkboxLabel.detail-area-field{
 .multipleTemplate-tutostep .instanceAddAbove a,
 .multipleTemplate-tutostep .instanceRemove a {
 	opacity: 0.4;
+	background-repeat: no-repeat;
+    background-position: center;
 }
 
 .multipleTemplate-tutostep .instanceAddAbove a:hover,
