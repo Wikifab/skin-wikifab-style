@@ -2392,6 +2392,7 @@ span.project-card-separator {
 
 .draft-list-container ul > li span:nth-child(4) a {
     background: @main-btn-color;
+    border: 1px solid @main-btn-color;
     padding: 5px 7px;
     border-radius: 3px;
     color: #fff;
@@ -2400,6 +2401,7 @@ span.project-card-separator {
 .draft-list-container ul > li span:nth-child(4) a:hover,
 .draft-list-container ul > li span:nth-child(4) a:focus {
     background: @main-hover-color;
+    border: 1px solid @main-hover-color;
     text-decoration: none;
 }
 
@@ -2420,7 +2422,8 @@ span.project-card-separator {
     font-weight:normal;
 }
 
-.draft-list-container ul > li span a.draft-being-edited-3 {
+.draft-list-container ul > li span a.draft-being-edited-3,
+.draft-list-container ul > li span a.draft-being-edited-3:hover {
 	background: #eee;
     cursor: default;
     color: #bbb;
