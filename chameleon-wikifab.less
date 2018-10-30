@@ -298,6 +298,7 @@ a:hover {
 
 .prerequisites-selection .multipleTemplateAdder {
 	width: auto;
+    margin-top: 7px;
 }
 
 
@@ -4637,7 +4638,12 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 @media (min-width: 768px) {
 #pfForm .WfFormTutoStep .col-sm-push-6 {
     padding-left: 10px;
-    padding-right: 5px;
+    padding-right: 0px;
+}
+
+#pfForm .WfFormTutoStep .col-sm-pull-6 {
+    padding-right: 0;
+    padding-left: 5px;
 }
 }
 
@@ -4651,7 +4657,6 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 	display: block;
 	float: right;
 }
-
 
 #pfForm .security-rules label.checkboxLabel {
 	padding: 0 30px;
@@ -4746,29 +4751,12 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 	padding: 5px 23px 5px 10px;
 }
 
-.add-attachments .multipleTemplate td.instanceMain, .add-attachments .multipleTemplate td.instanceMain p {
-	width: 341px;
-}
-
 h5.tuto-details-material-title {
 	margin-top: 2px;
 }
 
 .mw-body .files-list ul{
     margin-bottom: 1px;
-}
-
-.add-attachments .multipleTemplateWrapper .multipleTemplateInstance {
-	margin:0px;
-	margin-bottom:10px;
-}
-
-.add-attachments .multipleTemplateAdder, .material-tool-list .multipleTemplateAdder {
-    width: inherit;
-}
-
-.add-attachments .instanceAddAbove {
-    display: none;
 }
 
 .edit-step-title span {
@@ -4831,23 +4819,32 @@ label.checkboxLabel.detail-area-field{
 
 .multipleTemplateWrapper .multipleTemplateInstance {
     background-color: #fafbfc;
-    border: 1px solid #ddd;
-    padding: 15px 5px 15px 10px;
+    border: 1px solid #eee;
+    padding: 12px 5px 12px 8px;
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance {
+    padding: 12px 5px 12px 8px;
 }
 
 #pfForm td.instanceRearranger {
 	width: 10px;
-    opacity: hover;
+    opacity: 0.4;
+    transition: 0.2s;
 }
 
-#pfForm td.instanceRearranger {
+#pfForm td.instanceRearranger:hover {
     opacity: 1;
 }
 
 .multipleTemplateInstance td.instanceMain {
-	padding:0px;
-	width: calc(~"100% - 34px");
+    padding: 0px 5px;
+    width: 100%;
     float: left;
+}
+
+.multipleTemplate-tutostep .multipleTemplateInstance td.instanceMain {
+	width: calc(~"100% - 34px");
 }
 
 
@@ -4911,6 +4908,7 @@ label.checkboxLabel.detail-area-field{
 #pfForm .prerequisites-selection .select2-container,
 #pfForm .WfFormTokens .select2-container {
     width: 100%;
+    margin-bottom: 0px;
 }
 
 .prerequisites-selection .multipleTemplateWrapper .multipleTemplateInstance {
@@ -5010,38 +5008,34 @@ label.checkboxLabel.detail-area-field{
   border:1px solid #e7e7e7;
 }
 
-.multipleTemplateInstance {
-  background-color: #fff;
-}
-
 .DokitPfTemplateTools div {
     float:left;
     width:100%;
 }
 
-.multipleTemplate-tutostep a.addAboveButton {
+.multipleTemplateWrapper a.addAboveButton {
     cursor: pointer;
     background-image: url('images/wf-ic-addstep.png');
 }
 
-.multipleTemplate-tutostep a.removeButton {
+.multipleTemplateWrapper a.removeButton {
   cursor: pointer;
   background-image: url('images/wf-ic-removestep.png');
 }
 
-.multipleTemplate-tutostep .instanceAddAbove a,
-.multipleTemplate-tutostep .instanceRemove a {
+.multipleTemplateWrapper .instanceAddAbove a,
+.multipleTemplateWrapper .instanceRemove a {
 	opacity: 0.4;
 	background-repeat: no-repeat;
     background-position: center;
 }
 
-.multipleTemplate-tutostep .instanceAddAbove a:hover,
-.multipleTemplate-tutostep .instanceAddAbove a:active,
-.multipleTemplate-tutostep .instanceAddAbove a:focus,
-.multipleTemplate-tutostep .instanceRemove a:hover,
-.multipleTemplate-tutostep .instanceRemove a:active,
-.multipleTemplate-tutostep .instanceRemove a:focus {
+.multipleTemplateWrapper .instanceAddAbove a:hover,
+.multipleTemplateWrapper .instanceAddAbove a:active,
+.multipleTemplateWrapper .instanceAddAbove a:focus,
+.multipleTemplateWrapper .instanceRemove a:hover,
+.multipleTemplateWrapper .instanceRemove a:active,
+.multipleTemplateWrapper .instanceRemove a:focus {
   opacity: 1;
   box-shadow: none !important;
   outline: none;
@@ -5209,13 +5203,6 @@ label.checkboxLabel.detail-area-field{
 
 .material-tool-list .step-nav img {
     width: 73%;
-}
-
-.add-attachments .addAboveButton,
-.add-attachments .instanceRearranger,
-.material-tool-list .addAboveButton,
-.material-tool-list .instanceRearranger {
-	display:none;
 }
 
 .flow-component #mw-content-text .mw-ui-button.mw-ui-progressive {
