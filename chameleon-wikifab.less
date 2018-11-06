@@ -2424,9 +2424,11 @@ span.project-card-separator {
 }
 
 .draft-list-container ul > li span a.draft-being-edited-3,
-.draft-list-container ul > li span a.draft-being-edited-3:hover {
+.draft-list-container ul > li span a.draft-being-edited-3:hover,
+.draft-list-container ul > li span a.draft-being-edited-3:focus {
 	background: #eee;
     cursor: default;
+    outline: 0;
     color: #bbb;
     border: 1px solid #ddd;
 }
@@ -4462,6 +4464,11 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     background-repeat: no-repeat;
     background-image: url('images/WFselectDropdown.png');
     background-color: #f9f9f9;
+}
+
+.WfFormDropdown.WfFormDropdownAutoWidth {
+    width: auto;
+    float: unset;
 }
 
 .WfFormDropdownLight {
