@@ -5743,15 +5743,18 @@ div.navbar-personaltoolwidgets > li > a {
 }
 */
 
-body[class^='page-Group_'].action-view, body[class*='page-Group_'].action-view {
+body[class^='page-Group_'].action-view, body[class*='page-Group_'].action-view,
+body[class^='page-Manual_'].action-view, body[class*='page-Manual_'].action-view {
 	background-color: #f9fafc;
 }
 
-body[class^='page-Group_'].action-view .firstHeading, body[class*='page-Group_'].action-view .firstHeading {
+body[class^='page-Group_'].action-view .firstHeading, body[class*='page-Group_'].action-view .firstHeading,
+body[class^='page-Manual_'].action-view .firstHeading, body[class*='page-Manual_'].action-view .firstHeading {
 	display:none;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav {
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav,
+body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav {
 	max-width: 1140px;
 	margin:auto;
     border-bottom: 0;
@@ -5768,7 +5771,8 @@ body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class
     -ms-transform: translateY(-50%) translateX(-50%);
 }
 
-body[class^='page-Group_'] .permissions-errors, body[class*='page-Group_'] .permissions-errors {
+body[class^='page-Group_'] .permissions-errors, body[class*='page-Group_'] .permissions-errors,
+body[class^='page-Manual_'] .permissions-errors, body[class*='page-Manual_'] .permissions-errors {
     max-width: 1170px;
     margin: auto;
     padding: 0px 15px;
@@ -5790,7 +5794,8 @@ body[class^='page-Group_'] .permissions-errors, body[class*='page-Group_'] .perm
 	color:#888;
 }
 
-body[class^='page-Group_'] .group-info span a, body[class*='page-Group_'] .group-info span a{
+body[class^='page-Group_'] .group-info span a, body[class*='page-Group_'] .group-info span a,
+body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .group-info span a {
 	color:#888;
 }
 
@@ -5820,24 +5825,28 @@ body[class^='page-Group_'] .group-info span a, body[class*='page-Group_'] .group
     vertical-align: baseline;
 }
 
-body[class^='page-Group_'] div.patrollink, body[class*='page-Group_'] div.patrollink {
+body[class^='page-Group_'] div.patrollink, body[class*='page-Group_'] div.patrollink,
+body[class^='page-Manual_'] div.patrollink, body[class*='page-Manual_'] div.patrollink {
 	float: right;
 	background: #fff;
 	width: 100%;
 	text-align: center;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text .tabber .tabbertab, body[class*='page-Group_'].action-view #mw-content-text .tabber .tabbertab {
+body[class^='page-Group_'].action-view #mw-content-text .tabber .tabbertab, body[class*='page-Group_'].action-view #mw-content-text .tabber .tabbertab,
+body[class^='page-Manual_'].action-view #mw-content-text .tabber .tabbertab, body[class*='page-Manual_'].action-view #mw-content-text .tabber .tabbertab {
 	background:#fff;
 	border:none;
 	border-top:1px solid #ddd;
 }	
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a,
+body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li a {
     background: transparent;
 }
 
-body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p,
+body[class^='page-Manual_'].action-view .group-main-image p, body[class*='page-Manual_'].action-view .group-main-image p {
 	height: 260px;
     overflow: hidden;
     border: 9px solid #ddd;
@@ -5846,7 +5855,8 @@ body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Gr
 	display:flex;
 }
 
-body[class^='page-Group_'].action-view .group-main-image img, body[class*='page-Group_'].action-view .group-main-image img{
+body[class^='page-Group_'].action-view .group-main-image img, body[class*='page-Group_'].action-view .group-main-image img,
+body[class^='page-Manual_'].action-view .group-main-image img, body[class*='page-Manual_'].action-view .group-main-image img {
     width: 100%;
     height: initial;
 	margin: auto;
@@ -5867,12 +5877,16 @@ body[class^='page-Group_'].action-view .group-main-image img, body[class*='page-
 
 
 body[class^='page-Group_'] .mw-body,
-body[class*='page-Group_'] .mw-body {
+body[class*='page-Group_'] .mw-body,
+body[class^='page-Manual_'] .mw-body,
+body[class*='page-Manual_'] .mw-body {
     margin-top:0px
 }
 
 body[class^='page-Group_'].action-view span.group-type,
-body[class*='page-Group_'].action-view span.group-type {
+body[class*='page-Group_'].action-view span.group-type,
+body[class^='page-Manual_'].action-view span.group-type,
+body[class*='page-Manual_'].action-view span.group-type {
     font-size: 14.5px;
     font-weight: normal;
     color: #ccc;
@@ -5883,7 +5897,9 @@ body[class*='page-Group_'].action-view span.group-type {
 }
 
 body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a,
-body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a {
+body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a,
+body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li.tabberactive a,
+body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li.tabberactive a {
     border: 1px solid #ddd;
     border-bottom: 1px solid #fff;
     -webkit-border-top-left-radius: 4px;
@@ -5898,32 +5914,41 @@ body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberac
 }
 
 body[class^='page-Group_'] .navbar,
-body[class*='page-Group_'] .navbar {
+body[class*='page-Group_'] .navbar,
+body[class^='page-Manual_'] .navbar,
+body[class*='page-Manual_'] .navbar {
 	margin-bottom: 0px;
 }
 
-body[class^='page-Group_'].action-view .p-contentnavigation li.selected, body[class*='page-Group_'].action-view .p-contentnavigation li.selected {
+body[class^='page-Group_'].action-view .p-contentnavigation li.selected, body[class*='page-Group_'].action-view .p-contentnavigation li.selected,
+body[class^='page-Manual_'].action-view .p-contentnavigation li.selected, body[class*='page-Manual_'].action-view .p-contentnavigation li.selected {
     border-bottom: 1px solid #f9fafc;
 	background: #f9fafc;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a,
+body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li a {
 	padding: 9px 15px;
 	border: none;
 }
 
 body[class^='page-Spécial_AjouterDonnées_Group_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Group_'] .contentHeader,
-body[class^='page-Special_FormEdit_Group_'] .contentHeader, body[class*='page-Special_FormEdit_Group_'] .contentHeader {
+body[class^='page-Special_FormEdit_Group_'] .contentHeader, body[class*='page-Special_FormEdit_Group_'] .contentHeader,
+body[class^='page-Spécial_AjouterDonnées_Manual_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Manual_'] .contentHeader,
+body[class^='page-Special_FormEdit_Manual_'] .contentHeader, body[class*='page-Special_FormEdit_Manual_'] .contentHeader {
 	display:none;
 }
 
 body[class^='page-Spécial_AjouterDonnées_Group_'] .col-lg-12, body[class*='page-Spécial_AjouterDonnées_Group_'] .col-lg-12,
-body[class^='page-Special_FormEdit_Group_'] .col-lg-12, body[class*='page-Special_FormEdit_Group_'] .col-lg-12 {
+body[class^='page-Special_FormEdit_Group_'] .col-lg-12, body[class*='page-Special_FormEdit_Group_'] .col-lg-12,
+body[class^='page-Spécial_AjouterDonnées_Manual_'] .col-lg-12, body[class*='page-Spécial_AjouterDonnées_Manual_'] .col-lg-12,
+body[class^='page-Special_FormEdit_Manual_'] .col-lg-12, body[class*='page-Special_FormEdit_Manual_'] .col-lg-12 {
 	padding-right:0px;
 	padding-left:0px;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav {
+body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav,
+body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav {
 	margin-bottom: -1px;
 }
 
@@ -6017,7 +6042,8 @@ p.machines-form {
     padding-bottom: 8px;
 }
 
-body[class^='page-Group_'].action-view .Input-tabs, body[class*='page-Group_'].action-view .Input-tabs {
+body[class^='page-Group_'].action-view .Input-tabs, body[class*='page-Group_'].action-view .Input-tabs,
+body[class^='page-Manual_'].action-view .Input-tabs, body[class*='page-Manual_'].action-view .Input-tabs {
 	margin-bottom:0px;
     margin-top:0px;
 }
@@ -6057,24 +6083,28 @@ body[class^='page-Group_'].action-view .Input-tabs, body[class*='page-Group_'].a
     border: 1px solid #ccc;
 }
 
-body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].action-view .footerdata {
+body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].action-view .footerdata,
+body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_'].action-view .footerdata {
 	margin-top:0px;
 }
 
 @media (max-width: 1200px) {
-	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p,
+        body[class^='page-Manual_'].action-view .group-main-image p, body[class*='page-Manual_'].action-view .group-main-image p{
 		height: 210px;
 	}
 }
 
 @media (max-width: 992px) {
-	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p,
+    body[class^='page-Manual_'].action-view .group-main-image p, body[class*='page-Manual_'].action-view .group-main-image p {
 		height: 157px;
 	}
 }
 
 @media (max-width: 768px) {
-	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p{
+	body[class^='page-Group_'].action-view .group-main-image p, body[class*='page-Group_'].action-view .group-main-image p,
+    body[class^='page-Manual_'].action-view .group-main-image p, body[class*='page-Manual_'].action-view .group-main-image p {
 		height: 200px;
 	    max-width: 200px;
 	    margin: auto;
@@ -6093,7 +6123,8 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
     .hide-mobile-view {
         display:none;
     }
-	body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a {
+	body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a,
+    body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li a {
 	    margin-left: 5px;
 	    padding: 13px 7px;
 	    font-size: 14px;
@@ -6125,12 +6156,14 @@ body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].a
 	    width: 100%;
 	    float: left;
 	}
-	body[class^='page-Group_'] .group-title-box h1.group-title, body[class*='page-Group_'] .group-title-box h1.group-title {
+	body[class^='page-Group_'] .group-title-box h1.group-title, body[class*='page-Group_'] .group-title-box h1.group-title,
+    body[class^='page-Manual_'] .group-title-box h1.group-title, body[class*='page-Manual_'] .group-title-box h1.group-title {
 		padding-top: 29px;
 		color: inherit;
 		text-shadow: none;
 	}
-	body[class^='page-Group_'].action-view span.group-type, body[class*='page-Group_'].action-view span.group-type {
+	body[class^='page-Group_'].action-view span.group-type, body[class*='page-Group_'].action-view span.group-type,
+    body[class^='page-Manual_'].action-view span.group-type, body[class*='page-Manual_'].action-view span.group-type {
 		text-shadow: none;
 	}
 	#mw-content-text .group-main-tabs ul.tabbernav li a {
