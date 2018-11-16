@@ -2226,7 +2226,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform,-webkit-transform;
-    transition-duration: .2s;
+    transition-duration: .15s;
     transition-timing-function: ease-out;
     will-change: transform;
 }
@@ -2300,11 +2300,9 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 }
 
 .project-card:hover {
-	box-shadow: 0px 0px 15px 0 rgba(0,0,0,0.3);
-	-webkit-transform: translateY(-8px);
-    -ms-transform: translateY(-8%);
-    transform: translateY(-8px);
-    box-shadow: 0 7px 13px rgba(0,0,0,.2);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0.2) 0px 2px 32px 0px;
+    transform: scale(1.01);
+    z-index: 99;
 }
 
 span.project-card-type {
@@ -2556,7 +2554,12 @@ h5.project-title span {
 .project-card-book .project-blurb {
     height: auto;
     font-size: inherit;
+    margin-bottom: 0px;
     -webkit-line-clamp: 1;
+}
+
+.project-card-book .project-card-content {
+    padding: 10px 0;
 }
 
 .project-card.project-card-book {
@@ -2564,12 +2567,21 @@ h5.project-title span {
 }
 
 .project-card-book .project-thumbnail {
-    height: 110px;
+    height: 76px;
+    -webkit-border-radius: 8px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius: 8px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .project-card-book .project-thumbnail img {
-    min-width: 264px;
-    min-height: 110px;
+    min-width: 100%;
+    min-height: 56px;
     max-width: 350px;
     max-height: 210px;
 }
