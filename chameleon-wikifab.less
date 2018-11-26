@@ -594,23 +594,29 @@ a:hover {
     margin-left:0px;
 }
 
-.NewPageField input.formInput,
-.NewPageField input[type='text'] {
-    width: calc(~"100% - 134px");
+.NewPageField .pfFormInput p {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.NewPageField input.formInput {
+    width: 100%;
     border-radius: 3px;
     padding: 8px;
     vertical-align: top;
 }
 
 .NewPageField input[type='submit'] {
-    width: 130px;
     margin-top: 0px;
     font-size: 15px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-shadow: none;
     border-radius: 3px;
     font-weight: normal;
-    line-height: initial;
 }
 
 .hello-world-img img {
