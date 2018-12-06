@@ -5937,7 +5937,7 @@ body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .gro
     color: #fff;
     text-shadow: rgba(0,0,0,0.498039) 0px 1px 3px;
     float: left;
-    width: calc(~"100% - 50px");
+    width: calc(~"100% - 150px");
     text-overflow: ellipsis;
     overflow: hidden;
     float: left;
@@ -6165,12 +6165,24 @@ body[class^='page-Manual_'].action-view .Input-tabs, body[class*='page-Manual_']
 .tabGroupsOptionButton {
     float:right;
     padding-top: 73px;
+    display: flex;
 }
 
 .tabGroupsOptionButton ul.dropdown-menu {
     list-style: none;
     padding-left: 0px;
     padding: 5px 0;
+}
+
+.tabGroupsOptionButton .btn {
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fcfcfc,#eee);
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    margin-left: 5px;
+    padding: 3px 10px;
+    color: #333;
+    border-radius: 3px;
 }
 
 .tabGroupsOptionButton .edit-btn {
