@@ -5972,7 +5972,8 @@ body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .gro
     width: 100%;
 }
 
-.group-title-box h1.group-title {
+.group-title-box h1.group-title,
+.group-title-box h1.manual-title {
     padding-top: 69px;
     margin-bottom: 20px;
     padding-bottom: 7px;
@@ -5980,13 +5981,16 @@ body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .gro
     font-size: 36px;
     color: #fff;
     text-shadow: rgba(0,0,0,0.498039) 0px 1px 3px;
-    float: left;
-    width: calc(~"100% - 150px");
     text-overflow: ellipsis;
     overflow: hidden;
     float: left;
     white-space: nowrap;
     vertical-align: baseline;
+}
+
+.group-title-box h1.manual-title {
+    float: left;
+    width: calc(~"100% - 150px");   
 }
 
 body[class^='page-Group_'] div.patrollink, body[class*='page-Group_'] div.patrollink,
@@ -6208,8 +6212,11 @@ body[class^='page-Manual_'].action-view .Input-tabs, body[class*='page-Manual_']
 
 .tabGroupsOptionButton {
     float:right;
-    padding-top: 73px;
     display: flex;
+}
+
+body[class^='page-Manual_'] .tabGroupsOptionButton {
+    padding-top: 73px;
 }
 
 .tabGroupsOptionButton ul.dropdown-menu {
