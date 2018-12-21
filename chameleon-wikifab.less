@@ -828,7 +828,15 @@ a:hover {
     white-space: nowrap;
     vertical-align: baseline;
     float: left;
-    width: calc(~"100% - 30px");
+}
+
+.qtip img {
+    width: 100%;
+    max-width: 200px;
+    pointer-events: none;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
 }
 
 .file-subtitle {
@@ -3342,9 +3350,6 @@ body.page-Wikifab_Creator_handbook {
     display: inline-block;
 }
 
-.custom-tooltip, custom-tooltip-light {
-    margin-left:3px;
-}
 
 .custom-tooltip .smwtticon.info,
 .custom-tooltip-light .smwtticon.info {
@@ -3353,10 +3358,15 @@ body.page-Wikifab_Creator_handbook {
     padding: 9px;
     transition: all ease .25s;
     background-repeat: no-repeat;
+    margin-left: 3px;
 }
 
 .custom-tooltip-light .smwtticon.info {
     background: url('images/question-icon-light.png');
+}
+
+.dk-item-list.custom-tooltip .smwtticon.info {
+    background: url('images/quickview-icon.png');
 }
 
 .cc-modal-subtitle {
