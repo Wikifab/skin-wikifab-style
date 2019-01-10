@@ -165,6 +165,53 @@ body.ns-special .maincontent-header-tail {
     opacity: 1;
 }
 
+.action-formedit .maincontent-header-tail .page-tools-tabs li,
+.action-formedit .maincontent-header-tail .header-right-aligned {
+    display:none;
+}
+
+.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: transparent;
+    opacity: 0.6;
+    padding: 0;
+}
+
+.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a {
+    color: #aaa;
+    padding: 9px 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 200px;
+    width: 37px;
+    height: 37px;
+}
+
+.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a:focus {
+    text-decoration:none;
+}
+
+.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-right: 30px;
+    content:'\f060';
+}
+
+.action-formedit .maincontent-header-tail {
+    position: absolute;
+    top: 77px;
+}
+
+.action-formedit .maincontent-header-head {
+    margin-left: 51px;
+}
+
+.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main:hover {
+    opacity: 1;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: @nav-txt-color;
 }
@@ -6917,7 +6964,7 @@ input:-webkit-autofill {
 h2.cs-title {
     border-bottom: 1px solid #ddd;
     padding-bottom: 9px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 body > .oo-ui-windowManager {
@@ -7264,6 +7311,22 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     margin: auto;
 }
 
+}
+
+.dokit-custom-annotation-form .formmediagallery li,
+.dokit-custom-annotation-form .formmediagallery .empty-slot,
+.dokit-custom-annotation-form .formmediagallery div.add-new-file-slot {
+    width: 70px;
+    margin: 0 5px;
+    height: 70px; 
+}
+
+.dokit-custom-annotation-form .add-new-file-slot:after {
+    width:29px;
+}
+
+.dokit-custom-annotation-form .formmediagallery li .file-buttonbar {
+    display:none;
 }
 
 /* START Cleaning VE Dialog on formedit page */
