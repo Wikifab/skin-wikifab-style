@@ -165,6 +165,14 @@ body.ns-special .maincontent-header-tail {
     opacity: 1;
 }
 
+.action-formedit {
+    background-color: #fafbfc;
+}
+
+.action-formedit #main-content-header {
+    background-color: #fff;
+}
+
 .action-formedit .maincontent-header-tail .page-tools-tabs li,
 .action-formedit .maincontent-header-tail .header-right-aligned {
     display:none;
@@ -172,11 +180,12 @@ body.ns-special .maincontent-header-tail {
 
 .action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main {
     display: block;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 20px;
-    background: transparent;
+    background: #fff;
     opacity: 0.6;
     padding: 0;
+    transition: 0.2s;
 }
 
 .action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a {
@@ -2218,7 +2227,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
     padding: 10px 14px;
 	border: none;
 	border-bottom: 1px solid #ddd;
-	background:#fff;
+	background: transparent;
 }
 
 #mw-content-text ul.tabbernav li.tabberactive a {
@@ -2232,6 +2241,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
     border-bottom: 1px solid #fff;
     border-top: 3px solid #52bad5;
     border-top: 3px solid @main-btn-color;
+    background: #fff;
 }
 
 #mw-content-text ul.tabbernav {
@@ -2246,6 +2256,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	border-color: #ddd;
 	float: left;
     width: 100%;
+    background: #fff;
 }
 
 .Input-tabs {
@@ -3975,11 +3986,12 @@ body.page-Explore .footerdata,
 }
 
 .multipleTemplate-tutostep .multipleTemplateInstance.ui-sortable-placeholder {
-    border: 3px dotted #eee !important;
+    border: 3px dotted #ccc !important;
     border-radius: 6px;
     visibility:unset !important;
-    background:#fff !important;
+    background: transparent !important;
     background-image: none !important;
+    box-shadow: none !important;
 }
 
 .hrContentMinor{
@@ -4966,6 +4978,10 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 	max-width: 160px;
 }
 
+.multipleTemplate-tutostep .multipleTemplateList + p {
+    text-align: center;
+}
+
 .notes-ref td.instanceAddAbove {
 	display:none;
 }
@@ -5063,7 +5079,12 @@ label.checkboxLabel.detail-area-field{
 }
 
 .multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance {
-    padding: 12px 5px 12px 8px;
+    padding: 20px 9px 20px 14px;
+    background: #fff;
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 0;
 }
 
 #pfForm td.instanceRearranger {
@@ -6716,10 +6737,6 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
 	max-height: 130px;
     overflow: hidden;
     margin-bottom: 15px;
-}
-
-.msuploadmultiplewhitebg .formmediagallery .empty-slot {
-    background: #fafbfc;
 }
 
 .group-banner-upload .msupload-bottom, .group-logo-upload .msupload-bottom {
