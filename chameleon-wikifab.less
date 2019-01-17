@@ -124,8 +124,8 @@ body[class^='page-Spécial_AjouterDonnées_Item_'] {
     background-color:#eef2f6;  
 }
 
-.action-formedit.[class*='page-Manual_'],
-.action-formedit.[class^='page-Manual_'] {
+body.action-formedit.body[class*='page-Manual_'],
+body.action-formedit.body[class^='page-Manual_'] {
     background-color:#fff;
 }
 
@@ -253,11 +253,12 @@ body.ns-special .maincontent-header-tail {
 }
 
 input, .input, textarea, .textarea, input.mw-ui-input, select {
-	 border: 1px solid #ddd;
+	 border: 2px solid #ddd;
+     background: #fdfdfd;
 }
 
 input:hover, .input:hover, textarea:hover, .textarea:hover, select:hover, input.mw-ui-input:hover {
-	 border-color: #bbb;
+	 border-color: #ccc;
 }
 
 input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.mw-ui-input:focus {
@@ -265,6 +266,7 @@ input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.
 	 border-color: @main-btn-color;
 	 box-shadow: 0 0 7px rgba(39,128,248,.15);
 	 outline:none;
+     background: #fff;
 }
 
 .HpCategoriesSection {
@@ -487,9 +489,15 @@ a:hover {
 .WfFormTree ul.dynatree-container {
 	border-radius: 3px;
     padding: 0px 8px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
+    background:#fdfdfd;
 }
-    
+
+.WfFormTree ul.dynatree-container:hover {
+    border: 2px solid #ccc;
+    background:#fff;
+}
+
 .WfFormTree ul.dynatree-container li:first-child {
 	padding-top: 7px;
 }
@@ -4759,13 +4767,13 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 }
 
 .ve-ce-surface {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 3px;
-    background: #fff;
+    background: #fdfdfd;
 }
 
 .ve-ce-surface:hover {
-    border-color: #bbb;
+    border-color: #ccc;
 }
 
 .ve-area-wrapper .oo-ui-toolbar-bar  {
@@ -4785,6 +4793,7 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 .ve-ce-surface.ve-ce-surface-focused {
     border-radius: 3px 3px 0 0;
     border-color: @main-btn-color;
+    background:#fff;
 }
 
 .Licences-title {
@@ -4857,7 +4866,8 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 	border-radius: 3px;
 	width:100%;
 	padding: 6px 8px;
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
+    border-left:0;
 }
 
 .form-dropdown, .form-dropdown-1, .form-dropdown-2, .form-dropdown-3 {
@@ -5030,10 +5040,20 @@ h5.tuto-details-material-title {
 	border: 1px solid #cccccc;
 }
 
-.WfFormTokensParent .select2-container-multi.select2-container-active .select2-choices {
-     border-color: #52bad5;
-     border-color: @main-btn-color;
+.WfFormTokensParent .select2-container-multi.select2-container-active .select2-choices,
+.WfFormTokensParent .select2-dropdown-open.select2-drop-above .select2-choice,
+.WfFormTokensParent .select2-dropdown-open.select2-drop-above .select2-choices {
+     border: 2px solid #52bad5;
+     border: 2px solid @main-btn-color;
      box-shadow: 0 0 7px rgba(39,128,248,.15);
+}
+
+#pfForm .select2-container-multi .select2-choices {
+    border:2px solid #ddd;
+}
+
+#pfForm .select2-container-multi .select2-choices:hover {
+    border:2px solid #ddd;
 }
 
 .WfFormTokensParent .WfFormTokens {
