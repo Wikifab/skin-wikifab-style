@@ -114,6 +114,12 @@ button:focus, .btn:focus, .btn:active:focus, input:focus, .input:focus, textarea
     float: left;
 }
 
+.action-formedit,
+body[class^='.rootpage-Spécial_AjouterDonnées_ '],
+body[class*='.rootpage-Spécial_AjouterDonnées_ '] {
+    background-color:#eef2f6;  
+}
+
 .DokitPfTemplateTools {
     width: 40px;
     float: left;
@@ -5071,12 +5077,83 @@ label.checkboxLabel.detail-area-field{
 }
 
 .multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance {
-    padding: 20px 9px 20px 14px;
+    padding: 20px 15px;
     background: #fff;
-    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 15px 20px -10px rgba(0,0,0,0.14);
     margin-bottom: 30px;
     border-radius: 10px;
-    border: 0;
+}
+
+.multipleTemplate-tutostep td.instanceAddAbove,
+.multipleTemplate-tutostep td.instanceRemove {
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    position: absolute;
+    right: 20px;
+    background: #30373b;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    height: auto;
+    margin-top: -26px;
+    opacity:0;
+    transition:opacity 0.25s;
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper a.removeButton {
+    background-image:none;
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper a.removeButton:after {
+    font: normal normal normal 10px/1 FontAwesome;
+    content:'\f00d';
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper a.addAboveButton {
+    background-image:none;
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper a:after {
+    font: normal normal normal 10px/1 FontAwesome;
+    color: #fff;
+    vertical-align: 1px;
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper a.removeButton:after {
+    content:'\f00d';
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper a.addAboveButton:after {
+    content:'\f112';   
+}
+
+.multipleTemplate-tutostep .instanceRemove a,
+.multipleTemplate-tutostep .instanceAddAbove a {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.multipleTemplate-tutostep td.instanceAddAbove {
+    right:31px;
+}
+
+.multipleTemplate-tutostep td.instanceRemove {
+    right:4px;
+}
+
+.multipleTemplate-tutostep .multipleTemplateInstance:hover .instanceRemove,
+.multipleTemplate-tutostep .multipleTemplateInstance:hover .instanceAddAbove,
+.multipleTemplate-tutostep .multipleTemplateInstance:hover .dokit-custom-dropdown-topright {
+    opacity:1;
+}
+
+.multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance:active,
+.multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance:focus,
+.multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance:focus-within {
+    box-shadow: 0px 15px 20px -10px rgba(0,0,0,0.24);
 }
 
 #pfForm td.instanceRearranger {
@@ -5093,10 +5170,6 @@ label.checkboxLabel.detail-area-field{
     padding: 0px 5px;
     width: 100%;
     float: left;
-}
-
-.multipleTemplate-tutostep .multipleTemplateInstance td.instanceMain {
-	width: calc(~"100% - 34px");
 }
 
 #profileWf {
