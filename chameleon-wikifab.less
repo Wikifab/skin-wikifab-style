@@ -115,9 +115,18 @@ button:focus, .btn:focus, .btn:active:focus, input:focus, .input:focus, textarea
 }
 
 .action-formedit,
-body[class^='.rootpage-Spécial_AjouterDonnées_ '],
-body[class*='.rootpage-Spécial_AjouterDonnées_ '] {
+body[class*='page-Spécial_AjouterDonnées_Tutorial_'],
+body[class^='page-Spécial_AjouterDonnées_Tutorial_'],
+body[class*='page-Spécial_AjouterDonnées_DokitPage_'],
+body[class^='page-Spécial_AjouterDonnées_DokitPage_'],
+body[class*='page-Spécial_AjouterDonnées_Item_'],
+body[class^='page-Spécial_AjouterDonnées_Item_'] {
     background-color:#eef2f6;  
+}
+
+.action-formedit.[class*='page-Manual_'],
+.action-formedit.[class^='page-Manual_'] {
+    background-color:#fff;
 }
 
 .DokitPfTemplateTools {
@@ -171,12 +180,12 @@ body.ns-special .maincontent-header-tail {
     opacity: 1;
 }
 
-.action-formedit .maincontent-header-tail .page-tools-tabs li,
-.action-formedit .maincontent-header-tail .header-right-aligned {
+.action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li,
+.action-formedit #main-content-header .maincontent-header-tail .header-right-aligned {
     display:none;
 }
 
-.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main {
+.action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main {
     display: block;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -186,36 +195,36 @@ body.ns-special .maincontent-header-tail {
     transition: 0.2s;
 }
 
-.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a {
+.action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a {
     color: #aaa;
-    padding: 9px 12px;
+    padding: 7px 10.5px;
     overflow: hidden;
     display: -webkit-box;
     max-width: 200px;
-    width: 37px;
-    height: 37px;
+    width: 33px;
+    height: 33px;
 }
 
-.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a:focus {
+.action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a:focus {
     text-decoration:none;
 }
 
-.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a:before {
+.action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a:before {
     font: normal normal normal 14px/1 FontAwesome;
     margin-right: 30px;
     content:'\f060';
 }
 
-.action-formedit .maincontent-header-tail {
+.action-formedit #main-content-header .maincontent-header-tail {
     position: absolute;
-    top: 77px;
+    top: 79px;
 }
 
 .action-formedit .maincontent-header-head {
-    margin-left: 51px;
+    margin-left: 46px;
 }
 
-.action-formedit .maincontent-header-tail .page-tools-tabs li#ca-nstab-main:hover {
+.action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main:hover {
     opacity: 1;
 }
 
@@ -3979,8 +3988,7 @@ body.page-Explore .footerdata,
 
 .multipleTemplate-tutostep .multipleTemplateAdder {
     font-size: 1.25em;
-    padding: 12px;
-    width: 100%;
+    padding: 12px 15px;
 }
 
 .multipleTemplate-tutostep .multipleTemplateInstance.ui-sortable-placeholder {
@@ -5082,6 +5090,7 @@ label.checkboxLabel.detail-area-field{
     box-shadow: 0px 15px 20px -10px rgba(0,0,0,0.14);
     margin-bottom: 30px;
     border-radius: 10px;
+    border:0;
 }
 
 .multipleTemplate-tutostep td.instanceAddAbove,
@@ -5095,7 +5104,7 @@ label.checkboxLabel.detail-area-field{
     border: 1px solid #fff;
     border-radius: 100%;
     height: auto;
-    margin-top: -26px;
+    margin-top: -30px;
     opacity:0;
     transition:opacity 0.25s;
 }
@@ -5127,8 +5136,8 @@ label.checkboxLabel.detail-area-field{
     content:'\f112';   
 }
 
-.multipleTemplate-tutostep .instanceRemove a,
-.multipleTemplate-tutostep .instanceAddAbove a {
+.multipleTemplate-tutostep .multipleTemplateWrapper .instanceRemove a,
+.multipleTemplate-tutostep .multipleTemplateWrapper .instanceAddAbove a {
     width: 20px;
     height: 20px;
     text-align: center;
@@ -5145,8 +5154,7 @@ label.checkboxLabel.detail-area-field{
 }
 
 .multipleTemplate-tutostep .multipleTemplateInstance:hover .instanceRemove,
-.multipleTemplate-tutostep .multipleTemplateInstance:hover .instanceAddAbove,
-.multipleTemplate-tutostep .multipleTemplateInstance:hover .dokit-custom-dropdown-topright {
+.multipleTemplate-tutostep .multipleTemplateInstance:hover .instanceAddAbove {
     opacity:1;
 }
 
