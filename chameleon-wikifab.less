@@ -124,8 +124,8 @@ body[class^='page-Spécial_AjouterDonnées_Item_'] {
     background-color:#eef2f6;  
 }
 
-body.action-formedit.body[class*='page-Manual_'],
-body.action-formedit.body[class^='page-Manual_'] {
+body[class*='page-Manual_'].action-formedit,
+body[class^='page-Manual_'].action-formedit {
     background-color:#fff;
 }
 
@@ -3997,6 +3997,8 @@ body.page-Explore .footerdata,
 .multipleTemplate-tutostep .multipleTemplateAdder {
     font-size: 1.25em;
     padding: 12px 15px;
+    background-color: #52bad5;
+    background-color: @main-btn-color;
 }
 
 .multipleTemplate-tutostep .multipleTemplateInstance.ui-sortable-placeholder {
@@ -4777,8 +4779,12 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 }
 
 .ve-area-wrapper .oo-ui-toolbar-bar  {
-    border: 1px solid #ddd !important;
+    border: 2px solid #ddd !important;
     border-top: none !important;
+}
+
+.oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle {
+    padding:1em 0.85714286em;
 }
 
 .ve-area-wrapper .oo-ui-toolbar-bar .oo-ui-tool-name-vefpgSwitchEditor .oo-ui-tool-link {
