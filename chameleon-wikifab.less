@@ -6153,11 +6153,6 @@ body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .gro
     vertical-align: baseline;
 }
 
-.group-title-box h1.manual-title {
-    float: left;
-    width: calc(~"100% - 150px");   
-}
-
 body[class^='page-Group_'] div.patrollink, body[class*='page-Group_'] div.patrollink,
 body[class^='page-Manual_'] div.patrollink, body[class*='page-Manual_'] div.patrollink {
 	float: right;
@@ -6376,8 +6371,9 @@ body[class^='page-Manual_'].action-view .Input-tabs, body[class*='page-Manual_']
 }
 
 .tabGroupsOptionButton {
-    float:right;
-    display: flex;
+    position: absolute;
+    right: 15px;
+    margin-top: -60px;
 }
 
 body[class^='page-Manual_'] .tabGroupsOptionButton {
