@@ -266,7 +266,7 @@ input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.
 	 border-color: @main-btn-color;
 	 box-shadow: 0 0 7px rgba(39,128,248,.15);
 	 outline:none;
-     background: #fff;
+     background-color: #fff;
 }
 
 .HpCategoriesSection {
@@ -380,6 +380,8 @@ a:hover {
 .prerequisites-selection .multipleTemplateAdder {
 	width: auto;
     margin-top: 7px;
+    background-color: #52bad5;
+    background-color: @main-btn-color;
 }
 
 .multipleTemplateSingleEntry .instanceRearranger,
@@ -495,7 +497,6 @@ a:hover {
 
 .WfFormTree ul.dynatree-container:hover {
     border: 2px solid #ccc;
-    background:#fff;
 }
 
 .WfFormTree ul.dynatree-container li:first-child {
@@ -2239,13 +2240,14 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 
 #mw-content-text ul.tabbernav li a {
 	margin-left: 0px;
-    padding: 10px 14px;
+    padding: 13px 14px 20px;
 	border: none;
 	background: transparent;
 }
 
 #mw-content-text ul.tabbernav li.tabberactive a {
     border-radius: 5px 5px 0 0;
+    background: #fff;
 }
 
 #mw-content-text ul.tabbernav {
@@ -2258,7 +2260,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 
 #mw-content-text .tabber .tabbertab {
     padding: 15px 15px;
-    border-radius: 0 8px 8px 8px;
+    border-radius: 8px;
     border: none;
     float: left;
     width: 100%;
@@ -2267,7 +2269,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 }
 
 .Input-tabs {
-	margin:20px 0px 15px;
+	margin:20px 0px;
 	float:left;
 	width:100%
 }
@@ -3986,6 +3988,11 @@ body.page-Explore .footerdata,
 	padding: 12px 15px;
 }
 
+.multipleTemplate-tutostep {
+    float: left;
+    width: 100%;
+}
+
 .multipleTemplate-tutostep .multipleTemplateAdder {
     font-size: 1.25em;
     padding: 12px 15px;
@@ -4704,6 +4711,10 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     line-height: 1.2em;
 }
 
+.WfFormDropdown:focus {
+    
+}
+
 .WfFormDropdown.WfFormDropdownAutoWidth {
     width: auto;
     float: unset;
@@ -4983,7 +4994,7 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
 
 .WfEndForm {
     border: 0px;
-    height: 50px;
+    height: 100px;
     float: left;
     width: 100%;
 }
@@ -5046,7 +5057,7 @@ h5.tuto-details-material-title {
      box-shadow: 0 0 7px rgba(39,128,248,.15);
 }
 
-#WfFormTokensParent .select2-container-multi .select2-choices {
+.WfFormTokensParent .select2-container-multi .select2-choices {
     background-image: none;
     border: 2px solid #ddd;
     padding: 2px;
@@ -5075,18 +5086,18 @@ h5.tuto-details-material-title {
 
 #pfForm .select2-dropdown-open.select2-drop-above .select2-choice,
 #pfForm .select2-dropdown-open.select2-drop-above .select2-choices,
-#pfForm .select2-drop-active,
+.action-formedit .select2-drop-active,
 #pfForm .select2-container-active .select2-choice,
 #pfForm .select2-container-active .select2-choices {
      border: 2px solid #52bad5;
      border: 2px solid @main-btn-color;
 }
 
-#WfFormTokensParent .select2-container-multi .select2-choices:hover {
+.WfFormTokensParent .select2-container-multi .select2-choices:hover {
     border:2px solid #ddd;
 }
 
-#WfFormTokensParent .pf-select2-dropdown .select2-results .select2-highlighted {
+.WfFormTokensParent .pf-select2-dropdown .select2-results .select2-highlighted {
     background: #52bad5;
     background: @main-btn-color;
 }
