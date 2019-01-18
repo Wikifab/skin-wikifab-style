@@ -4701,6 +4701,7 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     padding: 8px;
     background-repeat: no-repeat;
     background-image: url('images/WFselectDropdown.png');
+    line-height: 1.2em;
 }
 
 .WfFormDropdown.WfFormDropdownAutoWidth {
@@ -5045,12 +5046,49 @@ h5.tuto-details-material-title {
      box-shadow: 0 0 7px rgba(39,128,248,.15);
 }
 
-#pfForm .select2-container-multi .select2-choices {
+#WfFormTokensParent .select2-container-multi .select2-choices {
+    background-image: none;
+    border: 2px solid #ddd;
+    padding: 2px;
+    background: #fdfdfd;
+}
+
+#pfForm .select2-container .select2-choice {
+    height: 35px;
+    border: 2px solid #ddd;
+    font-size: 14.5px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 3px 0 0 8px;
+    outline: none;
+    color: #30373b !important;
+}
+
+#pfForm .select2-container .select2-choice .select2-arrow {
+    background-image:none;
+    border-left: 0;
+    background: transparent;
+}
+
+#pfForm .select2-container .select2-choice:hover {
+    border: 2px solid #ccc;
+}
+
+#pfForm .select2-dropdown-open.select2-drop-above .select2-choice,
+#pfForm .select2-dropdown-open.select2-drop-above .select2-choices,
+#pfForm .select2-drop-active,
+#pfForm .select2-container-active .select2-choice,
+#pfForm .select2-container-active .select2-choices {
+     border: 2px solid #52bad5;
+     border: 2px solid @main-btn-color;
+}
+
+#WfFormTokensParent .select2-container-multi .select2-choices:hover {
     border:2px solid #ddd;
 }
 
-#pfForm .select2-container-multi .select2-choices:hover {
-    border:2px solid #ddd;
+#WfFormTokensParent .pf-select2-dropdown .select2-results .select2-highlighted {
+    background: #52bad5;
+    background: @main-btn-color;
 }
 
 .WfFormTokensParent .WfFormTokens {
@@ -5237,14 +5275,6 @@ label.checkboxLabel.detail-area-field{
 	margin-bottom:13px;
 }
 
-.select2-container.pfComboBox .select2-choice {
-	height: 33px;
-    font-size: 14.5px;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding: 3px 0 0 8px;
-    outline: none;
-    color: #30373b !important;
-}
 
 .select2-container.pfComboBox .select2-choice abbr {
 	top: 10px;
