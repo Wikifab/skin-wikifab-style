@@ -523,6 +523,63 @@ a:hover {
     font-style: normal;
 }
 
+.WfFormCheckboxParent {
+    position: relative;
+}
+
+.WfFormCheckboxParent label:hover {
+    cursor:pointer;
+}
+
+.WfFormCheckbox input{
+    margin-right: 12px;
+    vertical-align: 6px;
+}
+
+.WfFormCheckbox input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: none;
+    outline-offset: 0;
+}
+
+.WfFormCheckbox input:before {
+    content: '';
+    width: 21px;
+    float: left;
+    height: 21px;
+    border: 2px solid #ddd;
+    background: #fdfdfd;
+    border-radius: 3px;
+}
+
+.WfFormCheckbox input[type="checkbox"]:not(:checked):after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    transition: all .1s;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #ddd;
+    background: #fdfdfd;
+    border-radius: 3px;
+}
+
+.WfFormCheckbox input[type="checkbox"]:checked:after {
+    content: '✔';
+    position: absolute;
+    left: 0px;
+    font-size: 14px;
+    color: #fff;
+    transition: all .1s;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    background-color: #52bad5;
+    border: 2px solid #2c9ab7;
+}
+
 .grid.ext-translate-container .row.tux-editor-header {
     width: 1170px;
     margin: auto;
