@@ -266,6 +266,9 @@ input:focus, .input:focus, textarea:focus, .textarea:focus, select:focus, input.
 	 border-color: @main-btn-color;
 	 box-shadow: 0 0 7px rgba(39,128,248,.15);
 	 outline:none;
+}
+
+input:active, .input:active, textarea:active, .textarea:active, select:active, input.mw-ui-input:active {
      background-color: #fff;
 }
 
@@ -731,7 +734,7 @@ a:hover {
 }
 
 .NewPageTabs ul.nav-tabs > li {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 4px;
     font-size: 1.1em;
     margin-left: 10px;
@@ -6491,6 +6494,7 @@ body[class^='page-Manual_'].action-view .Input-tabs, body[class*='page-Manual_']
     position: absolute;
     right: 15px;
     margin-top: -60px;
+        display: inline-flex;
 }
 
 body[class^='page-Manual_'] .tabGroupsOptionButton {
@@ -6508,7 +6512,6 @@ body[class^='page-Manual_'] .tabGroupsOptionButton {
     background-image: -webkit-linear-gradient(#fcfcfc,#eee);
     background-image: linear-gradient(#fcfcfc,#eee);
     border: 1px solid #d5d5d5;
-    margin-left: 5px;
     padding: 3px 10px;
     color: #333;
     border-radius: 3px;
