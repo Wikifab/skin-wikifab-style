@@ -392,7 +392,7 @@ a:hover {
 }
 
 .dokit-video-url {
-    width: calc(~"100% - 108px");
+    width: calc(~"100% - 110px");
     float: left;
 }
 
@@ -2241,22 +2241,11 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	margin-left: 0px;
     padding: 10px 14px;
 	border: none;
-	border-bottom: 1px solid #ddd;
 	background: transparent;
 }
 
 #mw-content-text ul.tabbernav li.tabberactive a {
-	border: 1px solid #ddd;
-	-webkit-border-top-left-radius: 4px;
-	-webkit-border-top-right-radius: 4px;
-	-moz-border-radius-topleft: 4px;
-	-moz-border-radius-topright: 4px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-    border-bottom: 1px solid #fff;
-    border-top: 3px solid #52bad5;
-    border-top: 3px solid @main-btn-color;
-    background: #fff;
+    border-radius: 5px 5px 0 0;
 }
 
 #mw-content-text ul.tabbernav {
@@ -2264,14 +2253,17 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	padding-left: 0px;
 	border-color: #ddd;
 	font:inherit;
+    border: 0;
 }
 
 #mw-content-text .tabber .tabbertab {
-	padding: 15px 15px;
-	border-color: #ddd;
-	float: left;
+    padding: 15px 15px;
+    border-radius: 0 8px 8px 8px;
+    border: none;
+    float: left;
     width: 100%;
     background: #fff;
+    box-shadow: 0px 15px 20px -10px rgba(0,0,0,0.14);
 }
 
 .Input-tabs {
@@ -4709,7 +4701,6 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     padding: 8px;
     background-repeat: no-repeat;
     background-image: url('images/WFselectDropdown.png');
-    background-color: #f9f9f9;
 }
 
 .WfFormDropdown.WfFormDropdownAutoWidth {
@@ -7211,6 +7202,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     line-height: initial;
     min-width: 0;
     font-weight: normal;
+    border-width: 2px;
     padding: 10px;
     border-color:0;
     margin-bottom: 0px;
@@ -7277,6 +7269,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     padding: 10px;
     resize: none;
     border-radius: 3px;
+    border-width:2px;
     margin-bottom: 8px;
     margin-top: 10px;
 }
