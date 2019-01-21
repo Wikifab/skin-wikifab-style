@@ -512,12 +512,35 @@ a:hover {
     border: 2px solid #ccc;
 }
 
+.WfFormTree ul.dynatree-container li {
+	padding:3px 0;
+}
+
+.WfFormTree span.dynatree-checkbox {
+    margin-left: 3px;
+    background: url('images/dk-checkboxes-status.png');
+    background-position: 0 0;
+	width: 17px;
+    cursor: pointer;
+    background-size: auto 100%;
+    height: 17px;
+}
+
+.WfFormTree span.dynatree-checkbox:hover {
+    background-position: 34px;
+}
+
+.WfFormTree .dynatree-selected span.dynatree-checkbox,
+.WfFormTree .dynatree-selected span.dynatree-checkbox:hover {
+    background-position: 17px;
+}
+
 .WfFormTree ul.dynatree-container li:first-child {
 	padding-top: 7px;
 }
     
 .WfFormTree ul.dynatree-container li:only-child {
-	padding-top: 0px;
+    padding: 3px 0;
 }
 
 .WfFormTree ul.dynatree-container .dynatree-icon {
@@ -3974,7 +3997,7 @@ h2.contribuer-subtitle{
     width: 15%;
     border-radius: 5px;
     border: 0;
-    transition: 0.25s;
+    transition: 0.1s;
     margin: 0px;
     margin-left: 2%;
     height: 60px;
