@@ -526,13 +526,6 @@ a:hover {
     font-style: normal;
 }
 
-.WfFormCheckboxParent {
-    position: relative;
-}
-
-.WfFormCheckboxParent label:hover {
-    cursor:pointer;
-}
 
 .WfFormCheckbox input{
     margin-right: 12px;
@@ -545,19 +538,12 @@ a:hover {
     outline-offset: 0;
 }
 
-.WfFormCheckbox input:before {
-    content: '';
-    width: 21px;
-    float: left;
-    height: 21px;
-    border: 2px solid #ddd;
-    background: #fdfdfd;
-    border-radius: 3px;
+.WfFormCheckbox input:after {
+    display:block;
 }
 
 .WfFormCheckbox input[type="checkbox"]:not(:checked):after {
     content: '';
-    position: absolute;
     left: 0px;
     transition: all .1s;
     width: 21px;
@@ -569,7 +555,6 @@ a:hover {
 
 .WfFormCheckbox input[type="checkbox"]:checked:after {
     content: '✔';
-    position: absolute;
     left: 0px;
     font-size: 14px;
     color: #fff;
@@ -4891,6 +4876,7 @@ body.rootpage-Wikifab_Community #mw-content-text .mw-pt-translate-header {
     margin-right: 10px;
     white-space: nowrap;
     font-weight:normal;
+    cursor:pointer;
 }
 
 .WfFormCheckbox100 .WfFormCheckbox25, .WfFormCheckbox33, .WfFormCheckbox50 {
