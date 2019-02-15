@@ -5901,6 +5901,26 @@ nav .navbar-nav.ExploreSearchBar,
     float: left;
 }
 
+body[class^='page-Manual_'] #main-content-header .PageNetworkLinks,
+body[class*='page-Manual_'] #main-content-header .PageNetworkLinks {
+    top: 48px;
+}
+
+.group-main-image {
+    display:none;
+}
+
+.group-banner {
+    height: 88px;
+}
+
+.group-title-box {
+    margin-top: 0;
+}
+
+.group-title-box h1.group-title, .group-title-box h1.manual-title {
+    padding-top:0;
+}
 
 .wf-btn-lg {
     font-size: 15px;
@@ -6292,6 +6312,7 @@ body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav, body[clas
     position: absolute;
     left: 50%;
     opacity: 0.25;
+    z-index: -1;
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
@@ -6305,7 +6326,7 @@ body[class^='page-Manual_'] .permissions-errors, body[class*='page-Manual_'] .pe
 }
 
 .group-banner {
-	height: 165px;
+	height: 167px;
 	overflow: hidden;
     opacity: 0.9;
 	background-color: #30373b;
