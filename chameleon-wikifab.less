@@ -2494,6 +2494,65 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
 	z-index: 1;
 }
 
+.group-thumbnail img:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 0;
+}
+
+.group-thumbnail-banner img:before  { 
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 85px;
+    width: 100%;
+    background: linear-gradient(to right, #0e1c2a, #1d466c);
+    border: none;
+    border-radius: 0;
+}
+
+.group-thumbnail img:after { 
+    content: "\f03e";
+    display: block;
+    font-size: 26px;
+    font-style: normal;
+    font-family: FontAwesome;
+    color: rgb(151, 151, 151);
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.project-thumbnail img:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f9fafc;
+    border: none;
+    border-radius: 0;
+}
+
+.project-thumbnail img:after {
+    content: "\f03e";
+    display: block;
+    font-size: 53px;
+    font-style: normal;
+    font-family: FontAwesome;
+    color: #cdd4e3;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
 .wfExpInput-container {
     display: inline-flex;
     width: 100%;
