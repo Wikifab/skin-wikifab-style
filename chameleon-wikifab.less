@@ -5911,6 +5911,11 @@ label.checkboxLabel.detail-area-field{
 	.container {
     	width: 100%;
 	}
+
+    body[class^='page-Manual_'] .group-title-box + div.container,
+    body[class*='page-Manual_'] .group-title-box + div.container {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 992px) {
@@ -6360,7 +6365,6 @@ body[class*='page-Manual_'] .group-title-box + div.container h1 {
 
 body[class^='page-Manual_'] .group-title-box + div.container,
 body[class*='page-Manual_'] .group-title-box + div.container {
-    overflow: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
 }
