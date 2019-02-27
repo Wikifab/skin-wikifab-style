@@ -2887,7 +2887,7 @@ h5.project-title span {
 }
 
 .project-card-book .project-card-content {
-    padding: 10px 0;
+    padding: 10px 10px 10px 0;
 }
 
 .project-card.project-card-book {
@@ -4041,7 +4041,7 @@ h2.contribuer-subtitle{
 }
 
 .group-main-image {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     background: #fff;
     height: 262px;
     -webkit-border-radius: 5px;
@@ -5962,6 +5962,18 @@ nav .navbar-nav.ExploreSearchBar,
     float: left;
 }
 
+.project-card-book .project-thumbnail {
+    -webkit-border-radius: 3px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius: 3px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
 body[class^='page-Manual_'] #main-content-header .PageNetworkLinks,
 body[class*='page-Manual_'] #main-content-header .PageNetworkLinks {
     top: 48px;
@@ -6240,6 +6252,10 @@ h1.firstHeading {
 	    overflow: hidden;
 	    line-height: 1;
 	}
+
+    .project-card.project-card-book .project-card-content {
+        margin-left: -15px;
+    }
 }
 
 /*************************
@@ -6336,14 +6352,29 @@ body[class^='page-Manual_'].action-view, body[class*='page-Manual_'].action-view
 	background-color: #f9fafc;
 }
 
+body[class^='page-Manual_'] .group-title-box + div.container h1,
+body[class*='page-Manual_'] .group-title-box + div.container h1 {
+    font-size: 2em;
+    float:left;
+}
+
+body[class^='page-Manual_'] .group-title-box + div.container,
+body[class*='page-Manual_'] .group-title-box + div.container {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 body[class^='page-Manual_'] h2,
 body[class*='page-Manual_'] h2 {
     font-size: 1.55em;
+    float:left;
 }
 
 body[class^='page-Manual_'] h3,
 body[class*='page-Manual_'] h3 {
     font-size: 1.35em;
+    float:left;
 }
 
 body[class^='page-Manual_'] h4,
@@ -6353,6 +6384,7 @@ body[class*='page-Manual_'] h5,
 body[class^='page-Manual_'] h6,
 body[class*='page-Manual_'] h6 {
     font-size: 1.20em;
+    float:left;
 }
 
 body[class^='page-Group_'].action-view .firstHeading, body[class*='page-Group_'].action-view .firstHeading,
@@ -6415,6 +6447,7 @@ body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .gro
     font-size: 1.1em;
     float: left;
     width: 100%;
+    margin-bottom: 0px;
 }
 
 .group-title-box h1.group-title,
@@ -6430,6 +6463,7 @@ body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .gro
     overflow: hidden;
     white-space: nowrap;
     vertical-align: baseline;
+    width: calc(~"100% - 205px")
 }
 
 body[class^='page-Group_'] div.patrollink, body[class*='page-Group_'] div.patrollink,
@@ -6769,8 +6803,10 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
 	    width: 100%;
 	    float: left;
 	}
-	body[class^='page-Group_'] .group-title-box h1.group-title, body[class*='page-Group_'] .group-title-box h1.group-title,
-    body[class^='page-Manual_'] .group-title-box h1.group-title, body[class*='page-Manual_'] .group-title-box h1.group-title {
+	body[class^='page-Group_'] .group-title-box h1.group-title,
+    body[class*='page-Group_'] .group-title-box h1.group-title,
+    body[class^='page-Manual_'] .group-title-box h1.group-title,
+    body[class*='page-Manual_'] .group-title-box h1.group-title {
 		padding-top: 29px;
 		color: inherit;
 		text-shadow: none;
@@ -7667,6 +7703,16 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     font-size: 1.2em;
     padding: 9px;
     margin-bottom: 20px;
+}
+
+.group-title-box h1.group-title,
+.group-title-box h1.manual-title {
+    width: 100%;
+    font-size: 33px;
+}
+
+.group-title-box .tabGroupsOptionButton {
+    display:none;
 }
 
 #cs-comments #cs-add-button .cs-comment-button-label {
