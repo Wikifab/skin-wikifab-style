@@ -6405,10 +6405,11 @@ body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav, body[clas
 
 .group-banner img {
 	width: 100%;
-    height: auto;
+    height: -webkit-fill-available;
     position: absolute;
+    object-fit: cover;
     left: 50%;
-    opacity: 0.25;
+    opacity: 0.4;
     z-index: -1;
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
