@@ -115,13 +115,7 @@ button:focus, .btn:focus, .btn:active:focus, input:focus, .input:focus, textarea
 }
 
 .action-formedit,
-.mw-special-FormEdit,
-body[class*='page-Spécial_AjouterDonnées_Tutorial_'],
-body[class^='page-Spécial_AjouterDonnées_Tutorial_'],
-body[class*='page-Spécial_AjouterDonnées_DokitPage_'],
-body[class^='page-Spécial_AjouterDonnées_DokitPage_'],
-body[class*='page-Spécial_AjouterDonnées_Item_'],
-body[class^='page-Spécial_AjouterDonnées_Item_'] {
+.mw-special-FormEdit {
     background-color:#eef2f6;  
 }
 
@@ -131,7 +125,9 @@ body[class^='page-Manual_'].action-formedit .maincontent-header-head {
 }
 
 body[class*='page-Manual_'].action-formedit,
-body[class^='page-Manual_'].action-formedit {
+body[class^='page-Manual_'].action-formedit,
+body[class*='page-Manual_'].mw-special-FormEdit,
+body[class^='page-Manual_'].mw-special-FormEdit {
     background-color:#fff;
 }
 
@@ -6325,7 +6321,7 @@ div.navbar-personaltoolwidgets > li > a {
     top:0;
     left:0;
     padding:0.2em;
-}
+}   
 
 .mw-echo-ui-paginationWidget .oo-ui-buttonOptionWidget .oo-ui-buttonElement-button {
     padding: 0.25em;
@@ -6925,7 +6921,7 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
         padding: 15px 30px !important;
         width: 100%;
         float: left;
-        color: rgba(255,255,255,0.4);
+        color: @nav-txt-color;
         font-size: 14.5px;
     }
 
@@ -6955,14 +6951,14 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
     }
 
     nav .navbar-collapse .navbar-tools .p-personal-tools > li > a {
-        color:rgba(255,255,255,0.4);
+        color:@nav-txt-color;
         padding: 15px 30px;
         line-height: 20px;
         font-size: 14.5px;
     }
 
     nav .navbar-collapse .navbar-tools .p-personal-tools > li > a:hover {
-        color:#fff;
+        color:@nav-txthover-color;
         background: transparent;
     }
 
