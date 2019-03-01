@@ -2897,6 +2897,8 @@ h5.project-title {
     left: 100px;
     width: calc(~"100% - 100px");
     min-height: 76px;
+    -webkit-transform: none;
+    transform: none;
 }
 
 .project-card.project-card-book {
@@ -5976,20 +5978,6 @@ nav .navbar-nav.ExploreSearchBar,
     float: left;
 }
 
-.project-card-book .project-thumbnail {
-    -webkit-border-radius: 3px;
-    -webkit-border-top-right-radius: 0px;
-    -webkit-border-bottom-right-radius: 0px;
-    -moz-border-radius: 3px;
-    -moz-border-radius-topright: 0px;
-    -moz-border-radius-bottomright: 0px;
-    border-radius: 3px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    height: 67px;
-    width: 85px;
-}
-
 body[class^='page-Manual_'] #main-content-header .PageNetworkLinks,
 body[class*='page-Manual_'] #main-content-header .PageNetworkLinks {
     top: 48px;
@@ -6272,7 +6260,21 @@ h1.firstHeading {
     .project-card.project-card-book .project-card-content {
         min-height: 67px;
         left: 85px;
-        width: calc(~"100% - 850px");
+        width: calc(~"100% - 85px");
+    }
+
+    .project-card-book .project-thumbnail {
+        -webkit-border-radius: 3px;
+        -webkit-border-top-right-radius: 0px;
+        -webkit-border-bottom-right-radius: 0px;
+        -moz-border-radius: 3px;
+        -moz-border-radius-topright: 0px;
+        -moz-border-radius-bottomright: 0px;
+        border-radius: 3px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 67px;
+        width: 85px;
     }
 }
 
