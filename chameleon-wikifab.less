@@ -2482,7 +2482,7 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
     transition-timing-function: ease-out;
     will-change: transform;
     position: relative;
-    min-height: 260px;
+    min-height: 253px;
     overflow: hidden;
 }
 
@@ -2639,12 +2639,12 @@ span.project-card-separator {
 }
 
 .project-card-content {
-	padding: 10px 12px 15px 12px;
+	padding: 10px 12px 10px 12px;
     position: absolute;
     bottom: 0;
     width: 100%;
-    -webkit-transform: translateY(5em);
-    transform: translateY(5em);
+    -webkit-transform: translateY(calc(~"100% - 5em"));
+    transform: translateY(calc(~"100% - 5em"));
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -2881,7 +2881,7 @@ h5.project-title {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .project-card-book .project-blurb {
@@ -5748,14 +5748,10 @@ label.checkboxLabel.detail-area-field{
 
 .project-thumbnail img {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    min-width: 264px;
-    min-height: 193px;
-    max-width: 295px;
-    max-height: 280px;
-    -ms-transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
+    float: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-thumbnail {
@@ -5763,13 +5759,14 @@ label.checkboxLabel.detail-area-field{
     top: 0;
     left: 0; 
     width: 100%;
-    height: 190px;
+    height: 180px;
 	-webkit-border-top-left-radius: 8px;
     -webkit-border-top-right-radius: 8px;
     -moz-border-radius-topleft: 8px;
     -moz-border-radius-topright: 8px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    overflow: hidden;
 }
 
 .page-Wikifab_est_en_version_Beta .section, .page-Early_access .section {
@@ -5893,6 +5890,10 @@ label.checkboxLabel.detail-area-field{
     max-height: 250px;
 }
 
+.project-card {
+    min-height: 227px;
+}
+
 .wf-top-button .btn .glyphicon {
     color: #fff;
 }
@@ -5990,6 +5991,7 @@ nav .navbar-nav.ExploreSearchBar,
     border-radius: 3px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+        width: 20%;
 }
 
 body[class^='page-Manual_'] #main-content-header .PageNetworkLinks,
@@ -6177,6 +6179,11 @@ h1.firstHeading {
 
 .project-card-content {
     padding: 10px 10px 10px 15px;
+    bottom: unset;
+    -webkit-transform: unset;
+    transform: unset;
+    transition: unset;
+    left: 20%;
 }
 
 .step-nav {
