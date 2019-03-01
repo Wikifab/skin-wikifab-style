@@ -2480,16 +2480,14 @@ body .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-prima
     transition-property: transform,-webkit-transform;
     transition-duration: .2s;
     transition-timing-function: ease-out;
-    will-change: transform;
+    will-change: transform;`
+    position: relative;
+    min-height: 260px;
+    overflow: hidden;
 }
 
 .project-card.project-card-book {
     transition-duration: .15s;
-}
-
-.project-card .project-thumbnail {
-	position:relative;
-	z-index: 1;
 }
 
 .group-thumbnail img:before {
@@ -2645,8 +2643,8 @@ span.project-card-separator {
     position: absolute;
     bottom: 0;
     width: 100%;
-    -webkit-transform: translateY(calc(100% - 5em));
-    transform: translateY(calc(100% - 5em));
+    -webkit-transform: translateY(calc(~"100% - 5em"));
+    transform: translateY(calc(~"100% - 5em"));
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -5686,7 +5684,7 @@ label.checkboxLabel.detail-area-field{
     color: #777;
     border-radius: 5px;
     margin-bottom: 4px;
-    margin-right: 1px;
+    margin-right: 4px;
 }
 
 .project-location ul {
@@ -5696,6 +5694,8 @@ label.checkboxLabel.detail-area-field{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .collaps-icon {
@@ -5763,7 +5763,7 @@ label.checkboxLabel.detail-area-field{
     top: 0;
     left: 0; 
     width: 100%;
-    heigth: 190px;
+    height: 190px;
 	-webkit-border-top-left-radius: 8px;
     -webkit-border-top-right-radius: 8px;
     -moz-border-radius-topleft: 8px;
@@ -6094,9 +6094,6 @@ nav .navbar-nav .input-group {
 }
 
 .project-card {
-    position: relative;
-    min-height: 260px;
-    overflow: hidden;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
