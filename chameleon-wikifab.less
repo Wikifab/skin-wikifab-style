@@ -5883,12 +5883,6 @@ label.checkboxLabel.detail-area-field{
 }
 
 @media (max-width: 1200px) {
-.project-thumbnail img {
-	min-height: 154px;
-    min-width: 100%;
-    max-width: 250px;
-    max-height: 250px;
-}
 
 .project-card {
     min-height: 227px;
@@ -5929,11 +5923,6 @@ label.checkboxLabel.detail-area-field{
 }
 
 @media (max-width: 992px) {
-.project-thumbnail img {
-    min-height: 237px;
-    max-height: 350px;
-    min-width: 100%;
-}
 
 .group-main-image {
     height: 200px;
@@ -5991,7 +5980,7 @@ nav .navbar-nav.ExploreSearchBar,
     border-radius: 3px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-        width: 20%;
+    width: 20%;
 }
 
 body[class^='page-Manual_'] #main-content-header .PageNetworkLinks,
@@ -6100,6 +6089,7 @@ nav .navbar-nav .input-group {
     -moz-border-radius: 3px;
     border-radius: 3px;
     margin-bottom: 15px;
+    min-height: 100px;
 }
 
 .project-card:hover {
@@ -6146,23 +6136,12 @@ h1.firstHeading {
 	padding-left:15px;
 }
 
-.project-thumbnail img {
-    min-height: 190px;
-    max-height: 350px;
-    min-width: 100%;
-}
-
 #profileWf .project-card .col-xs-5, .searchresults .project-card .col-xs-5 {
     padding-right: 0px;
 }
 
 #profileWf .project-card .col-xs-7, .searchresults .project-card .col-xs-7 {
     padding-left: 0px;
-}
-
-.project-thumbnail {
-    height: 190px;
-    border-radius: 0px;
 }
 
 .project-thumbnail {
@@ -6175,6 +6154,9 @@ h1.firstHeading {
 	-webkit-border-top-right-radius: 0px;
 	-moz-border-radius-topright: 0px;
 	border-top-right-radius: 0px;
+    border-radius: 0px;
+    height: 100px;
+    width: 20%;
 }
 
 .project-card-content {
@@ -6184,6 +6166,7 @@ h1.firstHeading {
     transform: unset;
     transition: unset;
     left: 20%;
+    width: 80%;
 }
 
 .step-nav {
@@ -6259,15 +6242,6 @@ h1.firstHeading {
 	.project-card-content {
 	    padding-left: 10px;
 	    padding-bottom: 5px;
-	}
-	.project-thumbnail img {
-	    min-height: 126px;
-	    max-height: 350px;
-	    min-width: 130px;
-	    max-width: 211px;
-	}
-	.project-thumbnail {
-	    height: 126px;
 	}
 	.project-card h5.project-title {
 	    font-size: 16px;
