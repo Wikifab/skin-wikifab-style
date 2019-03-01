@@ -2892,15 +2892,27 @@ h5.project-title {
 }
 
 .project-card-book .project-card-content {
-    padding: 10px 10px 10px 0;
+    padding: 10px 15px;
+    bottom: unset;
+    left: 100px;
+    width: calc(~"100% - 100px");
+    min-height: 76px;
 }
 
 .project-card.project-card-book {
     margin-bottom: 10px;
+    min-height: 76px;
+}
+
+.project-card.project-card-book h5.project-title {
+    -webkit-line-clamp: 1;
+    height: 24px;
+    margin-bottom: 3px;
 }
 
 .project-card-book .project-thumbnail {
     height: 76px;
+    width: 100px;
     -webkit-border-radius: 8px;
     -webkit-border-top-right-radius: 0px;
     -webkit-border-bottom-right-radius: 0px;
@@ -2910,13 +2922,7 @@ h5.project-title {
     border-radius: 8px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-}
-
-.project-card-book .project-thumbnail img {
-    min-width: 100%;
-    min-height: 56px;
-    max-width: 350px;
-    max-height: 210px;
+    width:100px;
 }
 
 .project-card-book .project-location {
@@ -5980,7 +5986,8 @@ nav .navbar-nav.ExploreSearchBar,
     border-radius: 3px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 20%;
+    height: 67px;
+    width: 85px;
 }
 
 body[class^='page-Manual_'] #main-content-header .PageNetworkLinks,
@@ -6257,8 +6264,15 @@ h1.firstHeading {
         font-size: 33px;
     }
 
+    .project-card.project-card-book {
+        margin-bottom: 10px;
+        min-height: 67px;
+    }
+
     .project-card.project-card-book .project-card-content {
-        margin-left: -15px;
+        min-height: 67px;
+        left: 85px;
+        width: calc(~"100% - 850px");
     }
 }
 
