@@ -6244,13 +6244,18 @@ h1.firstHeading {
 	    padding-bottom: 5px;
 	}
 	.project-card h5.project-title {
-	    font-size: 16px;
-	    margin-top: 4px;
-	    height: 20px;
-	    margin-bottom: 5px;
-	    overflow: hidden;
-	    line-height: 1;
+        font-size: 16px;
+        margin-top: 0px;
+        height: 22px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        line-height: 1.3em;
+        -webkit-line-clamp: 1;
 	}
+
+    .project-thumbnail img:after {
+        font-size: 33px;
+    }
 
     .project-card.project-card-book .project-card-content {
         margin-left: -15px;
