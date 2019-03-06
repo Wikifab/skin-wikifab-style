@@ -4071,8 +4071,10 @@ h2.contribuer-subtitle{
 }
 
 .tuto-main-image img{
-	width:100%;
-	height:auto;
+	width: 100%;
+	height: 253px;
+    object-fit: cover;
+    object-position: 50% 50%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
     border-radius: 5px;
@@ -4081,8 +4083,13 @@ h2.contribuer-subtitle{
 
 .tuto-step-image img{
 	width:100%;
-	height:100%;
+    height: 412.5px;
     object-fit: contain;
+}
+
+.tuto-step-image .carousel-indicators img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .tuto-step-image .carousel-inner span.mp4-file,
@@ -4133,11 +4140,13 @@ h2.contribuer-subtitle{
 
 .tuto-step-image .carousel-indicators .annotatedImageContainer {
     height: 100%;
+    border: 0;
 }
 
 .tuto-step-image .carousel-indicators video {
     height: 60px;
-    width: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
 .tuto-step-image .carousel-indicators .active {
