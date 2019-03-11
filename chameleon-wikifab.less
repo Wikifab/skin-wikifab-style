@@ -1702,7 +1702,6 @@ body.skin-chameleon .qtip {
 
 .header-right-aligned {
     float: right;
-    margin-bottom: 13px;
 }
 
 .header-right-aligned ul.page-tools-dropdown {
@@ -6034,11 +6033,6 @@ nav .navbar-nav.ExploreSearchBar,
     float: left;
 }
 
-body[class^='page-Manual_'] #main-content-header .PageNetworkLinks,
-body[class*='page-Manual_'] #main-content-header .PageNetworkLinks {
-    top: 48px;
-}
-
 .group-main-image {
     display:none;
 }
@@ -6507,12 +6501,13 @@ body[class^='page-Manual_'] .permissions-errors, body[class*='page-Manual_'] .pe
 .group-banner {
 	height: 167px;
 	overflow: hidden;
-    opacity: 0.9;
-	background-color: #30373b;
+	background-color: #495359;
     position: absolute;
     left: 0;
     top: 50px;
     width: 100%;
+    color: transparent;
+    z-index: -1;
 }
 
 .group-info span {
@@ -6523,10 +6518,6 @@ body[class^='page-Manual_'] .permissions-errors, body[class*='page-Manual_'] .pe
 body[class^='page-Group_'] .group-info span a, body[class*='page-Group_'] .group-info span a,
 body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .group-info span a {
 	color:#888;
-}
-
-.group-title-box {
-    margin-top: 50px;
 }
 
 .group-description {
@@ -6549,7 +6540,6 @@ body[class^='page-Manual_'] .group-info span a, body[class*='page-Manual_'] .gro
     overflow: hidden;
     white-space: nowrap;
     vertical-align: baseline;
-    width: calc(~"100% - 205px")
 }
 
 body[class^='page-Group_'] div.patrollink, body[class*='page-Group_'] div.patrollink,
@@ -7758,7 +7748,7 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 
 @media only screen and (max-width: 550px) {
 
-.PageNetworkLinks, .saving-menu #wpSaveAndContinue, .saving-menu .custom-tooltip-light {
+.saving-menu #wpSaveAndContinue, .saving-menu .custom-tooltip-light {
     display: none;
 }
 
