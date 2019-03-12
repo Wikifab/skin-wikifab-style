@@ -1245,9 +1245,21 @@ a:hover {
 	margin-top:12px;
 }
 
+.mw-special-Search #mw-search-top-table input:active,
+.mw-special-Search #mw-search-top-table input:focus {
+    border-color: #52bad5;
+    border-color: @main-btn-color;
+}
+
 #mw-search-top-table .oo-ui-textInputWidget.oo-ui-iconElement .oo-ui-iconElement-icon {
-	left: 0.3em;
+    left: 11px;
+    opacity: 0.3;
     max-height: initial;
+}
+
+.mw-special-Search #mw-search-top-table input:active + span.oo-ui-iconElement-icon,
+.mw-special-Search #mw-search-top-table input:focus + span.oo-ui-iconElement-icon {
+    opacity:1;
 }
 
 #mw-search-top-table .oo-ui-actionFieldLayout-input {
