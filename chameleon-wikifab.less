@@ -4491,7 +4491,9 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
     font-weight: bold;
 }
 
-#mw-content-text .mw-pt-translate-header {
+#mw-content-text .mw-pt-translate-header,
+body[class^='page-Manual_'] #mw-content-text .mw-pt-translate-header .translation-intro-text,
+body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header .translation-intro-text {
     font-size: inherit;
     text-align: left;
     width: 100%;
@@ -4509,6 +4511,29 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
 	background-position: 12px;
     max-width: 1140px;
     margin: 0 auto 20px;
+}
+
+body[class^='page-Manual_'] #mw-content-text .mw-pt-translate-header,
+body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
+    font-size: unset;
+    text-align: unset;
+    width: unset;
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+    padding: unset;
+    margin-bottom: unset;
+    border: unset;
+    border-radius: unset;
+    margin-top: unset;
+    background-image: unset;
+    background-repeat: unset;
+    background-size: unset;
+    background-position: unset;
+    max-width: unset;
+    margin: unset;
+    background: #495358;
+    font-size: inherit;
 }
 
 #mw-content-text .mw-pt-translate-header + hr {
