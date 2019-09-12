@@ -1288,6 +1288,61 @@ a:hover {
     padding: 8px !important;
 }
 
+.WFfilter .WFfilter-property .selectize-control .selectize-input {
+border: 0;
+    background: transparent;
+    box-shadow: none;
+    font-size: 100%;
+    padding: 10px 25px 10px 15px;
+}
+
+.WFfilter .WFfilter-property .selectize-control.single .dropdown-active:before {
+    display:none;
+}
+
+.WFfilter .WFfilter-property .selectize-control .selectize-input > * {
+    font-size: 1.15em;
+    color: #30373b;
+    line-height: 1.42857143 !important;
+}
+
+.WFfilter .WFfilter-property .selectize-control.single .selectize-input:after {
+    border-color: #30373b transparent transparent transparent;
+    border-width: 4px 4px 0 4px;
+    margin-top:0;
+}
+
+.WFfilter .WFfilter-property .selectize-control .selectize-input > *::placeholder {
+    color: #30373b;
+}
+
+.WFfilter .WFfilter-property .selectize-control .selectize-input:hover,
+.WFfilter .WFfilter-property .selectize-input.dropdown-active {
+    background-color: #eeeeee;
+        -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.WFfilter .WFfilter-property .selectize-dropdown {
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    font-size: 14px;
+        text-align: left;
+    line-height: 2em;
+}
+
+.WFfilter .WFfilter-property .selectize-dropdown .selectize-dropdown-content .active:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.WFfilter .WFfilter-property .selectize-dropdown .selectize-dropdown-content .active:last-child {
+    border-radius:0 0 3px 3px;
+}
+
 .WFfilter .dk-text-property .selectize-input .item {
     position: absolute;
     padding: 8px;
