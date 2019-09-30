@@ -493,6 +493,10 @@ a:hover {
     margin:0;
 }
 
+.multipleTemplateInstance table {
+	display: block;
+}
+
 .multipleTemplateSingleEntry .multipleTemplateInstance td.instanceMain {
     padding:0;
 }
@@ -4738,6 +4742,7 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
 .add-attachments.simplePMG .multipleTemplateWrapper td.instanceRemove {
     position: absolute;
     right: 15px;
+    margin-top: -6px;
 }
 
 .add-attachments.simplePMG .multipleTemplateWrapper td.instanceAddAbove {
@@ -4745,8 +4750,8 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
 }
 
 .add-attachments.simplePMG .multipleTemplateWrapper td.instanceMain .fa {
-    font-size: 2em;
-    margin-right: 5px;
+    font-size: 1.5em;
+    margin-right: 7px;
 }
 
 .add-attachments.simplePMG .multipleTemplateWrapper td.instanceMain .fa.fa-file-word-o {
@@ -4766,7 +4771,12 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
 }
 
 .add-attachments.simplePMG .multipleTemplateWrapper td.instanceMain .fa + span {
-    vertical-align: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 140px);
+    white-space: nowrap;
+	padding-top: 1px;
+    float: left;
 }
 
 .bg-halfsquare-separator, .bg-halfsquare-separator-2, .bg-halfsquare-separator-3 {
