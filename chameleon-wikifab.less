@@ -2819,14 +2819,19 @@ span.project-card-separator {
     box-shadow: 0px -3px 15px rgba(0,0,0,0.15);
 }
 
-.project-card:hover .project-thumbnail img {
-    opacity: 0.7;
-    transition: opacity 0.5s;
+.project-card .project-thumbnail:before {
+    opacity: 0;
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
 }
 
-.project-card:hover .project-thumbnail {
-    background: #000;
-    transition: background 0.25s;
+.project-card:hover .project-thumbnail:before {
+    opacity: 0.2;
+    transition: opacity 1s;
 }
 
 .project-card.project-card-book:hover .project-thumbnail img {
@@ -6077,6 +6082,7 @@ label.checkboxLabel.detail-area-field{
     position: absolute;
     float: left;
     width: 100%;
+    z-index: -1;
     height: 100%;
     object-fit: cover;
 }
