@@ -4745,7 +4745,7 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
 .add-attachments.simplePMG .multipleTemplateWrapper td.instanceRemove {
     position: absolute;
     right: 15px;
-    margin-top: -6px;
+    margin-top: -4px;
 }
 
 .add-attachments.simplePMG .multipleTemplateWrapper td.instanceAddAbove {
@@ -4774,14 +4774,18 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
     color: orange;
 }
 
-.add-attachments.simplePMG .multipleTemplateWrapper td.instanceMain .fa + span {
+.add-attachments.simplePMG .multipleTemplateInstance td.instanceMain {
+    padding: 3px 5px 2px 9px;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 100%;
-    max-width: calc(~"100% - 140px");
+    max-width: calc(~"100% - 40px");
     white-space: nowrap;
-	padding-top: 1px;
-    float: left;
+    line-height: 21px;
+}
+
+.add-attachments.simplePMG .multipleTemplateWrapper .multipleTemplateInstance {
+    padding: 8px;
 }
 
 .bg-halfsquare-separator, .bg-halfsquare-separator-2, .bg-halfsquare-separator-3 {
