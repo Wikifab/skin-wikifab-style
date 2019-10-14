@@ -153,6 +153,7 @@ body[class^='page-Manual_'].mw-special-FormEdit {
     margin-bottom: 15px;
     background-color: #fafbfc;
     border-bottom: 1px solid #eee;
+    position: relative;
 }
 
 nav.navbar-default {
@@ -202,22 +203,31 @@ body.ns-special .maincontent-header-tail {
 
 .action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main {
     display: block;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 20px;
     background: #fff;
-    opacity: 0.6;
     padding: 0;
     transition: 0.2s;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    will-change: transform;
 }
 
 .action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a {
-    color: #aaa;
+    color: #ccc;
     padding: 7px 10.5px;
     overflow: hidden;
     display: -webkit-box;
     max-width: 200px;
     width: 33px;
     height: 33px;
+}
+
+.action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main:hover a {
+    color: #bbb;
 }
 
 .action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main a:focus {
@@ -232,7 +242,7 @@ body.ns-special .maincontent-header-tail {
 
 .action-formedit #main-content-header .maincontent-header-tail {
     position: absolute;
-    top: 79px;
+    top: 29px;
 }
 
 .action-formedit .maincontent-header-head {
@@ -240,7 +250,10 @@ body.ns-special .maincontent-header-tail {
 }
 
 .action-formedit #main-content-header .maincontent-header-tail .page-tools-tabs li#ca-nstab-main:hover {
-    opacity: 1;
+    -webkit-transform: translateX(-3px);
+    -ms-transform: translateX(-3%);
+    transform: translateX(-3px);
+    border: 1px solid #ccc;
 }
 
 .navbar-default .navbar-nav > li > a {
