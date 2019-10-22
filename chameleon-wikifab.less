@@ -6769,13 +6769,6 @@ body[class^='page-Manual_'].action-view .firstHeading, body[class*='page-Manual_
 	display:none;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav,
-body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav {
-	max-width: 1140px;
-	margin:auto;
-    border-bottom: 0;
-}
-
 .group-banner img {
 	width: 100%;
     height: -webkit-fill-available;
@@ -6852,16 +6845,15 @@ body[class^='page-Manual_'] div.patrollink, body[class*='page-Manual_'] div.patr
 	text-align: center;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text .tabber .tabbertab, body[class*='page-Group_'].action-view #mw-content-text .tabber .tabbertab,
-body[class^='page-Manual_'].action-view #mw-content-text .tabber .tabbertab, body[class*='page-Manual_'].action-view #mw-content-text .tabber .tabbertab {
-	background:#fff;
-	border:none;
-	border-top:1px solid #ddd;
-}	
+.group-tabs .tabbertab {
+    border-radius: 0 0 10px 10px;
+    min-height: 200px;
+    padding: 30px 30px 10px 30px;
+}
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a,
-body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li a {
+.group-tabs li a {
     background: transparent;
+    font-size: 1.1em;
 }
 
 body[class^='page-Group_'].action-view .group-main-image img, body[class*='page-Group_'].action-view .group-main-image img,
@@ -6884,7 +6876,6 @@ body[class^='page-Manual_'].action-view .group-main-image img, body[class*='page
 	display:none;
 }
 
-
 body[class^='page-Group_'] .mw-body,
 body[class*='page-Group_'] .mw-body,
 body[class^='page-Manual_'] .mw-body,
@@ -6905,20 +6896,7 @@ body[class*='page-Manual_'].action-view span.group-type {
     text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 3px;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a,
-body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li.tabberactive a,
-body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li.tabberactive a,
-body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li.tabberactive a {
-    border: 1px solid #ddd;
-    border-bottom: 1px solid #fff;
-    -webkit-border-top-left-radius: 4px;
-    -webkit-border-top-right-radius: 4px;
-    -moz-border-radius-topleft: 4px;
-    -moz-border-radius-topright: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-top: #52bad5;
-    border-top: 3px solid @main-btn-color;
+.group-tabs li.tabberactive a {
     background: #fff;
 }
 
@@ -6935,12 +6913,6 @@ body[class^='page-Manual_'].action-view .p-contentnavigation li.selected, body[c
 	background: #f9fafc;
 }
 
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a,
-body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li a {
-	padding: 9px 15px;
-	border: none;
-}
-
 body[class^='page-Spécial_AjouterDonnées_Group_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Group_'] .contentHeader,
 body[class^='page-Special_FormEdit_Group_'] .contentHeader, body[class*='page-Special_FormEdit_Group_'] .contentHeader,
 body[class^='page-Spécial_AjouterDonnées_Manual_'] .contentHeader, body[class*='page-Spécial_AjouterDonnées_Manual_'] .contentHeader,
@@ -6954,11 +6926,6 @@ body[class^='page-Spécial_AjouterDonnées_Manual_'] .col-lg-12, body[class*='pa
 body[class^='page-Special_FormEdit_Manual_'] .col-lg-12, body[class*='page-Special_FormEdit_Manual_'] .col-lg-12 {
 	padding-right:0px;
 	padding-left:0px;
-}
-
-body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav,
-body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav {
-	margin-bottom: -1px;
 }
 
 p.machines-form-first, p.machines-form {
