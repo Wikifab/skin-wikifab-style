@@ -4618,25 +4618,18 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header .translatio
 
 body[class^='page-Manual_'] #mw-content-text .mw-pt-translate-header,
 body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
-    font-size: unset;
-    text-align: unset;
-    width: unset;
-    color: unset;
-    background-color: unset;
-    border-color: unset;
-    padding: unset;
-    margin-bottom: unset;
-    border: unset;
-    border-radius: unset;
-    margin-top: unset;
-    background-image: unset;
-    background-repeat: unset;
-    background-size: unset;
-    background-position: unset;
-    max-width: unset;
-    margin: unset;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
+body[class^='page-Manual_'] #mw-content-text .mw-pt-translate-header + hr,
+body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header + hr {
+    display: block;
+    height: 70px;
+    margin: 0;
+    border: 0;
     background: #495358;
-    font-size: inherit;
 }
 
 #mw-content-text .mw-pt-translate-header + hr {
