@@ -2837,6 +2837,7 @@ span.project-card-separator {
     transition: transform 0.3s, -webkit-transform 0.3s;
     background: #fff;
     box-shadow: 0px -3px 15px rgba(0,0,0,0.15);
+    z-index: 1;
 }
 
 .project-card .project-thumbnail:before {
@@ -2852,6 +2853,7 @@ span.project-card-separator {
 .project-card:hover .project-thumbnail:before {
     opacity: 0.25;
     transition: opacity 0.5s;
+    z-index: 1;
 }
 
 .project-card:hover .project-card-content {
@@ -4675,6 +4677,14 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header + hr {
     width: 130px;
 }
 
+.tuto-items-container .mw-pt-languages-label:after {
+    letter-spacing: -2.5px;
+    content: "||";
+    color: #f1f1f1;
+    margin-left: -4.5px;
+    font-weight: 800;
+}
+
 .tuto-items-container .mw-pt-languages-list {
     padding-left: 1em;
     padding-bottom: 0;
@@ -4683,6 +4693,8 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header + hr {
     float: right;
     font-size: 15px;
     color: #444;
+    text-align: right;
+    width: calc(~"100% - 130px");
 }
 
 .mw-content-ltr .tuto-items-container #toc ul {
@@ -6085,7 +6097,6 @@ label.checkboxLabel.detail-area-field{
     position: absolute;
     float: left;
     width: 100%;
-    z-index: -1;
     height: 100%;
     object-fit: cover;
 }
@@ -7053,6 +7064,8 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
     .WfFormTutoStepInstructions {
         margin-bottom: 10px;
     }
+
+    .PageNetworkLinks {display:none}
 
     #PageGallery,
     .pageGalleryControls,
