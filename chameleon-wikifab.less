@@ -4600,9 +4600,7 @@ body.mw-special-UserBoardAdvanced .navbar-default .navbar-nav > li#pt-social-mes
     font-weight: bold;
 }
 
-#mw-content-text .mw-pt-translate-header,
-body[class^='page-Manual_'] #mw-content-text .mw-pt-translate-header .translation-intro-text,
-body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header .translation-intro-text {
+#mw-content-text .mw-pt-translate-header {
     font-size: inherit;
     text-align: left;
     width: 100%;
@@ -4622,6 +4620,8 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header .translatio
     margin: 0 auto 20px;
 }
 
+.translation-intro-text .btn {display:initial}
+
 body[class^='page-Manual_'] #mw-content-text .mw-pt-translate-header,
 body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
     position:absolute;
@@ -4629,8 +4629,8 @@ body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header {
     right:0;
 }
 
-body[class^='page-Manual_'] #mw-content-text .mw-pt-translate-header + hr,
-body[class*='page-Manual_'] #mw-content-text .mw-pt-translate-header + hr {
+body[class^='page-Manual_'].bodyTranslatedPage #mw-content-text .mw-pt-translate-header + hr,
+body[class*='page-Manual_'].bodyTranslatedPage #mw-content-text .mw-pt-translate-header + hr {
     display: block;
     height: 70px;
     margin: 0;
