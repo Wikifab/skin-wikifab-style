@@ -7066,6 +7066,10 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
         display: block;
     }
 
+    .multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance {
+        padding: 20px 0px;
+    }
+
     .WfFormTutoStepInstructions {
         margin-bottom: 10px;
     }
@@ -7073,10 +7077,12 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
     .PageNetworkLinks {display:none}
 
     #PageGallery,
-    .pageGalleryControls,
-    .hide-mobile-view {
+    .pageGalleryControls {
         display:none;
     }
+    
+    .hide-mobile-view {height:0;}
+
 	body[class^='page-Group_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Group_'].action-view #mw-content-text ul.tabbernav li a,
     body[class^='page-Manual_'].action-view #mw-content-text ul.tabbernav li a, body[class*='page-Manual_'].action-view #mw-content-text ul.tabbernav li a {
 	    margin-left: 5px;
@@ -8041,3 +8047,14 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
     display:none;
 }
 
+/* smartphones, touchscreens */
+@media (hover: none), (pointer: none), (pointer: coarse) {
+    #pfForm td.instanceRearranger {
+        display: none;
+    }
+
+    .formmediagallery li .file-cancel {
+        display: unset;
+        opacity: 0.7;
+    }
+}
