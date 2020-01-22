@@ -7034,7 +7034,6 @@ body[class^='page-Manual_'].action-view .Input-tabs, body[class*='page-Manual_']
 }
 
 
-
 body[class^='page-Group_'].action-view .footerdata, body[class*='page-Group_'].action-view .footerdata,
 body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_'].action-view .footerdata {
 	margin-top:0px;
@@ -7055,7 +7054,20 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
 }
 
 @media (max-width: 500px) {
-    .status-checkbox-label {display:none;}
+    .saving-menu .status-checkbox-label {display:none;}
+
+        #pfForm td.instanceRearranger {
+        display: none;
+    }
+
+    .multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance {
+        padding: 20px 0px;
+    }
+
+    .formmediagallery li .file-cancel {
+        display: block;
+        opacity: 0.7;
+    }
 }
 
 @media (max-width: 767px) {
@@ -7068,10 +7080,6 @@ body[class^='page-Manual_'].action-view .footerdata, body[class*='page-Manual_']
 
     nav .navbar-nav {
         display: block;
-    }
-
-    .multipleTemplate-tutostep .multipleTemplateWrapper .multipleTemplateInstance {
-        padding: 20px 0px;
     }
 
     .WfFormTutoStepInstructions {
@@ -8053,16 +8061,4 @@ body .oo-ui-windowManager-modal > .oo-ui-dialog {
 
 .dokit-custom-annotation-form .formmediagallery li .file-buttonbar {
     display:none;
-}
-
-/* smartphones, touchscreens */
-@media (hover: none), (pointer: none), (pointer: coarse) {
-    #pfForm td.instanceRearranger {
-        display: none;
-    }
-
-    .formmediagallery li .file-cancel {
-        display: unset;
-        opacity: 0.7;
-    }
 }
