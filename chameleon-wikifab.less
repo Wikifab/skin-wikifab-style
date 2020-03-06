@@ -349,13 +349,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 input.hasDatepicker {
     padding: 7px;
-    border-right: none;
     -webkit-border-top-left-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-radius-topleft: 3px;
     -moz-border-radius-bottomleft: 3px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    width: calc(~"100% - 40px");
 }
 
 .bodyTranslatedPage .hideInTranslatedPage {
@@ -365,13 +365,24 @@ input.hasDatepicker {
 button.ui-datepicker-trigger {
     padding: 7px 11px;
     border: 1px solid #ddd;
-    background-color: #f8f8f8;
+    background-color: #fafbfc;
     -webkit-border-top-right-radius: 3px;
     -webkit-border-bottom-right-radius: 3px;
     -moz-border-radius-topright: 3px;
     -moz-border-radius-bottomright: 3px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    border-left: 0;
+}
+
+button.ui-datepicker-trigger:hover {
+	background-color: #f1f1f1;
+}
+
+
+button.ui-datepicker-trigger:active,
+button.ui-datepicker-trigger:forcus {
+	background-color: #fff;
 }
 
 .UserCard .UsersWatchButton .btn {
